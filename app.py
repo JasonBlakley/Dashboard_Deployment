@@ -249,6 +249,16 @@ january26_merged_new = january26_merged['Body'].read()
 with open('January_26_merged.csv','wb') as file:
     file.write(january26_merged_new)
 
+february26_merged = get_item('oidash-app','February_26_merged.csv')
+february26_merged_new = february26_merged['Body'].read()
+with open('February_26_merged.csv','wb') as file:
+    file.write(february26_merged_new)
+
+march26_merged = get_item('oidash-app','March_26_merged.csv')
+march26_merged_new = march26_merged['Body'].read()
+with open('March_26_merged.csv','wb') as file:
+    file.write(march26_merged_new)
+
 
 
 
@@ -308,7 +318,15 @@ january_26_merged = pd.read_csv('January_26_merged.csv')
 january_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 january_26_merged['Date'] = pd.to_datetime(january_26_merged['Month'])
 
-all_data = pd.concat([all_data_24, jan_25_merged, feb_25_merged, march_25_merged, april_25_merged, may_25_merged, june_25_merged, july_25_merged, august_25_merged, september_25_merged, october_25_merged, november_25_merged, december_25_merged, january_26_merged])
+february_26_merged = pd.read_csv('February_26_merged.csv')
+february_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+february_26_merged['Date'] = pd.to_datetime(february_26_merged['Month'])
+
+march_26_merged = pd.read_csv('March_26_merged.csv')
+march_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+march_26_merged['Date'] = pd.to_datetime(march_26_merged['Month'])
+
+all_data = pd.concat([all_data_24, jan_25_merged, feb_25_merged, march_25_merged, april_25_merged, may_25_merged, june_25_merged, july_25_merged, august_25_merged, september_25_merged, october_25_merged, november_25_merged, december_25_merged, january_26_merged, february_26_merged, march_26_merged])
 earliest_date = all_data['Date'].min() # earliest date 
 most_recent_date = all_data['Date'].max() # the most recent date 
 # merging the pidname info 
