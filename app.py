@@ -1045,6 +1045,32 @@ def update_graph1(selected_client, cmr_dropdown_selections, click, sort_button, 
         product_type = None
 
     graph1_processed_data = graph_data_prep(selected_client= selected_client, data = all_data,graph_num = 1, start_interval=interval_start, product_type= product_type, cmr_numbers= cmr_dropdown_selections )
+    
+    # Calculate date label from the actual filtered data
+    if cmr_dropdown_selections:
+        client_filtered_data = all_data[(all_data['Global Buying Group Name'] == selected_client) & (all_data['CMR Number'].isin(cmr_dropdown_selections))]
+    else:
+        client_filtered_data = all_data[all_data['Global Buying Group Name'] == selected_client]
+    
+    client_filtered_data['Date'] = pd.to_datetime(client_filtered_data['Month'])
+    client_latest_date = client_filtered_data['Date'].max()
+    
+    if interval_start != None:
+        client_start_date = client_latest_date - interval_start
+        # Get actual min date from filtered data to ensure accuracy
+        date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
+        actual_start_date = date_filtered_data['Date'].min()
+        start_month = calendar.month_name[actual_start_date.month]
+        start_year = actual_start_date.year
+    else:
+        client_earliest_date = client_filtered_data['Date'].min()
+        start_month = calendar.month_name[client_earliest_date.month]
+        start_year = client_earliest_date.year
+    
+    end_date_month = calendar.month_name[client_latest_date.month]
+    end_year = client_latest_date.year
+    date_label = f'{start_month} {start_year} through {end_date_month} {end_year}'
+    
     # checks state for the top 5 and top 10 products
     if 'submit_button' == ctx.triggered_id:
         if top_products_selection == 'Top 5':
@@ -1055,17 +1081,6 @@ def update_graph1(selected_client, cmr_dropdown_selections, click, sort_button, 
             graph1_processed_data = graph1_processed_data
     if 'clear_filters_button' == ctx.triggered_id:
         graph1_processed_data = graph1_processed_data
-
-    end_date_month = calendar.month_name[most_recent_date.month]
-    #if (interval_start!= timedelta(days = 365)) and (interval_start != None):
-    if interval_start != None:
-
-        start_date = most_recent_date  - interval_start
-        start_month = calendar.month_name[start_date.month ] 
-        date_label = f'{start_month} {start_date.year} through {end_date_month} {most_recent_date.year}'
-    else:
-        earliest_month = calendar.month_name[earliest_date.month ] 
-        date_label = f'{earliest_month} {earliest_date.year} through {end_date_month} {most_recent_date.year}'
 
     #create custom annotations based on legend status
     first = True
@@ -1218,16 +1233,31 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
         product_type = None
 
 
-    end_date_month = calendar.month_name[most_recent_date.month]
-
-    #if (interval_start!= timedelta(days = 365)) and (interval_start != None):
-    if interval_start != None:
-        start_date = most_recent_date  - interval_start
-        start_month = calendar.month_name[start_date.month ] 
-        date_label = f'{start_month} {start_date.year} through {end_date_month} {most_recent_date.year}'
+    # Calculate date label from the actual filtered data
+    if cmr_dropdown_selections:
+        client_filtered_data = all_data[(all_data['Global Buying Group Name'] == selected_client) & (all_data['CMR Number'].isin(cmr_dropdown_selections))]
     else:
-        earliest_month = calendar.month_name[earliest_date.month ] 
-        date_label = f'{earliest_month} {earliest_date.year} through {end_date_month} {most_recent_date.year}'
+        client_filtered_data = all_data[all_data['Global Buying Group Name'] == selected_client]
+    
+    client_filtered_data['Date'] = pd.to_datetime(client_filtered_data['Month'])
+    client_latest_date = client_filtered_data['Date'].max()
+    
+    if interval_start != None:
+        client_start_date = client_latest_date - interval_start
+        # Get actual min date from filtered data to ensure accuracy
+        date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
+        actual_start_date = date_filtered_data['Date'].min()
+        start_month = calendar.month_name[actual_start_date.month]
+        start_year = actual_start_date.year
+    else:
+        client_earliest_date = client_filtered_data['Date'].min()
+        start_month = calendar.month_name[client_earliest_date.month]
+        start_year = client_earliest_date.year
+    
+    end_date_month = calendar.month_name[client_latest_date.month]
+    end_year = client_latest_date.year
+    date_label = f'{start_month} {start_year} through {end_date_month} {end_year}'
+    
     graph2_processed_data = graph_data_prep(selected_client= selected_client, data = all_data, graph_num = 2,  start_interval=interval_start, product_type= product_type, cmr_numbers= cmr_dropdown_selections)
     if 'submit_button' == ctx.triggered_id:
         if top_products_selection == 'Top 5':
@@ -1394,16 +1424,30 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
         product_type = None
     end_date_month = calendar.month_name[most_recent_date.month]
    
-    end_date_month = calendar.month_name[most_recent_date.month]
-
-    #if (interval_start!= timedelta(days = 365)) and (interval_start != None):
-    if interval_start != None:
-        start_date = most_recent_date  - interval_start
-        start_month = calendar.month_name[start_date.month ] 
-        date_label = f'{start_month} {start_date.year} through {end_date_month} {most_recent_date.year}'
+    # Calculate date label from the actual filtered data
+    if cmr_dropdown_selections:
+        client_filtered_data = all_data[(all_data['Global Buying Group Name'] == selected_client) & (all_data['CMR Number'].isin(cmr_dropdown_selections))]
     else:
-        earliest_month = calendar.month_name[earliest_date.month ] 
-        date_label = f'{earliest_month} {earliest_date.year} through {end_date_month} {most_recent_date.year}'
+        client_filtered_data = all_data[all_data['Global Buying Group Name'] == selected_client]
+    
+    client_filtered_data['Date'] = pd.to_datetime(client_filtered_data['Month'])
+    client_latest_date = client_filtered_data['Date'].max()
+    
+    if interval_start != None:
+        client_start_date = client_latest_date - interval_start
+        # Get actual min date from filtered data to ensure accuracy
+        date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
+        actual_start_date = date_filtered_data['Date'].min()
+        start_month = calendar.month_name[actual_start_date.month]
+        start_year = actual_start_date.year
+    else:
+        client_earliest_date = client_filtered_data['Date'].min()
+        start_month = calendar.month_name[client_earliest_date.month]
+        start_year = client_earliest_date.year
+    
+    end_date_month = calendar.month_name[client_latest_date.month]
+    end_year = client_latest_date.year
+    date_label = f'{start_month} {start_year} through {end_date_month} {end_year}'
 
     graph3_processed_data = graph_data_prep(selected_client= selected_client, cmr_numbers= cmr_dropdown_selections, data = all_data, graph_num = 1, start_interval=interval_start, product_type= product_type)
     if 'submit_button' == ctx.triggered_id:
