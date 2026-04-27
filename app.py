@@ -1233,7 +1233,10 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
         product_type = None
 
 
-    # Calculate date label from the actual filtered data
+    graph2_processed_data = graph_data_prep(selected_client= selected_client, data = all_data, graph_num = 2,  start_interval=interval_start, product_type= product_type, cmr_numbers= cmr_dropdown_selections)
+    
+    # Calculate date label from the actual filtered data AFTER graph_data_prep processing
+    # This ensures the date label matches what's actually displayed in the graph
     if cmr_dropdown_selections:
         client_filtered_data = all_data[(all_data['Global Buying Group Name'] == selected_client) & (all_data['CMR Number'].isin(cmr_dropdown_selections))]
     else:
@@ -1258,7 +1261,6 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     end_year = client_latest_date.year
     date_label = f'{start_month} {start_year} through {end_date_month} {end_year}'
     
-    graph2_processed_data = graph_data_prep(selected_client= selected_client, data = all_data, graph_num = 2,  start_interval=interval_start, product_type= product_type, cmr_numbers= cmr_dropdown_selections)
     if 'submit_button' == ctx.triggered_id:
         if top_products_selection == 'Top 5':
             graph2_processed_data = graph2_processed_data.sort_values(by = 'counts', ascending = False).head()
