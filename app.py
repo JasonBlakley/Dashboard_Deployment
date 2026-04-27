@@ -1422,7 +1422,6 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
     if 'clear_filters_button' == ctx.triggered_id:
         interval_start = None
         product_type = None
-    end_date_month = calendar.month_name[most_recent_date.month]
    
     # Calculate date label from the actual filtered data
     if cmr_dropdown_selections:
