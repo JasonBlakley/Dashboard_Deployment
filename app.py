@@ -836,14 +836,15 @@ def string_replace(summary):
 
 def graph_data_prep(selected_client, data, graph_num,  start_interval = None, product_type = None, cmr_numbers = None ):
     from natsort import natsort_keygen
+    from dateutil.relativedelta import relativedelta
     """
-    Processes data used to populate graphs used 
+    Processes data used to populate graphs used
     
     Keyword Arguments:
     selected_client -- The name of the client selected
     data -- The dataset passed in. This should be the raw data from EPM
     graph_num -- The graph number that the data will be used for (1,2 or 3)
-    start_interval -- Start interval of how far back to look for data (default None)
+    start_interval -- Number of complete months to look back (default None for all data)
     
     Returns:
     client_defects_data -- DataFrame with case info describing the severity level and type of question
@@ -856,10 +857,11 @@ def graph_data_prep(selected_client, data, graph_num,  start_interval = None, pr
     filtered_data_by_client['Date'] = pd.to_datetime(filtered_data_by_client['Month'])
     latest_date = filtered_data_by_client['Date'].max() # the most recent date
     
-    # filtering based off input from the buttons
+    # filtering based off input from the buttons - using complete calendar months
     
     if start_interval:
-        start_date = latest_date - start_interval
+        # start_interval is now the number of months to go back
+        start_date = latest_date - relativedelta(months=start_interval)
         data_filtered_by_date = filtered_data_by_client[(filtered_data_by_client['Date'] <= latest_date) & (filtered_data_by_client['Date'] >= start_date)]
     else:
         data_filtered_by_date = filtered_data_by_client
@@ -1023,15 +1025,15 @@ def update_graph1(selected_client, cmr_dropdown_selections, click, sort_button, 
         else: legend1[num] = vis
 
     product_type = None
-    interval_start = None
+    interval_months = None
     if submit_button_clicks > 0:
-        # checks state for the date buttons
+        # checks state for the date buttons - using complete calendar months
         if date_dropdown_selection == '3 Months':
-            interval_start = timedelta(days = 91) # data for the last 3 months
+            interval_months = 3 # data for the last 3 complete months
         elif date_dropdown_selection == '6 Months':
-            interval_start = timedelta(days = 182) # data for last 6 months 
+            interval_months = 6 # data for last 6 complete months
         elif date_dropdown_selection == '1 year':
-            interval_start = timedelta(days = 365) # data for last 1 year 
+            interval_months = 12 # data for last 12 complete months
         # checks state for the product specification
         if product_group_selection == 'Hardware':
             product_type = 'Hardware'
@@ -1041,10 +1043,10 @@ def update_graph1(selected_client, cmr_dropdown_selections, click, sort_button, 
             product_type = None
         # clear filters button
     if 'clear_filters_button' == ctx.triggered_id:
-        interval_start = None
+        interval_months = None
         product_type = None
 
-    graph1_processed_data = graph_data_prep(selected_client= selected_client, data = all_data,graph_num = 1, start_interval=interval_start, product_type= product_type, cmr_numbers= cmr_dropdown_selections )
+    graph1_processed_data = graph_data_prep(selected_client= selected_client, data = all_data,graph_num = 1, start_interval=interval_months, product_type= product_type, cmr_numbers= cmr_dropdown_selections )
     
     # Calculate date label from the actual filtered data
     if cmr_dropdown_selections:
@@ -1055,8 +1057,10 @@ def update_graph1(selected_client, cmr_dropdown_selections, click, sort_button, 
     client_filtered_data['Date'] = pd.to_datetime(client_filtered_data['Month'])
     client_latest_date = client_filtered_data['Date'].max()
     
-    if interval_start != None:
-        client_start_date = client_latest_date - interval_start
+    if interval_months != None:
+        from dateutil.relativedelta import relativedelta
+        # Calculate start date by going back N complete months
+        client_start_date = client_latest_date - relativedelta(months=interval_months)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
@@ -1211,15 +1215,15 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     filtered_clients = summary_new """
 
     product_type = None
-    interval_start = None
+    interval_months = None
     if submit_button_clicks > 0:
-        # checks state for the date buttons
+        # checks state for the date buttons - using complete calendar months
         if date_dropdown_selection == '3 Months':
-            interval_start = timedelta(days = 91) # data for the last 3 months
+            interval_months = 3 # data for the last 3 complete months
         elif date_dropdown_selection == '6 Months':
-            interval_start = timedelta(days = 182) # data for last 6 months 
+            interval_months = 6 # data for last 6 complete months
         elif date_dropdown_selection == '1 year':
-            interval_start = timedelta(days = 365) # data for last 1 year 
+            interval_months = 12 # data for last 12 complete months
         # checks state for the product specification
         if product_group_selection == 'Hardware':
             product_type = 'Hardware'
@@ -1229,11 +1233,11 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
             product_type = None
         # clear filters button
     if 'clear_filters_button' == ctx.triggered_id:
-        interval_start = None
+        interval_months = None
         product_type = None
 
 
-    graph2_processed_data = graph_data_prep(selected_client= selected_client, data = all_data, graph_num = 2,  start_interval=interval_start, product_type= product_type, cmr_numbers= cmr_dropdown_selections)
+    graph2_processed_data = graph_data_prep(selected_client= selected_client, data = all_data, graph_num = 2,  start_interval=interval_months, product_type= product_type, cmr_numbers= cmr_dropdown_selections)
     
     # Calculate date label from the actual filtered data AFTER graph_data_prep processing
     # This ensures the date label matches what's actually displayed in the graph
@@ -1245,8 +1249,10 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     client_filtered_data['Date'] = pd.to_datetime(client_filtered_data['Month'])
     client_latest_date = client_filtered_data['Date'].max()
     
-    if interval_start != None:
-        client_start_date = client_latest_date - interval_start
+    if interval_months != None:
+        from dateutil.relativedelta import relativedelta
+        # Calculate start date by going back N complete months
+        client_start_date = client_latest_date - relativedelta(months=interval_months)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
@@ -1404,15 +1410,15 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
 
 
     product_type = None
-    interval_start = None
+    interval_months = None
     if submit_button_clicks > 0:
-        # checks state for the date buttons
+        # checks state for the date buttons - using complete calendar months
         if date_dropdown_selection == '3 Months':
-            interval_start = timedelta(days = 91) # data for the last 3 months
+            interval_months = 3 # data for the last 3 complete months
         elif date_dropdown_selection == '6 Months':
-            interval_start = timedelta(days = 182) # data for last 6 months 
+            interval_months = 6 # data for last 6 complete months
         elif date_dropdown_selection == '1 year':
-            interval_start = timedelta(days = 365) # data for last 1 year 
+            interval_months = 12 # data for last 12 complete months
         # checks state for the product specification
         if product_group_selection == 'Hardware':
             product_type = 'Hardware'
@@ -1422,7 +1428,7 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
             product_type = None
         # clear filters button
     if 'clear_filters_button' == ctx.triggered_id:
-        interval_start = None
+        interval_months = None
         product_type = None
    
     # Calculate date label from the actual filtered data
@@ -1434,8 +1440,10 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
     client_filtered_data['Date'] = pd.to_datetime(client_filtered_data['Month'])
     client_latest_date = client_filtered_data['Date'].max()
     
-    if interval_start != None:
-        client_start_date = client_latest_date - interval_start
+    if interval_months != None:
+        from dateutil.relativedelta import relativedelta
+        # Calculate start date by going back N complete months
+        client_start_date = client_latest_date - relativedelta(months=interval_months)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
@@ -1450,7 +1458,7 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
     end_year = client_latest_date.year
     date_label = f'{start_month} {start_year} through {end_date_month} {end_year}'
 
-    graph3_processed_data = graph_data_prep(selected_client= selected_client, cmr_numbers= cmr_dropdown_selections, data = all_data, graph_num = 1, start_interval=interval_start, product_type= product_type)
+    graph3_processed_data = graph_data_prep(selected_client= selected_client, cmr_numbers= cmr_dropdown_selections, data = all_data, graph_num = 1, start_interval=interval_months, product_type= product_type)
     if 'submit_button' == ctx.triggered_id:
         if top_products_selection == 'Top 5':
             graph3_processed_data = graph3_processed_data.sort_values(by = 'total', ascending = False).head()
