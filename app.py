@@ -26,13 +26,14 @@ import io
 from auth_dash import AppIDAuthProviderDash
 from datetime import datetime
 from wordcloud import WordCloud, STOPWORDS
-from flask import jsonify, send_file, Flask
+from flask import jsonify, send_file, Flask, request
 import base64
 from io import BytesIO
 import matplotlib.pyplot as plt
 import threading
 import zipfile
 from PIL import Image
+import logging
 #import client data
 #setting up the API with the COS
 # Constants for IBM COS values
@@ -351,6 +352,22 @@ server = Flask(__name__)
 DASH_URL_BASE_PATHNAME = "/dashboard/"
 auth = AppIDAuthProviderDash(DASH_URL_BASE_PATHNAME)
 app = dash.Dash(__name__,  server = auth.flask, url_base_pathname = DASH_URL_BASE_PATHNAME, external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWESOME])
+
+#==========================================================================================================================================
+# Configure Usage Logging
+#==========================================================================================================================================
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+# Log all dashboard access
+@auth.flask.before_request
+def log_request():
+    if request.path.startswith('/dashboard'):
+        logger.info(f"Dashboard Access | IP: {request.remote_addr} | Path: {request.path} | Method: {request.method}")
+
 #==========================================================================================================================================
 #Import Dictionaries - Used for calculating the color for EOS status
 #RED: products and related versions that have reached end of support
@@ -1017,6 +1034,9 @@ def update_graph1(selected_client, cmr_dropdown_selections, click, sort_button, 
     returns a bar graph of product open tickets and their severity
     for selected client represented by values 1-4
     """
+    # Log Graph 1 usage
+    logger.info(f"Graph 1 Update | Client: {selected_client} | Date Filter: {date_dropdown_selection} | Product Group: {product_group_selection}")
+    
     #check for legend action and update global variable
     if str(click)!="None":
         num = click[1][0]
@@ -1185,6 +1205,9 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     Status. Such that Green is in support, Yellow approaching
     EOS within 12 months, Red reached EOS and blue is unknown
     """
+    # Log Graph 2 usage
+    logger.info(f"Graph 2 Update | Client: {selected_client} | Date Filter: {date_dropdown_selection} | Product Group: {product_group_selection}")
+    
     #Filter data
     #filtered_clients = client_focus_list[client_focus_list['client'] == selected_client]
     #filtered_clients['Product Version'] = filtered_clients['Product Version'].apply(clean_versions)
@@ -1402,6 +1425,11 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
     """
     Returns Bar graph of open tickets based on product count
     and categorized by Defect or How to Questions.
+    """
+    # Log Graph 3 usage
+    logger.info(f"Graph 3 Update | Client: {selected_client} | Date Filter: {date_dropdown_selection} | Product Group: {product_group_selection}")
+    
+    """
     """
     #check for legend action and update global variable
     if str(click)!="None":
