@@ -860,8 +860,9 @@ def graph_data_prep(selected_client, data, graph_num,  start_interval = None, pr
     # filtering based off input from the buttons - using complete calendar months
     
     if start_interval:
-        # start_interval is now the number of months to go back
-        start_date = latest_date - relativedelta(months=start_interval)
+        # start_interval is the number of months to include
+        # For "last N months", go back N-1 months to include N complete months
+        start_date = latest_date - relativedelta(months=start_interval - 1)
         data_filtered_by_date = filtered_data_by_client[(filtered_data_by_client['Date'] <= latest_date) & (filtered_data_by_client['Date'] >= start_date)]
     else:
         data_filtered_by_date = filtered_data_by_client
@@ -1059,8 +1060,9 @@ def update_graph1(selected_client, cmr_dropdown_selections, click, sort_button, 
     
     if interval_months != None:
         from dateutil.relativedelta import relativedelta
-        # Calculate start date by going back N complete months
-        client_start_date = client_latest_date - relativedelta(months=interval_months)
+        # Calculate start date: for "last N months", go back N-1 months
+        # Example: "last 3 months" from March = go back 2 months to January (Jan, Feb, Mar = 3 months)
+        client_start_date = client_latest_date - relativedelta(months=interval_months - 1)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
@@ -1251,8 +1253,9 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     
     if interval_months != None:
         from dateutil.relativedelta import relativedelta
-        # Calculate start date by going back N complete months
-        client_start_date = client_latest_date - relativedelta(months=interval_months)
+        # Calculate start date: for "last N months", go back N-1 months
+        # Example: "last 3 months" from March = go back 2 months to January (Jan, Feb, Mar = 3 months)
+        client_start_date = client_latest_date - relativedelta(months=interval_months - 1)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
@@ -1442,8 +1445,9 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
     
     if interval_months != None:
         from dateutil.relativedelta import relativedelta
-        # Calculate start date by going back N complete months
-        client_start_date = client_latest_date - relativedelta(months=interval_months)
+        # Calculate start date: for "last N months", go back N-1 months
+        # Example: "last 3 months" from March = go back 2 months to January (Jan, Feb, Mar = 3 months)
+        client_start_date = client_latest_date - relativedelta(months=interval_months - 1)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
