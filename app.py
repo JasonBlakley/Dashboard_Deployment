@@ -1484,11 +1484,12 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
         height=800,width =800 + 13*len(x),
         legend=dict(yanchor="bottom", y=1, xanchor="auto", x=1, orientation="h", itemsizing='constant'),
         title={
-            'text': f'Proportion of Defects to Case Activity by Product for Summary of {selected_client} from {date_label}<br>Product Group:{product_group_selection}' + 4* "&nbsp;" + f'Number of Top Products:{top_products_selection}',            
-            'y':0.97,
+            'text': f'Proportion of Defects to Case Activity by Product for Summary of {selected_client} from {date_label}<br>Product Group:{product_group_selection}' + 4* "&nbsp;" + f'Number of Top Products:{top_products_selection}',
+            'y':0.95,
             'x':0,
             'xanchor': 'left',
-            'yanchor': 'top'})
+            'yanchor': 'top'},
+        margin=dict(t=100))  # Add top margin to prevent title cutoff
     
     
     #annotations for dashboard
