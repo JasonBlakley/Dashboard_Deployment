@@ -852,8 +852,11 @@ def graph_data_prep(selected_client, data, graph_num,  start_interval = None, pr
     
     if start_interval:
         # start_interval is the number of months to include
-        # For "last N months", go back N-1 months to include N complete months
-        start_date = latest_date - relativedelta(months=start_interval - 1)
+        # For "last N months", go back N-1 months from the first day of latest month
+        # Example: "last 6 months" from April 2026 = go back 5 months from April 1st to November 1st 2025
+        # This gives us: Nov 2025, Dec 2025, Jan 2026, Feb 2026, Mar 2026, Apr 2026 = 6 months
+        first_day_of_latest_month = datetime(year=latest_date.year, month=latest_date.month, day=1)
+        start_date = first_day_of_latest_month - relativedelta(months=start_interval - 1)
         data_filtered_by_date = filtered_data_by_client[(filtered_data_by_client['Date'] <= latest_date) & (filtered_data_by_client['Date'] >= start_date)]
     else:
         data_filtered_by_date = filtered_data_by_client
