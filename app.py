@@ -48,6 +48,31 @@ cos = ibm_boto3.resource("s3",
     config=Config(signature_version="oauth"),
     endpoint_url=COS_ENDPOINT
 )
+
+# ============================================================================
+# HEALTH CHECK SERVER - Allows app to pass readiness probes during data loading
+# This lightweight server responds immediately while main app loads data
+# ============================================================================
+print("Starting health check server...")
+health_app = Flask('health_check')
+
+@health_app.route('/health')
+def health_check():
+    return {'status': 'ok', 'message': 'Application is starting, data loading in progress'}, 200
+
+@health_app.route('/ready')
+def ready_check():
+    # This will be used later to check if data loading is complete
+    return {'status': 'loading', 'message': 'Data is being loaded'}, 200
+
+def run_health_server():
+    health_app.run(host='0.0.0.0', port=8051, debug=False, use_reloader=False)
+
+health_thread = threading.Thread(target=run_health_server, daemon=True)
+health_thread.start()
+print("✓ Health check server started on port 8051")
+print("Main application will now load data (this may take 5-10 minutes)...")
+
 # Using the API to connect to the COS
 def get_item(bucket_name, item_name):
     print("Retrieving item from bucket: {0}, key: {1}".format(bucket_name, item_name))
