@@ -1054,9 +1054,11 @@ def update_graph1(selected_client, cmr_dropdown_selections, click, sort_button, 
     
     if interval_months != None:
         from dateutil.relativedelta import relativedelta
-        # Calculate start date: for "last N months", go back N-1 months
-        # Example: "last 3 months" from March = go back 2 months to January (Jan, Feb, Mar = 3 months)
-        client_start_date = client_latest_date - relativedelta(months=interval_months - 1)
+        # Calculate start date: for "last N months", go back N-1 months from the first day of latest month
+        # Example: "last 6 months" from April 2026 = go back 5 months from April 1st to November 1st 2025
+        # This gives us: Nov 2025, Dec 2025, Jan 2026, Feb 2026, Mar 2026, Apr 2026 = 6 months
+        first_day_of_latest_month = datetime(year=client_latest_date.year, month=client_latest_date.month, day=1)
+        client_start_date = first_day_of_latest_month - relativedelta(months=interval_months - 1)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
@@ -1253,9 +1255,11 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     
     if interval_months != None:
         from dateutil.relativedelta import relativedelta
-        # Calculate start date: for "last N months", go back N-1 months
-        # Example: "last 3 months" from March = go back 2 months to January (Jan, Feb, Mar = 3 months)
-        client_start_date = client_latest_date - relativedelta(months=interval_months - 1)
+        # Calculate start date: for "last N months", go back N-1 months from the first day of latest month
+        # Example: "last 6 months" from April 2026 = go back 5 months from April 1st to November 1st 2025
+        # This gives us: Nov 2025, Dec 2025, Jan 2026, Feb 2026, Mar 2026, Apr 2026 = 6 months
+        first_day_of_latest_month = datetime(year=client_latest_date.year, month=client_latest_date.month, day=1)
+        client_start_date = first_day_of_latest_month - relativedelta(months=interval_months - 1)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
@@ -1454,9 +1458,11 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
     
     if interval_months != None:
         from dateutil.relativedelta import relativedelta
-        # Calculate start date: for "last N months", go back N-1 months
-        # Example: "last 3 months" from March = go back 2 months to January (Jan, Feb, Mar = 3 months)
-        client_start_date = client_latest_date - relativedelta(months=interval_months - 1)
+        # Calculate start date: for "last N months", go back N-1 months from the first day of latest month
+        # Example: "last 6 months" from April 2026 = go back 5 months from April 1st to November 1st 2025
+        # This gives us: Nov 2025, Dec 2025, Jan 2026, Feb 2026, Mar 2026, Apr 2026 = 6 months
+        first_day_of_latest_month = datetime(year=client_latest_date.year, month=client_latest_date.month, day=1)
+        client_start_date = first_day_of_latest_month - relativedelta(months=interval_months - 1)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
