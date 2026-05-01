@@ -224,9 +224,9 @@ with open('Merged_data_2025.csv','wb') as file:
 print("✓ 2025 data downloaded")
 
 print("Downloading 2026 monthly data...")
-january26_merged = get_item('oidash-app','January_2026_merged.csv')
+january26_merged = get_item('oidash-app','January_26_merged.csv')
 january26_merged_new = january26_merged['Body'].read()
-with open('January_2026_merged.csv','wb') as file:
+with open('January_26_merged.csv','wb') as file:
     file.write(january26_merged_new)
 
 february26_merged = get_item('oidash-app','February_2026_merged.csv')
@@ -265,7 +265,7 @@ print(f"✓ Loaded {len(all_data_25):,} records from 2025")
 
 # Load 2026 monthly data
 print("Loading 2026 monthly data...")
-january_26_merged = pd.read_csv('January_2026_merged.csv', low_memory=False)
+january_26_merged = pd.read_csv('January_26_merged.csv', low_memory=False)
 january_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 january_26_merged['Date'] = pd.to_datetime(january_26_merged['Month'])
 
