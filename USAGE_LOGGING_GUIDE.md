@@ -41,89 +41,66 @@ Each time a graph is updated (user changes filters, selects different client, et
 - IBM Cloud CLI installed
 - Logged into IBM Cloud: `ibmcloud login`
 - Target your resource group: `ibmcloud target -g <resource-group>`
-- Select your Code Engine project: `ibmcloud ce project select --name python-appid-proj`
 
 ### View Real-Time Logs
 To see logs as they happen (tail mode):
-```powershell
+```bash
 ibmcloud ce application logs --name python-appid-app --follow
 ```
 
 ### View Recent Logs
 To see the last 100 log entries:
-```powershell
+```bash
 ibmcloud ce application logs --name python-appid-app --tail 100
 ```
 
-### View Logs from Recent History
-The current Code Engine CLI in this environment does **not** support `--since` for `application logs`.
-
-Use a larger tail count instead:
-```powershell
-ibmcloud ce application logs --name python-appid-app --tail 2000
+### View Logs from Specific Time Period
+To see logs from the last hour:
+```bash
+ibmcloud ce application logs --name python-appid-app --since 1h
 ```
 
-Approximate recent-history options:
-- `--tail 500` for a smaller recent sample
-- `--tail 2000` for more recent history
-- `--tail 5000` if you need a broader window
+Other time options:
+- `--since 30m` (last 30 minutes)
+- `--since 24h` (last 24 hours)
+- `--since 7d` (last 7 days)
 
 ### Filter Logs
-These examples are for **PowerShell on Windows**. Use `Select-String` instead of `grep`.
-
 To see only dashboard access logs:
-```powershell
-ibmcloud ce application logs --name python-appid-app --tail 500 | Select-String "Dashboard Access"
+```bash
+ibmcloud ce application logs --name python-appid-app --tail 500 | grep "Dashboard Access"
 ```
 
 To see only graph update logs:
-```powershell
-ibmcloud ce application logs --name python-appid-app --tail 500 | Select-String "Graph"
+```bash
+ibmcloud ce application logs --name python-appid-app --tail 500 | grep "Graph"
 ```
 
 To see logs for a specific client:
-```powershell
-ibmcloud ce application logs --name python-appid-app --tail 500 | Select-String "CAPITAL ONE"
+```bash
+ibmcloud ce application logs --name python-appid-app --tail 500 | grep "CAPITAL ONE"
 ```
 
 ## Usage Analysis Examples
 
 ### Count Total Dashboard Accesses
-```powershell
-(ibmcloud ce application logs --name python-appid-app --tail 1000 | Select-String "Dashboard Access").Count
+```bash
+ibmcloud ce application logs --name python-appid-app --tail 1000 | grep "Dashboard Access" | wc -l
 ```
 
 ### See Which Clients Are Being Analyzed
-```powershell
-ibmcloud ce application logs --name python-appid-app --tail 500 |
-    Select-String "Graph 1 Update" |
-    ForEach-Object {
-        if ($_ -match "Client: ([^|]+)") { $matches[1].Trim() }
-    } |
-    Group-Object |
-    Sort-Object Count -Descending
+```bash
+ibmcloud ce application logs --name python-appid-app --tail 500 | grep "Graph 1 Update" | grep -o "Client: [^|]*" | sort | uniq -c
 ```
 
 ### See Which Date Filters Are Most Popular
-```powershell
-ibmcloud ce application logs --name python-appid-app --tail 500 |
-    Select-String "Date Filter" |
-    ForEach-Object {
-        if ($_ -match "Date Filter: ([^|]+)") { $matches[1].Trim() }
-    } |
-    Group-Object |
-    Sort-Object Count -Descending
+```bash
+ibmcloud ce application logs --name python-appid-app --tail 500 | grep "Date Filter" | grep -o "Date Filter: [^|]*" | sort | uniq -c
 ```
 
 ### See Which Product Groups Are Most Used
-```powershell
-ibmcloud ce application logs --name python-appid-app --tail 500 |
-    Select-String "Product Group" |
-    ForEach-Object {
-        if ($_ -match "Product Group: ([^|]+)") { $matches[1].Trim() }
-    } |
-    Group-Object |
-    Sort-Object Count -Descending
+```bash
+ibmcloud ce application logs --name python-appid-app --tail 500 | grep "Product Group" | grep -o "Product Group: [^|]*" | sort | uniq -c
 ```
 
 ## Log Retention
@@ -131,38 +108,26 @@ ibmcloud ce application logs --name python-appid-app --tail 500 |
 **Important:** Code Engine logs are retained for a limited time (typically 7-10 days). For long-term analysis:
 
 1. **Export logs regularly:**
-   ```powershell
-   $date = Get-Date -Format "yyyyMMdd"
-   ibmcloud ce application logs --name python-appid-app --tail 10000 > "dashboard_logs_$date.txt"
+   ```bash
+   ibmcloud ce application logs --name python-appid-app --tail 10000 > dashboard_logs_$(date +%Y%m%d).txt
    ```
 
 2. **Schedule weekly exports** (create a script):
-   ```powershell
-   $date = Get-Date -Format "yyyyMMdd"
-   $logDir = "C:\DashboardLogs"
-   if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir | Out-Null }
-
+   ```bash
+   #!/bin/bash
+   # weekly_log_export.sh
+   ibmcloud login --apikey $IBM_CLOUD_API_KEY
    ibmcloud target -g <your-resource-group>
-   ibmcloud ce project select --name python-appid-proj
-   ibmcloud ce application logs --name python-appid-app --tail 10000 > "$logDir\logs_$date.txt"
+   ibmcloud ce application logs --name python-appid-app --tail 10000 > ~/dashboard_logs/logs_$(date +%Y%m%d).txt
    ```
 
-3. **Analyze exported logs** using PowerShell:
-   ```powershell
+3. **Analyze exported logs** using standard text processing tools:
+   ```bash
    # Count accesses per day
-   Get-ChildItem . -Filter "dashboard_logs_*.txt" |
-       Select-String "Dashboard Access" |
-       Group-Object { $_.Line.Split(' ')[0] } |
-       Sort-Object Name
-
+   grep "Dashboard Access" dashboard_logs_*.txt | cut -d' ' -f1 | sort | uniq -c
+   
    # Most active users by IP
-   Get-ChildItem . -Filter "dashboard_logs_*.txt" |
-       Select-String "Dashboard Access" |
-       ForEach-Object {
-           if ($_.Line -match "IP: ([0-9.]+)") { $matches[1] }
-       } |
-       Group-Object |
-       Sort-Object Count -Descending
+   grep "Dashboard Access" dashboard_logs_*.txt | grep -o "IP: [0-9.]*" | sort | uniq -c | sort -rn
    ```
 
 ## Privacy Considerations
@@ -189,7 +154,7 @@ The logs include IP addresses. If this is a concern:
 If logs are overwhelming, you can:
 1. Increase the tail number: `--tail 5000`
 2. Export to file and analyze offline
-3. Use `Select-String` in PowerShell to filter specific information
+3. Use grep to filter specific information
 
 ## Next Steps
 

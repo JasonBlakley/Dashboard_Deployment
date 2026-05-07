@@ -149,9 +149,9 @@ with open('ibm_product_lifecycle_list_Oct_24.csv','wb') as file:
 ########################################  """
 
 ### -- WORDCLOUD DEV ADD BACK FOR DEPLOYMENT
-lifecycle_data_cloud = get_item('oidash-app','ibm_product_lifecycle_list_May_26.csv')
+lifecycle_data_cloud = get_item('oidash-app','ibm_product_lifecycle_list_May_25.csv')
 lifecycle_data = lifecycle_data_cloud['Body'].read()
-with open('ibm_product_lifecycle_list_May_26.csv','wb') as file:
+with open('ibm_product_lifecycle_list_May_25.csv','wb') as file:
 
     file.write(lifecycle_data) 
 
@@ -310,15 +310,15 @@ print(f"✓ Cached {len(PRODUCT_INFO_TABLE_CACHE)} products for faster Graph 2 r
 #all_data.rename(columns = {'pidname_y' : 'pidname'} ,inplace = True)
 # joining the pid info back to the new data 
 # get the dictionaries and write them to JSON files
-red = get_item('oidash-app','Red_dict_May_26_final.json')
+red = get_item('oidash-app','Red_dict_May_25_final.json')
 red = red['Body'].read()
 with open('red.json','wb') as file:
     file.write(red)
-orange = get_item('oidash-app','Orange_dict_May_26_final.json')
+orange = get_item('oidash-app','Orange_dict_May_25_final.json')
 orange = orange['Body'].read()
 with open('orange.json','wb') as file:
     file.write(orange)
-green = get_item('oidash-app','Green_dict_May_26_final.json')
+green = get_item('oidash-app','Green_dict_May_25_final.json')
 green = green['Body'].read()
 with open('green.json','wb') as file:
     file.write(green)
@@ -356,7 +356,7 @@ f.close()
 with open('green.json', 'r') as f:
   green = json.load(f)
 f.close()
-product_lifecycle_data = pd.read_csv('ibm_product_lifecycle_list_May_26.csv')
+product_lifecycle_data = pd.read_csv('ibm_product_lifecycle_list_May_25.csv')
 pid_grouped  =product_lifecycle_data[['IBM Product', 'PID']].groupby('PID')['IBM Product'].apply(list).reset_index()
 for product_list in pid_grouped['IBM Product']:
     red_versions = []
@@ -950,9 +950,9 @@ stopwords = set(STOPWORDS)
 def plot_wordcloud(data, selected_client, selected_product):
     wc = WordCloud(stopwords = stopwords, background_color='white', width=480, height=360)
     filtered_by_client = data[data['Global Buying Group Name'] == selected_client]
-    filtered_by_product = filtered_by_client[filtered_by_client['Product'] == selected_product].dropna(subset = ['Concept']).copy()
-    combined_concepts = ' '.join(filtered_by_product['Concept'].astype(str).str.strip())
-    wc.generate(combined_concepts)
+    filtered_by_product = filtered_by_client[filtered_by_client['Product'] == selected_product]
+    filtered_by_product.dropna(subset = ['Concept'], inplace = True)
+    wc.generate(filtered_by_product['Concept'].to_string(index = False).replace('\n', ''))
     return wc.to_image()
 #==========================================================================================================================================
 #graph creation
@@ -1614,12 +1614,12 @@ def add_tab(client_selection, submit_button_clicks, clear_button_clicks, product
 # Callbacks and functions to download all wordclouds for a client
 
 def plot_all_wordclouds(data, selected_client, selected_product):
-    """Used to create wordclouds when the button to generate wordclouds
+    """Used to create wordclouds when the button to generate wordclouds 
     for all products is activated"""
     wc = WordCloud(stopwords = stopwords, background_color='white', width=600, height=500)
-    filtered_by_product = data[data['Product'] == selected_product].dropna(subset = ['Concept']).copy()
-    combined_concepts = ' '.join(filtered_by_product['Concept'].astype(str).str.strip())
-    wordcloud = wc.generate(combined_concepts)
+    filtered_by_product = data[data['Product'] == selected_product]
+    filtered_by_product.dropna(subset = ['Concept'], inplace = True)
+    wordcloud = wc.generate(filtered_by_product['Concept'].to_string(index = False).replace('\n', ''))
     wordcloud.to_file(f'{selected_client}/{selected_product}.png')
     return wc.to_image()
 all_data['Product'] = all_data['Product'].str.replace('/', '-')
@@ -1641,19 +1641,19 @@ def generate_zip(n_clicks, customer_selection):
             progress_interval = 100 / len(unique_products)
 
             for product in unique_products:
-                filtered_product_data = customer_data[customer_data['Product'] == product].dropna(subset=['Concept']).copy()
+                filtered_product_data = customer_data[customer_data['Product'] == product].dropna(subset=['Concept'])
 
                 if filtered_product_data.shape[0] >= 3:
-                    combined_concepts = ' '.join(filtered_product_data['Concept'].astype(str).str.strip())
-                    if combined_concepts.strip():
-                        wc = WordCloud(stopwords=stopwords, background_color='white', width=600, height=500)
-                        wordcloud = wc.generate(combined_concepts)
+                    wc = WordCloud(stopwords=stopwords, background_color='white', width=600, height=500)
+                    wordcloud = wc.generate(
+                        filtered_product_data['Concept'].to_string(index=False).replace('\n', '')
+                    )
 
-                        img_buffer = io.BytesIO()
-                        wordcloud.to_image().save(img_buffer, format="PNG")
-                        img_buffer.seek(0)
+                    img_buffer = io.BytesIO()
+                    wordcloud.to_image().save(img_buffer, format="PNG")
+                    img_buffer.seek(0)
 
-                        zip_file.writestr(f"{customer_selection}/{product}.png", img_buffer.getvalue())
+                    zip_file.writestr(f"{customer_selection}/{product}.png", img_buffer.getvalue())
 
                 progress_value += progress_interval
 
