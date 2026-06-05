@@ -34,6 +34,7 @@ import threading
 import zipfile
 from PIL import Image
 import logging
+from product_name_mappings import get_mapped_product_name, normalize_version
 #import client data
 #setting up the API with the COS
 # Constants for IBM COS values
@@ -540,8 +541,11 @@ def calc_color(x):
     Return: (string) - color associated with product version EOS status
     Comments: Uses dictionaries 'red' and 'orange' to determine colors based on EOS status
     ---------------------------------------------------------------------------------"""
-    prod_string=x["Product Name"].lower()
-    version=str(x['Product Version']).lower()
+    # Apply product name mapping to handle mismatches between ticket data and lifecycle file
+    original_product = x["Product Name"]
+    mapped_product = get_mapped_product_name(original_product)
+    prod_string = mapped_product.lower()
+    version = str(x['Product Version']).lower()
     # for instances where the product name is the EXACT same 
     if prod_string in red and version in red[prod_string]:#if product in red and version in red
         return "red"
