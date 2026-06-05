@@ -470,7 +470,7 @@ if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(red.keys()):
     red['Aspera'] = red['IBM Aspera High-Speed Transfer Endpoint (HSTE)'] 
 if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(green.keys()):
     green['Aspera'] = green['IBM Aspera High-Speed Transfer Endpoint (HSTE)'] 
-if 'AIX Standard Edition' in list(orange.keys()):
+if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(orange.keys()):
     orange['Aspera'] = orange['IBM Aspera High-Speed Transfer Endpoint (HSTE)']
 if 'Tivoli Netcool/Impact' in list(red.keys()):
     red['Netcool/Impact'] = red['Tivoli Netcool/Impact'] 
