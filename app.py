@@ -149,11 +149,10 @@ with open('ibm_product_lifecycle_list_Oct_24.csv','wb') as file:
 ########################################  """
 
 ### -- WORDCLOUD DEV ADD BACK FOR DEPLOYMENT
-lifecycle_data_cloud = get_item('oidash-app','ibm_product_lifecycle_list_May_25.csv')
+lifecycle_data_cloud = get_item('oidash-app','ibm_product_lifecycle_list_May_26_FIXED.csv')
 lifecycle_data = lifecycle_data_cloud['Body'].read()
-with open('ibm_product_lifecycle_list_May_25.csv','wb') as file:
-
-    file.write(lifecycle_data) 
+with open('ibm_product_lifecycle_list_May_26_FIXED.csv','wb') as file:
+    file.write(lifecycle_data)
 
 
 
@@ -243,6 +242,11 @@ april26_merged = get_item('oidash-app','April_2026_merged.csv')
 april26_merged_new = april26_merged['Body'].read()
 with open('April_2026_merged.csv','wb') as file:
     file.write(april26_merged_new)
+
+may26_merged = get_item('oidash-app','May_2026_merged.csv')
+may26_merged_new = may26_merged['Body'].read()
+with open('May_2026_merged.csv','wb') as file:
+    file.write(may26_merged_new)
 print("✓ 2026 monthly data downloaded")
 
 # Load 2024 data
@@ -280,7 +284,11 @@ march_26_merged['Date'] = pd.to_datetime(march_26_merged['Month'])
 april_26_merged = pd.read_csv('April_2026_merged.csv', low_memory=False)
 april_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 april_26_merged['Date'] = pd.to_datetime(april_26_merged['Month'])
-print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged):,} records from 2026")
+
+may_26_merged = pd.read_csv('May_2026_merged.csv', low_memory=False)
+may_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+may_26_merged['Date'] = pd.to_datetime(may_26_merged['Month'])
+print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged):,} records from 2026")
 
 # Concatenate all data (6 dataframes instead of 16)
 print("Merging all data...")
@@ -290,7 +298,8 @@ all_data = pd.concat([
     january_26_merged,
     february_26_merged,
     march_26_merged,
-    april_26_merged
+    april_26_merged,
+    may_26_merged
 ], ignore_index=True)
 print(f"✓ Total records: {len(all_data):,}")
 earliest_date = all_data['Date'].min() # earliest date 
@@ -310,15 +319,15 @@ print(f"✓ Cached {len(PRODUCT_INFO_TABLE_CACHE)} products for faster Graph 2 r
 #all_data.rename(columns = {'pidname_y' : 'pidname'} ,inplace = True)
 # joining the pid info back to the new data 
 # get the dictionaries and write them to JSON files
-red = get_item('oidash-app','Red_dict_May_25_final.json')
+red = get_item('oidash-app','Red_dict_May_26_final.json')
 red = red['Body'].read()
 with open('red.json','wb') as file:
     file.write(red)
-orange = get_item('oidash-app','Orange_dict_May_25_final.json')
+orange = get_item('oidash-app','Orange_dict_May_26_final.json')
 orange = orange['Body'].read()
 with open('orange.json','wb') as file:
     file.write(orange)
-green = get_item('oidash-app','Green_dict_May_25_final.json')
+green = get_item('oidash-app','Green_dict_May_26_final.json')
 green = green['Body'].read()
 with open('green.json','wb') as file:
     file.write(green)
@@ -356,7 +365,7 @@ f.close()
 with open('green.json', 'r') as f:
   green = json.load(f)
 f.close()
-product_lifecycle_data = pd.read_csv('ibm_product_lifecycle_list_May_25.csv')
+product_lifecycle_data = pd.read_csv('ibm_product_lifecycle_list_May_26_FIXED.csv')
 pid_grouped  =product_lifecycle_data[['IBM Product', 'PID']].groupby('PID')['IBM Product'].apply(list).reset_index()
 for product_list in pid_grouped['IBM Product']:
     red_versions = []
