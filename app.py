@@ -1303,6 +1303,21 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     #create graph base
     fig2 = go.Figure()
     graph2_processed_data['Product Version'] = graph2_processed_data['Product Version'].apply(clean_versions)
+    
+    # Add sort order for lifecycle status grouping
+    # Green=1, Orange=2, Red=3, Blue=4 (so green appears at top when sorted descending)
+    color_sort_order = {'green': 1, 'orange': 2, 'red': 3, 'blue': 4}
+    graph2_processed_data['color_sort'] = graph2_processed_data['color'].map(color_sort_order)
+    
+    # Sort by lifecycle status first (ascending so green=1 is first), then by product name (descending Z-A)
+    graph2_processed_data = graph2_processed_data.sort_values(
+        by=['color_sort', 'Product Name'],
+        ascending=[True, False]
+    )
+    
+    # Create custom category order for Y-axis (maintains the sorted order)
+    category_order = graph2_processed_data['Product Name'].unique().tolist()
+    
     y = 0
     for color,eos in colors.items():
         trace = (graph2_processed_data.loc[graph2_processed_data['color'] == color].reset_index())
@@ -1314,10 +1329,10 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
         fig2.add_trace(temp)
 
     counts = (graph2_processed_data["Product Name"].value_counts().max())
-    #update graph orientation
+    #update graph orientation with custom category order
     fig2.update_layout(
         xaxis=dict(title='Latest Product Version to Oldest',range=(0.5,counts + 0.5)),
-        yaxis=dict(title='IBM Product',categoryorder='category descending',dtick=1),
+        yaxis=dict(title='IBM Product',categoryorder='array', categoryarray=category_order, dtick=1),
         showlegend=True,
         height = 380 + 7*y,
         legend=dict(yanchor="bottom", y=1, xanchor="right", x=1, orientation="h", itemsizing='constant'),
