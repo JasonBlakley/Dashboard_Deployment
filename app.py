@@ -545,7 +545,7 @@ def calc_color(x):
     original_product = x["Product Name"]
     mapped_product = get_mapped_product_name(original_product)
     prod_string = mapped_product  # Keep original case for reference
-    prod_string_lower = mapped_product.lower()  # Lowercase for all dict lookups (dicts are lowercased at load time)
+    prod_string_lower = mapped_product.lower()  # Lowercase for ALL dict lookups (dicts are lowercased at load time)
     version_raw = str(x['Product Version'])
     
     # Normalize version to try multiple formats (e.g., "7.1" -> ["7.1", "7.1.0", "7.1.x"])
@@ -557,7 +557,7 @@ def calc_color(x):
         return "blue"
     
     # Try exact product name match with all normalized version formats
-    # NOTE: Use prod_string_lower because all dict keys are lowercased at load time (line ~527)
+    # IMPORTANT: use prod_string_lower because all dict keys are lowercased at load time
     if prod_string_lower in red:
         for ver in versions_to_try:
             if ver in red[prod_string_lower]:
@@ -670,11 +670,18 @@ def calc_color(x):
                     if versions_split[0] == provided_versions_split[0]:
                         return 'green'
     return "blue"
-def detect_shortest_string(LIST,prod_string):
-    if prod_string + ' Standard Edition' in LIST:
-        return prod_string + ' Standard Edition'
-    elif 'IBM ' + prod_string in LIST:
-        return 'IBM ' +prod_string 
+def detect_shortest_string(LIST, prod_string):
+    # prod_string is already lowercase; LIST contains lowercase dict keys
+    # Prefer exact match first
+    if prod_string in LIST:
+        return prod_string
+    # Then prefer "X standard edition" (e.g. "aix standard edition")
+    if prod_string + ' standard edition' in LIST:
+        return prod_string + ' standard edition'
+    # Then prefer "ibm X" prefix match
+    if 'ibm ' + prod_string in LIST:
+        return 'ibm ' + prod_string
+    # Otherwise pick the shortest string that contains prod_string (highest % match)
     best_match = 0
     loc = None
     for index, string in enumerate(LIST):
