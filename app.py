@@ -544,8 +544,8 @@ def calc_color(x):
     # Apply product name mapping to handle mismatches between ticket data and lifecycle file
     original_product = x["Product Name"]
     mapped_product = get_mapped_product_name(original_product)
-    prod_string = mapped_product  # Keep original case for dictionary lookup
-    prod_string_lower = mapped_product.lower()  # Lowercase for fallback substring matching
+    prod_string = mapped_product  # Keep original case for reference
+    prod_string_lower = mapped_product.lower()  # Lowercase for all dict lookups (dicts are lowercased at load time)
     version_raw = str(x['Product Version'])
     
     # Normalize version to try multiple formats (e.g., "7.1" -> ["7.1", "7.1.0", "7.1.x"])
@@ -557,19 +557,20 @@ def calc_color(x):
         return "blue"
     
     # Try exact product name match with all normalized version formats
-    if prod_string in red:
+    # NOTE: Use prod_string_lower because all dict keys are lowercased at load time (line ~527)
+    if prod_string_lower in red:
         for ver in versions_to_try:
-            if ver in red[prod_string]:
+            if ver in red[prod_string_lower]:
                 return "red"
     
-    if prod_string in orange:
+    if prod_string_lower in orange:
         for ver in versions_to_try:
-            if ver in orange[prod_string]:
+            if ver in orange[prod_string_lower]:
                 return "orange"
     
-    if prod_string in green:
+    if prod_string_lower in green:
         for ver in versions_to_try:
-            if ver in green[prod_string]:
+            if ver in green[prod_string_lower]:
                 return "green"
     
     # If exact product name not found, check if products exist in string. Ex: 'MQ' in 'IBM MQ'
