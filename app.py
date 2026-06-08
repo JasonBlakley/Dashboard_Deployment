@@ -461,12 +461,18 @@ if 'IBM Aspera Faspex' in list(green.keys()):
 if 'IBM Aspera Faspex' in list(orange.keys()):
     orange['Aspera'] = orange['IBM Aspera Faspex']
 if 'AIX Standard Edition' in list(red.keys()):
-    red['AIX'] = red['AIX Standard Edition'] 
+    red['AIX'] = list(red['AIX Standard Edition'])
 if 'AIX Standard Edition' in list(green.keys()):
-    green['AIX'] = green['AIX Standard Edition']
-    green['AIX'].append('7.3.0')
+    green['AIX'] = list(green['AIX Standard Edition'])
 if 'AIX Standard Edition' in list(orange.keys()):
-    orange['AIX'] = orange['AIX Standard Edition'] 
+    orange['AIX'] = list(orange['AIX Standard Edition'])
+# Merge 'IBM AIX 7 Standard Edition' versions (contains 7.3.0) into the 'AIX' key
+if 'IBM AIX 7 Standard Edition' in list(green.keys()):
+    green.setdefault('AIX', []).extend(green['IBM AIX 7 Standard Edition'])
+if 'IBM AIX 7 Standard Edition' in list(red.keys()):
+    red.setdefault('AIX', []).extend(red['IBM AIX 7 Standard Edition'])
+if 'IBM AIX 7 Standard Edition' in list(orange.keys()):
+    orange.setdefault('AIX', []).extend(orange['IBM AIX 7 Standard Edition'])
 if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(red.keys()):
     red['Aspera'] = red['IBM Aspera High-Speed Transfer Endpoint (HSTE)'] 
 if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(green.keys()):
@@ -675,10 +681,10 @@ def detect_shortest_string(LIST, prod_string):
     # Prefer exact match first
     if prod_string in LIST:
         return prod_string
-    # Then prefer "X standard edition" (e.g. "aix standard edition")
+    # Then prefer "X standard edition"
     if prod_string + ' standard edition' in LIST:
         return prod_string + ' standard edition'
-    # Then prefer "ibm X" prefix match
+    # Then prefer "ibm X" prefix
     if 'ibm ' + prod_string in LIST:
         return 'ibm ' + prod_string
     # Otherwise pick the shortest string that contains prod_string (highest % match)
