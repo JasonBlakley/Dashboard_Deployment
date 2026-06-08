@@ -1,0 +1,35 @@
+﻿MONTHLY COGNOS REPORT EXPORT REMINDER
+======================================
+
+Report: Case Arrival Details
+Report ID: iA52C0D19539F42F9909BF269CD1FF5A2
+URL: https://w3.ibm.com/epm/app-prod/bi/?perspective=classicviewer&id=iA52C0D19539F42F9909BF269CD1FF5A2
+
+SCHEDULE: 1st of each month
+
+STEPS:
+1. Open report URL in browser
+2. Set parameters:
+   - Start Date: First day of PREVIOUS month (e.g., 2026-04-01)
+   - End Date: Last day of PREVIOUS month (e.g., 2026-04-30)
+   - Sources: Check ALL
+     â˜‘ Salesforce
+     â˜‘ Retain
+     â˜‘ ServiceNow
+     â˜‘ BAIW
+     â˜‘ Watson Health
+     â˜‘ MaaS360
+     â˜‘ Trusteer
+3. Click "Run Report"
+4. Export to CSV
+5. Save as: Case_Arrival_Details_YYYYMM.csv
+6. Move to: .\cognos_exports
+
+NEXT EXPORT DUE: 04/01/2026 16:08:36.AddMonths(1).ToString('yyyy-MM-dd')
+
+AUTOMATION OPTIONS:
+- Schedule report in Cognos (recommended)
+- Use Cognos REST API (requires API key)
+- Browser automation with Selenium (advanced)
+
+For help, see: cognos-report-export.ps1

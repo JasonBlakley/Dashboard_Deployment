@@ -34,7 +34,6 @@ import threading
 import zipfile
 from PIL import Image
 import logging
-from product_name_mappings import get_mapped_product_name, normalize_version
 #import client data
 #setting up the API with the COS
 # Constants for IBM COS values
@@ -461,18 +460,12 @@ if 'IBM Aspera Faspex' in list(green.keys()):
 if 'IBM Aspera Faspex' in list(orange.keys()):
     orange['Aspera'] = orange['IBM Aspera Faspex']
 if 'AIX Standard Edition' in list(red.keys()):
-    red['AIX'] = list(red['AIX Standard Edition'])
+    red['AIX'] = red['AIX Standard Edition'] 
 if 'AIX Standard Edition' in list(green.keys()):
-    green['AIX'] = list(green['AIX Standard Edition'])
+    green['AIX'] = green['AIX Standard Edition']
+    green['AIX'].append('7.3.0')
 if 'AIX Standard Edition' in list(orange.keys()):
-    orange['AIX'] = list(orange['AIX Standard Edition'])
-# Merge 'IBM AIX 7 Standard Edition' (contains 7.3.0+) into the 'AIX' alias key
-if 'IBM AIX 7 Standard Edition' in list(green.keys()):
-    green.setdefault('AIX', []).extend(green['IBM AIX 7 Standard Edition'])
-if 'IBM AIX 7 Standard Edition' in list(red.keys()):
-    red.setdefault('AIX', []).extend(red['IBM AIX 7 Standard Edition'])
-if 'IBM AIX 7 Standard Edition' in list(orange.keys()):
-    orange.setdefault('AIX', []).extend(orange['IBM AIX 7 Standard Edition'])
+    orange['AIX'] = orange['AIX Standard Edition'] 
 if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(red.keys()):
     red['Aspera'] = red['IBM Aspera High-Speed Transfer Endpoint (HSTE)'] 
 if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(green.keys()):
@@ -547,143 +540,139 @@ def calc_color(x):
     Return: (string) - color associated with product version EOS status
     Comments: Uses dictionaries 'red' and 'orange' to determine colors based on EOS status
     ---------------------------------------------------------------------------------"""
-    # Apply product name mapping to handle mismatches between ticket data and lifecycle file
-    original_product = x["Product Name"]
-    mapped_product = get_mapped_product_name(original_product)
-    prod_string = mapped_product  # Keep original case for reference
-    prod_string_lower = mapped_product.lower()  # Lowercase for ALL dict lookups (dicts are lowercased at load time)
-    version_raw = str(x['Product Version'])
+    prod_string=x["Product Name"].lower()
+    version=str(x['Product Version']).lower()
+    # for instances where the product name is the EXACT same 
+    if prod_string in red and version in red[prod_string]:#if product in red and version in red
+        return "red"
+    elif prod_string in orange and version in orange[prod_string]:#if product in orange and version in orange
+        return "orange"
+    elif prod_string in green and version in green[prod_string]:#if product in green and version in green
+        return "green"
+    elif version == None or version == " " or version == "" or version == "NaN" or version == "nan":
+        return "blue"  
     
-    # Normalize version to try multiple formats (e.g., "7.1" -> ["7.1", "7.1.0", "7.1.x"])
-    versions_to_try = normalize_version(version_raw)
-    version = versions_to_try[0]  # Keep first normalized version for fallback logic
-    
-    # Check if version is null/empty
-    if version_raw in [None, " ", "", "NaN", "nan", "None"]:
-        return "blue"
-    
-    # Try exact product name match with all normalized version formats
-    # IMPORTANT: use prod_string_lower because all dict keys are lowercased at load time
-    if prod_string_lower in red:
-        for ver in versions_to_try:
-            if ver in red[prod_string_lower]:
-                return "red"
-    
-    if prod_string_lower in orange:
-        for ver in versions_to_try:
-            if ver in orange[prod_string_lower]:
+
+
+    #if exact product name not found, check if products exist in string. Ex: 'MQ' in 'IBM MQ'
+    else:
+        # go through all product names in all dictionaries to see if it is part of a string
+        orange_products = []
+        for oname in orange:
+            if prod_string in oname:
+                orange_products.append(oname)
+        if len(orange_products) > 0:
+            shortest_name = detect_shortest_string(orange_products, prod_string)
+            orange_product_versions = [i.lower() for i in orange[shortest_name]]
+            if prod_string in shortest_name and version in orange_product_versions:#if string contains a product
                 return "orange"
-    
-    if prod_string_lower in green:
-        for ver in versions_to_try:
-            if ver in green[prod_string_lower]:
-                return "green"
-    
-    # If exact product name not found, check if products exist in string. Ex: 'MQ' in 'IBM MQ'
-    # This fallback logic uses substring matching with normalized versions
-    # go through all product names in all dictionaries to see if it is part of a string
-    orange_products = []
-    for oname in orange:
-        if prod_string_lower in oname.lower():
-            orange_products.append(oname)
-    if len(orange_products) > 0:
-        shortest_name = detect_shortest_string(orange_products, prod_string_lower)
-        orange_product_versions = [i.lower() for i in orange[shortest_name]]
-        # Try all normalized version formats
-        for ver in versions_to_try:
-            if ver in orange_product_versions:
+            elif prod_string in shortest_name and version[:-1] + 'x' in orange_product_versions:
+                return "orange"    
+            elif prod_string in shortest_name and re.sub(r"\.[^\.]*$","",version)+ '.x' in orange_product_versions:
                 return "orange"
-        # Additional fallback checks for version patterns
-        if prod_string_lower in shortest_name.lower():
-            for detected_version in orange_product_versions:
-                if '.' in detected_version and '.' in version:
-                    if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+            elif prod_string in shortest_name and version + '.0' in orange_product_versions:
+                return "orange"
+            elif prod_string in shortest_name:
+                for detected_version in orange_product_versions:
+                    if '.' in detected_version and '.' in version:
+                        if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+                            return 'orange'
+            for i in orange_product_versions:
+                if 'x' in i:
+                    # checks if there is any numerical version
+                    prod_name = i.replace('x', '[0-9]+')
+                    if re.search(prod_name, version):
+                        return "orange"
+                    elif version == i.replace('.x', ''):
+                        return "orange"
+                    elif version + '.0.x' == i:
                         return 'orange'
-        for i in orange_product_versions:
-            if 'x' in i:
-                # checks if there is any numerical version
-                prod_name = i.replace('x', '[0-9]+')
-                if re.search(prod_name, version):
-                    return "orange"
-                elif version == i.replace('.x', ''):
-                    return "orange"
-                elif ('.x.x' in i) and ('.' in version):
-                    versions_split = i.split('.x')
-                    provided_versions_split = version.split('.')
-                    if versions_split[0] == provided_versions_split[0]:
-                        return 'orange'
+                    elif ('.x.x' in i) and ('.' in version):
+                        versions_split = i.split('.x')
+                        provided_versions_split = version.split('.')
+                        if versions_split[0] == provided_versions_split[0]:
+                            return 'orange'
       
-    red_products = []
-    for rname in red:
-        if prod_string_lower in rname.lower():
-            red_products.append(rname)
-    # gets the shortest name that contains the name of the IBM product
-    if len(red_products) > 0:
-        shortest_name = detect_shortest_string(red_products, prod_string_lower)
-        red_product_versions = [i.lower() for i in red[shortest_name]]
-        # Try all normalized version formats
-        for ver in versions_to_try:
-            if ver in red_product_versions:
+        red_products = []
+        for rname in red:
+            if prod_string in rname:
+                red_products.append(rname)
+        # gets the shortest name that contains the name of the IBM product 
+        if len(red_products) > 0:
+            shortest_name = detect_shortest_string(red_products, prod_string)
+            red_product_versions = [i.lower() for i in red[shortest_name]]
+            if prod_string in shortest_name and version in red_product_versions:
                 return "red"
-        # Additional fallback checks for version patterns
-        if prod_string_lower in shortest_name.lower():
-            for detected_version in red_product_versions:
-                if '.' in detected_version and '.' in version:
-                    if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+            elif prod_string in shortest_name and version[:-1] + 'x' in red_product_versions:
+                return 'red'
+            elif prod_string in shortest_name and re.sub(r"\.[^\.]*$","",version)+ '.x' in red_product_versions:
+                return "red"
+            elif prod_string in shortest_name and version + '.0' in red_product_versions:
+                return "red"
+            elif prod_string in shortest_name and version + '.0.0' in red_product_versions:
+                return "red"
+            elif prod_string in shortest_name:
+                for detected_version in red_product_versions:
+                    if '.' in detected_version and '.' in version:
+                        if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+                            return 'red' 
+            for i in red_product_versions:
+                if 'x' in i:
+                    # checks if there is any numerical version
+                    prod_name = i.replace('x', '[0-9]+')
+                    if re.search(prod_name, version):
+                        return "red"
+                    elif version == i.replace('.x', ''):
+                        return "red"
+                    elif version + '.0.x' == i:
                         return 'red'
-        for i in red_product_versions:
-            if 'x' in i:
-                # checks if there is any numerical version
-                prod_name = i.replace('x', '[0-9]+')
-                if re.search(prod_name, version):
-                    return "red"
-                elif version == i.replace('.x', ''):
-                    return "red"
-                elif ('.x.x' in i) and ('.' in version):
-                    versions_split = i.split('.x')
-                    provided_versions_split = version.split('.')
-                    if versions_split[0] == provided_versions_split[0]:
-                        return 'red'
+                    elif ('.x.x' in i) and ('.' in version):
+                        versions_split = i.split('.x')
+                        provided_versions_split = version.split('.')
+                        if versions_split[0] == provided_versions_split[0]:
+                            return 'red'
             
-    green_products = []
-    for gname in green:
-        if prod_string_lower in gname.lower():
-            green_products.append(gname)
-    if len(green_products) > 0:
-        shortest_name = detect_shortest_string(green_products, prod_string_lower)
-        green_product_versions = [i.lower() for i in green[shortest_name]]
-        # Try all normalized version formats
-        for ver in versions_to_try:
-            if ver in green_product_versions:
+        green_products = []    
+        for gname in green:
+            if prod_string in gname:
+                green_products.append(gname)
+        if len(green_products) > 0:
+            shortest_name = detect_shortest_string(green_products, prod_string)
+            green_product_versions = [i.lower() for i in green[shortest_name]]
+            if prod_string in shortest_name and version in green_product_versions:
                 return "green"
-        # Additional fallback checks for version patterns
-        if prod_string_lower in shortest_name.lower():
-            for detected_version in green_product_versions:
-                if '.' in detected_version and '.' in version:
-                    if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+            elif prod_string in shortest_name and version[:-1] + 'x' in green_product_versions:
+                return 'green'
+            elif prod_string in shortest_name and re.sub(r"\.[^\.]*$","",version)+ '.x' in green_product_versions:
+                return "green"
+            elif prod_string in shortest_name and version + '.0' in green_product_versions:
+                return "green"
+            elif prod_string in shortest_name:
+                for detected_version in green_product_versions:
+                    if '.' in detected_version and '.' in version:
+                        if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+                            return 'green'
+            for i in green_product_versions:
+                if 'x' in i:
+                    # checks if there is any numerical version
+                    prod_name = i.replace('x', '[0-9]+')
+                    if re.search(prod_name, version):
+                        return "green"
+                    elif version == i.replace('.x', ''):
+                        return "green"
+                    elif version + '.0.x' == i:
                         return 'green'
-        for i in green_product_versions:
-            if 'x' in i:
-                # checks if there is any numerical version
-                prod_name = i.replace('x', '[0-9]+')
-                if re.search(prod_name, version):
-                    return "green"
-                elif version == i.replace('.x', ''):
-                    return "green"
-                elif ('.x.x' in i) and ('.' in version):
-                    versions_split = i.split('.x')
-                    provided_versions_split = version.split('.')
-                    if versions_split[0] == provided_versions_split[0]:
-                        return 'green'
-    return "blue"
-def detect_shortest_string(LIST, prod_string):
-    # prod_string is already lowercase; LIST contains lowercase dict keys
-    if prod_string in LIST:
-        return prod_string
-    if prod_string + ' standard edition' in LIST:
-        return prod_string + ' standard edition'
-    if 'ibm ' + prod_string in LIST:
-        return 'ibm ' + prod_string
+                    elif ('.x.x' in i) and ('.' in version):
+                        versions_split = i.split('.x')
+                        provided_versions_split = version.split('.')
+                        if versions_split[0] == provided_versions_split[0]:
+                            return 'green'
+        return "blue" 
+def detect_shortest_string(LIST,prod_string):
+    if prod_string + ' Standard Edition' in LIST:
+        return prod_string + ' Standard Edition'
+    elif 'IBM ' + prod_string in LIST:
+        return 'IBM ' +prod_string 
     best_match = 0
     loc = None
     for index, string in enumerate(LIST):
@@ -1314,21 +1303,6 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     #create graph base
     fig2 = go.Figure()
     graph2_processed_data['Product Version'] = graph2_processed_data['Product Version'].apply(clean_versions)
-    
-    # Add sort order for lifecycle status grouping
-    # Green=1, Orange=2, Red=3, Blue=4 (so green appears at top when sorted descending)
-    color_sort_order = {'green': 1, 'orange': 2, 'red': 3, 'blue': 4}
-    graph2_processed_data['color_sort'] = graph2_processed_data['color'].map(color_sort_order)
-    
-    # Sort by lifecycle status first (ascending so green=1 is first), then by product name (descending Z-A)
-    graph2_processed_data = graph2_processed_data.sort_values(
-        by=['color_sort', 'Product Name'],
-        ascending=[True, False]
-    )
-    
-    # Create custom category order for Y-axis (maintains the sorted order)
-    category_order = graph2_processed_data['Product Name'].unique().tolist()
-    
     y = 0
     for color,eos in colors.items():
         trace = (graph2_processed_data.loc[graph2_processed_data['color'] == color].reset_index())
@@ -1340,10 +1314,10 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
         fig2.add_trace(temp)
 
     counts = (graph2_processed_data["Product Name"].value_counts().max())
-    #update graph orientation with custom category order
+    #update graph orientation
     fig2.update_layout(
         xaxis=dict(title='Latest Product Version to Oldest',range=(0.5,counts + 0.5)),
-        yaxis=dict(title='IBM Product',categoryorder='array', categoryarray=category_order, dtick=1),
+        yaxis=dict(title='IBM Product',categoryorder='category descending',dtick=1),
         showlegend=True,
         height = 380 + 7*y,
         legend=dict(yanchor="bottom", y=1, xanchor="right", x=1, orientation="h", itemsizing='constant'),

@@ -461,18 +461,12 @@ if 'IBM Aspera Faspex' in list(green.keys()):
 if 'IBM Aspera Faspex' in list(orange.keys()):
     orange['Aspera'] = orange['IBM Aspera Faspex']
 if 'AIX Standard Edition' in list(red.keys()):
-    red['AIX'] = list(red['AIX Standard Edition'])
+    red['AIX'] = red['AIX Standard Edition'] 
 if 'AIX Standard Edition' in list(green.keys()):
-    green['AIX'] = list(green['AIX Standard Edition'])
+    green['AIX'] = green['AIX Standard Edition']
+    green['AIX'].append('7.3.0')
 if 'AIX Standard Edition' in list(orange.keys()):
-    orange['AIX'] = list(orange['AIX Standard Edition'])
-# Merge 'IBM AIX 7 Standard Edition' (contains 7.3.0+) into the 'AIX' alias key
-if 'IBM AIX 7 Standard Edition' in list(green.keys()):
-    green.setdefault('AIX', []).extend(green['IBM AIX 7 Standard Edition'])
-if 'IBM AIX 7 Standard Edition' in list(red.keys()):
-    red.setdefault('AIX', []).extend(red['IBM AIX 7 Standard Edition'])
-if 'IBM AIX 7 Standard Edition' in list(orange.keys()):
-    orange.setdefault('AIX', []).extend(orange['IBM AIX 7 Standard Edition'])
+    orange['AIX'] = orange['AIX Standard Edition'] 
 if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(red.keys()):
     red['Aspera'] = red['IBM Aspera High-Speed Transfer Endpoint (HSTE)'] 
 if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(green.keys()):
@@ -550,8 +544,8 @@ def calc_color(x):
     # Apply product name mapping to handle mismatches between ticket data and lifecycle file
     original_product = x["Product Name"]
     mapped_product = get_mapped_product_name(original_product)
-    prod_string = mapped_product  # Keep original case for reference
-    prod_string_lower = mapped_product.lower()  # Lowercase for ALL dict lookups (dicts are lowercased at load time)
+    prod_string = mapped_product  # Keep original case for dictionary lookup
+    prod_string_lower = mapped_product.lower()  # Lowercase for fallback substring matching
     version_raw = str(x['Product Version'])
     
     # Normalize version to try multiple formats (e.g., "7.1" -> ["7.1", "7.1.0", "7.1.x"])
@@ -563,20 +557,19 @@ def calc_color(x):
         return "blue"
     
     # Try exact product name match with all normalized version formats
-    # IMPORTANT: use prod_string_lower because all dict keys are lowercased at load time
-    if prod_string_lower in red:
+    if prod_string in red:
         for ver in versions_to_try:
-            if ver in red[prod_string_lower]:
+            if ver in red[prod_string]:
                 return "red"
     
-    if prod_string_lower in orange:
+    if prod_string in orange:
         for ver in versions_to_try:
-            if ver in orange[prod_string_lower]:
+            if ver in orange[prod_string]:
                 return "orange"
     
-    if prod_string_lower in green:
+    if prod_string in green:
         for ver in versions_to_try:
-            if ver in green[prod_string_lower]:
+            if ver in green[prod_string]:
                 return "green"
     
     # If exact product name not found, check if products exist in string. Ex: 'MQ' in 'IBM MQ'
@@ -676,14 +669,11 @@ def calc_color(x):
                     if versions_split[0] == provided_versions_split[0]:
                         return 'green'
     return "blue"
-def detect_shortest_string(LIST, prod_string):
-    # prod_string is already lowercase; LIST contains lowercase dict keys
-    if prod_string in LIST:
-        return prod_string
-    if prod_string + ' standard edition' in LIST:
-        return prod_string + ' standard edition'
-    if 'ibm ' + prod_string in LIST:
-        return 'ibm ' + prod_string
+def detect_shortest_string(LIST,prod_string):
+    if prod_string + ' Standard Edition' in LIST:
+        return prod_string + ' Standard Edition'
+    elif 'IBM ' + prod_string in LIST:
+        return 'IBM ' +prod_string 
     best_match = 0
     loc = None
     for index, string in enumerate(LIST):

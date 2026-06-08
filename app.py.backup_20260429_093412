@@ -34,7 +34,6 @@ import threading
 import zipfile
 from PIL import Image
 import logging
-from product_name_mappings import get_mapped_product_name, normalize_version
 #import client data
 #setting up the API with the COS
 # Constants for IBM COS values
@@ -49,31 +48,6 @@ cos = ibm_boto3.resource("s3",
     config=Config(signature_version="oauth"),
     endpoint_url=COS_ENDPOINT
 )
-
-# ============================================================================
-# HEALTH CHECK SERVER - Allows app to pass readiness probes during data loading
-# This lightweight server responds immediately while main app loads data
-# ============================================================================
-print("Starting health check server...")
-health_app = Flask('health_check')
-
-@health_app.route('/health')
-def health_check():
-    return {'status': 'ok', 'message': 'Application is starting, data loading in progress'}, 200
-
-@health_app.route('/ready')
-def ready_check():
-    # This will be used later to check if data loading is complete
-    return {'status': 'loading', 'message': 'Data is being loaded'}, 200
-
-def run_health_server():
-    health_app.run(host='0.0.0.0', port=8051, debug=False, use_reloader=False)
-
-health_thread = threading.Thread(target=run_health_server, daemon=True)
-health_thread.start()
-print("✓ Health check server started on port 8051")
-print("Main application will now load data (this may take 5-10 minutes)...")
-
 # Using the API to connect to the COS
 def get_item(bucket_name, item_name):
     print("Retrieving item from bucket: {0}, key: {1}".format(bucket_name, item_name))
@@ -150,10 +124,11 @@ with open('ibm_product_lifecycle_list_Oct_24.csv','wb') as file:
 ########################################  """
 
 ### -- WORDCLOUD DEV ADD BACK FOR DEPLOYMENT
-lifecycle_data_cloud = get_item('oidash-app','ibm_product_lifecycle_list_May_26_FIXED.csv')
+lifecycle_data_cloud = get_item('oidash-app','ibm_product_lifecycle_list_May_25.csv')
 lifecycle_data = lifecycle_data_cloud['Body'].read()
-with open('ibm_product_lifecycle_list_May_26_FIXED.csv','wb') as file:
-    file.write(lifecycle_data)
+with open('ibm_product_lifecycle_list_May_25.csv','wb') as file:
+
+    file.write(lifecycle_data) 
 
 
 
@@ -205,25 +180,71 @@ all_data = pd.concat([all_data, jan_data_loaded, feb_data_loaded, march_data_loa
 """
 
 
-# ============================================================================
-# DATA LOADING - Consolidated yearly files (6 files instead of 16)
-# Reduces load time from 5-8 minutes to 3-5 minutes
-# ============================================================================
-print("Downloading 2024 data...")
 merged_2024 = get_item('oidash-app','Merged_data_2024.csv')
 merged_2024_new = merged_2024['Body'].read()
 with open('Merged_data_2024.csv','wb') as file:
     file.write(merged_2024_new)
-print("✓ 2024 data downloaded")
 
-print("Downloading 2025 data...")
-merged_2025 = get_item('oidash-app','Merged_data_2025.csv')
-merged_2025_new = merged_2025['Body'].read()
-with open('Merged_data_2025.csv','wb') as file:
-    file.write(merged_2025_new)
-print("✓ 2025 data downloaded")
+jan25_merged = get_item('oidash-app','Jan25_merged.csv')
+jan25_merged_new = jan25_merged['Body'].read()
+with open('Jan25_merged.csv','wb') as file:
+    file.write(jan25_merged_new)
 
-print("Downloading 2026 monthly data...")
+feb25_merged = get_item('oidash-app','Feb25_merged.csv')
+feb25_merged_new = feb25_merged['Body'].read()
+with open('Feb25_merged.csv','wb') as file:
+    file.write(feb25_merged_new)   
+
+march25_merged = get_item('oidash-app','March25_merged.csv')
+march25_merged_new = march25_merged['Body'].read()
+with open('March25_merged.csv','wb') as file:
+    file.write(march25_merged_new)
+
+april25_merged = get_item('oidash-app','April_25_merged.csv')
+april25_merged_new = april25_merged['Body'].read()
+with open('April_25_merged.csv','wb') as file:
+    file.write(april25_merged_new)
+
+may25_merged = get_item('oidash-app','May_25_merged.csv')
+may25_merged_new = may25_merged['Body'].read()
+with open('May_25_merged.csv','wb') as file:
+    file.write(may25_merged_new)
+
+june25_merged = get_item('oidash-app','June_25_merged.csv')
+june25_merged_new = june25_merged['Body'].read()
+with open('June_25_merged.csv','wb') as file:
+    file.write(june25_merged_new)
+
+july25_merged = get_item('oidash-app','July_25_merged.csv')
+july25_merged_new = july25_merged['Body'].read()
+with open('July_25_merged.csv','wb') as file:
+    file.write(july25_merged_new)
+
+august25_merged = get_item('oidash-app','August_25_merged.csv')
+august25_merged_new = august25_merged['Body'].read()
+with open('August_25_merged.csv','wb') as file:
+    file.write(august25_merged_new)
+
+september25_merged = get_item('oidash-app','September_25_merged.csv')
+september25_merged_new = september25_merged['Body'].read()
+with open('September_25_merged.csv','wb') as file:
+    file.write(september25_merged_new)
+
+october25_merged = get_item('oidash-app','October_25_merged.csv')
+october25_merged_new = october25_merged['Body'].read()
+with open('October_25_merged.csv','wb') as file:
+    file.write(october25_merged_new)
+
+november25_merged = get_item('oidash-app','November_25_merged.csv')
+november25_merged_new = november25_merged['Body'].read()
+with open('November_25_merged.csv','wb') as file:
+    file.write(november25_merged_new)
+
+december25_merged = get_item('oidash-app','December_25_merged.csv')
+december25_merged_new = december25_merged['Body'].read()
+with open('December_25_merged.csv','wb') as file:
+    file.write(december25_merged_new)
+
 january26_merged = get_item('oidash-app','January_26_merged.csv')
 january26_merged_new = january26_merged['Body'].read()
 with open('January_26_merged.csv','wb') as file:
@@ -239,96 +260,91 @@ march26_merged_new = march26_merged['Body'].read()
 with open('March_2026_merged.csv','wb') as file:
     file.write(march26_merged_new)
 
-april26_merged = get_item('oidash-app','April_2026_merged.csv')
-april26_merged_new = april26_merged['Body'].read()
-with open('April_2026_merged.csv','wb') as file:
-    file.write(april26_merged_new)
 
-may26_merged = get_item('oidash-app','May_2026_merged.csv')
-may26_merged_new = may26_merged['Body'].read()
-with open('May_2026_merged.csv','wb') as file:
-    file.write(may26_merged_new)
-print("✓ 2026 monthly data downloaded")
 
-# Load 2024 data
-print("Loading 2024 data...")
-all_data_24 = pd.read_csv('Merged_data_2024.csv', low_memory=False)
+
+all_data_24 = pd.read_csv('Merged_data_2024.csv')
 all_data_24.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 all_data_24['Date'] = pd.to_datetime(all_data_24['Month'])
-if 'Unnamed: 0' in all_data_24.columns:
-    all_data_24.drop(columns = ['Unnamed: 0'], inplace = True)
-print(f"✓ Loaded {len(all_data_24):,} records from 2024")
+all_data_24.drop(columns = ['Unnamed: 0'], inplace = True)
+# adding jan 25
+jan_25_merged = pd.read_csv('Jan25_merged.csv')
+jan_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+jan_25_merged['Date'] = pd.to_datetime(jan_25_merged['Month'])
+#jan_25_merged.drop(columns = ['Unnamed: 0'], inplace = True)
+feb_25_merged = pd.read_csv('Feb25_merged.csv')
+feb_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+feb_25_merged['Date'] = pd.to_datetime(feb_25_merged['Month'])
+march_25_merged = pd.read_csv('March25_merged.csv')
+march_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+march_25_merged['Date'] = pd.to_datetime(march_25_merged['Month'])
 
-# Load 2025 data
-print("Loading 2025 data...")
-all_data_25 = pd.read_csv('Merged_data_2025.csv', low_memory=False)
-all_data_25.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
-all_data_25['Date'] = pd.to_datetime(all_data_25['Month'])
-if 'Unnamed: 0' in all_data_25.columns:
-    all_data_25.drop(columns = ['Unnamed: 0'], inplace = True)
-print(f"✓ Loaded {len(all_data_25):,} records from 2025")
+april_25_merged = pd.read_csv('April_25_merged.csv')
+april_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+april_25_merged['Date'] = pd.to_datetime(april_25_merged['Month'])
 
-# Load 2026 monthly data
-print("Loading 2026 monthly data...")
-january_26_merged = pd.read_csv('January_26_merged.csv', low_memory=False)
+may_25_merged = pd.read_csv('May_25_merged.csv')
+may_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+may_25_merged['Date'] = pd.to_datetime(may_25_merged['Month'])
+
+june_25_merged = pd.read_csv('June_25_merged.csv')
+june_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+june_25_merged['Date'] = pd.to_datetime(june_25_merged['Month'])
+
+july_25_merged = pd.read_csv('July_25_merged.csv')
+july_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+july_25_merged['Date'] = pd.to_datetime(july_25_merged['Month'])
+
+august_25_merged = pd.read_csv('August_25_merged.csv')
+august_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+august_25_merged['Date'] = pd.to_datetime(august_25_merged['Month'])
+
+september_25_merged = pd.read_csv('September_25_merged.csv')
+september_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+september_25_merged['Date'] = pd.to_datetime(september_25_merged['Month'])
+
+october_25_merged = pd.read_csv('October_25_merged.csv')
+october_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+october_25_merged['Date'] = pd.to_datetime(october_25_merged['Month'])
+
+november_25_merged = pd.read_csv('November_25_merged.csv')
+november_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+november_25_merged['Date'] = pd.to_datetime(november_25_merged['Month'])
+
+december_25_merged = pd.read_csv('December_25_merged.csv')
+december_25_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+december_25_merged['Date'] = pd.to_datetime(december_25_merged['Month'])
+
+january_26_merged = pd.read_csv('January_26_merged.csv')
 january_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 january_26_merged['Date'] = pd.to_datetime(january_26_merged['Month'])
 
-february_26_merged = pd.read_csv('February_2026_merged.csv', low_memory=False)
+february_26_merged = pd.read_csv('February_2026_merged.csv')
 february_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 february_26_merged['Date'] = pd.to_datetime(february_26_merged['Month'])
 
-march_26_merged = pd.read_csv('March_2026_merged.csv', low_memory=False)
+march_26_merged = pd.read_csv('March_2026_merged.csv')
 march_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 march_26_merged['Date'] = pd.to_datetime(march_26_merged['Month'])
 
-april_26_merged = pd.read_csv('April_2026_merged.csv', low_memory=False)
-april_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
-april_26_merged['Date'] = pd.to_datetime(april_26_merged['Month'])
-
-may_26_merged = pd.read_csv('May_2026_merged.csv', low_memory=False)
-may_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
-may_26_merged['Date'] = pd.to_datetime(may_26_merged['Month'])
-print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged):,} records from 2026")
-
-# Concatenate all data (6 dataframes instead of 16)
-print("Merging all data...")
-all_data = pd.concat([
-    all_data_24,
-    all_data_25,
-    january_26_merged,
-    february_26_merged,
-    march_26_merged,
-    april_26_merged,
-    may_26_merged
-], ignore_index=True)
-print(f"✓ Total records: {len(all_data):,}")
+all_data = pd.concat([all_data_24, jan_25_merged, feb_25_merged, march_25_merged, april_25_merged, may_25_merged, june_25_merged, july_25_merged, august_25_merged, september_25_merged, october_25_merged, november_25_merged, december_25_merged, january_26_merged, february_26_merged, march_26_merged])
 earliest_date = all_data['Date'].min() # earliest date 
 most_recent_date = all_data['Date'].max() # the most recent date 
 # merging the pidname info 
 all_data = all_data.merge(pidname_mapping_table, how = 'left', on  = 'Product Name')
-
-# ============================================================================
-# PERFORMANCE OPTIMIZATION: Cache product info table
-# This cache eliminates the need to process all_data on every Graph 2 update
-# Expected improvement: 50-70% faster Graph 2 rendering
-# ============================================================================
-print("Creating product info cache for performance optimization...")
-PRODUCT_INFO_TABLE_CACHE = all_data.groupby('Product Name').first().reset_index()[['Product Name', 'pidname']]
-print(f"✓ Cached {len(PRODUCT_INFO_TABLE_CACHE)} products for faster Graph 2 rendering")
 #all_data.drop(columns = ['pidname_x'], inplace = True )
 #all_data.rename(columns = {'pidname_y' : 'pidname'} ,inplace = True)
 # joining the pid info back to the new data 
 # get the dictionaries and write them to JSON files
-red = get_item('oidash-app','Red_dict_May_26_final.json')
+red = get_item('oidash-app','Red_dict_May_25_final.json')
 red = red['Body'].read()
 with open('red.json','wb') as file:
     file.write(red)
-orange = get_item('oidash-app','Orange_dict_May_26_final.json')
+orange = get_item('oidash-app','Orange_dict_May_25_final.json')
 orange = orange['Body'].read()
 with open('orange.json','wb') as file:
     file.write(orange)
-green = get_item('oidash-app','Green_dict_May_26_final.json')
+green = get_item('oidash-app','Green_dict_May_25_final.json')
 green = green['Body'].read()
 with open('green.json','wb') as file:
     file.write(green)
@@ -366,7 +382,7 @@ f.close()
 with open('green.json', 'r') as f:
   green = json.load(f)
 f.close()
-product_lifecycle_data = pd.read_csv('ibm_product_lifecycle_list_May_26_FIXED.csv')
+product_lifecycle_data = pd.read_csv('ibm_product_lifecycle_list_May_25.csv')
 pid_grouped  =product_lifecycle_data[['IBM Product', 'PID']].groupby('PID')['IBM Product'].apply(list).reset_index()
 for product_list in pid_grouped['IBM Product']:
     red_versions = []
@@ -461,23 +477,17 @@ if 'IBM Aspera Faspex' in list(green.keys()):
 if 'IBM Aspera Faspex' in list(orange.keys()):
     orange['Aspera'] = orange['IBM Aspera Faspex']
 if 'AIX Standard Edition' in list(red.keys()):
-    red['AIX'] = list(red['AIX Standard Edition'])
+    red['AIX'] = red['AIX Standard Edition'] 
 if 'AIX Standard Edition' in list(green.keys()):
-    green['AIX'] = list(green['AIX Standard Edition'])
+    green['AIX'] = green['AIX Standard Edition']
+    green['AIX'].append('7.3.0')
 if 'AIX Standard Edition' in list(orange.keys()):
-    orange['AIX'] = list(orange['AIX Standard Edition'])
-# Merge 'IBM AIX 7 Standard Edition' (contains 7.3.0+) into the 'AIX' alias key
-if 'IBM AIX 7 Standard Edition' in list(green.keys()):
-    green.setdefault('AIX', []).extend(green['IBM AIX 7 Standard Edition'])
-if 'IBM AIX 7 Standard Edition' in list(red.keys()):
-    red.setdefault('AIX', []).extend(red['IBM AIX 7 Standard Edition'])
-if 'IBM AIX 7 Standard Edition' in list(orange.keys()):
-    orange.setdefault('AIX', []).extend(orange['IBM AIX 7 Standard Edition'])
+    orange['AIX'] = orange['AIX Standard Edition'] 
 if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(red.keys()):
     red['Aspera'] = red['IBM Aspera High-Speed Transfer Endpoint (HSTE)'] 
 if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(green.keys()):
     green['Aspera'] = green['IBM Aspera High-Speed Transfer Endpoint (HSTE)'] 
-if 'IBM Aspera High-Speed Transfer Endpoint (HSTE)' in list(orange.keys()):
+if 'AIX Standard Edition' in list(orange.keys()):
     orange['Aspera'] = orange['IBM Aspera High-Speed Transfer Endpoint (HSTE)']
 if 'Tivoli Netcool/Impact' in list(red.keys()):
     red['Netcool/Impact'] = red['Tivoli Netcool/Impact'] 
@@ -547,143 +557,139 @@ def calc_color(x):
     Return: (string) - color associated with product version EOS status
     Comments: Uses dictionaries 'red' and 'orange' to determine colors based on EOS status
     ---------------------------------------------------------------------------------"""
-    # Apply product name mapping to handle mismatches between ticket data and lifecycle file
-    original_product = x["Product Name"]
-    mapped_product = get_mapped_product_name(original_product)
-    prod_string = mapped_product  # Keep original case for reference
-    prod_string_lower = mapped_product.lower()  # Lowercase for ALL dict lookups (dicts are lowercased at load time)
-    version_raw = str(x['Product Version'])
+    prod_string=x["Product Name"].lower()
+    version=str(x['Product Version']).lower()
+    # for instances where the product name is the EXACT same 
+    if prod_string in red and version in red[prod_string]:#if product in red and version in red
+        return "red"
+    elif prod_string in orange and version in orange[prod_string]:#if product in orange and version in orange
+        return "orange"
+    elif prod_string in green and version in green[prod_string]:#if product in green and version in green
+        return "green"
+    elif version == None or version == " " or version == "" or version == "NaN" or version == "nan":
+        return "blue"  
     
-    # Normalize version to try multiple formats (e.g., "7.1" -> ["7.1", "7.1.0", "7.1.x"])
-    versions_to_try = normalize_version(version_raw)
-    version = versions_to_try[0]  # Keep first normalized version for fallback logic
-    
-    # Check if version is null/empty
-    if version_raw in [None, " ", "", "NaN", "nan", "None"]:
-        return "blue"
-    
-    # Try exact product name match with all normalized version formats
-    # IMPORTANT: use prod_string_lower because all dict keys are lowercased at load time
-    if prod_string_lower in red:
-        for ver in versions_to_try:
-            if ver in red[prod_string_lower]:
-                return "red"
-    
-    if prod_string_lower in orange:
-        for ver in versions_to_try:
-            if ver in orange[prod_string_lower]:
+
+
+    #if exact product name not found, check if products exist in string. Ex: 'MQ' in 'IBM MQ'
+    else:
+        # go through all product names in all dictionaries to see if it is part of a string
+        orange_products = []
+        for oname in orange:
+            if prod_string in oname:
+                orange_products.append(oname)
+        if len(orange_products) > 0:
+            shortest_name = detect_shortest_string(orange_products, prod_string)
+            orange_product_versions = [i.lower() for i in orange[shortest_name]]
+            if prod_string in shortest_name and version in orange_product_versions:#if string contains a product
                 return "orange"
-    
-    if prod_string_lower in green:
-        for ver in versions_to_try:
-            if ver in green[prod_string_lower]:
-                return "green"
-    
-    # If exact product name not found, check if products exist in string. Ex: 'MQ' in 'IBM MQ'
-    # This fallback logic uses substring matching with normalized versions
-    # go through all product names in all dictionaries to see if it is part of a string
-    orange_products = []
-    for oname in orange:
-        if prod_string_lower in oname.lower():
-            orange_products.append(oname)
-    if len(orange_products) > 0:
-        shortest_name = detect_shortest_string(orange_products, prod_string_lower)
-        orange_product_versions = [i.lower() for i in orange[shortest_name]]
-        # Try all normalized version formats
-        for ver in versions_to_try:
-            if ver in orange_product_versions:
+            elif prod_string in shortest_name and version[:-1] + 'x' in orange_product_versions:
+                return "orange"    
+            elif prod_string in shortest_name and re.sub(r"\.[^\.]*$","",version)+ '.x' in orange_product_versions:
                 return "orange"
-        # Additional fallback checks for version patterns
-        if prod_string_lower in shortest_name.lower():
-            for detected_version in orange_product_versions:
-                if '.' in detected_version and '.' in version:
-                    if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+            elif prod_string in shortest_name and version + '.0' in orange_product_versions:
+                return "orange"
+            elif prod_string in shortest_name:
+                for detected_version in orange_product_versions:
+                    if '.' in detected_version and '.' in version:
+                        if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+                            return 'orange'
+            for i in orange_product_versions:
+                if 'x' in i:
+                    # checks if there is any numerical version
+                    prod_name = i.replace('x', '[0-9]+')
+                    if re.search(prod_name, version):
+                        return "orange"
+                    elif version == i.replace('.x', ''):
+                        return "orange"
+                    elif version + '.0.x' == i:
                         return 'orange'
-        for i in orange_product_versions:
-            if 'x' in i:
-                # checks if there is any numerical version
-                prod_name = i.replace('x', '[0-9]+')
-                if re.search(prod_name, version):
-                    return "orange"
-                elif version == i.replace('.x', ''):
-                    return "orange"
-                elif ('.x.x' in i) and ('.' in version):
-                    versions_split = i.split('.x')
-                    provided_versions_split = version.split('.')
-                    if versions_split[0] == provided_versions_split[0]:
-                        return 'orange'
+                    elif ('.x.x' in i) and ('.' in version):
+                        versions_split = i.split('.x')
+                        provided_versions_split = version.split('.')
+                        if versions_split[0] == provided_versions_split[0]:
+                            return 'orange'
       
-    red_products = []
-    for rname in red:
-        if prod_string_lower in rname.lower():
-            red_products.append(rname)
-    # gets the shortest name that contains the name of the IBM product
-    if len(red_products) > 0:
-        shortest_name = detect_shortest_string(red_products, prod_string_lower)
-        red_product_versions = [i.lower() for i in red[shortest_name]]
-        # Try all normalized version formats
-        for ver in versions_to_try:
-            if ver in red_product_versions:
+        red_products = []
+        for rname in red:
+            if prod_string in rname:
+                red_products.append(rname)
+        # gets the shortest name that contains the name of the IBM product 
+        if len(red_products) > 0:
+            shortest_name = detect_shortest_string(red_products, prod_string)
+            red_product_versions = [i.lower() for i in red[shortest_name]]
+            if prod_string in shortest_name and version in red_product_versions:
                 return "red"
-        # Additional fallback checks for version patterns
-        if prod_string_lower in shortest_name.lower():
-            for detected_version in red_product_versions:
-                if '.' in detected_version and '.' in version:
-                    if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+            elif prod_string in shortest_name and version[:-1] + 'x' in red_product_versions:
+                return 'red'
+            elif prod_string in shortest_name and re.sub(r"\.[^\.]*$","",version)+ '.x' in red_product_versions:
+                return "red"
+            elif prod_string in shortest_name and version + '.0' in red_product_versions:
+                return "red"
+            elif prod_string in shortest_name and version + '.0.0' in red_product_versions:
+                return "red"
+            elif prod_string in shortest_name:
+                for detected_version in red_product_versions:
+                    if '.' in detected_version and '.' in version:
+                        if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+                            return 'red' 
+            for i in red_product_versions:
+                if 'x' in i:
+                    # checks if there is any numerical version
+                    prod_name = i.replace('x', '[0-9]+')
+                    if re.search(prod_name, version):
+                        return "red"
+                    elif version == i.replace('.x', ''):
+                        return "red"
+                    elif version + '.0.x' == i:
                         return 'red'
-        for i in red_product_versions:
-            if 'x' in i:
-                # checks if there is any numerical version
-                prod_name = i.replace('x', '[0-9]+')
-                if re.search(prod_name, version):
-                    return "red"
-                elif version == i.replace('.x', ''):
-                    return "red"
-                elif ('.x.x' in i) and ('.' in version):
-                    versions_split = i.split('.x')
-                    provided_versions_split = version.split('.')
-                    if versions_split[0] == provided_versions_split[0]:
-                        return 'red'
+                    elif ('.x.x' in i) and ('.' in version):
+                        versions_split = i.split('.x')
+                        provided_versions_split = version.split('.')
+                        if versions_split[0] == provided_versions_split[0]:
+                            return 'red'
             
-    green_products = []
-    for gname in green:
-        if prod_string_lower in gname.lower():
-            green_products.append(gname)
-    if len(green_products) > 0:
-        shortest_name = detect_shortest_string(green_products, prod_string_lower)
-        green_product_versions = [i.lower() for i in green[shortest_name]]
-        # Try all normalized version formats
-        for ver in versions_to_try:
-            if ver in green_product_versions:
+        green_products = []    
+        for gname in green:
+            if prod_string in gname:
+                green_products.append(gname)
+        if len(green_products) > 0:
+            shortest_name = detect_shortest_string(green_products, prod_string)
+            green_product_versions = [i.lower() for i in green[shortest_name]]
+            if prod_string in shortest_name and version in green_product_versions:
                 return "green"
-        # Additional fallback checks for version patterns
-        if prod_string_lower in shortest_name.lower():
-            for detected_version in green_product_versions:
-                if '.' in detected_version and '.' in version:
-                    if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+            elif prod_string in shortest_name and version[:-1] + 'x' in green_product_versions:
+                return 'green'
+            elif prod_string in shortest_name and re.sub(r"\.[^\.]*$","",version)+ '.x' in green_product_versions:
+                return "green"
+            elif prod_string in shortest_name and version + '.0' in green_product_versions:
+                return "green"
+            elif prod_string in shortest_name:
+                for detected_version in green_product_versions:
+                    if '.' in detected_version and '.' in version:
+                        if version.split('.')[0:2] == detected_version.split('.')[0:2]:
+                            return 'green'
+            for i in green_product_versions:
+                if 'x' in i:
+                    # checks if there is any numerical version
+                    prod_name = i.replace('x', '[0-9]+')
+                    if re.search(prod_name, version):
+                        return "green"
+                    elif version == i.replace('.x', ''):
+                        return "green"
+                    elif version + '.0.x' == i:
                         return 'green'
-        for i in green_product_versions:
-            if 'x' in i:
-                # checks if there is any numerical version
-                prod_name = i.replace('x', '[0-9]+')
-                if re.search(prod_name, version):
-                    return "green"
-                elif version == i.replace('.x', ''):
-                    return "green"
-                elif ('.x.x' in i) and ('.' in version):
-                    versions_split = i.split('.x')
-                    provided_versions_split = version.split('.')
-                    if versions_split[0] == provided_versions_split[0]:
-                        return 'green'
-    return "blue"
-def detect_shortest_string(LIST, prod_string):
-    # prod_string is already lowercase; LIST contains lowercase dict keys
-    if prod_string in LIST:
-        return prod_string
-    if prod_string + ' standard edition' in LIST:
-        return prod_string + ' standard edition'
-    if 'ibm ' + prod_string in LIST:
-        return 'ibm ' + prod_string
+                    elif ('.x.x' in i) and ('.' in version):
+                        versions_split = i.split('.x')
+                        provided_versions_split = version.split('.')
+                        if versions_split[0] == provided_versions_split[0]:
+                            return 'green'
+        return "blue" 
+def detect_shortest_string(LIST,prod_string):
+    if prod_string + ' Standard Edition' in LIST:
+        return prod_string + ' Standard Edition'
+    elif 'IBM ' + prod_string in LIST:
+        return 'IBM ' +prod_string 
     best_match = 0
     loc = None
     for index, string in enumerate(LIST):
@@ -872,11 +878,8 @@ def graph_data_prep(selected_client, data, graph_num,  start_interval = None, pr
     
     if start_interval:
         # start_interval is the number of months to include
-        # For "last N months", go back N-1 months from the first day of latest month
-        # Example: "last 6 months" from April 2026 = go back 5 months from April 1st to November 1st 2025
-        # This gives us: Nov 2025, Dec 2025, Jan 2026, Feb 2026, Mar 2026, Apr 2026 = 6 months
-        first_day_of_latest_month = datetime(year=latest_date.year, month=latest_date.month, day=1)
-        start_date = first_day_of_latest_month - relativedelta(months=start_interval - 1)
+        # For "last N months", go back N-1 months to include N complete months
+        start_date = latest_date - relativedelta(months=start_interval - 1)
         data_filtered_by_date = filtered_data_by_client[(filtered_data_by_client['Date'] <= latest_date) & (filtered_data_by_client['Date'] >= start_date)]
     else:
         data_filtered_by_date = filtered_data_by_client
@@ -956,8 +959,8 @@ def graph_data_prep(selected_client, data, graph_num,  start_interval = None, pr
         product_info_grouped = product_info_grouped.rename(columns = {'Global Buying Group Name' : 'client'})
         product_info_grouped['color'] = product_info_grouped.apply(calc_color,axis=1).tolist()#find color/support status
 
-        # Use cached product info table (performance optimization - 50-70% faster)
-        product_info_table_subset = PRODUCT_INFO_TABLE_CACHE
+        product_info_table = all_data.groupby('Product Name').first().reset_index() # TODO: MAKE THIS MORE STREAMLINED
+        product_info_table_subset = product_info_table[['Product Name', 'pidname']]
         graph2_merged_data = product_info_grouped.merge(how = 'left', on = 'Product Name', right = product_info_table_subset)
         graph2_merged_data['color'] = graph2_merged_data.apply(process_blues, axis = 1)
 
@@ -1077,11 +1080,9 @@ def update_graph1(selected_client, cmr_dropdown_selections, click, sort_button, 
     
     if interval_months != None:
         from dateutil.relativedelta import relativedelta
-        # Calculate start date: for "last N months", go back N-1 months from the first day of latest month
-        # Example: "last 6 months" from April 2026 = go back 5 months from April 1st to November 1st 2025
-        # This gives us: Nov 2025, Dec 2025, Jan 2026, Feb 2026, Mar 2026, Apr 2026 = 6 months
-        first_day_of_latest_month = datetime(year=client_latest_date.year, month=client_latest_date.month, day=1)
-        client_start_date = first_day_of_latest_month - relativedelta(months=interval_months - 1)
+        # Calculate start date: for "last N months", go back N-1 months
+        # Example: "last 3 months" from March = go back 2 months to January (Jan, Feb, Mar = 3 months)
+        client_start_date = client_latest_date - relativedelta(months=interval_months - 1)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
@@ -1204,9 +1205,6 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     Status. Such that Green is in support, Yellow approaching
     EOS within 12 months, Red reached EOS and blue is unknown
     """
-    import time
-    start_time = time.time()  # Performance tracking
-    
     # Log Graph 2 usage
     logger.info(f"Graph 2 Update | Client: {selected_client} | Date Filter: {date_dropdown_selection} | Product Group: {product_group_selection}")
     
@@ -1278,11 +1276,9 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     
     if interval_months != None:
         from dateutil.relativedelta import relativedelta
-        # Calculate start date: for "last N months", go back N-1 months from the first day of latest month
-        # Example: "last 6 months" from April 2026 = go back 5 months from April 1st to November 1st 2025
-        # This gives us: Nov 2025, Dec 2025, Jan 2026, Feb 2026, Mar 2026, Apr 2026 = 6 months
-        first_day_of_latest_month = datetime(year=client_latest_date.year, month=client_latest_date.month, day=1)
-        client_start_date = first_day_of_latest_month - relativedelta(months=interval_months - 1)
+        # Calculate start date: for "last N months", go back N-1 months
+        # Example: "last 3 months" from March = go back 2 months to January (Jan, Feb, Mar = 3 months)
+        client_start_date = client_latest_date - relativedelta(months=interval_months - 1)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
@@ -1314,21 +1310,6 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     #create graph base
     fig2 = go.Figure()
     graph2_processed_data['Product Version'] = graph2_processed_data['Product Version'].apply(clean_versions)
-    
-    # Add sort order for lifecycle status grouping
-    # Green=1, Orange=2, Red=3, Blue=4 (so green appears at top when sorted descending)
-    color_sort_order = {'green': 1, 'orange': 2, 'red': 3, 'blue': 4}
-    graph2_processed_data['color_sort'] = graph2_processed_data['color'].map(color_sort_order)
-    
-    # Sort by lifecycle status first (ascending so green=1 is first), then by product name (descending Z-A)
-    graph2_processed_data = graph2_processed_data.sort_values(
-        by=['color_sort', 'Product Name'],
-        ascending=[True, False]
-    )
-    
-    # Create custom category order for Y-axis (maintains the sorted order)
-    category_order = graph2_processed_data['Product Name'].unique().tolist()
-    
     y = 0
     for color,eos in colors.items():
         trace = (graph2_processed_data.loc[graph2_processed_data['color'] == color].reset_index())
@@ -1340,10 +1321,10 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
         fig2.add_trace(temp)
 
     counts = (graph2_processed_data["Product Name"].value_counts().max())
-    #update graph orientation with custom category order
+    #update graph orientation
     fig2.update_layout(
         xaxis=dict(title='Latest Product Version to Oldest',range=(0.5,counts + 0.5)),
-        yaxis=dict(title='IBM Product',categoryorder='array', categoryarray=category_order, dtick=1),
+        yaxis=dict(title='IBM Product',categoryorder='category descending',dtick=1),
         showlegend=True,
         height = 380 + 7*y,
         legend=dict(yanchor="bottom", y=1, xanchor="right", x=1, orientation="h", itemsizing='constant'),
@@ -1426,10 +1407,6 @@ def update_graph2(selected_client, click, cmr_dropdown_selections,  versions_but
     #remove title and buttons as they are replaced with dash options
     fig2.update_layout(title=None,updatemenus=[dict(visible = False)])
 
-    # Log performance metrics
-    processing_time = time.time() - start_time
-    logger.info(f"Graph 2 rendered in {processing_time:.2f} seconds")
-    
     return fig2
 @app.callback(
     Output(component_id='graph-three', component_property='figure'),#graph shown in HTML
@@ -1496,11 +1473,9 @@ def update_graph3(selected_client, cmr_dropdown_selections, click,sort_button, t
     
     if interval_months != None:
         from dateutil.relativedelta import relativedelta
-        # Calculate start date: for "last N months", go back N-1 months from the first day of latest month
-        # Example: "last 6 months" from April 2026 = go back 5 months from April 1st to November 1st 2025
-        # This gives us: Nov 2025, Dec 2025, Jan 2026, Feb 2026, Mar 2026, Apr 2026 = 6 months
-        first_day_of_latest_month = datetime(year=client_latest_date.year, month=client_latest_date.month, day=1)
-        client_start_date = first_day_of_latest_month - relativedelta(months=interval_months - 1)
+        # Calculate start date: for "last N months", go back N-1 months
+        # Example: "last 3 months" from March = go back 2 months to January (Jan, Feb, Mar = 3 months)
+        client_start_date = client_latest_date - relativedelta(months=interval_months - 1)
         # Get actual min date from filtered data to ensure accuracy
         date_filtered_data = client_filtered_data[(client_filtered_data['Date'] <= client_latest_date) & (client_filtered_data['Date'] >= client_start_date)]
         actual_start_date = date_filtered_data['Date'].min()
