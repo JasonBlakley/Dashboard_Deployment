@@ -466,7 +466,7 @@ if 'AIX Standard Edition' in list(green.keys()):
     green['AIX'] = list(green['AIX Standard Edition'])
 if 'AIX Standard Edition' in list(orange.keys()):
     orange['AIX'] = list(orange['AIX Standard Edition'])
-# Merge 'IBM AIX 7 Standard Edition' versions (contains 7.3.0) into the 'AIX' key
+# Merge 'IBM AIX 7 Standard Edition' (contains 7.3.0+) into the 'AIX' alias key
 if 'IBM AIX 7 Standard Edition' in list(green.keys()):
     green.setdefault('AIX', []).extend(green['IBM AIX 7 Standard Edition'])
 if 'IBM AIX 7 Standard Edition' in list(red.keys()):
@@ -678,16 +678,12 @@ def calc_color(x):
     return "blue"
 def detect_shortest_string(LIST, prod_string):
     # prod_string is already lowercase; LIST contains lowercase dict keys
-    # Prefer exact match first
     if prod_string in LIST:
         return prod_string
-    # Then prefer "X standard edition"
     if prod_string + ' standard edition' in LIST:
         return prod_string + ' standard edition'
-    # Then prefer "ibm X" prefix
     if 'ibm ' + prod_string in LIST:
         return 'ibm ' + prod_string
-    # Otherwise pick the shortest string that contains prod_string (highest % match)
     best_match = 0
     loc = None
     for index, string in enumerate(LIST):

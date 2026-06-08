@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductTitleRecords>
+	               <HWTitleRecord>
+        <HWTitle><![CDATA[System z10 BC (2098-E10) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2098E10" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="Q295736S66922T52">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2019-12-31" eosannletno="73985"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[System z10 EC (2097-E64) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2097E64" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="B483886B33974S43">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="54763" eosdate="2019-12-31" eosannletno="73985"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[System z10 EC (2097-E56) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2097E56" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="P241806B93612Z52">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="54763" eosdate="2019-12-31" eosannletno="73985"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[System z10 EC (2097-E40) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2097E40" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="S364678V74825U06">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="54763" eosdate="2019-12-31" eosannletno="73985"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[System z10 EC (2097-E26) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2097E26" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="Z998689T07566J62">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="54763" eosdate="2019-12-31" eosannletno="73985"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[System z10 EC (2097-E12) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2097E12" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="Q878551O83541V15">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="54763" eosdate="2019-12-31" eosannletno="73985"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM 2096 System z9 (2096-S07) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2096S07" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="V480636H68442T18">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="49514" eosdate="2019-01-31" eosannletno="72801"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM 2096 System z9 (2096-R07) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2096R07" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="M395591K21145X87">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="49514" eosdate="2019-01-31" eosannletno="72801"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM z9 Enterprise (2094-S54) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2094S54" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="E141799L06144B17">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="49514" eosdate="2017-10-31" eosannletno="71676"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM z9 Enterprise (2094-S38) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2094S38" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="V763514H54502L74">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="49514" eosdate="2017-10-31" eosannletno="71676"  endalldate="2026-04-02"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM z9 Enterprise (2094-S28) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2094S28" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="E342450N74814L59">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="49514" eosdate="2017-10-31" eosannletno="71676"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM z9 Enterprise (2094-S18) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2094S18" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="K083539O28495P46">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="49514" eosdate="2017-10-31" eosannletno="71676"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM z9 Enterprise (2094-S08) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2094S08" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="W413610X71676W41">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="49514" eosdate="2017-10-31" eosannletno="71676"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                   <SWTitleRecord>
+        <SWTitle><![CDATA[IBM Sterling Transformation Extender for z/OS, 10.1.x]]></SWTitle>
+        <Version pid="5655-RA1" offeringtype="IPLA">
+        <versionNumber>10</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="S537958C48422I81">
+             <releaseNumber>1</releaseNumber>              <modLevelNumber>x</modLevelNumber>             <PLCInfo gadate="" gaannletno="220-453" eomdate="" eomannletno="AD26-0369" eosdate="2026-09-30" eosannletno="AD26-0369"  endalldate="2028-09-30"  exception="No" lifecyclepolicy="C" eligibleService="Proactive, SoftwareXcel, Support Line"/>
+            <PLCComment><![CDATA[5655-R97]]></PLCComment>                      </Release_Mod>
+        </Release_Mods></Version>
+        </SWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM eServer z890 (2086-A04) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2086A04" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="P873455K21575T59">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2016-10-31" eosannletno="70515"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM eServer zSeries 990 (2084-D32) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2084D32" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="F666684R97252T72">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2014-12-31" eosannletno=""  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM eServer zSeries 990 (2084-C24) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2084C24" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="Z719255M57306H15">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2014-12-31" eosannletno=""  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM eServer zSeries 990 (2084-B16) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2084B16" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="W249784E58471W09">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2014-12-31" eosannletno=""  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM eServer zSeries 990 (2084-A08) - Withdrawal notification]]></HWTitle>
+        <Version mtm="2084A08" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="Q661973Z46412T48">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2014-12-31" eosannletno=""  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[AS/400 Series Server (9406-S20)]]></HWTitle>
+        <Version mtm="9406S20" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="G421947O48560B31">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="2026-04-03" eodannletno="" eomdate="" eomannletno="" eosdate="" eosannletno=""  endalldate="2013-12-31"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM System i 820 Server (9406-820) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406820" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="E886928S91061R44">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2020-10-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM System i 810 Server (9406-810) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406810" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="X326300N95353M24">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="2926-04-03" eodannletno="" eomdate="" eomannletno="" eosdate="2020-10-31" eosannletno="71556"  endalldate=""  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM System i 800 Server (9406-800) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406800" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="J730321V14267P08">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2020-10-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[AS/400 Series Server (9406-720) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406720" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="O385562G51711U44">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2020-01-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[AS/400 Series Server (9406-620) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406620" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="H803530M97025E30">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2018-01-31" eosannletno="70515"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[AS/400 Series Server (9406-600) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406600" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="N582989L12279H63">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2018-01-31" eosannletno="70515"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM eServer i5 Model 595 (9406-595) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406595" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="G432498C30565E70">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2020-10-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM System i 570 Server (9406-570) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406570" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="W758799K94977V16">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2020-10-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM System i 550 Server (9406-550) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406550" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="G499622B89374P15">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2020-10-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM System i 525 Server (9406-525) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406525" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="U997469T57360R92">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2020-10-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM System i 520 Server (9406-520) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406520" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="K093565D43432Q52">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2019-01-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[Model 510 System Unit (9406-510) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406510" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="Z643293P55917J16">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2012-12-31" eosannletno=""  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[AS/400 Series Server (9406-500) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406500" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="P745171C22241Q92">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2012-12-31" eosannletno=""  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[System i 270 Server (9406-270) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406270" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="C623414N88781G46">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2020-10-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[AS/400 Series Server (9406-170) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9406170" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="H478250M53043S10">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2020-01-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[IBM System i 520 Server (9405-520) - Withdrawal notification]]></HWTitle>
+        <Version mtm="9405520" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="V837451V55660H03">
+                                    <PLCInfo gadate="" gaannletno="" eoddate="" eodannletno="" eomdate="" eomannletno="" eosdate="2019-01-31" eosannletno="71556"  endalldate="2026-04-03"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                 <HWTitleRecord>
+        <HWTitle><![CDATA[Power System Mellanox Director Switch (8828-ED0) - Withdrawal notification]]></HWTitle>
+        <Version mtm="8828ED0" offeringtype="N/A">
+        <versionNumber>N/A</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="M264517O67808J04">
+                                    <PLCInfo gadate="" gaannletno="70929" eoddate="" eodannletno="" eomdate="" eomannletno="77167" eosdate="2025-12-31" eosannletno="AD24-0701"  endalldate="2025-12-31"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+      </HWTitleRecord>
+    
+                   <SWTitleRecord>
+        <SWTitle><![CDATA[Communications Server for AIX, 6.4.0 - Withdrawal notification]]></SWTitle>
+        <Version pid="5765-E51" offeringtype="IPLA">
+        <versionNumber>6</versionNumber>
+        <Release_Mods>
+          <Release_Mod synkey="M074034X39906T78">
+             <releaseNumber>4</releaseNumber>                         <PLCInfo gadate="" gaannletno="209-138" eomdate="" eomannletno="912-194" eosdate="2023-09-30" eosannletno="921-074"  endalldate="2026-05-30"  exception="No" lifecyclepolicy="C" eligibleService=""/>
+                                  </Release_Mod>
+        </Release_Mods></Version>
+        </SWTitleRecord>
+    
+  </ProductTitleRecords>
