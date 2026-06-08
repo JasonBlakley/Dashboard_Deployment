@@ -110,7 +110,8 @@ def normalize_version(version):
     Normalize version strings to match lifecycle file formats.
     
     Common transformations:
-    - "7.1" -> "7.1.0"
+    - "7.1 (EOS 4/30/2023)" -> "7.1.0", "7.1", "7.1.x"
+    - "7.1" -> "7.1.0", "7.1", "7.1.x"
     - "9" -> "9.0"
     - "2021.1" -> "2021.1.0"
     
@@ -121,15 +122,19 @@ def normalize_version(version):
         list: List of possible version formats to try matching
     """
     if not version or not isinstance(version, str):
-        return [version]
+        return [str(version).lower()]
     
     version = version.strip().lower()
+    
+    # Strip EOS dates like "(EOS 4/30/2023)" or "(eos 4/30/2017)"
+    import re
+    version = re.sub(r'\s*\(eos[^)]*\)', '', version, flags=re.IGNORECASE).strip()
     
     # Return list of possible version formats
     versions_to_try = [version]
     
     # If version doesn't end with .0, try adding it
-    if '.' in version and not version.endswith('.0'):
+    if '.' in version and not version.endswith('.0') and not version.endswith('.x'):
         versions_to_try.append(version + '.0')
     
     # If version has no dots, try adding .0
@@ -141,7 +146,7 @@ def normalize_version(version):
         versions_to_try.append(version[:-2])
     
     # Try with .x suffix (common in lifecycle file)
-    if '.' in version:
+    if '.' in version and not version.endswith('.x'):
         parts = version.split('.')
         if len(parts) >= 2:
             versions_to_try.append(f"{parts[0]}.{parts[1]}.x")

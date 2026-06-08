@@ -544,134 +544,131 @@ def calc_color(x):
     # Apply product name mapping to handle mismatches between ticket data and lifecycle file
     original_product = x["Product Name"]
     mapped_product = get_mapped_product_name(original_product)
-    prod_string = mapped_product.lower()
-    version = str(x['Product Version']).lower()
-    # for instances where the product name is the EXACT same 
-    if prod_string in red and version in red[prod_string]:#if product in red and version in red
-        return "red"
-    elif prod_string in orange and version in orange[prod_string]:#if product in orange and version in orange
-        return "orange"
-    elif prod_string in green and version in green[prod_string]:#if product in green and version in green
-        return "green"
-    elif version == None or version == " " or version == "" or version == "NaN" or version == "nan":
-        return "blue"  
+    prod_string = mapped_product  # Keep original case for dictionary lookup
+    prod_string_lower = mapped_product.lower()  # Lowercase for fallback substring matching
+    version_raw = str(x['Product Version'])
     
-
-
-    #if exact product name not found, check if products exist in string. Ex: 'MQ' in 'IBM MQ'
-    else:
-        # go through all product names in all dictionaries to see if it is part of a string
-        orange_products = []
-        for oname in orange:
-            if prod_string in oname:
-                orange_products.append(oname)
-        if len(orange_products) > 0:
-            shortest_name = detect_shortest_string(orange_products, prod_string)
-            orange_product_versions = [i.lower() for i in orange[shortest_name]]
-            if prod_string in shortest_name and version in orange_product_versions:#if string contains a product
+    # Normalize version to try multiple formats (e.g., "7.1" -> ["7.1", "7.1.0", "7.1.x"])
+    versions_to_try = normalize_version(version_raw)
+    version = versions_to_try[0]  # Keep first normalized version for fallback logic
+    
+    # Check if version is null/empty
+    if version_raw in [None, " ", "", "NaN", "nan", "None"]:
+        return "blue"
+    
+    # Try exact product name match with all normalized version formats
+    if prod_string in red:
+        for ver in versions_to_try:
+            if ver in red[prod_string]:
+                return "red"
+    
+    if prod_string in orange:
+        for ver in versions_to_try:
+            if ver in orange[prod_string]:
                 return "orange"
-            elif prod_string in shortest_name and version[:-1] + 'x' in orange_product_versions:
-                return "orange"    
-            elif prod_string in shortest_name and re.sub(r"\.[^\.]*$","",version)+ '.x' in orange_product_versions:
+    
+    if prod_string in green:
+        for ver in versions_to_try:
+            if ver in green[prod_string]:
+                return "green"
+    
+    # If exact product name not found, check if products exist in string. Ex: 'MQ' in 'IBM MQ'
+    # This fallback logic uses substring matching with normalized versions
+    # go through all product names in all dictionaries to see if it is part of a string
+    orange_products = []
+    for oname in orange:
+        if prod_string_lower in oname.lower():
+            orange_products.append(oname)
+    if len(orange_products) > 0:
+        shortest_name = detect_shortest_string(orange_products, prod_string_lower)
+        orange_product_versions = [i.lower() for i in orange[shortest_name]]
+        # Try all normalized version formats
+        for ver in versions_to_try:
+            if ver in orange_product_versions:
                 return "orange"
-            elif prod_string in shortest_name and version + '.0' in orange_product_versions:
-                return "orange"
-            elif prod_string in shortest_name:
-                for detected_version in orange_product_versions:
-                    if '.' in detected_version and '.' in version:
-                        if version.split('.')[0:2] == detected_version.split('.')[0:2]:
-                            return 'orange'
-            for i in orange_product_versions:
-                if 'x' in i:
-                    # checks if there is any numerical version
-                    prod_name = i.replace('x', '[0-9]+')
-                    if re.search(prod_name, version):
-                        return "orange"
-                    elif version == i.replace('.x', ''):
-                        return "orange"
-                    elif version + '.0.x' == i:
+        # Additional fallback checks for version patterns
+        if prod_string_lower in shortest_name.lower():
+            for detected_version in orange_product_versions:
+                if '.' in detected_version and '.' in version:
+                    if version.split('.')[0:2] == detected_version.split('.')[0:2]:
                         return 'orange'
-                    elif ('.x.x' in i) and ('.' in version):
-                        versions_split = i.split('.x')
-                        provided_versions_split = version.split('.')
-                        if versions_split[0] == provided_versions_split[0]:
-                            return 'orange'
+        for i in orange_product_versions:
+            if 'x' in i:
+                # checks if there is any numerical version
+                prod_name = i.replace('x', '[0-9]+')
+                if re.search(prod_name, version):
+                    return "orange"
+                elif version == i.replace('.x', ''):
+                    return "orange"
+                elif ('.x.x' in i) and ('.' in version):
+                    versions_split = i.split('.x')
+                    provided_versions_split = version.split('.')
+                    if versions_split[0] == provided_versions_split[0]:
+                        return 'orange'
       
-        red_products = []
-        for rname in red:
-            if prod_string in rname:
-                red_products.append(rname)
-        # gets the shortest name that contains the name of the IBM product 
-        if len(red_products) > 0:
-            shortest_name = detect_shortest_string(red_products, prod_string)
-            red_product_versions = [i.lower() for i in red[shortest_name]]
-            if prod_string in shortest_name and version in red_product_versions:
+    red_products = []
+    for rname in red:
+        if prod_string_lower in rname.lower():
+            red_products.append(rname)
+    # gets the shortest name that contains the name of the IBM product
+    if len(red_products) > 0:
+        shortest_name = detect_shortest_string(red_products, prod_string_lower)
+        red_product_versions = [i.lower() for i in red[shortest_name]]
+        # Try all normalized version formats
+        for ver in versions_to_try:
+            if ver in red_product_versions:
                 return "red"
-            elif prod_string in shortest_name and version[:-1] + 'x' in red_product_versions:
-                return 'red'
-            elif prod_string in shortest_name and re.sub(r"\.[^\.]*$","",version)+ '.x' in red_product_versions:
-                return "red"
-            elif prod_string in shortest_name and version + '.0' in red_product_versions:
-                return "red"
-            elif prod_string in shortest_name and version + '.0.0' in red_product_versions:
-                return "red"
-            elif prod_string in shortest_name:
-                for detected_version in red_product_versions:
-                    if '.' in detected_version and '.' in version:
-                        if version.split('.')[0:2] == detected_version.split('.')[0:2]:
-                            return 'red' 
-            for i in red_product_versions:
-                if 'x' in i:
-                    # checks if there is any numerical version
-                    prod_name = i.replace('x', '[0-9]+')
-                    if re.search(prod_name, version):
-                        return "red"
-                    elif version == i.replace('.x', ''):
-                        return "red"
-                    elif version + '.0.x' == i:
+        # Additional fallback checks for version patterns
+        if prod_string_lower in shortest_name.lower():
+            for detected_version in red_product_versions:
+                if '.' in detected_version and '.' in version:
+                    if version.split('.')[0:2] == detected_version.split('.')[0:2]:
                         return 'red'
-                    elif ('.x.x' in i) and ('.' in version):
-                        versions_split = i.split('.x')
-                        provided_versions_split = version.split('.')
-                        if versions_split[0] == provided_versions_split[0]:
-                            return 'red'
+        for i in red_product_versions:
+            if 'x' in i:
+                # checks if there is any numerical version
+                prod_name = i.replace('x', '[0-9]+')
+                if re.search(prod_name, version):
+                    return "red"
+                elif version == i.replace('.x', ''):
+                    return "red"
+                elif ('.x.x' in i) and ('.' in version):
+                    versions_split = i.split('.x')
+                    provided_versions_split = version.split('.')
+                    if versions_split[0] == provided_versions_split[0]:
+                        return 'red'
             
-        green_products = []    
-        for gname in green:
-            if prod_string in gname:
-                green_products.append(gname)
-        if len(green_products) > 0:
-            shortest_name = detect_shortest_string(green_products, prod_string)
-            green_product_versions = [i.lower() for i in green[shortest_name]]
-            if prod_string in shortest_name and version in green_product_versions:
+    green_products = []
+    for gname in green:
+        if prod_string_lower in gname.lower():
+            green_products.append(gname)
+    if len(green_products) > 0:
+        shortest_name = detect_shortest_string(green_products, prod_string_lower)
+        green_product_versions = [i.lower() for i in green[shortest_name]]
+        # Try all normalized version formats
+        for ver in versions_to_try:
+            if ver in green_product_versions:
                 return "green"
-            elif prod_string in shortest_name and version[:-1] + 'x' in green_product_versions:
-                return 'green'
-            elif prod_string in shortest_name and re.sub(r"\.[^\.]*$","",version)+ '.x' in green_product_versions:
-                return "green"
-            elif prod_string in shortest_name and version + '.0' in green_product_versions:
-                return "green"
-            elif prod_string in shortest_name:
-                for detected_version in green_product_versions:
-                    if '.' in detected_version and '.' in version:
-                        if version.split('.')[0:2] == detected_version.split('.')[0:2]:
-                            return 'green'
-            for i in green_product_versions:
-                if 'x' in i:
-                    # checks if there is any numerical version
-                    prod_name = i.replace('x', '[0-9]+')
-                    if re.search(prod_name, version):
-                        return "green"
-                    elif version == i.replace('.x', ''):
-                        return "green"
-                    elif version + '.0.x' == i:
+        # Additional fallback checks for version patterns
+        if prod_string_lower in shortest_name.lower():
+            for detected_version in green_product_versions:
+                if '.' in detected_version and '.' in version:
+                    if version.split('.')[0:2] == detected_version.split('.')[0:2]:
                         return 'green'
-                    elif ('.x.x' in i) and ('.' in version):
-                        versions_split = i.split('.x')
-                        provided_versions_split = version.split('.')
-                        if versions_split[0] == provided_versions_split[0]:
-                            return 'green'
-        return "blue" 
+        for i in green_product_versions:
+            if 'x' in i:
+                # checks if there is any numerical version
+                prod_name = i.replace('x', '[0-9]+')
+                if re.search(prod_name, version):
+                    return "green"
+                elif version == i.replace('.x', ''):
+                    return "green"
+                elif ('.x.x' in i) and ('.' in version):
+                    versions_split = i.split('.x')
+                    provided_versions_split = version.split('.')
+                    if versions_split[0] == provided_versions_split[0]:
+                        return 'green'
+    return "blue"
 def detect_shortest_string(LIST,prod_string):
     if prod_string + ' Standard Edition' in LIST:
         return prod_string + ' Standard Edition'
