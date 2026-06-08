@@ -12,10 +12,14 @@ Last Updated: June 5, 2026
 # Product name mappings: ticket_name (lowercase) -> lifecycle_name (as it appears in lifecycle file)
 PRODUCT_NAME_MAPPINGS = {
     # AIX Products
-    # NOTE: AIX 7.2 is under "AIX Standard Edition", AIX 7.3 under "IBM AIX 7 Standard Edition"
-    # app.py merges both into 'AIX' alias key - mapping should point to that alias
-    "aix": "AIX",
+    "aix": "AIX Standard Edition",
     
+    # Apptio Products (SaaS - version strings from tickets are build hashes, not semver)
+    "apptio": "IBM Apptio",
+    "ibm apptio": "IBM Apptio",
+    "apptio cloudability": "IBM Cloudability",
+    "apptio targetprocess": "IBM Targetprocess",
+
     # Sterling Products (note: some use colon, some use space)
     "sterling b2b integrator": "Sterling B2B Integrator",
     "sterling connect direct": "Sterling Connect:Direct",
@@ -47,11 +51,7 @@ PRODUCT_NAME_MAPPINGS = {
     "red hat enterprise linux": "Red Hat Enterprise Linux Server",
     
     # IBM Cloud/Automation Products
-    "devops deploy": "IBM UrbanCode Deploy",
-    "ibm devops deploy": "IBM UrbanCode Deploy",
-    "urbancode deploy": "IBM UrbanCode Deploy",
-    "ibm urbancode deploy": "IBM UrbanCode Deploy",
-    "ucd": "IBM UrbanCode Deploy",
+    "urbancode deploy": "UrbanCode Deploy",
     "robotic process automation": "IBM Robotic Process Automation",
     
     # Security Products
@@ -65,10 +65,8 @@ PRODUCT_NAME_MAPPINGS = {
     "rational licensing": "Rational License Key Server",
     
     # DB2 Products
-    "db2": "IBM Db2 Advanced Edition",
-    "db2 database": "IBM Db2 Advanced Edition",
-    "db2 linux, unix and windows": "IBM Db2 Advanced Edition",
-    "db2 linux unix and windows": "IBM Db2 Advanced Edition",
+    "db2": "IBM Db2",
+    "db2 database": "IBM Db2",
     
     # MQ Products
     "mq": "IBM MQ",
@@ -158,21 +156,6 @@ def normalize_version(version):
         parts = version.split('.')
         if len(parts) >= 2:
             versions_to_try.append(f"{parts[0]}.{parts[1]}.x")
-    
-    # Try with .1 suffix for date-style versions like "2023.4" -> "2023.4.1"
-    # Some products (Cloud Pak for Integration) use exact patch versions
-    if '.' in version and not version.endswith('.x'):
-        parts = version.split('.')
-        if len(parts) == 2:
-            versions_to_try.append(version + '.1')
-    
-    # Handle uppercase X wildcard versions (e.g. "4.X.X" in lifecycle file)
-    # Add uppercase variants so dict lookup works either way
-    versions_upper = []
-    for v in versions_to_try:
-        if '.x' in v:
-            versions_upper.append(v.replace('.x', '.X').replace('x.', 'X.'))
-    versions_to_try.extend(versions_upper)
     
     return versions_to_try
 

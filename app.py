@@ -562,6 +562,19 @@ def calc_color(x):
     if version_raw in [None, " ", "", "NaN", "nan", "None"]:
         return "blue"
     
+    # SaaS products: version strings from tickets are meaningless (e.g. build hashes, release codes).
+    # If the only version entry for this product is 'saas', skip version matching and return color directly.
+    def is_saas_product(d, key):
+        versions = d.get(key, [])
+        return len(versions) > 0 and all(v.lower() == 'saas' for v in versions if v)
+
+    if prod_string_lower in red and is_saas_product(red, prod_string_lower):
+        return "red"
+    if prod_string_lower in orange and is_saas_product(orange, prod_string_lower):
+        return "orange"
+    if prod_string_lower in green and is_saas_product(green, prod_string_lower):
+        return "green"
+
     # Try exact product name match with all normalized version formats
     # IMPORTANT: use prod_string_lower because all dict keys are lowercased at load time
     if prod_string_lower in red:
