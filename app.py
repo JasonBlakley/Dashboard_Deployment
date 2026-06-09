@@ -562,7 +562,7 @@ def calc_color(x):
     if version_raw in [None, " ", "", "NaN", "nan", "None"]:
         return "blue"
     
-    # SaaS products: version strings from tickets are meaningless (e.g. build hashes, release codes).
+    # SaaS products: version strings from tickets are meaningless (build hashes, release codes).
     # If the only version entry for this product is 'saas', skip version matching and return color directly.
     def is_saas_product(d, key):
         versions = d.get(key, [])
