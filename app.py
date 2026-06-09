@@ -568,6 +568,7 @@ def calc_color(x):
         versions = d.get(key, [])
         return len(versions) > 0 and all(v.lower() == 'saas' for v in versions if v)
 
+    # Check SaaS products using lowercase key (dicts are lowercased at load time)
     if prod_string_lower in red and is_saas_product(red, prod_string_lower):
         return "red"
     if prod_string_lower in orange and is_saas_product(orange, prod_string_lower):
@@ -597,7 +598,7 @@ def calc_color(x):
     # go through all product names in all dictionaries to see if it is part of a string
     orange_products = []
     for oname in orange:
-        if prod_string_lower in oname.lower():
+        if prod_string.lower() in oname.lower():
             orange_products.append(oname)
     if len(orange_products) > 0:
         shortest_name = detect_shortest_string(orange_products, prod_string_lower)
@@ -628,7 +629,7 @@ def calc_color(x):
       
     red_products = []
     for rname in red:
-        if prod_string_lower in rname.lower():
+        if prod_string.lower() in rname.lower():
             red_products.append(rname)
     # gets the shortest name that contains the name of the IBM product
     if len(red_products) > 0:
@@ -660,7 +661,7 @@ def calc_color(x):
             
     green_products = []
     for gname in green:
-        if prod_string_lower in gname.lower():
+        if prod_string.lower() in gname.lower():
             green_products.append(gname)
     if len(green_products) > 0:
         shortest_name = detect_shortest_string(green_products, prod_string_lower)
@@ -690,12 +691,28 @@ def calc_color(x):
                         return 'green'
     return "blue"
 def detect_shortest_string(LIST, prod_string):
-    if prod_string in LIST:
-        return prod_string
-    if prod_string + ' standard edition' in LIST:
-        return prod_string + ' standard edition'
-    if 'ibm ' + prod_string in LIST:
-        return 'ibm ' + prod_string
+    """
+    Find the best matching product name from a list.
+    Performs case-insensitive matching but returns the original case from LIST.
+    """
+    prod_lower = prod_string.lower()
+    
+    # Check for exact match (case-insensitive)
+    for item in LIST:
+        if item.lower() == prod_lower:
+            return item
+    
+    # Check for standard edition variant
+    for item in LIST:
+        if item.lower() == prod_lower + ' standard edition':
+            return item
+    
+    # Check for IBM prefix variant
+    for item in LIST:
+        if item.lower() == 'ibm ' + prod_lower:
+            return item
+    
+    # Find best match by length ratio
     best_match = 0
     loc = None
     for index, string in enumerate(LIST):
@@ -703,7 +720,7 @@ def detect_shortest_string(LIST, prod_string):
         if percent_match > best_match:
             best_match = percent_match
             loc = index
-    return LIST[loc]
+    return LIST[loc] if loc is not None else LIST[0]
 def process_blues(row):
     if row['color'] == 'blue':
         pidname = row['pidname']
