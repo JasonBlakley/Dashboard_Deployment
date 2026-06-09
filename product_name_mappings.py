@@ -14,36 +14,30 @@ PRODUCT_NAME_MAPPINGS = {
     # AIX Products
     "aix": "AIX Standard Edition",
     
-    # Apptio Products (SaaS - version strings from tickets are build hashes, not semver)
-    "apptio": "IBM Apptio",
-    "ibm apptio": "IBM Apptio",
-    "apptio cloudability": "IBM Cloudability",
-    "apptio targetprocess": "IBM Targetprocess",
-
     # Sterling Products (note: some use colon, some use space)
-    "sterling b2b integrator": "Sterling B2B Integrator",
-    "sterling connect direct": "Sterling Connect:Direct",
-    "sterling connect:direct": "Sterling Connect:Direct",
-    "sterling connect direct for z/os": "Sterling Connect:Direct for z/OS",
-    "sterling connect:direct for z/os": "Sterling Connect:Direct for z/OS",
+    "sterling b2b integrator": "IBM Sterling B2B Integrator",
+    "sterling connect direct": "IBM Sterling Connect:Direct for UNIX",
+    "sterling connect:direct": "IBM Sterling Connect:Direct for UNIX",
+    "sterling connect direct for z/os": "IBM Sterling Connect:Direct for z/OS",
+    "sterling connect:direct for z/os": "IBM Sterling Connect:Direct for z/OS",
     "sterling connect direct enterprise for z/os": "Sterling Connect:Direct Enterprise for z/OS",
     "sterling connect:direct enterprise for z/os": "Sterling Connect:Direct Enterprise for z/OS",
-    "sterling file gateway": "Sterling File Gateway",
+    "sterling file gateway": "IBM Sterling File Gateway",
     "sterling gentran server": "Sterling Gentran Server",
-    "sterling transformation extender": "Sterling Transformation Extender",
+    "sterling transformation extender": "IBM Sterling Transformation Extender",
     "transformation extender advanced": "Transformation Extender Advanced",
     
     # WebSphere Products
-    "websphere": "IBM WebSphere Application Server",
-    "websphere application server": "IBM WebSphere Application Server",
-    "ibm websphere application server": "IBM WebSphere Application Server",
+    "websphere": "WebSphere Application Server",
+    "websphere application server": "WebSphere Application Server",
+    "ibm websphere application server": "WebSphere Application Server",
     
     # SPSS Products
     "spss modeler": "IBM SPSS Modeler",
     "spss statistics": "IBM SPSS Statistics",
     
     # Tivoli Products
-    "tivoli monitoring agents": "IBM Tivoli Monitoring",
+    "tivoli monitoring agents": "Tivoli Monitoring",
     "tivoli system automation application manager": "Tivoli System Automation Application Manager",
     
     # Red Hat Products
@@ -55,11 +49,11 @@ PRODUCT_NAME_MAPPINGS = {
     "robotic process automation": "IBM Robotic Process Automation",
     
     # Security Products
-    "security verify directory": "Security Verify Directory",
+    "security verify directory": "IBM Security Verify Directory",
     
     # Storage Products
-    "storage scale": "IBM Storage Scale",
-    "spectrum scale": "IBM Storage Scale",  # Former name
+    "storage scale": "IBM Storage Scale Data Management Edition",
+    "spectrum scale": "IBM Storage Scale Data Management Edition",  # Former name
     
     # Rational Products
     "rational licensing": "Rational License Key Server",
@@ -86,6 +80,86 @@ PRODUCT_NAME_MAPPINGS = {
     "domino": "IBM Domino",
     "lotus notes": "IBM Notes",  # Former name
     "lotus domino": "IBM Domino",  # Former name
+
+    # QRadar SIEM - dict uses "IBM Security QRadar SIEM" not "IBM QRadar SIEM"
+    "qradar siem": "IBM Security QRadar SIEM",
+    "ibm qradar siem": "IBM Security QRadar SIEM",
+
+    # Guardium S-TAP - map to Db2 variant as default (most common)
+    "guardium s-tap for zos": "IBM Security Guardium S-TAP for Db2 on z/OS",
+    "guardium s-tap for z/os": "IBM Security Guardium S-TAP for Db2 on z/OS",
+    "ibm guardium s-tap for z/os": "IBM Security Guardium S-TAP for Db2 on z/OS",
+
+    # zSecure - map to Admin as the base product
+    "zsecure": "IBM Security zSecure Admin",
+    "ibm zsecure": "IBM Security zSecure Admin",
+    "ibm security zsecure": "IBM Security zSecure Admin",
+
+    # Storage Scale editions
+    "ibm storage scale": "IBM Storage Scale Data Management Edition",
+
+    # Db2 Connect - use Enterprise Edition
+    "db2 connect": "DB2 Connect Enterprise Edition",
+    "ibm db2 connect": "DB2 Connect Enterprise Edition",
+
+    # Tivoli Monitoring - no IBM prefix
+    "tivoli monitoring agents": "Tivoli Monitoring",
+
+    # Host Access Client Package - platform variants
+    "host access client package": "Host Access Client Package for Multiplatforms",
+    "ibm host access client package": "Host Access Client Package for Multiplatforms",
+
+    # PowerHA SystemMirror - Standard Edition for AIX
+    "powerha systemmirror": "PowerHA SystemMirror Standard Edition for AIX",
+    "ibm powerha systemmirror": "PowerHA SystemMirror Standard Edition for AIX",
+
+    # PowerVM
+    "powervm / vios": "PowerVM",
+    "ibm powervm": "PowerVM",
+
+    # IBM Java for z/OS
+    "ibm java for z/os": "IBM 64-bit SDK for z/OS, Java 2 Technology Edition",
+    "ibm java": "IBM 64-bit SDK for z/OS, Java 2 Technology Edition",
+
+    # IntelliMagic
+    "intellimagic vision for san": "IBM Z IntelliMagic Vision",
+
+    # Big SQL
+    "big sql": "IBM Db2 Big SQL",
+    "ibm big sql": "IBM Db2 Big SQL",
+
+    # Informix
+    "informix dynamic server": "IBM Informix Advanced Enterprise Edition",
+    "informix tools and connectivity": "IBM Informix Advanced Enterprise Edition",
+
+    # Fault Analyzer - dict key has no IBM prefix
+    "fault analyzer": "Fault Analyzer for z/OS",
+    "fault analyzer for z/os": "Fault Analyzer for z/OS",
+
+    # CICS - dict key has no IBM prefix
+    "cics transaction server": "CICS Transaction Server for z/OS",
+    "cics transaction server for z/os": "CICS Transaction Server for z/OS",
+
+    # WebSphere eXtreme Scale - dict uses lowercase x and no IBM prefix
+    "websphere extreme scale": "WebSphere Extreme Scale",
+    "ibm websphere extreme scale": "WebSphere Extreme Scale",
+
+    # WebSphere Liberty Core - dict key is "WebSphere Application Server Liberty Core"
+    "websphere liberty core": "WebSphere Application Server Liberty Core",
+    "ibm websphere liberty": "WebSphere Application Server Liberty Core",
+
+    # WebSphere Service Registry and Repository - no IBM prefix in dict
+    "websphere service registry and repository": "WebSphere Service Registry and Repository",
+    "ibm websphere service registry and repository": "WebSphere Service Registry and Repository",
+
+    # Db2 for z/OS - dict has no IBM prefix
+    "db2 for z/os": "Db2 for z/OS",
+    "ibm db2 for z/os": "Db2 for z/OS",
+
+    # PL/I - dict uses "Enterprise" prefix
+    "pl/i": "IBM Enterprise PL/I for z/OS",
+    "ibm pl/i for z/os": "IBM Enterprise PL/I for z/OS",
+
 }
 
 def get_mapped_product_name(product_name):
