@@ -690,7 +690,6 @@ def calc_color(x):
                         return 'green'
     return "blue"
 def detect_shortest_string(LIST, prod_string):
-    # prod_string is already lowercase; LIST contains lowercase dict keys
     if prod_string in LIST:
         return prod_string
     if prod_string + ' standard edition' in LIST:
