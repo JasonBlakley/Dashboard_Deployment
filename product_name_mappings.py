@@ -12,7 +12,9 @@ Last Updated: June 5, 2026
 # Product name mappings: ticket_name (lowercase) -> lifecycle_name (as it appears in lifecycle file)
 PRODUCT_NAME_MAPPINGS = {
     # AIX Products
-    "aix": "AIX Standard Edition",
+    # Note: app.py merges "AIX Standard Edition" and "IBM AIX 7 Standard Edition" into a single "AIX" key
+    # So we map directly to "AIX" to match the merged key after lowercasing
+    "aix": "AIX",
     
     # Sterling Products (note: some use colon, some use space)
     "sterling b2b integrator": "IBM Sterling B2B Integrator",
