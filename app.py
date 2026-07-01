@@ -248,6 +248,11 @@ may26_merged = get_item('oidash-app','May_2026_merged.csv')
 may26_merged_new = may26_merged['Body'].read()
 with open('May_2026_merged.csv','wb') as file:
     file.write(may26_merged_new)
+
+june26_merged = get_item('oidash-app','June_2026_merged.csv')
+june26_merged_new = june26_merged['Body'].read()
+with open('June_2026_merged.csv','wb') as file:
+    file.write(june26_merged_new)
 print("✓ 2026 monthly data downloaded")
 
 # Load 2024 data
@@ -289,7 +294,11 @@ april_26_merged['Date'] = pd.to_datetime(april_26_merged['Month'])
 may_26_merged = pd.read_csv('May_2026_merged.csv', low_memory=False)
 may_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 may_26_merged['Date'] = pd.to_datetime(may_26_merged['Month'])
-print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged):,} records from 2026")
+
+june_26_merged = pd.read_csv('June_2026_merged.csv', low_memory=False)
+june_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+june_26_merged['Date'] = pd.to_datetime(june_26_merged['Month'])
+print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged) + len(june_26_merged):,} records from 2026")
 
 # Concatenate all data (6 dataframes instead of 16)
 print("Merging all data...")
@@ -300,7 +309,8 @@ all_data = pd.concat([
     february_26_merged,
     march_26_merged,
     april_26_merged,
-    may_26_merged
+    may_26_merged,
+    june_26_merged
 ], ignore_index=True)
 print(f"✓ Total records: {len(all_data):,}")
 earliest_date = all_data['Date'].min() # earliest date 
@@ -801,9 +811,45 @@ def clean_versions(txt):
     Description:Function used in association with graph 2 to clean the text of version annotations
     Parameters: txt (str) - a string relating to the version of IBM products
     Return: new_txt(str) - new string value stripped of punctuation from left and right sides, and limited to 4 values
+    
+    Enhanced to detect and clean invalid version strings (instructional text, EOS dates, etc.)
     ---------------------------------------------------------------------------------"""
     items = [',','.',';',':']
     new_txt = str(txt)
+    
+    # Check for invalid version patterns BEFORE other cleaning
+    if new_txt and new_txt != 'nan':
+        txt_lower = new_txt.lower()
+        
+        # Invalid patterns that indicate this is not a real version number
+        invalid_patterns = [
+            'for older versions',
+            'please select',
+            'cast iron',
+            'eos ',
+            'need service extension',
+            'out of support',
+            'service extension required',
+            'early ship program',
+            'best effort',
+            'build:',
+            'build ',
+        ]
+        
+        # Check if version string contains invalid patterns
+        for pattern in invalid_patterns:
+            if pattern in txt_lower:
+                return '[Data Quality Issue]'  # Return placeholder for invalid versions
+        
+        # Check length - versions shouldn't be very long
+        if len(new_txt) > 50:
+            return '[Data Quality Issue]'
+        
+        # Check word count - versions are typically short
+        if len(new_txt.split()) > 5:
+            return '[Data Quality Issue]'
+    
+    # Continue with original cleaning logic for valid versions
     for item in items:
         new_txt = new_txt.rstrip(item).lstrip(item)
 
