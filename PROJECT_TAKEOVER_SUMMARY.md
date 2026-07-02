@@ -2,16 +2,16 @@
 
 **Project Transition Date:** February 2026
 **Current Status:** Fully Operational with AI-Assisted Automation
-**Last Updated:** June 5, 2026
+**Last Updated:** July 1, 2026
 
 ---
 
 ## Executive Summary
 
-In February 2026, we took over the Customer Ticketing Dashboard project and transformed it from a manual, time-intensive deployment process into a streamlined, AI-assisted operation. Over the past 5 months, we've completed **6 successful deployments**, reduced deployment time by **87-92%**, and saved an estimated **$10,000-$12,000 annually** when accounting for all direct and hidden costs.
+In February 2026, we took over the Customer Ticketing Dashboard project and transformed it from a manual, time-intensive deployment process into a streamlined, AI-assisted operation. Over the past 6 months, we've completed **7 successful deployments**, reduced deployment time by **87-92%**, and saved an estimated **$10,000-$12,000 annually** when accounting for all direct and hidden costs.
 
 ### Key Achievements
-- ✅ **6 successful monthly deployments** (Feb-June 2026)
+- ✅ **7 successful deployments** (Feb-June 2026, including product name mappings fix)
 - ✅ **87-92% reduction in deployment time** (from 1.5-2.5 hours to 10-12 minutes)
 - ✅ **Eliminated 10+ hour problem deployments** through automated troubleshooting
 - ✅ **$10,000-$12,000 annual cost savings** (including hidden costs)
@@ -152,9 +152,11 @@ In February 2026, we took over the Customer Ticketing Dashboard project and tran
 | Apr 2026 | Apr 28, 2026 | ✅ Success | 35 min | None | N/A |
 | May 2026 | Jun 4, 2026 | ✅ Success | 28 min | None | N/A |
 | Jun 2026 | Jun 5, 2026 | ✅ Success | 50 min | KeyError | 22 min fix |
+| Product Mappings | Jun 8, 2026 | ✅ Success | 25 min | None | N/A |
+| Jun 2026 (re-run) | Jul 1, 2026 | ✅ Success | ~45 min | COS API key read-only; resolved with HMAC Writer key | N/A |
 
-**Success Rate:** 100% (all deployments completed successfully)  
-**Average Time:** 40 minutes total, 10-12 minutes human effort  
+**Success Rate:** 100% (all deployments completed successfully)
+**Average Time:** 37 minutes total, 10-12 minutes human effort
 **Issues Encountered:** 1 (resolved in 22 minutes)
 
 ---
@@ -304,10 +306,11 @@ ROI: 272-372%
 ### Application Status
 - **URL:** https://python-appid-app.wt1yl0ero9k.us-south.codeengine.appdomain.cloud
 - **Status:** ✅ Fully Operational
-- **Current Revision:** python-appid-app-00049
-- **Data Coverage:** January 2024 - May 2026
-- **Total Records:** 6,381,476 tickets
+- **Current Revision:** python-appid-app-00062
+- **Data Coverage:** January 2024 - June 2026
+- **Total Records:** ~6,565,539 tickets (added 184,063 June records)
 - **Users:** Sales team + external clients
+- **Latest Feature:** Product name mappings (resolves "blue bubble" N/A Version issues)
 
 ### Infrastructure
 - **Platform:** IBM Cloud Code Engine
@@ -328,8 +331,10 @@ ROI: 272-372%
 ## Next Steps
 
 ### Immediate (Next 30 Days)
-- [ ] Complete June 2026 deployment verification
-- [ ] Generate May 2026 usage report
+- [x] Complete June 2026 deployment (Jul 1, 2026)
+- [ ] Verify June 2026 data on live dashboard
+- [ ] Generate June 2026 usage report
+- [ ] Update COS service credential to Writer role for future uploads (current read-only key in app.py is fine for reads; upload scripts need the HMAC Writer key)
 - [ ] Review and update documentation as needed
 
 ### Short-term (Next 3 Months)
@@ -397,6 +402,6 @@ The project is now in a stable, maintainable state with clear processes, excelle
 
 ---
 
-**Document Version:** 1.0  
-**Last Updated:** June 5, 2026  
+**Document Version:** 1.1
+**Last Updated:** July 1, 2026
 **Next Review:** December 2026 (6-month review)
