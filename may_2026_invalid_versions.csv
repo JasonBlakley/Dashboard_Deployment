@@ -1,0 +1,54 @@
+Product,Version,Reason,Tickets
+IBM i,7.3 [EOS 30 Sep 2023 Need Service Extension],Too many words (8),60
+Storage Scale System Software,Storage Scale System Data Management Edition v5.2.3,Too long (51 chars),53
+Verify Identity Governance,V.10.0.2 - Identity Manager (ISIM - Appliance),Too many words (7),49
+Verify Identity Governance,V.10.0.2 - Identity Manager (ISIM - Software),Too many words (7),48
+Verify Identity Governance,V.10.0.1 - Identity Manager (ISIM - Software),Too many words (7),18
+Verify Identity Governance,V.10.0.1 - Identity Manager (ISIM - Appliance),Too many words (7),12
+Sterling Gentran Server,Gentran Server for Windows - 5.3.1,Too many words (6),12
+CICS Transaction Server,CICS TS 5.5 - EOS 30 Sept 2025,Too many words (8),11
+IBM i,7.2 [EOS 30 April 2021 Need Service Extension],Too many words (8),11
+Cloud Infrastructure Center,1.2.5 for IBM Z and LinuxONE,Too many words (6),8
+Storage Scale System Software,Storage Scale System Data Access Edition v5.2.3,Too many words (7),8
+Storage Scale System Software,Storage Scale System Data Management Edition 5.2.1,Too many words (7),8
+Storage Scale System Software,Storage Scale System Software Data Management Edition 5.1.9,Too long (59 chars),7
+Verify Identity Governance,V.10.0.0 - Identity Manager (ISIM - Software),Too many words (7),7
+Cloud Infrastructure Center,1.2.3 for IBM Z and LinuxONE,Too many words (6),6
+Sterling Gentran Server,Gentran Server for iSeries - 3.6.0,Too many words (6),6
+Storage Scale System Software,Storage Scale System Data Management Edition v5.2.2,Too long (51 chars),6
+XL C/C++,"Open XL C/C++ for AIX, V17.1",Too many words (6),5
+Storage Scale System Software,Storage Scale System Data Access Edition 5.2.1,Too many words (7),4
+Storage Scale System Software,Storage Scale System Data Access Edition v5.2.2,Too many words (7),4
+Verify Identity Governance,V.10.0.0 - Identity Manager (ISIM - Appliance),Too many words (7),3
+COBOL,"COBOL for Linux on x86, V1.2",Too many words (6),3
+PowerVM / VIOS,Early Ship Program Only - PowerVM,Too many words (6),3
+IBM i,7.1 and earlier [best effort- need special bid contract],Too long (56 chars),2
+COBOL,"Enterprise COBOL for z/OS, V6.3 (EOS, 9/30/2025)",Too many words (7),2
+COBOL,"COBOL for AIX, V5.1 (EOS, 4/30/2027)",Too many words (6),2
+GSS (GPFS Storage Server),5.0.1 Spectrum Scale RAID for x86 GPFS Storage Server (Lenovo) [EOS 4/30/2022],Too long (78 chars),2
+XL Fortran,"Open XL Fortran for AIX, V17.1",Too many words (6),1
+EDB Enterprise Postgres,EDB Postgres Advanced Server (EPAS) v15.x,Too many words (6),1
+EDB Enterprise Postgres,EDB Postgres Advanced Server (EPAS) v16.x,Too many words (6),1
+Storage Protect Plus,Version 10.1.16 Build: 607 Dec 17,Too many words (6),1
+Storage Protect Plus,"Version 10.1.10 Build: 2761 May 18, 2022 5:14:33 PM",Too long (51 chars),1
+Open Enterprise SDK for Node.js,"SDK for Node.js - z/OS, V24.0",Too many words (6),1
+CICS Transaction Gateway,9.2 (Distributed) - EOS 30 Sept 2026),Too many words (7),1
+Open SDK for Rust,"IBM Open SDK for Rust on AIX, V1.84.0",Too many words (8),1
+Storage Protect Plus,IBM Spectrum Protect Plus Version 10.1.17 Build: 271,Too long (52 chars),1
+COBOL,"Enterprise COBOL for z/OS, V4.2 (EOS, 04/30/2022)",Too many words (7),1
+CICS Transaction Gateway,9.2 (z/OS) - EOS 30 Sept 2026),Too many words (7),1
+Open SDK for Rust,"IBM Open SDK for Rust on AIX, V1.88.0",Too many words (8),1
+Storage Protect Plus,"Version 10.1.16 Build: 607 Dec 16, 2024 9:02:17 PM",Too many words (9),1
+Sterling Gentran Server,Gentran Server for Windows - 5.3.0,Too many words (6),1
+Verify Identity Governance,V.10.0.2 - Identity Manager (ISIM - Container),Too many words (7),1
+PL/I,"Enterprise PL/I for z/OS Runtime, V3+",Too many words (6),1
+Python for z/OS,"Open Enterprise Python for z/OS, V3.12 (EOS, 4/30/2026)",Too long (55 chars),1
+Application Support Facility,34E (Out of Support - Service Extension Required),Too many words (8),1
+z/OS,"Enterprise COBOL for z/OS, V6.1 (EOS, 09/30/2022)",Too many words (7),1
+Storage Scale System Software,Storage Scale System Software Data Access Edition 5.1.9,Too long (55 chars),1
+Python for z/OS,"Open Enterprise Python for z/OS, V3.13",Too many words (6),1
+CICS Transaction Server,CICS TS 5.2 - (EOS 31 Dec 2020),Too many words (8),1
+Storage Scale System Software,Storage Scale System Data Access Edition 5.2.0,Too many words (7),1
+Hardware Management Console Application,Early Ship Program Only - HMC,Too many words (6),1
+COBOL,"Enterprise COBOL for z/OS Runtime, V3+",Too many words (6),1
+Automatic Binary Optimizer,"IBM Automatic Binary Optimizer for z/OS Trial, V2.2.0",Too long (53 chars),1

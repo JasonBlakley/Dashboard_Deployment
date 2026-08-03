@@ -253,6 +253,11 @@ june26_merged = get_item('oidash-app','June_2026_merged.csv')
 june26_merged_new = june26_merged['Body'].read()
 with open('June_2026_merged.csv','wb') as file:
     file.write(june26_merged_new)
+
+july26_merged = get_item('oidash-app','July_2026_merged.csv')
+july26_merged_new = july26_merged['Body'].read()
+with open('July_2026_merged.csv','wb') as file:
+    file.write(july26_merged_new)
 print("✓ 2026 monthly data downloaded")
 
 # Load 2024 data
@@ -298,7 +303,11 @@ may_26_merged['Date'] = pd.to_datetime(may_26_merged['Month'])
 june_26_merged = pd.read_csv('June_2026_merged.csv', low_memory=False)
 june_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 june_26_merged['Date'] = pd.to_datetime(june_26_merged['Month'])
-print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged) + len(june_26_merged):,} records from 2026")
+
+july_26_merged = pd.read_csv('July_2026_merged.csv', low_memory=False)
+july_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+july_26_merged['Date'] = pd.to_datetime(july_26_merged['Month'])
+print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged) + len(june_26_merged) + len(july_26_merged):,} records from 2026")
 
 # Concatenate all data (6 dataframes instead of 16)
 print("Merging all data...")
@@ -310,7 +319,8 @@ all_data = pd.concat([
     march_26_merged,
     april_26_merged,
     may_26_merged,
-    june_26_merged
+    june_26_merged,
+    july_26_merged
 ], ignore_index=True)
 print(f"✓ Total records: {len(all_data):,}")
 earliest_date = all_data['Date'].min() # earliest date 

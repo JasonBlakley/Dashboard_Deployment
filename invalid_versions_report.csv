@@ -1,0 +1,654 @@
+Product Name,Invalid Version String,Reason,Total Tickets Affected
+IBM i,7.3 [EOS 30 Sep 2023 Need Service Extension],Too many words (8),9682
+AIX,7.1 (EOS 4/30/2023),Matches pattern: \(.*\),2584
+Copy Services Manager,DS8000 for Z and Open systems (including HDS),Matches pattern: \(.*\),2298
+Verify Identity Governance,V.10.0.2 - Identity Manager (ISIM - Software),Matches pattern: \(.*\),2099
+z/OS,2.4.0 (EOS - Sept 2024),Matches pattern: \(.*\),2020
+Verify Identity Governance,V.10.0.2 - Identity Governance (IGI),Matches pattern: \(.*\),1856
+IBM i,7.2 [EOS 30 April 2021 Need Service Extension],Too many words (8),1664
+Verify Identity Governance,V.10.0.2 - Identity Manager (ISIM - Appliance),Matches pattern: \(.*\),1563
+CICS Transaction Server,CICS TS 5.5 - EOS 30 Sept 2025,Too many words (8),1452
+IMS,15.3 (EOS 31 August 2026),Matches pattern: \(.*\),1056
+Verify Identity Governance,V.10.0.1 - Identity Manager (ISIM - Software),Matches pattern: \(.*\),1005
+Sterling Gentran Server,Gentran Server for Windows - 5.3.1,Too many words (6),999
+z/OS,2.3.0 (EOS - Sept 2022),Matches pattern: \(.*\),909
+Verify Identity Governance,V.10.0.1 - Identity Manager (ISIM - Appliance),Matches pattern: \(.*\),828
+Application Discovery and Delivery Intelligence,Application Discovery and Delivery Intelligence 6.1.3,Too long (53 chars),828
+Storage Scale System Software,Storage Scale System Software Data Access Edition v5.1.9,Too long (56 chars),698
+Storage Scale System Software,Storage Scale System Software Data Management Edition v5.1.9,Too long (60 chars),644
+IMS,15.4 (EOS 31 August 2027),Matches pattern: \(.*\),627
+Sterling Gentran Server,Gentran Server for iSeries - 3.6.0,Too many words (6),619
+Storage Scale System Software,Storage Scale System Data Management Edition v5.2.3,Too long (51 chars),613
+Security Verify Governance,V.10.0.1 - Identity Manager (ISIM - Software),Matches pattern: \(.*\),589
+Maximo Application Suite,9.0 (9.1 Feature Channel),Matches pattern: \(.*\),571
+Storage Scale System Software,Storage Scale System Data Management Edition v5.2.2,Too long (51 chars),485
+Verify Identity Governance,V.10.0.1 - Identity Governance (IGI),Matches pattern: \(.*\),478
+Copy Services Manager,"Other Non-DS8000 (includes SVC, XIV, FlashSystems & Storwize)",Too long (61 chars),478
+Tivoli Network Manager,4.2.0.21 (Build 311),Matches pattern: \(.*\),475
+Security Verify Governance,V.10.0.2 - Identity Manager (ISIM - Software),Matches pattern: \(.*\),465
+Security Verify Governance,V.10.0.2 - Identity Governance (IGI),Matches pattern: \(.*\),456
+Debug for z/OS,"16.0.x (EOS, 2026-04-30)",Matches pattern: \(.*\),455
+Verify Identity Governance,V.10.0.0 - Identity Manager (ISIM - Software),Matches pattern: \(.*\),427
+Security Verify Governance,V.10.0.1 - Identity Governance (IGI),Matches pattern: \(.*\),419
+Application Discovery and Delivery Intelligence,Application Discovery and Delivery Intelligence 6.1.2,Too long (53 chars),404
+Security Verify Governance,V.10.0.2 - Identity Manager (ISIM - Appliance),Matches pattern: \(.*\),398
+Security Verify Governance,V.10.0.1 - Identity Manager (ISIM - Appliance),Matches pattern: \(.*\),391
+Storage Scale System Software,Storage Scale Data Management Edition for IBM Storage Scale System v5.1.8,Too long (73 chars),385
+IBM i,Early Ship Program Only - IBM i,Too many words (7),382
+IMS,15.2 (EOS 30 June 2025),Matches pattern: \(.*\),342
+z/OS,3.2 (RBP clients only),Matches pattern: \(.*\),322
+Tivoli Network Manager,4.2.0.19 (Build 253),Matches pattern: \(.*\),320
+Security Verify Governance,V.10.0.0 - Identity Manager (ISIM - Software),Matches pattern: \(.*\),307
+AIX,6.1 (EOS 4/30/2017),Matches pattern: \(.*\),306
+Storage Scale System Software,Storage Scale System Data Access Edition v5.2.3,Too many words (7),298
+z/OS,2.2.0 (EOS - Sept 2020),Matches pattern: \(.*\),295
+Storage Scale System Software,Storage Scale System Data Access Edition 5.2.1,Too many words (7),294
+VM Recovery Manager,VM Recovery Manager for DR v1.8.0,Too many words (6),291
+Storage Scale System Software,Storage Scale System Data Management Edition 5.2.1,Too many words (7),279
+Tivoli Network Manager,4.2.0.16 (Build 177),Matches pattern: \(.*\),275
+BACC Cognos On Cloud,User Acceptance Testing (UAT),Matches pattern: \(.*\),271
+Verify Identity Governance,V.10.0.0 - Identity Governance (IGI),Matches pattern: \(.*\),271
+COBOL,"Enterprise COBOL for z/OS, V6.3 (EOS, 9/30/2025)",Matches pattern: \(.*\),270
+Tivoli Network Manager,4.2.0.18 (Build 207),Matches pattern: \(.*\),257
+IBM i on PowerVS,7.3 [EOS 30 September 2023 Need Service Extension],Too many words (8),254
+Storage Scale System Software,Storage Scale System Data Access Edition v5.2.2,Too many words (7),249
+Sterling B2B Integrator,5.2.6 (not supported),Matches pattern: \(.*\),227
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS 5.1.0,Too many words (8),225
+EDB Enterprise Postgres,EDB Postgres Advance Server (EPAS) v14.x,Matches pattern: \(.*\),214
+IBM i,"7.1 [EOS 30 April 2018 no service, use documentation / forums]",Too long (62 chars),214
+EDB Enterprise Postgres,EDB Postgres Advanced Server (EPAS) v15.x,Matches pattern: \(.*\),211
+TXSeries for Multiplatforms,9.1 (EOS 30 Sept 2027),Matches pattern: \(.*\),199
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS v5.1.6,Too many words (8),196
+Sterling Order Management,9.5 (Extended Support Only),Matches pattern: \(.*\),193
+VM Recovery Manager,VM Recovery Manager for HA v1.8.0,Too many words (6),178
+EDB Enterprise Postgres,EDB Postgres Advanced Server (EPAS) v16.x,Matches pattern: \(.*\),176
+Tivoli Network Manager,4.2.0.17 (Build 188),Matches pattern: \(.*\),170
+Application Discovery and Delivery Intelligence,Application Discovery and Delivery Intelligence 6.1.4,Too long (53 chars),170
+Security Verify Governance,V.10.0.0 - Identity Governance (IGI),Matches pattern: \(.*\),166
+BACC Planning Analytics (PA),UAT (User Acceptance Testing),Matches pattern: \(.*\),160
+Enterprise Performance Management,"EPM - Non Production Platforms (Dev, Test, QA, Regression, etc.)",Too long (64 chars),155
+Tivoli Network Manager,4.2.0.20 (Build 284),Matches pattern: \(.*\),149
+IBM i on Cloud,7.3 [EOS 30 September 2023 Need Service Extension],Too many words (8),146
+Application Discovery and Delivery Intelligence,Application Discovery and Delivery Intelligence 6.1.1,Too long (53 chars),145
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS v5.1.6,Too long (53 chars),140
+Tivoli Network Manager,4.2.0.23 (Build 361),Matches pattern: \(.*\),137
+GSS (GPFS Storage Server),5.0.1 Spectrum Scale RAID for x86 GPFS Storage Server (Lenovo) [EOS 4/30/2022],Too long (78 chars),137
+Tivoli Network Manager,4.2.0.15 (Build 163),Matches pattern: \(.*\),125
+Python for z/OS,"Open Enterprise Python for z/OS, V3.13",Too many words (6),124
+Verify Identity Governance,V.10.0.0 - Identity Manager (ISIM - Appliance),Matches pattern: \(.*\),123
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS v5.1.2,Too long (53 chars),120
+Cloud Infrastructure Center,1.2.3 for IBM Z and LinuxONE,Too many words (6),119
+PowerHA SystemMirror,"7.1 (EOS, Service Extension)",Matches pattern: \(.*\),111
+XL C/C++,"Open XL C/C++ for AIX, V17.1",Too many words (6),109
+Sterling Gentran Server,Gentran Server for iSeries - 3.5.0,Too many words (6),108
+Storage Scale System Software,Storage Scale System Data Access Edition 5.2.0,Too many words (7),107
+IBM i,7.1 [EOS 30 April 2018 Need Service Extension],Too many words (8),104
+Tivoli Network Manager,4.2.0.14 (Build 155),Matches pattern: \(.*\),103
+Sterling B2B Integrator,6.0.3 (not supported),Matches pattern: \(.*\),101
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS v5.1.2,Too many words (8),101
+Cloud Infrastructure Center,1.2.1 for IBM Z and LinuxONE,Too many words (6),99
+VM Recovery Manager,VM Recovery Manager for DR v1.7.0,Too many words (6),96
+Security Verify Governance,V.10.0.0 - Identity Manager (ISIM - Appliance),Matches pattern: \(.*\),96
+COBOL,"COBOL for Linux on x86, V1.2",Too many words (6),95
+Z Software Asset Management,8.1 - (Formerly TADz),Matches pattern: \(.*\),95
+CICS Transaction Server,CICS TS 5.4 - (EOS 31 Dec 2023),Matches pattern: \(.*\),95
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS 5.1.1,Too many words (8),94
+Db2 for z/OS,11 (EOS),Matches pattern: \(.*\),92
+CICS Transaction Server,CPSM 5.5 - EOS 30 Sept 2025,Too many words (7),89
+VM Recovery Manager,VM Recovery Manager for HA v1.7.0,Too many words (6),89
+Apptio,Other - please specify in description,Too many words (6),86
+Tivoli Network Manager,4.2.0.11 (build 117),Matches pattern: \(.*\),85
+COBOL,"Enterprise COBOL for z/OS, V4.2 (EOS, 04/30/2022)",Matches pattern: \(.*\),84
+Debug for z/OS,"15.0.x (EOS, 2024-04-30)",Matches pattern: \(.*\),84
+Storage Protect,7.1 (End of Support),Matches pattern: \(.*\),84
+Storage Scale System Software,Storage Scale System Data Management Edition 5.2.0,Too many words (7),82
+z/VM,7.2.0 (EOS),Matches pattern: \(.*\),79
+Enterprise Performance Management,EPM - Quote to Cash (Q2C),Matches pattern: \(.*\),77
+XL C/C++,"Open XL C/C++ for AIX, V17.1.1",Too many words (6),77
+Sterling Connect Direct,C:D Windows 4.7 (Unsupported),Matches pattern: \(.*\),76
+IMS,15.1 (EOS),Matches pattern: \(.*\),75
+Sterling Connect Direct,C:D UNIX 4.2 (Unsupported),Matches pattern: \(.*\),73
+Tivoli Network Manager,4.2.0.22 (Build 333),Matches pattern: \(.*\),73
+Automatic Binary Optimizer,"IBM Automatic Binary Optimizer for z/OS, V2.2.0",Too many words (7),72
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS v5.1.5,Too many words (8),72
+Tivoli Network Manager,4.2.0.22 (build 333),Matches pattern: \(.*\),70
+VM Recovery Manager,VM Recovery Manager for DR 1.6.0,Too many words (6),69
+z/OS,2.1.0 (EOS - Sept 2018),Matches pattern: \(.*\),68
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS v5.1.4,Too long (53 chars),65
+File Manager,14.1  (EOS 2024-04-30),Matches pattern: \(.*\),64
+IBM i,7.1 and earlier [best effort- need special bid contract],Too long (56 chars),61
+Spectrum Control,5.3.x (out of support),Matches pattern: \(.*\),60
+Hardware Management Console Application,Early Ship Program Only - HMC,Too many words (6),59
+Python for z/OS,"Open Enterprise Python for z/OS, V3.12 (EOS, 4/30/2026)",Too long (55 chars),58
+EDB Enterprise Postgres,EDB Postgres Advance Server (EPAS) v13.x,Matches pattern: \(.*\),58
+Verify Identity Governance,V.10.0.2 - Identity Manager (ISIM - Container),Matches pattern: \(.*\),58
+Application Support Facility,34E (Out of Support - Service Extension Required),Matches pattern: \(.*\),56
+CICS Transaction Gateway,9.2 (Distributed) - EOS 30 Sept 2026),Matches pattern: \(.*\),55
+TXSeries for Multiplatforms,8.2 (EOS 30 Apr 2024),Matches pattern: \(.*\),54
+Cloud Infrastructure Center,1.2.2 for IBM Z and LinuxONE,Too many words (6),54
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS v5.1.5,Too long (53 chars),54
+CICS Transaction Gateway,9.2 (z/OS) - EOS 30 Sept 2026),Matches pattern: \(.*\),53
+WebSphere Application Server for IBM i,8.5 ND - Please open case with the 'Websphere Application Server' product,Too long (73 chars),53
+Enterprise Performance Management,"EPM - Non Production Platforms (Dev, Test, QA)",Matches pattern: \(.*\),53
+BACC Cognos On Cloud,IBM Cloud VPC BACC Cognos on Cloud (BCA) PROD Regression Testing,Too long (64 chars),53
+EDB Enterprise Postgres,EDB Postgres Advance Server (EPAS) v12.x,Matches pattern: \(.*\),52
+CICS Transaction Server,CICS TS 5.3 - (EOS 31 Dec 2021),Matches pattern: \(.*\),52
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS v5.1.3,Too long (53 chars),52
+BACC Planning Analytics (PA),IBM Cloud VPC BACC Planning Analytics (PA) Validation Testing,Too long (61 chars),51
+Sterling Transformation Extender,9.0.0 (Support Extension Required),Matches pattern: \(.*\),51
+Tivoli Network Manager,4.2.0.0 (build 11),Matches pattern: \(.*\),51
+Python for z/OS,"Open Enterprise Python for z/OS, V3.11 (EOS, 4/30/2025)",Too long (55 chars),50
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS v5.1.3,Too many words (8),50
+Developer for z/OS,"15.0.x (EOS, 2024-04-30)",Matches pattern: \(.*\),49
+Rational Developer,"9.6.x (EOS, 2025-04-30)",Matches pattern: \(.*\),49
+Storage Scale,"5.0.x (EOS 4/30/2022, no Extended Support available)",Too long (52 chars),49
+PowerVM / VIOS,Early Ship Program Only - PowerVM,Too many words (6),48
+Sterling Transformation Extender,10.0.0 (Support Extension Required),Matches pattern: \(.*\),46
+COBOL,"Enterprise COBOL for z/OS Runtime, V3+",Too many words (6),45
+Sterling Gentran Server,Gentran Server for Windows - 5.2.0,Too many words (6),44
+COBOL,"Enterprise COBOL for z/OS Runtime, V5+",Too many words (6),44
+WebSphere Application Server for IBM i,9.0 ND - Please open case with the 'Websphere Application Server' product,Too long (73 chars),44
+VM Recovery Manager,VM REcovery Manager for DR v1.9.0,Too many words (6),44
+Fault Analyzer,14.1 (EOS 2024-04-30),Matches pattern: \(.*\),42
+IMS,15.2 (EOS),Matches pattern: \(.*\),42
+BACC Cognos On Cloud,IBM Cloud VPC BACC Cognos on Cloud (BCA) DEV Regression Testing,Too long (63 chars),42
+Sterling Connect Direct for z/OS,Other (Unsupported),Matches pattern: \(.*\),41
+Python for z/OS,"Open Enterprise Python for z/OS, V3.11",Too many words (6),41
+IBM i on Cloud,7.1 [EOS 30 April 2018 Need Service Extension],Too many words (8),40
+Cloud Infrastructure Center,1.2.4 for IBM Z and LinuxONE,Too many words (6),39
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS 5.1.1,Too long (52 chars),39
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS 5.0.5 (EOS 4/30/2022),Too long (64 chars),39
+IBM i on PowerVS,7.2 [EOS 30 April 2021 Need Service Extension],Too many words (8),38
+z/VSE,6.2.0 (EOS since 2023/09/30),Matches pattern: \(.*\),38
+Cloud Infrastructure Center,1.2.5 for IBM Z and LinuxONE,Too many words (6),37
+Storage Scale System Software,Storage Scale System Software Data Management Edition 5.1.9,Too long (59 chars),37
+EDB Enterprise Postgres,EDB Postgres Advanced Server (EPAS) v17.x,Matches pattern: \(.*\),35
+XL C/C++,"XL C/C++ for AIX, V13.1 (EOS 9/30/2022)",Matches pattern: \(.*\),35
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS 5.0.0 (EOS 4/30/2022),Too long (64 chars),35
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS 5.1.0,Too long (52 chars),35
+Security Verify Governance,V.10.0.2 - Identity Manager (ISIM - Container),Matches pattern: \(.*\),35
+COBOL,"Enterprise COBOL for z/OS, V6.2 (EOS, 9/30/2024)",Matches pattern: \(.*\),34
+Engineering Lifecycle Management Suite,6.0.6.1 (Ended Support 10/31/2022),Matches pattern: \(.*\),34
+Sterling Connect Direct,C:D UNIX 4.3 (Unsupported),Matches pattern: \(.*\),33
+Sterling Gentran Server,Gentran Server for Unix - 6.2.0,Too many words (6),32
+COBOL,"COBOL for Linux on x86, V1.1",Too many words (6),30
+Tivoli Network Manager,4.2.0.10 (build 106),Matches pattern: \(.*\),29
+COBOL,"COBOL for AIX, V5.1 (EOS, 4/30/2027)",Matches pattern: \(.*\),29
+EDB Enterprise Postgres,EDB Postgres Advance Server (EPAS) v11.x,Matches pattern: \(.*\),29
+Storage Scale System Software,Storage Scale System Software Data Access Edition 5.1.9,Too long (55 chars),28
+Sterling B2B Integrator,6.0.1 (not supported),Matches pattern: \(.*\),28
+Sterling Control Center,6.1.X (Unsupported),Matches pattern: \(.*\),27
+z/VM,7.1.0 (EOS),Matches pattern: \(.*\),27
+Db2 Web Query for i,2.3.0 (EOS 10/31/23),Matches pattern: \(.*\),27
+Application Discovery and Delivery Intelligence,Application Discovery and Delivery Intelligence 6.1.0,Too long (53 chars),27
+CICS Transaction Server,CICS TS 5.2 - (EOS 31 Dec 2020),Matches pattern: \(.*\),26
+VM Recovery Manager,VM Recovery Manager for HA 1.6.0,Too many words (6),26
+AIX,Early Ship Program Only - AIX,Too many words (6),26
+Sterling Connect Direct,C:D Windows 6.0 (Unsupported),Matches pattern: \(.*\),25
+Engineering Lifecycle Management Base,6.0.6.1 (Ended Support 10/31/2022),Matches pattern: \(.*\),25
+Engineering Lifecycle Management Base,7.0.1 (Ended Support 9/30/2023),Matches pattern: \(.*\),25
+Explorer for z/OS,"3.2.x (EOS, 2025-04-30)",Matches pattern: \(.*\),24
+Storage Protect Plus,"Version 10.1.16 Build: 607 Dec 16, 2024 9:02:17 PM",Too many words (9),24
+BACC DataStage,User Acceptance Testing (UAT),Matches pattern: \(.*\),24
+Sterling B2B Integrator,6.0.2 (not supported),Matches pattern: \(.*\),23
+Sterling File Gateway,6.0.3 (not supported),Matches pattern: \(.*\),23
+Storage Protect for Databases,7.1 (End of Support),Matches pattern: \(.*\),23
+BACC DataStage,Windows Terminal Services (WTS),Matches pattern: \(.*\),23
+Tivoli Network Manager,4.2.0.12 (build 128),Matches pattern: \(.*\),23
+Informix Dynamic Server,OnLine (all other versions),Matches pattern: \(.*\),22
+Storage Protect Plus,Versão 10.1.15 Construção: 198 31 de ago de 2023 01:57:49,Too long (57 chars),22
+VM Recovery Manager,VM Recovery Manager for HA v1.9.0,Too many words (6),22
+Dependency Based Build,"1.1.x (EOS, 2024-04-30)",Matches pattern: \(.*\),22
+Engineering Workflow Management,6.0.6.1 (Ended Support 10/31/2022),Matches pattern: \(.*\),21
+Engineering Workflow Management,6.0.6 (Ended Support 10/31/2022),Matches pattern: \(.*\),21
+Advanced VSAM Manager for z/OS,2.6.0 (Service Extension Only),Matches pattern: \(.*\),20
+Sterling Connect Direct,C:D Windows 4.8 (Unsupported),Matches pattern: \(.*\),20
+Sterling Transformation Extender,10.0.1 (Superseded by 10.0.3),Matches pattern: \(.*\),20
+IBM i,"7.1 and earlier [best effort, need special bid contract]",Too long (56 chars),20
+APL2,2.2.0 (EOS),Matches pattern: \(.*\),20
+Python for z/OS,"Open Enterprise Python for z/OS, V3.12",Too many words (6),20
+CICS Transaction Server,CICS/VSE TS 2.2 - (EOS 30th Sept 2023),Matches pattern: \(.*\),20
+Sterling B2B Integrator,6.0.0 (not supported),Matches pattern: \(.*\),19
+Tivoli Network Manager,4.2.0.7 (build 67),Matches pattern: \(.*\),19
+IBM i on Cloud,7.2 [EOS 30 April 2021 Need Service Extension],Too many words (8),19
+PL/I,"Enterprise PL/I for z/OS Runtime, V3+",Too many words (6),18
+z/OS,1.10.0 (EOS),Matches pattern: \(.*\),18
+Sterling Control Center,6.0.X (Unsupported),Matches pattern: \(.*\),18
+Debug for z/OS,"14.2.x (EOS, 2022-09-30)",Matches pattern: \(.*\),18
+Db2 for z/OS,10 (EOS),Matches pattern: \(.*\),18
+Engineering Workflow Management,7.0.1 (Ended Support 9/30/2023),Matches pattern: \(.*\),18
+Spectrum LSF,9.1.X (EOS),Matches pattern: \(.*\),18
+Storage Protect Plus,"Version 10.1.16 Build: 502 Jun 4, 2024 12:01:33 PM",Too many words (9),18
+Storage Scale,5.0.5 (EOS 4/30/2022),Matches pattern: \(.*\),18
+SDK for Node.js,"SDK for Node.js - z/OS, V18.0",Too many words (6),18
+Storage Scale,5.0.x (EOS 4/30/2022),Matches pattern: \(.*\),18
+Automatic Binary Optimizer,"IBM Automatic Binary Optimizer for z/OS Trial, V2.2.0",Too long (53 chars),17
+QRadar SIEM,7.2.x (EOS),Matches pattern: \(.*\),17
+Tivoli Network Manager,4.2.0.4 (build 47),Matches pattern: \(.*\),17
+SDK for Node.js,"SDK for Node.js - z/OS, V22.0",Too many words (6),17
+Storage Protect Plus,Versão 10.1.16 Construção: 330 18 de jan de 2024 23:11:16,Too long (57 chars),17
+z/OS,1.13.0 (EOS),Matches pattern: \(.*\),16
+Tivoli Network Manager,4.2.0.6 (build 62),Matches pattern: \(.*\),16
+Sterling Connect Direct for z/OS,5.2 (Unsupported),Matches pattern: \(.*\),16
+Application Performance Analyzer,"14.2.x (EOS, 2024-04-30)",Matches pattern: \(.*\),15
+IBM i,"6.1 [EOL 30 Sep 2019 no service, use documentation / forums]",Too long (60 chars),15
+Tivoli Network Manager,4.2.0.5 (build 60),Matches pattern: \(.*\),14
+Sterling Transformation Extender,10.0.3 (Support Extension Required),Matches pattern: \(.*\),14
+Sterling Secure Proxy,3.4.3 (Unsupported),Matches pattern: \(.*\),14
+Unified Key Orchestrator,Crypto Analytics Tool (CAT),Matches pattern: \(.*\),14
+IBM i,"5.4 [EOL 30 Sep 2017 no service, use documentation / forums]",Too long (60 chars),14
+DB2 Server for VSE and VM,7.5 Out-Of-Support (09-30-2023),Matches pattern: \(.*\),14
+Cloud Infrastructure Center,1.2.0 for IBM Z and LinuxONE,Too many words (6),13
+Storage Protect Plus,"Version 10.1.10 Build: 2709 Apr 25, 2022 12:36:41 PM",Too long (52 chars),13
+COBOL,"Enterprise COBOL for z/OS, V5.1 (EOS 4/30/2020)",Matches pattern: \(.*\),13
+Engineering Requirements Management DOORS Next,6.0.6 (Ended Support 10/31/2022),Matches pattern: \(.*\),12
+Storage Protect Plus,"Version 10.1.16 Build: 542 Aug 22, 2024 2:40:34 PM",Too many words (9),12
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS 5.0.5 (EOS 4/30/2022),Too long (68 chars),12
+COBOL,"Enterprise COBOL for z/OS, V6.1 (EOS, 09/30/2022)",Matches pattern: \(.*\),12
+Sterling Connect Direct,C:D i5/OS 3.7 (Unsupported),Matches pattern: \(.*\),11
+"Sterling Configure, Price, Quote",9.3 (Extended Support Only),Matches pattern: \(.*\),11
+Rational Developer,"9.5.x (EOS, 2019-05-28)",Matches pattern: \(.*\),11
+Engineering Requirements Management DOORS Next,6.0.6.1 (Ended Support 10/31/2022),Matches pattern: \(.*\),11
+z/OS,2.4.0 (EOS - Sept 2022),Matches pattern: \(.*\),11
+Open Enterprise SDK for Node.js,"SDK for Node.js - z/OS, V24.0",Too many words (6),10
+SDK for Node.js,"SDK for Node.js - z/OS, V20.0 (EOS, 4/30/2026)",Matches pattern: \(.*\),10
+XL C/C++,"XL C for AIX, V13.1 (EOS 9/30/2022)",Matches pattern: \(.*\),10
+Storage Protect for Mail,7.1 (End of Service),Matches pattern: \(.*\),10
+PL/I,"Enterprise PL/I for z/OS, V4.2 (EOS9/30/2016)",Matches pattern: \(.*\),10
+CICS TX Advanced,11.1 (EOS 31 Dec 2025),Matches pattern: \(.*\),10
+Sterling Gentran Server,Gentran Server for Windows - 5.3.0,Too many words (6),9
+Application Delivery Foundation Common Component,1.8.0 (EOS 2024-04-30),Matches pattern: \(.*\),9
+Developer for z/OS,"14.2.x (EOS, 2022-09-30)",Matches pattern: \(.*\),9
+Developer for z/OS,"14.1.x (EOS, 2021-04-30)",Matches pattern: \(.*\),9
+Storage Protect Plus,"Version 10.1.16 Build: 607 Dec 17, 2024 1:32:17 AM",Too many words (9),9
+Db2 Analytics Accelerator for z/OS,5.1.0 (EOS),Matches pattern: \(.*\),9
+Tivoli Network Manager,4.2.0.3 (build 34),Matches pattern: \(.*\),9
+Sterling Connect Direct,C:D UNIX 6.0 (Unsupported),Matches pattern: \(.*\),9
+IMS,13.0 (EOS),Matches pattern: \(.*\),9
+Spectrum Protect for ERP,7.1 (End of Service),Matches pattern: \(.*\),9
+Sterling Call Center,9.5 (Extended Support Only),Matches pattern: \(.*\),9
+Sterling Store,9.5 (Extended Support Only),Matches pattern: \(.*\),9
+Storage Protect Plus,"Version 10.1.15 Build: 164 Jul 31, 2023 7:42:54 PM",Too many words (9),9
+Engineering Lifecycle Management Base,6.0.1 (Ended Support 12/31/2020),Matches pattern: \(.*\),9
+Cloud Infrastructure Center,1.1.5 for IBM Z and LinuxONE,Too many words (6),9
+Storage Scale,5.0.4 (EOS 4/30/2022),Matches pattern: \(.*\),9
+Open Enterprise SDK for Node.js,"SDK for Node.js - z/OS, V22.0",Too many words (6),8
+Sterling Gentran Server,Gentran Server for Unix - 6.1.0,Too many words (6),8
+Blockchain Platform,2.5.2 (End of Support),Matches pattern: \(.*\),8
+Engineering Requirements Management DOORS Next,7.0.1 (Ended Support 9/30/2023),Matches pattern: \(.*\),8
+Storage Protect Plus,"Version 10.1.16 Build: 542 Aug 22, 2024 6:10:34 PM",Too many words (9),8
+XL C/C++,"XL C/C++ for Linux, V16.1 (EOS, 9/30/2024)",Matches pattern: \(.*\),8
+Engineering Workflow Management,6.0.5 (Ended Support 04/30/2021),Matches pattern: \(.*\),8
+IMS DataPropagator for z/OS,3.1.0 (EOS),Matches pattern: \(.*\),8
+Engineering Lifecycle Optimization Publishing,6.0.5 (Ended Support 04/30/2021),Matches pattern: \(.*\),8
+Storage Protect Plus,"Version 10.1.16 Build: 607 Dec 17, 2024",Too many words (7),8
+Explorer for z/OS,"3.1.x (EOS, 2024-04-30)",Matches pattern: \(.*\),8
+Rational Synergy,7.1.x (EOS),Matches pattern: \(.*\),8
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS v5.1.4,Too many words (8),8
+Engineering Lifecycle Management Base,6.0.6 (Ended Support 10/31/2022),Matches pattern: \(.*\),8
+Storage Scale,5.0.3 (EOS 4/30/2022),Matches pattern: \(.*\),8
+Tivoli Network Manager,3.9.0.5 (build 132),Matches pattern: \(.*\),8
+Z NetView,6.1.0 (EoS = 2018-09-30),Matches pattern: \(.*\),7
+Tivoli Network Manager,4.2.0.13 (Build 137),Matches pattern: \(.*\),7
+Engineering Lifecycle Management Suite,7.0.1 (Ended Support 09/30/2023),Matches pattern: \(.*\),7
+Z Decision Support,1.8.2 (EoS = 2022-04-30),Matches pattern: \(.*\),7
+Unified Key Orchestrator for Containers,UKO for Containers v3.1 (v3.1.0.5),Matches pattern: \(.*\),7
+Tivoli Network Manager,4.2.0.8 (build 84),Matches pattern: \(.*\),7
+CICS Transaction Server,CICS TS 5.1 - (EOS 1st Jul 2019),Matches pattern: \(.*\),7
+Storage Protect Plus,"Version 10.1.16 Build: 542 Aug 22, 2024 5:40:34 AM",Too many words (9),7
+Storage Protect Plus,"Version 10.1.12 Build: 400 Jan 3, 2023 4:26:36 PM",Too many words (9),7
+Python for z/OS,"Open Enterprise Python for z/OS, V3.10 (EOS, 9/30/2024)",Too long (55 chars),7
+PL/I,"Enterprise PL/I for z/OS, V5.2 (EOS, 9/30/2022)",Matches pattern: \(.*\),7
+Python for z/OS,"Open Enterprise Python for z/OS, V3.10",Too many words (6),7
+Sterling Connect Direct for z/OS,5.1 (Unsupported),Matches pattern: \(.*\),7
+SDK for Node.js,"SDK for Node.js - z/OS, V20.0",Too many words (6),7
+Storage Scale Erasure Code Edition,Spectrum Scale Data Access Edition for ESS 5.1.0,Too many words (8),7
+Storage Protect Plus,"Version 10.1.16 Build: 542 Aug 22, 2024",Too many words (7),6
+RMF Reporter,2.4.0 (EOS - Sept 2024),Matches pattern: \(.*\),6
+z Development and Test Environment,"12.0.x (EOS, 2022-04-30)",Matches pattern: \(.*\),6
+IMS,12.0 (EOS),Matches pattern: \(.*\),6
+Sterling File Gateway,6.0.2 (not supported),Matches pattern: \(.*\),6
+Tivoli Network Manager,4.2.0.9 (build 99),Matches pattern: \(.*\),6
+Open Enterprise SDK for Node.js,"SDK for Node.js - z/OS, V20.0 (EOS, 4/30/2026)",Matches pattern: \(.*\),6
+Engineering Lifecycle Management Extended SaaS,7.0.1 (Ended Support 09/30/2023),Matches pattern: \(.*\),6
+Enterprise Performance Management,EPM - IBM Consulting Planning Cube,Too many words (6),6
+Engineering Requirements Management DOORS Next,6.0.5 (Ended Support 04/30/2021),Matches pattern: \(.*\),6
+Storage Protect Plus,"Version 10.1.16 Build: 607 Dec 16, 2024 3:02:17 PM",Too many words (9),6
+Rational Developer,"9.0.x (EOS, 2019-04-30)",Matches pattern: \(.*\),6
+PL/I,"PL/I for AIX, V3.1 (EOS, 4/30/2027)",Matches pattern: \(.*\),6
+Rational Developer,"8.5.x (EOS, 2017-09-30)",Matches pattern: \(.*\),6
+Verify Identity Governance,V.11.0.0 - Identity Governance (IGI),Matches pattern: \(.*\),6
+Verify Identity Governance,V.10.0.2 - Identity Manager (ISIM),Matches pattern: \(.*\),6
+PowerHA SystemMirror,7.1 (EOS 4/30/2023),Matches pattern: \(.*\),6
+Rational Change,5.2.x (EOS),Matches pattern: \(.*\),6
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS 5.0.4 (EOS 4/30/2022),Too long (68 chars),6
+Storage Protect Plus,"Version 10.1.10 Build: 2772 Oct 3, 2022 5:00:24 PM",Too many words (9),6
+Content Manager for iSeries,CM for iSeries R5.3 with valid service extension,Too many words (8),6
+IBM i on PowerVS,"7.1 [EOS 30 April 2018 No service, use documentation / forums",Too long (61 chars),6
+COBOL,"COBOL for AIX, V4.1 (EOS 4/30/2018)",Matches pattern: \(.*\),6
+Engineering Workflow Management,6.0.3 (Ended Support 12/31/2020),Matches pattern: \(.*\),6
+Reliable Scalable Cluster Technology (RSCT),7.1 (EOS 4/30/2023),Matches pattern: \(.*\),6
+Storage Protect Plus,"Version 10.1.15 Build: 202 Sep 25, 2023 1:54:29 PM",Too many words (9),6
+IBM i on Cloud,"7.1 [EOS 30 April 2018 No service, use documentation / forums",Too long (61 chars),6
+TXSeries for Multiplatforms,8.1 - (EOS 30 Apr 2020),Matches pattern: \(.*\),6
+Storage Scale,5.0.2 (EOS 4/30/2022),Matches pattern: \(.*\),6
+Storage Protect Plus,"Version 10.1.16 Build: 607 Dec 16, 2024 10:02:17 PM",Too long (51 chars),6
+VM Recovery Manager,VM Recovery Manager DR v1.5.0 [EOS: 04/30/2025],Too many words (7),6
+CL/SuperSession,1.4.7 (EOS),Matches pattern: \(.*\),5
+Python AI Toolkit for z/OS,"Open Enterprise Python for z/OS, V3.12 (EOS, 4/30/2026)",Too long (55 chars),5
+Maximo Application Suite on Cloud,9.0 (9.1 Feature Channel),Matches pattern: \(.*\),5
+Informix Dynamic Server,OnLine Extended Edition 5.20 (Linux only),Matches pattern: \(.*\),5
+XL C/C++,"Open XL C/C++ for Linux on Power, V17.1.1",Too many words (8),5
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS 5.0.4 (EOS 4/30/2022),Too long (64 chars),5
+z Workload Scheduler,Older (extension required),Matches pattern: \(.*\),5
+TXSeries for Multiplatforms,8.1 (EOS 30 Apr 2020),Matches pattern: \(.*\),5
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS 5.0.1 (EOS 4/30/2022),Too long (64 chars),5
+WebSphere Application Server for IBM i,"7.0 [EOS} No Support , search docs and forums",Too many words (9),5
+Sterling B2B Integrator,5.2.5 (not supported),Matches pattern: \(.*\),5
+Engineering Lifecycle Optimization Publishing,6.0.6.1 (Ended Support 10/31/2022),Matches pattern: \(.*\),5
+Content Manager,8.5 (Out of Support),Matches pattern: \(.*\),5
+Storage Scale,5.0.0 (EOS 4/30/2022),Matches pattern: \(.*\),5
+Open Enterprise SDK for Go,"Open Enterprise SDK for Go, V1.22",Too many words (6),5
+Application Delivery Foundation Common Component,180 (EOS 2024-04-30),Matches pattern: \(.*\),5
+Storage Scale,5.0.1 Spectrum Scale RAID for x86 GPFS Storage Server (Lenovo) [EOS 4/30/2022],Too long (78 chars),5
+Informix Dynamic Server,Standard Engine (SE) 7.25,Matches pattern: \(.*\),5
+Hardware Management Console Application,7.1 (EOS 4/30/2023),Matches pattern: \(.*\),4
+CICS Transaction Gateway,8.1 - EOS 30 Sept 2017,Too many words (6),4
+AIX,Early Ship Program - Graphics Card,Too many words (6),4
+Storage Protect Plus,Versão 10.1.16 Construção: 502 4 de jun de 2024 13:01:33,Too long (56 chars),4
+Storage Protect Plus,"10.1.16 Build: 607 Dec 17, 2024",Too many words (6),4
+Cloud Infrastructure Center,1.1.6 for IBM Z and LinuxONE,Too many words (6),4
+Watson Explorer,IBM Watson Explorer Deep Analytics Edition V12.0.3.15 (5725-I17),Too long (64 chars),4
+z Workload Scheduler,8.6 (extension required),Matches pattern: \(.*\),4
+Open Enterprise SDK for Go,"Open Enterprise SDK for Go, V1.23",Too many words (6),4
+App Connect Professional,"(For older versions, please select the Cast Iron product)",Too long (57 chars),4
+Fault Analyzer,13.1 (EOS 2019-09-30),Matches pattern: \(.*\),4
+CICS Transaction Gateway,9.2 (z/OS),Matches pattern: \(.*\),4
+Storage Protect Plus,10.1.16.3 (10.1.16-542),Matches pattern: \(.*\),4
+Engineering Lifecycle Management Base SaaS,7.0.1 (Ended Support 9/30/2023),Matches pattern: \(.*\),4
+Storage Protect Plus,"Version 10.1.16 Build: 502 Jun 4, 2024 5:01:33 PM",Too many words (9),4
+COBOL,3.2 (RBP clients only),Matches pattern: \(.*\),4
+COBOL,"Enterprise COBOL Developer Trial for z/OS, V6.3 (EOS, 9/30/2023)",Too long (64 chars),4
+Enterprise Data Platform,EDP: Unified Ingestion Framework (UIF),Matches pattern: \(.*\),4
+QRadar Applications,7.2.x (EOS),Matches pattern: \(.*\),4
+OMEGAMON Performance Management Suite,5.3.0 (Note:  09/30/2020 EoS),Matches pattern: \(.*\),4
+Red Hat Enterprise Linux Server,Early Ship Program Only - Linux,Too many words (6),4
+Storage Protect for Space Management,7.1 (End of Service),Matches pattern: \(.*\),4
+CICS Transaction Gateway,9.0 - EOS 30 April 2020,Too many words (6),4
+Sterling Partner Engagement Manager,6.0.2 (not supported),Matches pattern: \(.*\),4
+Storage Protect Plus,"Version 10.1.15 Build: 148 Jun 5, 2023 3:40:44 PM",Too many words (9),4
+Engineering Lifecycle Management Base SaaS,7.0.0 (Ended Support 10/31/2022),Matches pattern: \(.*\),4
+Security ReaQta,0.80.1 (Linux),Matches pattern: \(.*\),4
+Cognos Controller,10.2.1 (EOS),Matches pattern: \(.*\),4
+Storage Protect Plus,Version 10.1.15 Build: 164 Jul 31,Too many words (6),4
+Storage Protect Plus,"Version 10.1.16 Build: 330 Jan 19, 2024 3:11:16 AM",Too many words (9),4
+Sterling B2B Integrator,5.2.1 (not supported),Matches pattern: \(.*\),4
+z/VM,6.4.0 (EOS),Matches pattern: \(.*\),4
+Rational Developer,"9.1.x (EOS, 2019-04-30)",Matches pattern: \(.*\),4
+Storage Protect Plus,"Version 10.1.16 Build: 330 Jan 18, 2024 9:11:16 PM",Too many words (9),3
+z Open Unit Test,"2.0.x (EOS, 2021-04-30)",Matches pattern: \(.*\),3
+Storage Scale Erasure Code Edition,Storage Scale System Software Data Management Edition v5.1.9,Too long (60 chars),3
+Storage Protect Plus,Versión 10.1.16 Compilación: 470 6 de mar. de 2024 18:31:39,Too long (59 chars),3
+SDK for Node.js,"SDK for Node.js - z/OS, V18.0 (EOS, 4/30/2025)",Matches pattern: \(.*\),3
+z Development and Test Environment,"9.0.x (EOS, 2018-09-30)",Matches pattern: \(.*\),3
+Dependency Based Build,"1.0.x (EOS, 2023-04-30)",Matches pattern: \(.*\),3
+Python for z/OS,"Open Enterprise Python for z/OS, V3.9 (EOS, 4/30/2024)",Too long (54 chars),3
+QRadar Log Manager,7.2.x (EOS),Matches pattern: \(.*\),3
+z/VSE,6.2.0 (unsupported  since 2024/12/31),Matches pattern: \(.*\),3
+Storage Protect Plus,Versão 10.1.15 Construção: 198 31 de ago de 2023,Too many words (9),3
+Storage Protect Plus,"Version 10.1.14 Build: 217 May 2, 2023 4:58:43 PM",Too many words (9),3
+Storage Protect Plus,"Version 10.1.10 Build: 2772 Oct 3, 2022 8:30:24 PM",Too many words (9),3
+IMS Fast Path Solution Pack for z/OS,15.3 (EOS 31 August 2026),Matches pattern: \(.*\),3
+Storage Protect Plus,Version 10.1.16 Build: 470 6. März 2024 19:31:39,Too many words (8),3
+Storage Protect Plus,"Version 10.1.16 Build: 502 Jun 4, 2024",Too many words (7),3
+Application Performance Analyzer,1.8.0 (EOS 2024-04-30),Matches pattern: \(.*\),3
+Z Open Automation Utilities,1.1.0 (EOS),Matches pattern: \(.*\),3
+Sterling Connect Direct,C:D HP NonStop 3.5 (Unsupported),Matches pattern: \(.*\),3
+IBM i Lab Services,Gentran Server for iSeries - 3.6.0,Too many words (6),3
+Verify Identity Governance,V.11.0.0 - Identity Manager (ISIM - Container),Matches pattern: \(.*\),3
+z Workload Scheduler,2.3.0 (EOS - Sept 2022),Matches pattern: \(.*\),3
+Storage Scale System Software,5.0.1 Spectrum Scale RAID for x86 GPFS Storage Server (Lenovo) [EOS 4/30/2022],Too long (78 chars),3
+Engineering Lifecycle Management Extended SaaS,6.0.5 (Ended Support 10/31/2022),Matches pattern: \(.*\),3
+Fault Analyzer,14.1  (EOS 2024-04-30),Matches pattern: \(.*\),3
+Verify Identity Access,V.10.0.2 - Identity Manager (ISIM - Software),Matches pattern: \(.*\),3
+IBM i on PowerVS,"7.1 and earlier [best effort, need special bid contract]",Too long (56 chars),3
+Open Enterprise SDK for Node.js,"SDK for Node.js - z/OS, V18.0 (EOS, 4/30/2025)",Matches pattern: \(.*\),3
+Z Decision Support,1.8.1 (EoS = 2022-04-30),Matches pattern: \(.*\),3
+Netcool/OMNIbus,4.2.0.19 (Build 253),Matches pattern: \(.*\),3
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS 5.0.2 (EOS 4/30/2022),Too long (64 chars),3
+Storage Protect Plus,"Version 10.1.15 Build: 198 Aug 31, 2023 1:57:49 AM",Too many words (9),3
+Key Lifecycle Manager,"Other Non-DS8000 (includes SVC, XIV, FlashSystems & Storwize)",Too long (61 chars),3
+Storage Protect Plus,Version 10.1.16 Build: 607 16. Dez. 2024 21:02:17,Too many words (8),3
+Netcool/OMNIbus,4.2.0.3 (build 34),Matches pattern: \(.*\),3
+License Metric Tool,6.0.2 (not supported),Matches pattern: \(.*\),3
+Storage Protect Plus,"Version: Version 10.1.16 Build: 607 Dec 16, 2024 9:02:17 PM",Too long (59 chars),3
+Tivoli Composite Application Manager for Transactions for z/OS,7.3.0 (Note:  04/30/2020 EoS),Matches pattern: \(.*\),3
+WebSphere Application Server,V.10.0.2 - Identity Manager (ISIM - Software),Matches pattern: \(.*\),3
+Storage Protect Plus,Version 10.1.16 Build: 607 Dec 17,Too many words (6),3
+Storage Scale System Software,Spectrum Scale Data Access Edition for ESS 5.0.3 (EOS 4/30/2022),Too long (64 chars),3
+Tivoli Network Manager,4.2.0.1 (build 19),Matches pattern: \(.*\),3
+OMEGAMON for Messaging on z/OS,7.1.0 (Note:  10/31/2019 EoS),Matches pattern: \(.*\),3
+XL C/C++,"XL C/C++ for AIX, V11.1 (EOS 4/30/2019)",Matches pattern: \(.*\),3
+Developer for z/OS HLL/WB,"15.0.x (EOS, 2024-04-30)",Matches pattern: \(.*\),3
+Engineering Test Management,6.0.6.1 (Ended Support 10/31/2022),Matches pattern: \(.*\),3
+PL/I,"Enterprise PL/I for z/OS, V4.5 (EOS 4/30/2020)",Matches pattern: \(.*\),3
+z/OS,1.12.0 (EOS),Matches pattern: \(.*\),3
+Content Navigator and Content Navigator Mobile App,2.0.3.8 (Out Of Support),Matches pattern: \(.*\),3
+SDK for Node.js,"SDK for Node.js - z/OS, V16.0",Too many words (6),3
+Rational Licensing,7.3 [EOS 30 Sep 2023 Need Service Extension],Too many words (8),3
+Sterling File Gateway,2.2.6 (not supported),Matches pattern: \(.*\),3
+Storage Protect Plus,Version 10.1.15 Build: 214 Oct 27,Too many words (6),3
+Storage Protect Plus,"Version 10.1.15 Build: 214 Oct 27, 2023 4:27:43 PM",Too many words (9),3
+IMS,11.0 (EOS),Matches pattern: \(.*\),3
+Storage Scale Erasure Code Edition,Spectrum Scale Data Access Edition for ESS 5.0.0 (EOS 4/30/2022),Too long (64 chars),3
+Verify Identity Governance,V.11.0.0 - Identity Manager (ISIM - Appliance),Matches pattern: \(.*\),3
+XL Fortran,"Open XL Fortran for AIX, V17.1",Too many words (6),2
+Storage Protect Plus,"Version 10.1.17 Build: 152 Mar 20, 2025 3:35:44 PM",Too many words (9),2
+Watson Explorer,12.0.3 (FP16),Matches pattern: \(.*\),2
+Storage Protect Plus,Version 10.1.16 Build: 607 16 de dic. de 2024 16:02:17,Too long (54 chars),2
+Watson Explorer,12.0.3.9 (12.9.117+863),Matches pattern: \(.*\),2
+Engineering Test Management,6.0.6 (Ended Support 10/31/2022),Matches pattern: \(.*\),2
+Storage Scale Erasure Code Edition,5.0.4 (EOS 4/30/2022),Matches pattern: \(.*\),2
+Engineering Test Management,7.0.0 (Ended Support 10/31/2022),Matches pattern: \(.*\),2
+QRadar SIEM SaaS,7.2.x (EOS),Matches pattern: \(.*\),2
+Sterling File Gateway,C:D UNIX 6.0 (Unsupported),Matches pattern: \(.*\),2
+Z Open Automation Utilities,1.0.3 (EOS),Matches pattern: \(.*\),2
+Storage Protect Plus,IBM Spectrum Protect Plus  10.1.15 build [ 148 ],Too many words (9),2
+PowerVC for Private Cloud,Early Ship Program Only - PowerVC for Private Cloud,Too long (51 chars),2
+Storage Protect Plus,"Version 10.1.16 Build: 607 Dec 16, 2024 8:02:17 PM",Too many words (9),2
+PowerVM / VIOS,VM Recovery Manager for DR v1.8.0,Too many words (6),2
+Sterling Connect Direct,C:D OpenVMS 3.5 (Unsupported),Matches pattern: \(.*\),2
+Storage Scale,Spectrum Scale Data Access Edition for ESS v5.1.5,Too many words (8),2
+Storage Protect Plus,"IBM Spectrum Protect Plus Version 10.1.11 Build: 3010 Jun 23, 2022",Too long (66 chars),2
+Storage Protect Plus,"Version 10.1.16 Build: 607 Dec 17,",Too many words (6),2
+Storage Scale,Storage Scale System Data Access Edition v5.2.3,Too many words (7),2
+COBOL,2.3.0 (EOS - Sept 2022),Matches pattern: \(.*\),2
+COBOL,"COBOL Runtime Environment for AIX, V5.1 (EOS, 4/30/2027)",Too long (56 chars),2
+SAN Volume Controller,7.3 [EOS 30 Sep 2023 Need Service Extension],Too many words (8),2
+Db2 Analytics Accelerator for z/OS,4.1.0 (EOS),Matches pattern: \(.*\),2
+z/OS,"Enterprise COBOL for z/OS, V6.3 (EOS, 9/30/2025)",Matches pattern: \(.*\),2
+Db2 Analytics Accelerator for z/OS,7.1.0 (EOS),Matches pattern: \(.*\),2
+Storage Protect Plus,"10.1.16 Build: 607 Dec 17, 2024 1:32:17 AM",Too many words (8),2
+WebSphere Application Server,9.5 (Extended Support Only),Matches pattern: \(.*\),2
+Storage Protect Plus,"Version 10.1.16 Build: 607 Dec 17, 202",Too many words (7),2
+Developer for z/OS,"16.0.x (EOS, 2026-04-30)",Matches pattern: \(.*\),2
+Screen Definition Facility II,CICS TS 5.5 - EOS 30 Sept 2025,Too many words (8),2
+Developer for z/OS,"9.1.x (EOS, 2019-04-30)",Matches pattern: \(.*\),2
+PL/I,3.2 (RBP clients only),Matches pattern: \(.*\),2
+Storage Scale,7.1 (EOS 4/30/2023),Matches pattern: \(.*\),2
+RMF Reporter,3.2 (RBP clients only),Matches pattern: \(.*\),2
+Storage Protect Plus,"Version 10.1.16 Build: 607 Dec 17, 2024 1:32:17",Too many words (8),2
+Storage Protect Plus,"Version 10.1.16 Build: 502 Jun 4, 2024 9:31:33 PM",Too many words (9),2
+z/OS,"Open Enterprise Python for z/OS, V3.13",Too many words (6),2
+AIX on PowerVS,Early Ship Program Only - AIX on PowerVS,Too many words (8),2
+DataRefresher,1.1.0 (EOS),Matches pattern: \(.*\),2
+CICS Transaction Gateway,9.1 (Distributed) - EOS 30 April 2024,Matches pattern: \(.*\),2
+Storage Protect Plus,"Version 10.1.16 Build: 542 Aug 22, 2024 1:40:34 PM",Too many words (9),2
+Db2 Analytics Accelerator for z/OS,510 (EOS),Matches pattern: \(.*\),2
+Storage Protect Plus,"Version 10.1.10 Build: 2773 Nov 29, 2022 8:54:21 AM",Too long (51 chars),2
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS 5.0.1 (EOS 4/30/2022),Too long (68 chars),2
+Storage Protect Plus,"Version 10.1.17 Build: 271 Jun 12, 2025 4:12:46 PM",Too many words (9),2
+PowerVM / VIOS,7.1 (EOS 4/30/2023),Matches pattern: \(.*\),2
+Db2 for z/OS,"Open Enterprise Python for z/OS, V3.13",Too many words (6),2
+Workload Scheduler Distributed Agent for z/OS,8.6 (extension required),Matches pattern: \(.*\),2
+WebSphere Application Server,9.0 ND - Please open case with the 'Websphere Application Server' product,Too long (73 chars),2
+QRadar Appliance Hardware,7.2.x (EOS),Matches pattern: \(.*\),2
+CICS Transaction Gateway,9.1 (z/OS) - EOS 30 April 2022,Matches pattern: \(.*\),2
+On Demand Consulting for Analytics,Watson Explorer (v12+),Matches pattern: \(.*\),2
+Planning Analytics Local,10.2.1 (TM1 EOS/CS),Matches pattern: \(.*\),2
+Application Performance Analyzer,"14.1.x (EOS, 2021-04-30)",Matches pattern: \(.*\),2
+Debug for z/OS,"12.1.x (EOS, 2018-02-28)",Matches pattern: \(.*\),2
+Storage Protect Plus,Versión 10.1.15 Compilación: 214 27 de oct. de 2023 17:27:43,Too long (60 chars),2
+Content Manager,8.4 (Out of Support),Matches pattern: \(.*\),2
+Storage Scale Erasure Code Edition,5.0.3 (EOS 4/30/2022),Matches pattern: \(.*\),2
+Storage Protect Plus,"Version 10.1.15 Build: 214 Oct 27, 2023 6:27:43 PM",Too many words (9),2
+Storage Scale,5.0.1 (EOS 4/30/2022),Matches pattern: \(.*\),2
+Sterling B2B Integrator,5.2.4 (not supported),Matches pattern: \(.*\),2
+Debug for z/OS,"14.0.x (EOS, 2019-09-30)",Matches pattern: \(.*\),2
+SUSE Linux Enterprise Server,Early Ship Program Only - SLES,Too many words (6),2
+z/OS,1.08.0 (EOS),Matches pattern: \(.*\),2
+XL Fortran,"XL Fortran for AIX, V15.1 (EOS, 09/30/2022)",Matches pattern: \(.*\),2
+Sterling Call Center,9.3 (Extended Support Only),Matches pattern: \(.*\),2
+Cognos Planning,10.1.1 (EOS),Matches pattern: \(.*\),2
+Engineering Workflow Management,6.0.4 (Ended Support 04/30/2021),Matches pattern: \(.*\),2
+Engineering Workflow Management,6.0.0 (Ended Support 12/31/2020),Matches pattern: \(.*\),2
+Engineering Test Management,7.0.1 (Ended Support 9/30/2023),Matches pattern: \(.*\),2
+"ACF/VTAM (VM,VSE)",4.2.0 z/VSE (EOS since 2023/09/30),Matches pattern: \(.*\),2
+RMF Reporter,2.2.0 (EOS - Sept 2020),Matches pattern: \(.*\),2
+Storage Protect Plus,"Version 10.1.15 Build: 202 Sep 25, 2023 2:54:29 PM",Too many words (9),2
+TCP/IP FOR VSE,TCP/IP for z/VSE 2.2 (EOS since 2023/09/30),Matches pattern: \(.*\),2
+IMS,14.1 (EOS),Matches pattern: \(.*\),2
+SDK for Node.js,"SDK for Node.js - z/OS, V8.0 (EOS, 9/30/2021)",Matches pattern: \(.*\),2
+Storage Protect Plus,Versión 10.1.16 Compilación: 542 22 de ago. de 2024 13:40:34,Too long (60 chars),2
+Enterprise Performance Management,EPM - Enterprise Reference Data Manager (ERDM),Matches pattern: \(.*\),2
+Storage Scale Erasure Code Edition,Storage Scale System Software Data Access Edition v5.1.9,Too long (56 chars),2
+Storage Protect Plus,Versão 10.1.16 Construção: 542 22 de ago de 2024 09:40:34,Too long (57 chars),2
+Z OMEGAMON AI for CICS,5.1.0 (Note:  10/31/2019 EoS),Matches pattern: \(.*\),2
+Workload Scheduler Distributed Agent for z/OS,9.3 (extension required),Matches pattern: \(.*\),2
+z/OS,"Open Enterprise Python for z/OS, V3.12 (EOS, 4/30/2026)",Too long (55 chars),2
+Storage Scale,Spectrum Scale Data Access Edition for ESS 5.1.1,Too many words (8),2
+Storage Protect Plus,"Version 10.1.16 Build: 330 Jan 19, 2024 2:11:16 AM",Too many words (9),2
+Storage Protect Plus,Unable to add vSnap servers from DR site – incorrect username or password error,Too long (79 chars),2
+Tivoli Netcool Configuration Manager,4.2.0.23 (Build 361),Matches pattern: \(.*\),2
+Storage Protect Plus,"10.1.16 Build: 607 Dec 16, 2024 10:02:17 PM",Too many words (8),2
+Informix Dynamic Server,XPS 8.x (all versions),Matches pattern: \(.*\),2
+Storage Protect Plus,IBM Spectrum Protect Plus 10.1.13 Build: 209,Too many words (7),2
+Key Lifecycle Manager,Storage Scale System Data Management Edition v5.2.2,Too long (51 chars),2
+WebSphere Application Server,7.1 (EOS 4/30/2023),Matches pattern: \(.*\),2
+Storage Protect Plus,Version 10.1.7 Build: 3043 30. Okt. 2020 17:41:45,Too many words (8),2
+SPSS Licensing,Faculty Pack for SPSS Statistics Premium v31,Too many words (7),2
+z/OS,"16.0.x (EOS, 2026-04-30)",Matches pattern: \(.*\),1
+Storage Protect Plus,Version 10.1.16 Build: 607 16 de dic. de 2024 15:02:17,Too long (54 chars),1
+Watson Explorer,12.0.3.21 - Module Release Version	 12.10.104+145,Too many words (6),1
+Storage Protect Plus,Version 10.1.16 Build: 502 4 de jun. de 2024 13:01:33,Too long (53 chars),1
+Engineering Workflow Management,7.0.0 (Ended Support 10/31/2022),Matches pattern: \(.*\),1
+z Workload Scheduler,9.1 (extension required),Matches pattern: \(.*\),1
+Watson Explorer,12.0.3.19-WS-WatsonExplorer-DAEAnalytical-Linux-FP019,Too long (53 chars),1
+AFP Toolbox for MVS,2.4.0 (EOS - Sept 2024),Matches pattern: \(.*\),1
+Open Enterprise SDK for Go,"Open Enterprise SDK for Go, V1.25",Too many words (6),1
+FlashSystem 5000,7.1 [EOS 30 April 2018 Need Service Extension],Too many words (8),1
+CICS Transaction Server,CICS TS 4.2  - (EOS 30 Sep 2018),Matches pattern: \(.*\),1
+License Metric Tool,10.2.0 (EOS),Matches pattern: \(.*\),1
+Hardware Management Console Application,7.3 [EOS 30 Sep 2023 Need Service Extension],Too many words (8),1
+Application Discovery and Delivery Intelligence,"Application Discovery and Delivery Intelligence 6.0.0 (EOS, 2023-09-30)",Too long (71 chars),1
+Engineering Lifecycle Management Base,6.0.3 (Ended Support 12/31/2020),Matches pattern: \(.*\),1
+Planning Analytics Local,10.2.2 (TM1 EOS/CS),Matches pattern: \(.*\),1
+XL C/C++,z/OS XL C/C++ V2R2 (EOS 9/30/2020),Matches pattern: \(.*\),1
+COBOL,"Enterprise COBOL Developer Trial for z/OS, V6.3",Too many words (7),1
+PL/I,"Enterprise PL/I for z/OS, V5.1(EOS, 9/30/2022)",Matches pattern: \(.*\),1
+Storage Protect Plus,"10.1.10 Build: 2709 Apr 25, 2022 5:36:41 PM",Too many words (8),1
+Storage Protect Plus,"Version 10.1.13 Build: 194 Nov 30, 2022 11:02:20 PM",Too long (51 chars),1
+XL C/C++,"XL C for AIX, V12.1 (EOS 4/30/2020)",Matches pattern: \(.*\),1
+Storage Protect Plus,Spectrum Protect Plus Version 10.1.7 Build:3103,Too many words (6),1
+Spectrum Scale for DSS (Distributed Storage Solutions),5.0.4 (EOS 4/30/2022),Matches pattern: \(.*\),1
+Storage Scale Erasure Code Edition,5.0.2 (EOS 4/30/2022),Matches pattern: \(.*\),1
+XL C/C++,"XL C/C++ for AIX, V12.1 (EOS 4/30/2020)",Matches pattern: \(.*\),1
+Storage Protect Plus,"Version 10.1.16 Build: 470 Mar 7, 2024 12:01:39 AM",Too many words (9),1
+COBOL,"Enterprise COBOL for z/OS, V5.2 (EOS 4/30/2020)",Matches pattern: \(.*\),1
+AIX on Cloud,"Open Enterprise Python for z/OS, V3.11",Too many words (6),1
+XL C/C++,"XL C/C++ for Linux on z Systems, V1.1 (EOS 9/30/2018)",Too long (53 chars),1
+Storage Protect Plus,(the recommended version),Matches pattern: \(.*\),1
+Db2 Connect,7.3 [EOS 30 September 2023 Need Service Extension],Too many words (8),1
+Spectrum Scale for DSS-G (Distributed Storage Solutions),5.0.4 (EOS 4/30/2022),Matches pattern: \(.*\),1
+Open Enterprise SDK for Go,"Open Enterprise SDK for Go, V1.19 (EOS, 4/30/2025)",Matches pattern: \(.*\),1
+File Manager,13.1  (EOS 2019-09-30),Matches pattern: \(.*\),1
+Video Analytics,1.0.6 (Video Analytics),Matches pattern: \(.*\),1
+Cloud Infrastructure Center,1.1.4 for IBM Z and LinuxONE,Too many words (6),1
+Storage Protect Plus,"Version 10.1.12 Build: 400 Jan 3, 2023 7:26:36 PM",Too many words (9),1
+Storage Protect Plus,"10.1.15 Build: 214 Oct 27, 2023 5:27:43 PM",Too many words (8),1
+Storage Protect Plus,IBM Spectrum Protect Plus version 10.1.11,Too many words (6),1
+VM Recovery Manager,VM Recovery Manager for DR v1.4.0,Too many words (6),1
+Sterling Partner Engagement Manager,6.1.0 (not supported),Matches pattern: \(.*\),1
+COBOL,"COBOL Runtime Environment for AIX, V5.1",Too many words (6),1
+Counter Fraud Management,2.0.0.1 (EOS),Matches pattern: \(.*\),1
+Storage Protect Plus,"Version 10.1.16 Build: 502 Jun 4, 2024 6:01:33 PM",Too many words (9),1
+Storage Protect Plus,IBM Spectrum Protect Plus version 10.1.6-2045,Too many words (6),1
+CICS Transaction Gateway,8.1 - (EOS 30 Sep 2017),Matches pattern: \(.*\),1
+Engineering Lifecycle Optimization Publishing,7.0.1 (Ended Support 9/30/2023),Matches pattern: \(.*\),1
+Storage Protect Plus,SPP version - Version 10.1.16 Build: 502,Too many words (7),1
+Storage Protect Plus,"Version 10.1.15 Build: 198 Aug 31, 2023 10:27:49 AM",Too long (51 chars),1
+PowerVM / VIOS,7.2 [EOS 30 April 2021 Need Service Extension],Too many words (8),1
+MQ Appliance,7.3 [EOS 30 September 2023 Need Service Extension],Too many words (8),1
+Security Verify Directory,V.10.0.0 - Identity Manager (ISIM - Appliance),Matches pattern: \(.*\),1
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS 5.0.0 (EOS 4/30/2022),Too long (68 chars),1
+Storage Protect Plus,"Version 10.1.15 Build: 214 Oct 27, 2023 12:27:43 PM",Too long (51 chars),1
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS 5.0.2 (EOS 4/30/2022),Too long (68 chars),1
+Storage Protect Plus,Version 10.1.16 Build: 502 4. Juni 2024 18:01:33,Too many words (8),1
+Storage Protect Plus,VSNAP VERSION: 10.1.16-105 // Version 10.1.16 Build: 542,Too long (56 chars),1
+Storage Protect Plus,Version 10.1.16 Build: 502 Jun 4,Too many words (6),1
+Tivoli Monitoring,7.1 (EOS 4/30/2023),Matches pattern: \(.*\),1
+Storage Scale,Storage Scale System Software Data Management Edition v5.1.9,Too long (60 chars),1
+Storwize V7000,VM Recovery Manager for DR v1.8.0,Too many words (6),1
+Sterling Secure Proxy,3.4.2 (Unsupported),Matches pattern: \(.*\),1
+Netcool/OMNIbus,4.2.0.12 (build 128),Matches pattern: \(.*\),1
+Content Manager for iSeries,WAF 5.3 with valid service extension,Too many words (6),1
+XL C/C++,"XL C/C++ for Linux, V13.1 (EOS 4/30/2022)",Matches pattern: \(.*\),1
+Storage Protect,7.1.1.0 (End of Support),Matches pattern: \(.*\),1
+Cognos TM1,10.2.0 (EOS),Matches pattern: \(.*\),1
+Storage Protect,7.1.4.100 (End of Support),Matches pattern: \(.*\),1
+XL C/C++,"XL C for AIX, V11.1 (EOS 4/30/2019)",Matches pattern: \(.*\),1
+WebSphere Application Server,V.10.0.0 - Identity Manager (ISIM - Software),Matches pattern: \(.*\),1
+Netcool/OMNIbus,4.2.0.8 (build 84),Matches pattern: \(.*\),1
+Python for z/OS,"Open Enterprise Python for z/OS, V3.8 (EOS, 9/30/2022)",Too long (54 chars),1
+Security ReaQta,1.0.0 (MacOS),Matches pattern: \(.*\),1
+BACC Cognos Alpha,User Acceptance Testing (UAT),Matches pattern: \(.*\),1
+Tivoli Monitoring,4.2.0.5 (build 60),Matches pattern: \(.*\),1
+Python for z/OS,"Open Enterprise SDK for Go, V1.22",Too many words (6),1
+Storage Scale System Software,Spectrum Scale Data Management Edition for ESS 5.0.3 (EOS 4/30/2022),Too long (68 chars),1
+Engineering Lifecycle Management Base,6.0.4 (Ended Support 04/30/2021),Matches pattern: \(.*\),1
+XL Fortran,"XL Fortran for Linux, V16.1 (EOS, 9/30/2024)",Matches pattern: \(.*\),1
+Storage Scale Erasure Code Edition,Storage Scale Data Management Edition for IBM Storage Scale System v5.1.8,Too long (73 chars),1
+Storage Scale Erasure Code Edition,Spectrum Scale Data Access Edition for ESS 5.0.5 (EOS 4/30/2022),Too long (64 chars),1
+Counter Fraud Management,2.0.0.3 (EOS),Matches pattern: \(.*\),1
+Storage Protect Plus,CTGGA0605 Unable to find replication target for storage controller 2104,Too long (71 chars),1
+Sterling B2B Integrator,5.2.2 (not supported),Matches pattern: \(.*\),1
+Storage Protect Plus,IBM SPP version Version 10.1.16 Build: 502,Too many words (7),1
+Storage Protect Plus,Version 10.1.16 Build: 542 22. Aug. 2024 14:40:34,Too many words (8),1
+AIX,Early Ship Program Only - PowerVM,Too many words (6),1
+Verify Identity Governance,V.11.0.0 - Identity Manager (ISIM - Software),Matches pattern: \(.*\),1
+Engineering Lifecycle Optimization Engineering Insights,6.0.5  (Ended Support 04/30/2021),Matches pattern: \(.*\),1
+Watson Explorer,IBM Watson Explorer Deep Analytics Edition V12.0.3.13 (5725-I17),Too long (64 chars),1
+Watson Explorer,12.0.3.16-WS-WatsonExplorer-DAEAnalytical-Windows-FP016,Too long (55 chars),1
+z/OS,1.11.0 (EOS),Matches pattern: \(.*\),1
+IMS,9.1 (EOS),Matches pattern: \(.*\),1
+Security ReaQta,1.0.1 (MacOS),Matches pattern: \(.*\),1
+Storage Protect Plus,10.1.10 Build 2768 Jul 13 2022 3:59:09 PM,Too many words (8),1
+Sterling Gentran Server,Gentran Server for Windows - 5.2.J,Too many words (6),1
+Storage Protect Plus,Storage Protect Plus Version 10.1.16 Build: 502,Too many words (7),1
+Engineering Requirements Management DOORS Next,7.0.0 (Ended Support 10/31/2022),Matches pattern: \(.*\),1
+IMS Index Builder for z/OS,15.2 (EOS 30 June 2025),Matches pattern: \(.*\),1
+Storage Protect Plus,IBM Spectrum Protect Plus 10.1.14 build 217,Too many words (7),1
+MQ,7.2 [EOS 30 April 2021 Need Service Extension],Too many words (8),1
+Storage Protect,7.1.6.5 (End of Support),Matches pattern: \(.*\),1
+z/OS,"Open Enterprise SDK for Go, V1.22",Too many words (6),1
+Storage Protect Plus,"Version 10.1.12, compilation : 301 19 oct. 2022 21:24:27",Too long (56 chars),1
+Engineering Test Management,6.0.2 (Ended Support 04/30/2021),Matches pattern: \(.*\),1
+COBOL,2.1.0 (EOS - Sept 2018),Matches pattern: \(.*\),1
+Rational Licensing,6.0.6 (Ended Support 10/31/2022),Matches pattern: \(.*\),1
+XL Fortran,"Open XL Fortran for AIX, V17.1.1",Too many words (6),1
+Storage Protect Plus,"Version 10.1.10 Build: 2761 May 18, 2022 5:14:33 PM",Too long (51 chars),1
+Open SDK for Rust,"IBM Open SDK for Rust on AIX, V1.84.0",Too many words (8),1
+Storage Protect Plus,IBM Spectrum Protect Plus Version 10.1.17 Build: 271,Too long (52 chars),1
+Open SDK for Rust,"IBM Open SDK for Rust on AIX, V1.88.0",Too many words (8),1
+MQ for z/OS,15.4 (EOS 31 August 2027),Matches pattern: \(.*\),1
+z/OS,"Enterprise COBOL for z/OS, V6.1 (EOS, 09/30/2022)",Matches pattern: \(.*\),1

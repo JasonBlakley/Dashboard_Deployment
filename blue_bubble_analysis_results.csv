@@ -1,0 +1,1329 @@
+original_product,mapped_product,version,normalized_versions,found_in,matched_version,is_blue
+ATMs,ATMs,ATM,atm,NOT FOUND,N/A,True
+TS1090 Tape Drive,TS1090 Tape Drive,TS1090 Tape Drive,ts1090 tape drive,NOT FOUND,N/A,True
+Cloud Pak for Security,Cloud Pak for Security,Cloud Pak for Security,cloud pak for security,NOT FOUND,N/A,True
+z14,z14,Z Servers,z servers,NOT FOUND,N/A,True
+Citrix MetaFrame,Citrix MetaFrame,Citrix MetaFrame,citrix metaframe,NOT FOUND,N/A,True
+Maximo Application Suite on Cloud,Maximo Application Suite on Cloud,Maximo Application Suite on Cloud,maximo application suite on cloud,NOT FOUND,N/A,True
+SAN Volume Controller,SAN Volume Controller,SAN Volume Controller,san volume controller,NOT FOUND,N/A,True
+QRadar SIEM,IBM Security QRadar SIEM,QRadar SIEM,qradar siem,NOT FOUND,N/A,True
+z17,z17,Z Servers,z servers,NOT FOUND,N/A,True
+Cash Recycling Automatic Teller Machine,Cash Recycling Automatic Teller Machine,Cash Recycling Automatic Teller Machine,cash recycling automatic teller machine,NOT FOUND,N/A,True
+Printers,Printers,Printer,printer,NOT FOUND,N/A,True
+Consumer Trusteer Rapport,Consumer Trusteer Rapport,Consumer Trusteer Rapport,consumer trusteer rapport,NOT FOUND,N/A,True
+Power System S922 Server,Power System S922 Server,Power System S922 Server,power system s922 server,NOT FOUND,N/A,True
+Robotic Process Automation,IBM Robotic Process Automation,Robotic Process Automation,robotic process automation,NOT FOUND,N/A,True
+LinuxONE Emperor 4,LinuxONE Emperor 4,Z Servers,z servers,NOT FOUND,N/A,True
+z/OS,z/OS,Z/OS,z/os,NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,eCare,ecare,NOT FOUND,N/A,True
+Storage Fusion HCI Physical Appliance,Storage Fusion HCI Physical Appliance,Spectrum Fusion HCI,spectrum fusion hci,NOT FOUND,N/A,True
+FlashSystem 5000,FlashSystem 5000,FlashSystem 5000,flashsystem 5000,NOT FOUND,N/A,True
+webMethods Integration SaaS,webMethods Integration SaaS,webMethods Integration SaaS,webmethods integration saas,NOT FOUND,N/A,True
+Power System Hardware Management Console Physical Appliance,Power System Hardware Management Console Physical Appliance,Power System Hardware Management Console Physical Appliance,power system hardware management console physical appliance,NOT FOUND,N/A,True
+IBM i,IBM i,IBM i,ibm i,NOT FOUND,N/A,True
+Power System E880C Server,Power System E880C Server,Power System E880C Server,power system e880c server,NOT FOUND,N/A,True
+Workload Scheduler,Workload Scheduler,Workload Scheduler,workload scheduler,NOT FOUND,N/A,True
+Labor Only Project Services,Labor Only Project Services,Labor Only Project Services,labor only project services,NOT FOUND,N/A,True
+DS8900F,DS8900F,DS8900F,ds8900f,NOT FOUND,N/A,True
+Hardware Management Console Application,Hardware Management Console Application,Hardware Management Console (HMC) for Power,hardware management console (hmc) for power,NOT FOUND,N/A,True
+QRadar SOAR,QRadar SOAR,QRadar SOAR,qradar soar,NOT FOUND,N/A,True
+Aspera,Aspera,"Aspera High-Speed Transfer Server (ES, CS)","aspera high-speed transfer server (es, cs)",NOT FOUND,N/A,True
+WebSphere Application Server,WebSphere Application Server,WebSphere Application Server,websphere application server,NOT FOUND,N/A,True
+"Db2 Linux, Unix and Windows","Db2 Linux, Unix and Windows","Db2 Linux, Unix and Windows","db2 linux, unix and windows",NOT FOUND,N/A,True
+AIX,AIX,AIX,aix,NOT FOUND,N/A,True
+Maximo Application Suite,Maximo Application Suite,Maximo Application Suite,maximo application suite,NOT FOUND,N/A,True
+Security Verify,Security Verify,Security Verify,security verify,NOT FOUND,N/A,True
+Red Hat Enterprise Linux Server,Red Hat Enterprise Linux Server,Red Hat Enterprise Linux Server,red hat enterprise linux server,NOT FOUND,N/A,True
+Sterling B2B Integrator,IBM Sterling B2B Integrator,Sterling B2B Integrator,sterling b2b integrator,NOT FOUND,N/A,True
+ASA Series,ASA Series,ASA Appliance,asa appliance,NOT FOUND,N/A,True
+z16 A02,z16 A02,Z Servers,z servers,NOT FOUND,N/A,True
+Content Manager OnDemand,Content Manager OnDemand,Content Manager OnDemand,content manager ondemand,NOT FOUND,N/A,True
+Envizi ESG Suite,Envizi ESG Suite,Envizi ESG Suite,envizi esg suite,NOT FOUND,N/A,True
+ProLiant DL Series Servers,ProLiant DL Series Servers,ProLiant DL Series Servers,proliant dl series servers,NOT FOUND,N/A,True
+z16,z16,Z Servers,z servers,NOT FOUND,N/A,True
+TS4500 Tape Library,TS4500 Tape Library,TS4500 Tape Library,ts4500 tape library,NOT FOUND,N/A,True
+TS7700,TS7700,TS7700,ts7700,NOT FOUND,N/A,True
+SPSS Licensing,SPSS Licensing,SPSS Licensing,spss licensing,NOT FOUND,N/A,True
+OpenPages,OpenPages,OpenPages GRC Platform,openpages grc platform,NOT FOUND,N/A,True
+Master Data Management SE,Master Data Management SE,Master Data Management SE,master data management se,NOT FOUND,N/A,True
+Elastic Storage System Hardware,Elastic Storage System Hardware,Elastic Storage Server HW,elastic storage server hw,NOT FOUND,N/A,True
+Vault Self-Managed,Vault Self-Managed,Vault Self-Managed,vault self-managed,NOT FOUND,N/A,True
+Power System S1014 Server,Power System S1014 Server,Power System S1014 Server,power system s1014 server,NOT FOUND,N/A,True
+Macbook Air,Macbook Air,Macbook Air,macbook air,NOT FOUND,N/A,True
+z15 T02,z15 T02,Z Servers,z servers,NOT FOUND,N/A,True
+Video Streaming,Video Streaming,unassigned,unassigned,NOT FOUND,N/A,True
+Cognos Analytics,IBM Cognos Analytics,Cognos Analytics,cognos analytics,NOT FOUND,N/A,True
+Verify Identity Access,Verify Identity Access,Verify Identity Access,verify identity access,NOT FOUND,N/A,True
+Db2 Warehouse as a Service,Db2 Warehouse as a Service,Db2 Warehouse as a Service,db2 warehouse as a service,NOT FOUND,N/A,True
+Spectrum LSF,Spectrum LSF,Spectrum LSF,spectrum lsf,NOT FOUND,N/A,True
+ProLiant ML Series Servers,ProLiant ML Series Servers,Proliant ML Series Servers,proliant ml series servers,NOT FOUND,N/A,True
+Cloud Pak for Business Automation as a Service,Cloud Pak for Business Automation as a Service,Cloud Pak for Business Automation as a Service,cloud pak for business automation as a service,NOT FOUND,N/A,True
+TS1160 Tape Drive,TS1160 Tape Drive,TS1160 Tape Drive,ts1160 tape drive,NOT FOUND,N/A,True
+Subscription and Subscriber Management,Subscription and Subscriber Management,Subscription and Subscriber,subscription and subscriber,NOT FOUND,N/A,True
+Analytics Cloud Service,Analytics Cloud Service,Analytics Cloud Service,analytics cloud service,NOT FOUND,N/A,True
+PowerEdge Server,PowerEdge Server,PowerEdge,poweredge,NOT FOUND,N/A,True
+Trusteer Pinpoint Detect,Trusteer Pinpoint Detect,Trusteer Pinpoint Detect,trusteer pinpoint detect,NOT FOUND,N/A,True
+IBM Technology Zone,IBM Technology Zone,IBM Technology Zone,ibm technology zone,NOT FOUND,N/A,True
+z14 ZR1,z14 ZR1,Z Servers,z servers,NOT FOUND,N/A,True
+z13,z13,Z Servers,z servers,NOT FOUND,N/A,True
+Power System S1022 Server,Power System S1022 Server,Power System S1022 Server,power system s1022 server,NOT FOUND,N/A,True
+DS8A00,DS8A00,DS8A00,ds8a00,NOT FOUND,N/A,True
+LiveWork,LiveWork,unassigned,unassigned,NOT FOUND,N/A,True
+Power System S914 Server,Power System S914 Server,Power System S914 Server,power system s914 server,NOT FOUND,N/A,True
+FlashSystem 9100,FlashSystem 9100,FlashSystem 9100,flashsystem 9100,NOT FOUND,N/A,True
+Storage Protect,Storage Protect,Spectrum Protect,spectrum protect,NOT FOUND,N/A,True
+Cloud Infrastructure Center,Cloud Infrastructure Center,Cloud Infrastructure Center,cloud infrastructure center,NOT FOUND,N/A,True
+Bob,Bob,Bob,bob,NOT FOUND,N/A,True
+MQ,IBM MQ,IBM MQ,ibm mq,NOT FOUND,N/A,True
+Laptop Personal Computers,Laptop Personal Computers,Laptop,laptop,NOT FOUND,N/A,True
+MaaS360,MaaS360,MaaS360,maas360,NOT FOUND,N/A,True
+Macbook Pro,Macbook Pro,Macbook Pro,macbook pro,NOT FOUND,N/A,True
+Targetprocess,Targetprocess,IBM Targetprocess,ibm targetprocess,NOT FOUND,N/A,True
+Cloud Pak for AIOps,Cloud Pak for AIOps,Cloud Pak for AIOps,cloud pak for aiops,NOT FOUND,N/A,True
+Apptio,Apptio,Apptio,apptio,NOT FOUND,N/A,True
+Installation & De-Installation Project Services,Installation & De-Installation Project Services,Installation & De-Installation Project Services,installation & de-installation project services,NOT FOUND,N/A,True
+DataPower,DataPower,DataPower,datapower,NOT FOUND,N/A,True
+Operational Decision Manager,Operational Decision Manager,Operational Decision Manager,operational decision manager,NOT FOUND,N/A,True
+Cloud Object Storage,Cloud Object Storage,Cloud Object Storage,cloud object storage,NOT FOUND,N/A,True
+InfoSphere Information Server: Data Integration (DataStage),InfoSphere Information Server: Data Integration (DataStage),InfoSphere Information Server: Data Integration (DataStage),infosphere information server: data integration (datastage),NOT FOUND,N/A,True
+Guardium Data Protection,Guardium Data Protection,Guardium Data Protection,guardium data protection,NOT FOUND,N/A,True
+FlashSystem 9200,FlashSystem 9200,FlashSystem 9200,flashsystem 9200,NOT FOUND,N/A,True
+Desktop Personal Computers,Desktop Personal Computers,Precision,precision,NOT FOUND,N/A,True
+Db2 Log Analysis Tool for z/OS,Db2 Log Analysis Tool for z/OS,Db2 Log Analysis Tool for z/OS,db2 log analysis tool for z/os,NOT FOUND,N/A,True
+Cloud Pak for Data,Cloud Pak for Data,Cloud Pak for Data,cloud pak for data,NOT FOUND,N/A,True
+Support Insights,Support Insights,Support Insights,support insights,NOT FOUND,N/A,True
+Cloud Pak for Business Automation,Cloud Pak for Business Automation,Cloud Pak for Business Automation,cloud pak for business automation,NOT FOUND,N/A,True
+Storwize V7000,Storwize V7000,Storwize V7000,storwize v7000,NOT FOUND,N/A,True
+Field Project Services,Field Project Services,Field Project Services,field project services,NOT FOUND,N/A,True
+Planning Analytics Local,Planning Analytics Local,Planning Analytics Local,planning analytics local,NOT FOUND,N/A,True
+Turbonomic SaaS,Turbonomic SaaS,Turbonomic ARM SaaS,turbonomic arm saas,NOT FOUND,N/A,True
+Netcool/OMNIbus,Netcool/OMNIbus,Netcool/OMNIbus,netcool/omnibus,NOT FOUND,N/A,True
+Power System E870 Server,Power System E870 Server,Power System E870 Server,power system e870 server,NOT FOUND,N/A,True
+IBMid Enterprise Federation,IBMid Enterprise Federation,IBMid Enterprise Federation,ibmid enterprise federation,NOT FOUND,N/A,True
+Power System 740 Server,Power System 740 Server,Power System 740 Server,power system 740 server,NOT FOUND,N/A,True
+DevOps Deploy,DevOps Deploy,DevOps Deploy,devops deploy,NOT FOUND,N/A,True
+Db2 for z/OS,Db2 for z/OS,Db2 for z/OS,db2 for z/os,NOT FOUND,N/A,True
+Storwize V5000e,Storwize V5000e,Storwize V5000e,storwize v5000e,NOT FOUND,N/A,True
+Terminals for Attractive Customer Experience Passbook Printer,Terminals for Attractive Customer Experience Passbook Printer,Terminals for Attractive Customer Experience Passbook Printer,terminals for attractive customer experience passbook printer,NOT FOUND,N/A,True
+Maximo Renewables,Maximo Renewables,Maximo Renewables,maximo renewables,NOT FOUND,N/A,True
+Flexera One,Flexera One,Flexera One,flexera one,NOT FOUND,N/A,True
+Thin Client Series Personal Computers,Thin Client Series Personal Computers,Thin Client,thin client,NOT FOUND,N/A,True
+App Connect Enterprise,App Connect Enterprise,Integration Bus,integration bus,NOT FOUND,N/A,True
+Storage Protect Plus,Storage Protect Plus,Storage Protect Plus,storage protect plus,NOT FOUND,N/A,True
+Power System S824 Server,Power System S824 Server,Power System S824 Server,power system s824 server,NOT FOUND,N/A,True
+FlashSystem 5200,FlashSystem 5200,FlashSystem 5200,flashsystem 5200,NOT FOUND,N/A,True
+Instana Observability SaaS,Instana Observability SaaS,Instana Observability SaaS,instana observability saas,NOT FOUND,N/A,True
+Datacap,Datacap,Datacap,datacap,NOT FOUND,N/A,True
+Cloudability,Cloudability,Cloudability,cloudability,NOT FOUND,N/A,True
+Sterling B2B Integration SaaS Premium,Sterling B2B Integration SaaS Premium,Sterling B2B Integration Saas Premium,sterling b2b integration saas premium,NOT FOUND,N/A,True
+Power System E980 Server,Power System E980 Server,Power System E980 Server,power system e980 server,NOT FOUND,N/A,True
+FlashSystem 7200,FlashSystem 7200,FlashSystem 7200,flashsystem 7200,NOT FOUND,N/A,True
+Data Replication,Data Replication,Replication - Change Data Capture,replication - change data capture,NOT FOUND,N/A,True
+Siebel,Siebel,Siebel,siebel,NOT FOUND,N/A,True
+API Connect,API Connect,API Connect,api connect,NOT FOUND,N/A,True
+VSP,VSP,VSP,vsp,NOT FOUND,N/A,True
+Spectrum Virtualize for FlashSystem 7000 ,Spectrum Virtualize for FlashSystem 7000 ,Spectrum Virtualize for FlashSystem 7000,spectrum virtualize for flashsystem 7000,NOT FOUND,N/A,True
+Best Effort,Best Effort,Best Effort,best effort,NOT FOUND,N/A,True
+Engineering Lifecycle Management Base,Engineering Lifecycle Management Base,Engineering Lifecycle Management Base,engineering lifecycle management base,NOT FOUND,N/A,True
+Router Series,Router Series,Router Series,router series,NOT FOUND,N/A,True
+Facilities and Real Estate Management on Cloud (TRIRIGA),Facilities and Real Estate Management on Cloud (TRIRIGA),(SaaS) TRIRIGA Facilities & Real Estate Management on Cloud,(saas) tririga facilities & real estate management on cloud,NOT FOUND,N/A,True
+DIDO Controller,DIDO Controller,DIDO Controller,dido controller,NOT FOUND,N/A,True
+Power System S1024 Server,Power System S1024 Server,Power System S1024 Server,power system s1024 server,NOT FOUND,N/A,True
+TS4300 Tape Library,TS4300 Tape Library,TS4300 Tape Library,ts4300 tape library,NOT FOUND,N/A,True
+Premium Operations Linux,Premium Operations Linux,Premium Operations Linux,premium operations linux,NOT FOUND,N/A,True
+Planning Analytics on Cloud,Planning Analytics on Cloud,Planning Analytics on Cloud,planning analytics on cloud,NOT FOUND,N/A,True
+ApplinX,ApplinX,ApplinX,applinx,NOT FOUND,N/A,True
+Power System E1080 Server,Power System E1080 Server,Power System E1080 Server,power system e1080 server,NOT FOUND,N/A,True
+Power System S1022s Server,Power System S1022s Server,Power System S1022s Server,power system s1022s server,NOT FOUND,N/A,True
+Nexus Series,Nexus Series,Nexus Switch,nexus switch,NOT FOUND,N/A,True
+Power System S924 Server,Power System S924 Server,Power System S924 Server,power system s924 server,NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,IBM Technology Zone,ibm technology zone,NOT FOUND,N/A,True
+Power System 720 Server,Power System 720 Server,Power System 720 Server,power system 720 server,NOT FOUND,N/A,True
+Power System S1122 Server,Power System S1122 Server,Power System S1122 Server,power system s1122 server,NOT FOUND,N/A,True
+TS1070 Tape Drive,TS1070 Tape Drive,TS1070 Tape Drive,ts1070 tape drive,NOT FOUND,N/A,True
+CICS Transaction Server,CICS Transaction Server for z/OS,CICS TS for z/OS,cics ts for z/os,NOT FOUND,N/A,True
+FlashSystem 5100,FlashSystem 5100,FlashSystem 5100,flashsystem 5100,NOT FOUND,N/A,True
+Sterling Control Center,Sterling Control Center,Sterling Control Center,sterling control center,NOT FOUND,N/A,True
+Storage Fusion,Storage Fusion,Spectrum Fusion,spectrum fusion,NOT FOUND,N/A,True
+Cloud Pak for Applications,Cloud Pak for Applications,Cloud Pak for Applications,cloud pak for applications,NOT FOUND,N/A,True
+Informix Dynamic Server,IBM Informix Advanced Enterprise Edition,Informix Dynamic Server,informix dynamic server,NOT FOUND,N/A,True
+SAN c-type Collection,SAN c-type Collection,SAN c-type Collection,san c-type collection,NOT FOUND,N/A,True
+Power System S814 Server,Power System S814 Server,Power System S814 Server,power system s814 server,NOT FOUND,N/A,True
+Db2 as a Service,Db2 as a Service,Db2 as a Service,db2 as a service,NOT FOUND,N/A,True
+FlashSystem 7300,FlashSystem 7300,FlashSystem 7300,flashsystem 7300,NOT FOUND,N/A,True
+License Metric Tool,License Metric Tool,License Metric Tool,license metric tool,NOT FOUND,N/A,True
+Sterling Connect Direct,IBM Sterling Connect:Direct for UNIX,Sterling Connect Direct,sterling connect direct,NOT FOUND,N/A,True
+Copy Services Manager,Copy Services Manager,Copy Services Manager,copy services manager,NOT FOUND,N/A,True
+Diamondback Tape Library,Diamondback Tape Library,Diamondback Tape Library,diamondback tape library,NOT FOUND,N/A,True
+SAN b-type Collection,SAN b-type Collection,SAN b-type Collection,san b-type collection,NOT FOUND,N/A,True
+Power System E1050 Server,Power System E1050 Server,Power System E1050 Server,power system e1050 server,NOT FOUND,N/A,True
+FlashSystem 9500,FlashSystem 9500,FlashSystem 9500,flashsystem 9500,NOT FOUND,N/A,True
+Business Automation Workflow,Business Automation Workflow,Business Automation Workflow,business automation workflow,NOT FOUND,N/A,True
+Storage Protect for Virtual Environments,Storage Protect for Virtual Environments,Storage Protect for Virtual Environments,storage protect for virtual environments,NOT FOUND,N/A,True
+TS1080 Tape Drive,TS1080 Tape Drive,TS1080 Tape Drive,ts1080 tape drive,NOT FOUND,N/A,True
+FlashSystem 9600,FlashSystem 9600,unassigned,unassigned,NOT FOUND,N/A,True
+Nexus 9200 FX3 Switch for IBM System Storage,Nexus 9200 FX3 Switch for IBM System Storage,unassigned,unassigned,NOT FOUND,N/A,True
+Storwize V5000,Storwize V5000,Storwize V5000,storwize v5000,NOT FOUND,N/A,True
+TS3500 Tape Library,TS3500 Tape Library,TS3500 Tape Library,ts3500 tape library,NOT FOUND,N/A,True
+watsonx BI as a Service,watsonx BI as a Service,watsonx BI as a Service,watsonx bi as a service,NOT FOUND,N/A,True
+Terminals for Attractive Customer Experience Keyboard,Terminals for Attractive Customer Experience Keyboard,Terminals for Attractive Customer Experience Keyboard,terminals for attractive customer experience keyboard,NOT FOUND,N/A,True
+Instana Observability,Instana Observability,Instana Observability,instana observability,NOT FOUND,N/A,True
+TS1155 Tape Drive,TS1155 Tape Drive,TS1155 Tape Drive,ts1155 tape drive,NOT FOUND,N/A,True
+Retail Systems,Retail Systems,RP9 Retail Systems,rp9 retail systems,NOT FOUND,N/A,True
+Delivery SCBN Premium,Delivery SCBN Premium,WCE: Delivery SCBN Premium,wce: delivery scbn premium,NOT FOUND,N/A,True
+Desktop Personal Computers,Desktop Personal Computers,Desktop PC,desktop pc,NOT FOUND,N/A,True
+SPSS Digital,SPSS Digital,SPSS Statistics Subscription,spss statistics subscription,NOT FOUND,N/A,True
+Order Management On Cloud,Order Management On Cloud,Order Management On Cloud,order management on cloud,NOT FOUND,N/A,True
+Cloud Pak for Integration,Cloud Pak for Integration,Cloud Pak for Integration,cloud pak for integration,NOT FOUND,N/A,True
+Cloud Pak for Data System,Cloud Pak for Data System,Hybrid Cloud Appliance,hybrid cloud appliance,NOT FOUND,N/A,True
+Safer Payments,Safer Payments,Safer Payments,safer payments,NOT FOUND,N/A,True
+Business Automation Workflow on Cloud,Business Automation Workflow on Cloud,BAW on Cloud,baw on cloud,NOT FOUND,N/A,True
+Fire Servers,Fire Servers,Fire,fire,NOT FOUND,N/A,True
+watsonx Orchestrate on IBM Cloud,watsonx Orchestrate on IBM Cloud,watsonx Orchestrate on IBM Cloud,watsonx orchestrate on ibm cloud,NOT FOUND,N/A,True
+Cloudera Data Platform Private Cloud,Cloudera Data Platform Private Cloud,Cloudera CDP Private Cloud,cloudera cdp private cloud,NOT FOUND,N/A,True
+Flash Storage System,Flash Storage System,FAS Series,fas series,NOT FOUND,N/A,True
+PowerVM / VIOS,PowerVM,PowerVM / VIOS,powervm / vios,NOT FOUND,N/A,True
+InfoSphere Virtual Data Pipeline,InfoSphere Virtual Data Pipeline,InfoSphere Virtual Data Pipeline,infosphere virtual data pipeline,NOT FOUND,N/A,True
+Z OMEGAMON AI for Db2,Z OMEGAMON AI for Db2,unassigned,unassigned,NOT FOUND,N/A,True
+MANTA Automated Data Lineage for IBM Cloud Pak for Data,MANTA Automated Data Lineage for IBM Cloud Pak for Data,MANTA Automated Data Lineage for IBM Cloud Pak for Data,manta automated data lineage for ibm cloud pak for data,NOT FOUND,N/A,True
+Tivoli Monitoring,Tivoli Monitoring,ITM Platform,itm platform,NOT FOUND,N/A,True
+webMethods Integration,webMethods Integration,webMethods Integration,webmethods integration,NOT FOUND,N/A,True
+Catalyst,Catalyst,Catalyst,catalyst,NOT FOUND,N/A,True
+watsonx Orchestrate,watsonx Orchestrate,watsonx Orchestrate,watsonx orchestrate,NOT FOUND,N/A,True
+Business Automation Manager Open Editions,Business Automation Manager Open Editions,Business Automation Manager Open Editions,business automation manager open editions,NOT FOUND,N/A,True
+Power System E950 Server,Power System E950 Server,Power System E950 Server,power system e950 server,NOT FOUND,N/A,True
+Maximo Inventory Optimization,Maximo Inventory Optimization,Maximo MRO Inventory Optimization (Oniqua),maximo mro inventory optimization (oniqua),NOT FOUND,N/A,True
+Catalyst Switch,Catalyst Switch,Catalyst Switch,catalyst switch,NOT FOUND,N/A,True
+Consulting Advantage,Consulting Advantage,Consulting Advantage,consulting advantage,NOT FOUND,N/A,True
+Storage Insights,Storage Insights,Storage Insights Pro,storage insights pro,NOT FOUND,N/A,True
+Master Data Management AE,Master Data Management AE,Master Data Management AE,master data management ae,NOT FOUND,N/A,True
+Maximo Asset Management,Maximo Asset Management,Maximo Asset Management,maximo asset management,NOT FOUND,N/A,True
+Db2 pureScale,Db2 pureScale,Db2 pureScale,db2 purescale,NOT FOUND,N/A,True
+Storage Scale System Software,Storage Scale System Software,Storage Scale System Software,storage scale system software,NOT FOUND,N/A,True
+WebSphere Liberty Core,WebSphere Application Server Liberty Core,Websphere Application Server Liberty,websphere application server liberty,NOT FOUND,N/A,True
+ThinkSystem SR V1 Series Server,ThinkSystem SR V1 Series Server,ThinkSystem,thinksystem,NOT FOUND,N/A,True
+WebSphere Hybrid Edition,WebSphere Hybrid Edition,WebSphere Hybrid Edition,websphere hybrid edition,NOT FOUND,N/A,True
+Terraform Self-Managed,Terraform Self-Managed,Terraform Self-Managed,terraform self-managed,NOT FOUND,N/A,True
+Terraform,Terraform,Terraform,terraform,NOT FOUND,N/A,True
+MongoDB,MongoDB,MongoDB,mongodb,NOT FOUND,N/A,True
+Tivoli Composite Application Manager for Applications,Tivoli Composite Application Manager for Applications,ITCAM,itcam,NOT FOUND,N/A,True
+Point of Sale Monitor,Point of Sale Monitor,POS Monitor,pos monitor,NOT FOUND,N/A,True
+Trusteer Rapport,Trusteer Rapport,Trusteer Rapport,trusteer rapport,NOT FOUND,N/A,True
+SUSE Linux Enterprise Server,SUSE Linux Enterprise Server,SUSE Linux Enterprise Server,suse linux enterprise server,NOT FOUND,N/A,True
+iPhone,iPhone,iPhone,iphone,NOT FOUND,N/A,True
+Content Collector,Content Collector,Content Collector,content collector,NOT FOUND,N/A,True
+InfoSphere Information Server: Generic,InfoSphere Information Server: Generic,InfoSphere Information Server: Generic,infosphere information server: generic,NOT FOUND,N/A,True
+Security Verify Privilege,Security Verify Privilege,Security Verify Privilege,security verify privilege,NOT FOUND,N/A,True
+Turbonomic On-Premises,Turbonomic On-Premises,Turbonomic ARM,turbonomic arm,NOT FOUND,N/A,True
+GDPS (Geographically Dispersed Parallel Sysplex),GDPS (Geographically Dispersed Parallel Sysplex),GDPS (Geographically Dispersed Parallel Sysplex),gdps (geographically dispersed parallel sysplex),NOT FOUND,N/A,True
+Appliances,Appliances,Appliance,appliance,NOT FOUND,N/A,True
+eCare: Passport Advantage,eCare: Passport Advantage,Digital eCare,digital ecare,NOT FOUND,N/A,True
+webMethods Hybrid Integration SaaS,webMethods Hybrid Integration SaaS,webMethods Hybrid Integration SaaS,webmethods hybrid integration saas,NOT FOUND,N/A,True
+ThinkSystem Series Storage,ThinkSystem Series Storage,ThinkSystem DS Series Storage Systems,thinksystem ds series storage systems,NOT FOUND,N/A,True
+Salesforce Internal Support,Salesforce Internal Support,Internal Support,internal support,NOT FOUND,N/A,True
+SevOne Network Performance Management,SevOne Network Performance Management,SevOne Network Performance Management,sevone network performance management,NOT FOUND,N/A,True
+Power System S822 Server,Power System S822 Server,Power System S822 Server,power system s822 server,NOT FOUND,N/A,True
+OpenPages on Cloud,OpenPages on Cloud,OpenPages GRC on Cloud,openpages grc on cloud,NOT FOUND,N/A,True
+SUSE Linux Enterprise Server for SAP Applications,SUSE Linux Enterprise Server for SAP Applications,SUSE Linux Enterprise Server for SAP Applications,suse linux enterprise server for sap applications,NOT FOUND,N/A,True
+Aironet Series,Aironet Series,Wireless Controller,wireless controller,NOT FOUND,N/A,True
+Data Replication for z/OS,Data Replication for z/OS,Data Replication for z/OS,data replication for z/os,NOT FOUND,N/A,True
+Aspera On Cloud,Aspera On Cloud,"Aspera on Cloud (Files, ATS)","aspera on cloud (files, ats)",NOT FOUND,N/A,True
+Master Data Management CE,Master Data Management CE,Master Data Management CE,master data management ce,NOT FOUND,N/A,True
+XL C/C++,XL C/C++,XL C/C++,xl c/c++,NOT FOUND,N/A,True
+HashiCorp Boundary SaaS,HashiCorp Boundary SaaS,HashiCorp Boundary SaaS,hashicorp boundary saas,NOT FOUND,N/A,True
+Cash Drawers,Cash Drawers,Cash Drawer,cash drawer,NOT FOUND,N/A,True
+Netcool Operations Insights,Netcool Operations Insights,Netcool Omnibus,netcool omnibus,NOT FOUND,N/A,True
+IBM Z Security and Compliance Center,IBM Z Security and Compliance Center,IBM Z Security and Compliance Center,ibm z security and compliance center,NOT FOUND,N/A,True
+Premium Operations Microsoft,Premium Operations Microsoft,Storage Premium Operations,storage premium operations,NOT FOUND,N/A,True
+Engineering Requirements Management DOORS Next,Engineering Requirements Management DOORS Next,Engineering Requirements Management DOORS Next,engineering requirements management doors next,NOT FOUND,N/A,True
+Db2 Genius Hub,Db2 Genius Hub,Db2 Intelligence Center,db2 intelligence center,NOT FOUND,N/A,True
+XIV,XIV,XIV,xiv,NOT FOUND,N/A,True
+zEC12,zEC12,Z Servers,z servers,NOT FOUND,N/A,True
+webMethods API Management,webMethods API Management,webMethods API Management,webmethods api management,NOT FOUND,N/A,True
+PowerVC for Private Cloud,PowerVC for Private Cloud,PowerVC for Private Cloud,powervc for private cloud,NOT FOUND,N/A,True
+VM Lifecycle Manager,VM Lifecycle Manager,VM Lifecycle Manager,vm lifecycle manager,NOT FOUND,N/A,True
+Engineering Requirements Management DOORS,Engineering Requirements Management DOORS,Engineering Requirements Management DOORS,engineering requirements management doors,NOT FOUND,N/A,True
+FileNet Content Manager,FileNet Content Manager,FileNet Content Manager,filenet content manager,NOT FOUND,N/A,True
+IBM i on PowerVS,IBM i on PowerVS,IBM i on Cloud,ibm i on cloud,NOT FOUND,N/A,True
+Cloud Management Console,Cloud Management Console,Cloud Management Console,cloud management console,NOT FOUND,N/A,True
+Unified Management Server for z/OS,Unified Management Server for z/OS,Unified Management Server for z/OS,unified management server for z/os,NOT FOUND,N/A,True
+Verify Identity Governance,Verify Identity Governance,Verify Identity Governance,verify identity governance,NOT FOUND,N/A,True
+Barcode Scanners,Barcode Scanners,Barcode Scanner,barcode scanner,NOT FOUND,N/A,True
+z15,z15,Z Servers,z servers,NOT FOUND,N/A,True
+AIX on PowerVS,AIX on PowerVS,AIX on Cloud,aix on cloud,NOT FOUND,N/A,True
+QRadar Network Insights,QRadar Network Insights,QRadar Network Insights,qradar network insights,NOT FOUND,N/A,True
+SPSS Statistics,IBM SPSS Statistics,SPSS Statistics,spss statistics,NOT FOUND,N/A,True
+Power System H922 Server,Power System H922 Server,Power System H922 Server,power system h922 server,NOT FOUND,N/A,True
+FlashSystem 7600,FlashSystem 7600,unassigned,unassigned,NOT FOUND,N/A,True
+LinuxONE Emperor 5,LinuxONE Emperor 5,Z Servers,z servers,NOT FOUND,N/A,True
+Sterling Connect Direct for z/OS,IBM Sterling Connect:Direct for z/OS,Sterling Connect Direct for z/OS,sterling connect direct for z/os,NOT FOUND,N/A,True
+Astra DB,Astra DB,Astra DB,astra db,NOT FOUND,N/A,True
+DevOps Code ClearCase,DevOps Code ClearCase,DevOps Code ClearCase,devops code clearcase,NOT FOUND,N/A,True
+Db2 Administration Foundation for z/OS,Db2 Administration Foundation for z/OS,Db2 Administration Foundation for z/OS,db2 administration foundation for z/os,NOT FOUND,N/A,True
+DataStax Enterprise,DataStax Enterprise,DataStax Enterprise,datastax enterprise,NOT FOUND,N/A,True
+Reliable Scalable Cluster Technology (RSCT),Reliable Scalable Cluster Technology (RSCT),Reliable Scalable Cluster Technology (RSCT),reliable scalable cluster technology (rsct),NOT FOUND,N/A,True
+Storage Scale,IBM Storage Scale Data Management Edition,Spectrum Scale,spectrum scale,NOT FOUND,N/A,True
+Enterprise Performance Management,Enterprise Performance Management,Enterprise Performance Management,enterprise performance management,NOT FOUND,N/A,True
+watsonx Code Assistant for Z,watsonx Code Assistant for Z,watsonx Code Assistant for Z,watsonx code assistant for z,NOT FOUND,N/A,True
+SurePOS,SurePOS,SurePOS,surepos,NOT FOUND,N/A,True
+Cognos Command Center,Cognos Command Center,Cognos Command Center,cognos command center,NOT FOUND,N/A,True
+Financial Transaction Manager,Financial Transaction Manager,Financial Transaction Manager (FTM Base),financial transaction manager (ftm base),NOT FOUND,N/A,True
+Storage Copy Data Management,Storage Copy Data Management,Storage Copy Data Manager,storage copy data manager,NOT FOUND,N/A,True
+Premium Operations Vmware,Premium Operations Vmware,Storage Premium Operations,storage premium operations,NOT FOUND,N/A,True
+Sterling Gentran Server,Sterling Gentran Server,Sterling Gentran Server,sterling gentran server,NOT FOUND,N/A,True
+Azure,Azure,Microsoft Azure,microsoft azure,NOT FOUND,N/A,True
+Security Series,Security Series,Security Appliance,security appliance,NOT FOUND,N/A,True
+Deskside & End User Support Project Services,Deskside & End User Support Project Services,Deskside & End User Support Project Services,deskside & end user support project services,NOT FOUND,N/A,True
+Db2 Administration Tool for z/OS,Db2 Administration Tool for z/OS,Db2 Administration Tool for z/OS,db2 administration tool for z/os,NOT FOUND,N/A,True
+FlashSystem V9000,FlashSystem V9000,FlashSystem V9000,flashsystem v9000,NOT FOUND,N/A,True
+Operations Analytics (Log Analysis/Predictive Insights),Operations Analytics (Log Analysis/Predictive Insights),Operations Analytics LA PI,operations analytics la pi,NOT FOUND,N/A,True
+Cash Recycler,Cash Recycler,Cash Recycler,cash recycler,NOT FOUND,N/A,True
+FlashSystem 900,FlashSystem 900,FlashSystem 900,flashsystem 900,NOT FOUND,N/A,True
+watsonx.ai as a Service,watsonx.ai as a Service,watsonx.ai as a Service,"watsonx.ai as a service, watsonx.ai as a service.0, watsonx.ai as a service.x",NOT FOUND,N/A,True
+Sterling Transformation Extender,IBM Sterling Transformation Extender,Sterling Transformation Extender (WTX),sterling transformation extender (wtx),NOT FOUND,N/A,True
+Db2 AI for z/OS,Db2 AI for z/OS,Db2 AI for z/OS,db2 ai for z/os,NOT FOUND,N/A,True
+Document Reader,Document Reader,Document Reader,document reader,NOT FOUND,N/A,True
+Sterling B2B Integration Value-Added Network,Sterling B2B Integration Value-Added Network,Sterling B2B Integration Value-Added Network,sterling b2b integration value-added network,NOT FOUND,N/A,True
+Premium Operations Open Source,Premium Operations Open Source,Storage Premium Operations,storage premium operations,NOT FOUND,N/A,True
+Data Set Commander,Data Set Commander,Data Set Commander,data set commander,NOT FOUND,N/A,True
+iPad,iPad,iPad,ipad,NOT FOUND,N/A,True
+zTech,zTech,IBM Z ISV Development Programs,ibm z isv development programs,NOT FOUND,N/A,True
+Consul Self-Managed,Consul Self-Managed,Consul Self-Managed,consul self-managed,NOT FOUND,N/A,True
+z16 AGZ,z16 AGZ,Z Servers,z servers,NOT FOUND,N/A,True
+Cognos Analytics on Cloud,Cognos Analytics on Cloud,Cognos Analytics on Cloud,cognos analytics on cloud,NOT FOUND,N/A,True
+BACC Cognos On Cloud,BACC Cognos On Cloud,BACC Support,bacc support,NOT FOUND,N/A,True
+Call Center on Cloud,Call Center on Cloud,Call Center on Cloud,call center on cloud,NOT FOUND,N/A,True
+watsonx.governance,watsonx.governance,watsonx.governance,"watsonx.governance, watsonx.governance.0, watsonx.governance.x",NOT FOUND,N/A,True
+Kubecost Self Hosted,Kubecost Self Hosted,Kubecost Self Hosted,kubecost self hosted,NOT FOUND,N/A,True
+Business Process Manager on Cloud,Business Process Manager on Cloud,BPM on Cloud,bpm on cloud,NOT FOUND,N/A,True
+MQ Appliance,MQ Appliance,MQ Appliance,mq appliance,NOT FOUND,N/A,True
+ProLiant BL Series C-Class Server Blades,ProLiant BL Series C-Class Server Blades,Blade server,blade server,NOT FOUND,N/A,True
+Maximo Asset Configuration Manager,Maximo Asset Configuration Manager,Maximo Asset Configuration Manager,maximo asset configuration manager,NOT FOUND,N/A,True
+DevOps Test Workbench,DevOps Test Workbench,DevOps Test Workbench,devops test workbench,NOT FOUND,N/A,True
+Tivoli Management Services for z/OS,Tivoli Management Services for z/OS,Tivoli Monitoring Services on z/OS,tivoli monitoring services on z/os,NOT FOUND,N/A,True
+TellerScan Series Check Scanners,TellerScan Series Check Scanners,TellerScan Series Check Scanners,tellerscan series check scanners,NOT FOUND,N/A,True
+Monitors,Monitors,19in Monitor,19in monitor,NOT FOUND,N/A,True
+Maximo EAM SaaS Flex,Maximo EAM SaaS Flex,(SaaS) Maximo EAM SaaS Flex,(saas) maximo eam saas flex,NOT FOUND,N/A,True
+Sterling Call Center,Sterling Call Center,Sterling Call Center,sterling call center,NOT FOUND,N/A,True
+SmartSource Elite Series Scanners,SmartSource Elite Series Scanners,SmartSource Elite Series Scanners,smartsource elite series scanners,NOT FOUND,N/A,True
+Content Manager,Content Manager,Content Manager,content manager,NOT FOUND,N/A,True
+M365 Platform,M365 Platform,M365 Platform,m365 platform,NOT FOUND,N/A,True
+Security Verify Directory,IBM Security Verify Directory,Security Verify Directory,security verify directory,NOT FOUND,N/A,True
+Workload Automation on Cloud,Workload Automation on Cloud,Workload Automation on Cloud (SaaS),workload automation on cloud (saas),NOT FOUND,N/A,True
+SAN Cisco MDS Collection,SAN Cisco MDS Collection,SAN Cisco MDS Collection,san cisco mds collection,NOT FOUND,N/A,True
+CICS Configuration Manager,CICS Configuration Manager,CICS Configuration Manager,cics configuration manager,NOT FOUND,N/A,True
+webMethods B2B,webMethods B2B,webMethods B2B,webmethods b2b,NOT FOUND,N/A,True
+Key Lifecycle Manager,Key Lifecycle Manager,Key Lifecycle Manager,key lifecycle manager,NOT FOUND,N/A,True
+Content Navigator and Content Navigator Mobile App,Content Navigator and Content Navigator Mobile App,Content Navigator and Content Navigator Mobile App,content navigator and content navigator mobile app,NOT FOUND,N/A,True
+Vault,Vault,Vault,vault,NOT FOUND,N/A,True
+Smart Uninterruptible Power Supply,Smart Uninterruptible Power Supply,Smart Uninterruptible Power Supply,smart uninterruptible power supply,NOT FOUND,N/A,True
+ThinkSystem SC Series Servers,ThinkSystem SC Series Servers,unassigned,unassigned,NOT FOUND,N/A,True
+LinuxONE III LT2,LinuxONE III LT2,Z Servers,z servers,NOT FOUND,N/A,True
+Z System Automation,Z System Automation,Z System Automation,z system automation,NOT FOUND,N/A,True
+TRIRIGA Platform,TRIRIGA Platform,TRIRIGA Platform,tririga platform,NOT FOUND,N/A,True
+Magnetic Stripe Device,Magnetic Stripe Device,Magnetic Stripe Device,magnetic stripe device,NOT FOUND,N/A,True
+Shopz,Shopz,ShopZ,shopz,NOT FOUND,N/A,True
+zSecure,IBM Security zSecure Admin,zSecure,zsecure,NOT FOUND,N/A,True
+Spectrum Conductor,Spectrum Conductor,Spectrum Conductor,spectrum conductor,NOT FOUND,N/A,True
+DS8870,DS8870,DS8870,ds8870,NOT FOUND,N/A,True
+Sparc,Sparc,Sparc,sparc,NOT FOUND,N/A,True
+Oniqua Analytics Solution,Oniqua Analytics Solution,Oniqua Analytics Solution,oniqua analytics solution,NOT FOUND,N/A,True
+Banknote Counter,Banknote Counter,Banknote Counter,banknote counter,NOT FOUND,N/A,True
+VX Pin Pad,VX Pin Pad,VX Pin Pad,vx pin pad,NOT FOUND,N/A,True
+ThinkPad Series Laptops,ThinkPad Series Laptops,ThinkPad,thinkpad,NOT FOUND,N/A,True
+TRIRIGA Applications,TRIRIGA Applications,TRIRIGA Applications,tririga applications,NOT FOUND,N/A,True
+App Connect Professional,App Connect Professional,App Connect Professional,app connect professional,NOT FOUND,N/A,True
+InfoSphere Information Server: Information Analyzer (IA),InfoSphere Information Server: Information Analyzer (IA),InfoSphere Information Server: Information Analyzer (IA),infosphere information server: information analyzer (ia),NOT FOUND,N/A,True
+Thermal Barcode Printer,Thermal Barcode Printer,Thermal Barcode Printer,thermal barcode printer,NOT FOUND,N/A,True
+Sterling File Gateway,IBM Sterling File Gateway,Sterling File Gateway,sterling file gateway,NOT FOUND,N/A,True
+watsonx.data as a Service,watsonx.data as a Service,watsonx.data as a Service,"watsonx.data as a service, watsonx.data as a service.0, watsonx.data as a service.x",NOT FOUND,N/A,True
+Sterling Secure Proxy,Sterling Secure Proxy,Sterling Secure Proxy,sterling secure proxy,NOT FOUND,N/A,True
+TS2900 Tape Autoloader,TS2900 Tape Autoloader,TS2900 Tape Autoloader,ts2900 tape autoloader,NOT FOUND,N/A,True
+Tivoli Monitoring Agents,Tivoli Monitoring,ITM Agents,itm agents,NOT FOUND,N/A,True
+Switch,Switch,Switch,switch,NOT FOUND,N/A,True
+watsonx.data,watsonx.data,watsonx.data,"watsonx.data, watsonx.data.0, watsonx.data.x",NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,Digital eCare,digital ecare,NOT FOUND,N/A,True
+ThinkCentre,ThinkCentre,ThinkCentre,thinkcentre,NOT FOUND,N/A,True
+Apollo 4200 Series Servers,Apollo 4200 Series Servers,Apollo Server,apollo server,NOT FOUND,N/A,True
+Optim Test Data Management,Optim Test Data Management,Optim Test Data Management,optim test data management,NOT FOUND,N/A,True
+BEETLE Series Point of Sale Systems,BEETLE Series Point of Sale Systems,BEETLE Series Point of Sale Systems,beetle series point of sale systems,NOT FOUND,N/A,True
+Laptop Personal Computers,Laptop Personal Computers,Latitude,latitude,NOT FOUND,N/A,True
+Premium Operations MVS,Premium Operations MVS,Storage Premium Operations,storage premium operations,NOT FOUND,N/A,True
+Power System L1124 Server,Power System L1124 Server,Power System L1124 Server,power system l1124 server,NOT FOUND,N/A,True
+Power System L1122 Server,Power System L1122 Server,Power System L1122 Server,power system l1122 server,NOT FOUND,N/A,True
+Teller Cash Dispenser,Teller Cash Dispenser,Teller Cash Dispenser,teller cash dispenser,NOT FOUND,N/A,True
+Power System E1150 Server,Power System E1150 Server,Power System E1150 Server,power system e1150 server,NOT FOUND,N/A,True
+Tape Library,Tape Library,TS4300 Tape Library,ts4300 tape library,NOT FOUND,N/A,True
+Spectrum Archive Enterprise and Library,Spectrum Archive Enterprise and Library,Spectrum Archive Enterprise and Library,spectrum archive enterprise and library,NOT FOUND,N/A,True
+LinuxONE Rockhopper 4 LA2,LinuxONE Rockhopper 4 LA2,Z Servers,z servers,NOT FOUND,N/A,True
+Rational Licensing,Rational License Key Server,Licensing Group,licensing group,NOT FOUND,N/A,True
+Cloud Pak System,Cloud Pak System,Cloud Pak System / PureApplication,cloud pak system / pureapplication,NOT FOUND,N/A,True
+Power System L1024 Server,Power System L1024 Server,Power System L1024 Server,power system l1024 server,NOT FOUND,N/A,True
+Security Family,Security Family,Security Family,security family,NOT FOUND,N/A,True
+MQ for z/OS,MQ for z/OS,IBM MQ for z/OS,ibm mq for z/os,NOT FOUND,N/A,True
+Spectrum LSF RTM,Spectrum LSF RTM,Spectrum LSF RTM,spectrum lsf rtm,NOT FOUND,N/A,True
+Advanced VSAM Manager for z/OS,Advanced VSAM Manager for z/OS,Advanced VSAM Manager for z/OS,advanced vsam manager for z/os,NOT FOUND,N/A,True
+TS2270 Tape Drive,TS2270 Tape Drive,TS2270 Tape Drive,ts2270 tape drive,NOT FOUND,N/A,True
+Planning Analytics as a Service,Planning Analytics as a Service,IBM Planning Analytics as a Service,ibm planning analytics as a service,NOT FOUND,N/A,True
+DS8880,DS8880,DS8880,ds8880,NOT FOUND,N/A,True
+Storage Scale Erasure Code Edition,Storage Scale Erasure Code Edition,Spectrum Scale Erasure Code Edition,spectrum scale erasure code edition,NOT FOUND,N/A,True
+DP Series Printer,DP Series Printer,DP Series Printer,dp series printer,NOT FOUND,N/A,True
+Tivoli Network Manager,Tivoli Network Manager,Netcool ITNM - ITNCM,netcool itnm - itncm,NOT FOUND,N/A,True
+Dynamics 365,Dynamics 365,Dynamics 365,dynamics 365,NOT FOUND,N/A,True
+watsonx Orchestrate Cartridge for IBM Cloud Pak for Data,watsonx Orchestrate Cartridge for IBM Cloud Pak for Data,watsonx Orchestrate Cartridge for IBM Cloud Pak for Data,watsonx orchestrate cartridge for ibm cloud pak for data,NOT FOUND,N/A,True
+Security Verify Directory Integrator,Security Verify Directory Integrator,Security Verify Directory Integrator,security verify directory integrator,NOT FOUND,N/A,True
+EDB Enterprise Postgres,EDB Enterprise Postgres,EDB Enterprise Postgres,edb enterprise postgres,NOT FOUND,N/A,True
+Db2 Analytics Accelerator for z/OS,Db2 Analytics Accelerator for z/OS,Db2 Analytics Accelerator for z/OS,db2 analytics accelerator for z/os,NOT FOUND,N/A,True
+watsonx.ai,watsonx.ai,watsonx.ai,"watsonx.ai, watsonx.ai.0, watsonx.ai.x",NOT FOUND,N/A,True
+FileNet Image Services (IS) Connector,FileNet Image Services (IS) Connector,FileNet Image Services (IS) Connector,filenet image services (is) connector,NOT FOUND,N/A,True
+Z Software Asset Management,Z Software Asset Management,Z Software Asset Management,z software asset management,NOT FOUND,N/A,True
+Host Access Client Package,Host Access Client Package for Multiplatforms,Host Access Client Package,host access client package,NOT FOUND,N/A,True
+FileNet Image Services,FileNet Image Services,FileNet Image Services,filenet image services,NOT FOUND,N/A,True
+Rational Developer for i,Rational Developer for i,Rational Developer for i,rational developer for i,NOT FOUND,N/A,True
+Rational Developer for i,Rational Developer for i,Rational Developer for i,rational developer for i,NOT FOUND,N/A,True
+Symmetrix,Symmetrix,Symmetrix,symmetrix,NOT FOUND,N/A,True
+TS1150 Tape Drive,TS1150 Tape Drive,TS1150 Tape Drive,ts1150 tape drive,NOT FOUND,N/A,True
+Encoder,Encoder,Encoder,encoder,NOT FOUND,N/A,True
+NS1 Connect,NS1 Connect,NS1 Connect,ns1 connect,NOT FOUND,N/A,True
+BACC Planning Analytics (PA),BACC Planning Analytics (PA),BACC Support,bacc support,NOT FOUND,N/A,True
+TPF,TPF,z/TPF,z/tpf,NOT FOUND,N/A,True
+Thermal Printer,Thermal Printer,Thermal Printer,thermal printer,NOT FOUND,N/A,True
+Uninterruptible Power Supply,Uninterruptible Power Supply,Uninterruptible Power Supply,uninterruptible power supply,NOT FOUND,N/A,True
+zSingle Next,zSingle Next,unassigned,unassigned,NOT FOUND,N/A,True
+Backup and Restore Manager z/VM,Backup and Restore Manager z/VM,IBM Backup and Restore Manager for zVM,ibm backup and restore manager for zvm,NOT FOUND,N/A,True
+XL Fortran,XL Fortran,XL Fortran,xl fortran,NOT FOUND,N/A,True
+Unknown Product,Unknown Product,Unknown Product,unknown product,NOT FOUND,N/A,True
+Unity EdgeConnect Appliances,Unity EdgeConnect Appliances,unassigned,unassigned,NOT FOUND,N/A,True
+Debug for z/OS,Debug for z/OS,Debug for z/OS,debug for z/os,NOT FOUND,N/A,True
+Cognos Controller,Cognos Controller,Cognos Controller,cognos controller,NOT FOUND,N/A,True
+Integrated Analytics Systems,Integrated Analytics Systems,Integrated Analytics System,integrated analytics system,NOT FOUND,N/A,True
+QRadar SIEM SaaS,QRadar SIEM SaaS,QRadar SIEM SaaS,qradar siem saas,NOT FOUND,N/A,True
+US Postal Service Kiosk,US Postal Service Kiosk,US Postal Service Kiosk,us postal service kiosk,NOT FOUND,N/A,True
+Sterling B2B Integration SaaS Essentials and Standard,Sterling B2B Integration SaaS Essentials and Standard,Sterling B2B Integration Saas Essentials and Standard,sterling b2b integration saas essentials and standard,NOT FOUND,N/A,True
+StreamSets,StreamSets,StreamSets,streamsets,NOT FOUND,N/A,True
+IMS,IMS,IMS,ims,NOT FOUND,N/A,True
+z/VM,z/VM,VM BATCH,vm batch,NOT FOUND,N/A,True
+System Storage Device Enclosure,System Storage Device Enclosure,System Storage Device Enclosure,system storage device enclosure,NOT FOUND,N/A,True
+Netezza as a Service,Netezza as a Service,Netezza as a Service,netezza as a service,NOT FOUND,N/A,True
+Data Virtualization Manager,Data Virtualization Manager,Data Virtualization Manager,data virtualization manager,NOT FOUND,N/A,True
+ATMs,ATMs,9600 Series Automated Teller Machines,9600 series automated teller machines,NOT FOUND,N/A,True
+WebSphere Liberty,WebSphere Liberty,unassigned,unassigned,NOT FOUND,N/A,True
+ThinkSystem SR V2 Series Server,ThinkSystem SR V2 Series Server,unassigned,unassigned,NOT FOUND,N/A,True
+Wyse Thin Client,Wyse Thin Client,Wyse Thin Client,wyse thin client,NOT FOUND,N/A,True
+Watson Discovery,Watson Discovery,Watson Discovery,watson discovery,NOT FOUND,N/A,True
+Workload Automation,Workload Automation,Workload Automation,workload automation,NOT FOUND,N/A,True
+TS3200 Tape Library,TS3200 Tape Library,TS3200 Tape Library,ts3200 tape library,NOT FOUND,N/A,True
+Power System L1022 Server,Power System L1022 Server,Power System L1022 Server,power system l1022 server,NOT FOUND,N/A,True
+Enterprise Data Platform,Enterprise Data Platform,BACC Support,bacc support,NOT FOUND,N/A,True
+Spectrum Control,Spectrum Control,Spectrum Control,spectrum control,NOT FOUND,N/A,True
+Database,Database,Database,database,NOT FOUND,N/A,True
+Power System E850C Server,Power System E850C Server,Power System E850C Server,power system e850c server,NOT FOUND,N/A,True
+eCare: MyIBM,eCare: MyIBM,Digital eCare,digital ecare,NOT FOUND,N/A,True
+RCW Series Coin Recyclers,RCW Series Coin Recyclers,RCW Series Coin Recyclers,rcw series coin recyclers,NOT FOUND,N/A,True
+Concert,Concert,IBM Concert Software,ibm concert software,NOT FOUND,N/A,True
+Self Checkout Kiosk,Self Checkout Kiosk,Self Checkout Kiosk,self checkout kiosk,NOT FOUND,N/A,True
+API Connect Cloud Service,API Connect Cloud Service,API Connect Cloud Service,api connect cloud service,NOT FOUND,N/A,True
+Z NetView,Z NetView,Z NetView,z netview,NOT FOUND,N/A,True
+Tape Drives Collection,Tape Drives Collection,Tape Drives Collection,tape drives collection,NOT FOUND,N/A,True
+LinuxONE III,LinuxONE III,Z Servers,z servers,NOT FOUND,N/A,True
+Handheld Scanner,Handheld Scanner,Handheld Scanner,handheld scanner,NOT FOUND,N/A,True
+SAGA Series Point of Sale Displays,SAGA Series Point of Sale Displays,SAGA Series Point of Sale Displays,saga series point of sale displays,NOT FOUND,N/A,True
+Pinpad Point of Sale Terminals,Pinpad Point of Sale Terminals,Pinpad Point of Sale Terminals,pinpad point of sale terminals,NOT FOUND,N/A,True
+Engineering Lifecycle Management Base SaaS,Engineering Lifecycle Management Base SaaS,(SaaS) Engineering Lifecycle Management Base,(saas) engineering lifecycle management base,NOT FOUND,N/A,True
+UCS Series,UCS Series,Server,server,NOT FOUND,N/A,True
+Guardium Data Encryption,Guardium Data Encryption,Guardium Data Encryption,guardium data encryption,NOT FOUND,N/A,True
+Discovery SG Series Scanners,Discovery SG Series Scanners,Discovery SG Series Scanners,discovery sg series scanners,NOT FOUND,N/A,True
+Lenovo Server,Lenovo Server,X86 Server,x86 server,NOT FOUND,N/A,True
+BIG-IP,BIG-IP,BIG-IP Switch,big-ip switch,NOT FOUND,N/A,True
+HashiCorp Boundary Self-Managed,HashiCorp Boundary Self-Managed,HashiCorp Boundary Self-Managed,hashicorp boundary self-managed,NOT FOUND,N/A,True
+PowerHA SystemMirror,PowerHA SystemMirror Standard Edition for AIX,PowerHA SystemMirror,powerha systemmirror,NOT FOUND,N/A,True
+Synergy Series Compute Modules,Synergy Series Compute Modules,Synergy Series Compute Modules,synergy series compute modules,NOT FOUND,N/A,True
+Point of Sale Receipt Printers,Point of Sale Receipt Printers,Point of Sale Receipt Printers,point of sale receipt printers,NOT FOUND,N/A,True
+Point of Sale Machine,Point of Sale Machine,Point of Sale Machine,point of sale machine,NOT FOUND,N/A,True
+Netcool/Impact,Netcool/Impact,Netcool Impact TBSM,netcool impact tbsm,NOT FOUND,N/A,True
+WCE Provisioning,WCE Provisioning,WCE Provisioning,wce provisioning,NOT FOUND,N/A,True
+FlashSystem A9000,FlashSystem A9000,FlashSystem A9000,flashsystem a9000,NOT FOUND,N/A,True
+Mobile Computers,Mobile Computers,Mobile Computers,mobile computers,NOT FOUND,N/A,True
+Spectrum Virtualize for Storwize V7000,Spectrum Virtualize for Storwize V7000,Spectrum Virtualize for Storwize V7000,spectrum virtualize for storwize v7000,NOT FOUND,N/A,True
+webMethods Business Process Management,webMethods Business Process Management,webMethods Business Process Management,webmethods business process management,NOT FOUND,N/A,True
+zCX Foundation for Red Hat OpenShift,zCX Foundation for Red Hat OpenShift,zCX Foundation for Red Hat OpenShift,zcx foundation for red hat openshift,NOT FOUND,N/A,True
+Engineering Lifecycle Management Suite,Engineering Lifecycle Management Suite,Engineering Lifecycle Management Suite,engineering lifecycle management suite,NOT FOUND,N/A,True
+Power System S1124 Server,Power System S1124 Server,Power System  S1124 Server,power system  s1124 server,NOT FOUND,N/A,True
+Z OMEGAMON AI for Networks,Z OMEGAMON AI for Networks,Z OMEGAMON AI for Networks,z omegamon ai for networks,NOT FOUND,N/A,True
+Power System S1012 Server,Power System S1012 Server,Power System S1012 Server,power system s1012 server,NOT FOUND,N/A,True
+X6 Series SAN Directors,X6 Series SAN Directors,X6 Series SAN Directors,x6 series san directors,NOT FOUND,N/A,True
+Business Automation Content Services on Cloud,Business Automation Content Services on Cloud,Business Automation Content Services on Cloud,business automation content services on cloud,NOT FOUND,N/A,True
+Z OMEGAMON AI for CICS,Z OMEGAMON AI for CICS,Z OMEGAMON AI for CICS,z omegamon ai for cics,NOT FOUND,N/A,True
+Watson Machine Learning Server,Watson Machine Learning Server,Watson Machine Learning Server,watson machine learning server,NOT FOUND,N/A,True
+Connectrix,Connectrix,Connectrix,connectrix,NOT FOUND,N/A,True
+TS1140 Tape Drive,TS1140 Tape Drive,TS1140 Tape Drive,ts1140 tape drive,NOT FOUND,N/A,True
+Power System 780 Server,Power System 780 Server,Power System 780 Server,power system 780 server,NOT FOUND,N/A,True
+Spectrum Symphony,Spectrum Symphony,Spectrum Symphony,spectrum symphony,NOT FOUND,N/A,True
+VM Recovery Manager,VM Recovery Manager,VM Recovery Manager for DR and HA,vm recovery manager for dr and ha,NOT FOUND,N/A,True
+Laser Printers,Laser Printers,Laser Printer,laser printer,NOT FOUND,N/A,True
+Operational Decision Manager on Cloud,Operational Decision Manager on Cloud,ODM on Cloud,odm on cloud,NOT FOUND,N/A,True
+Control Desk,Control Desk,Control Desk,control desk,NOT FOUND,N/A,True
+watsonx Assistant for Cloud,watsonx Assistant for Cloud,watsonx Assistant for Cloud,watsonx assistant for cloud,NOT FOUND,N/A,True
+Power System E1180 Server,Power System E1180 Server,Power System E1180 Server,power system e1180 server,NOT FOUND,N/A,True
+Storage Sentinel,Storage Sentinel,Storage Sentinel,storage sentinel,NOT FOUND,N/A,True
+Sterling Order Management,Sterling Order Management,Sterling Order Management,sterling order management,NOT FOUND,N/A,True
+watsonx.governance as a Service,watsonx.governance as a Service,watsonx.governance as a Service,"watsonx.governance as a service, watsonx.governance as a service.0, watsonx.governance as a service.x",NOT FOUND,N/A,True
+MX Series Routers,MX Series Routers,MX SERIES,mx series,NOT FOUND,N/A,True
+EX Series Ethernet Switches,EX Series Ethernet Switches,EX Series,ex series,NOT FOUND,N/A,True
+IBM Verify on Cloud,IBM Verify on Cloud,No Product,no product,NOT FOUND,N/A,True
+Engineering Lifecycle Management Extended SaaS,Engineering Lifecycle Management Extended SaaS,(SaaS) Engineering Lifecycle Management Extended,(saas) engineering lifecycle management extended,NOT FOUND,N/A,True
+Cognos Controller on Cloud,Cognos Controller on Cloud,Cognos Controller on Cloud,cognos controller on cloud,NOT FOUND,N/A,True
+Power System 710 Server,Power System 710 Server,Power System 710 Server,power system 710 server,NOT FOUND,N/A,True
+DS8000 Legacy Systems,DS8000 Legacy Systems,DS8000 Legacy,ds8000 legacy,NOT FOUND,N/A,True
+Storwize V3700,Storwize V3700,Storwize V3700,storwize v3700,NOT FOUND,N/A,True
+Power System Flat Panel Console,Power System Flat Panel Console,Power System Flat Panel Console,power system flat panel console,NOT FOUND,N/A,True
+Manta Standalone Data Lineage,Manta Standalone Data Lineage,Manta Standalone Data Lineage,manta standalone data lineage,NOT FOUND,N/A,True
+QRadar Cloud-Native SIEM,QRadar Cloud-Native SIEM,QRadar Cloud-Native SIEM,qradar cloud-native siem,NOT FOUND,N/A,True
+BladeSystem c7000 Series Enclosures,BladeSystem c7000 Series Enclosures,C-class,c-class,NOT FOUND,N/A,True
+Comprehend,Comprehend,unassigned,unassigned,NOT FOUND,N/A,True
+Mac Studio,Mac Studio,Mac Studio,mac studio,NOT FOUND,N/A,True
+webMethods Managed File Transfer,webMethods Managed File Transfer,webMethods Managed File Transfer,webmethods managed file transfer,NOT FOUND,N/A,True
+Power System 750 Server,Power System 750 Server,Power System 750 Server,power system 750 server,NOT FOUND,N/A,True
+webMethods API Management SaaS,webMethods API Management SaaS,webMethods API Management SaaS,webmethods api management saas,NOT FOUND,N/A,True
+System i 520 Server,System i 520 Server,System i 520 Server,system i 520 server,NOT FOUND,N/A,True
+Data Studio,Data Studio,Data Studio,data studio,NOT FOUND,N/A,True
+LinuxONE Rockhopper 4 AGL,LinuxONE Rockhopper 4 AGL,Z Servers,z servers,NOT FOUND,N/A,True
+Fusion Middleware,Fusion Middleware,Fusion Middleware,fusion middleware,NOT FOUND,N/A,True
+Blueworks Live,Blueworks Live,Blueworks Live,blueworks live,NOT FOUND,N/A,True
+Jazz for Service Management DASH / TIP,Jazz for Service Management DASH / TIP,JazzSM Dash,jazzsm dash,NOT FOUND,N/A,True
+Flash Array,Flash Array,Flash Array,flash array,NOT FOUND,N/A,True
+Gluster & GlusterFS,Gluster & GlusterFS,Gluster & GlusterFS,gluster & glusterfs,NOT FOUND,N/A,True
+Spectrum Virtualize for SAN Volume Controller,Spectrum Virtualize for SAN Volume Controller,Spectrum Virtualize,spectrum virtualize,NOT FOUND,N/A,True
+Db2 Data Management Console,Db2 Data Management Console,Db2 Data Management Console,db2 data management console,NOT FOUND,N/A,True
+Power System E880 Server,Power System E880 Server,Power System E880 Server,power system e880 server,NOT FOUND,N/A,True
+Sterling Intelligent Promising,Sterling Intelligent Promising,Sterling Intelligent Promising,sterling intelligent promising,NOT FOUND,N/A,True
+ThinkSystem ST Series Server,ThinkSystem ST Series Server,ThinkServer,thinkserver,NOT FOUND,N/A,True
+Power System 520 Server,Power System 520 Server,Power System 520 Server,power system 520 server,NOT FOUND,N/A,True
+OpenPages as a Service,OpenPages as a Service,OpenPages as a Service,openpages as a service,NOT FOUND,N/A,True
+Onsite Standby Project Services,Onsite Standby Project Services,Onsite Standby Project Services,onsite standby project services,NOT FOUND,N/A,True
+z Workload Scheduler,z Workload Scheduler,z Workload Scheduler,z workload scheduler,NOT FOUND,N/A,True
+Engineering Workflow Management,Engineering Workflow Management,Engineering Workflow Management,engineering workflow management,NOT FOUND,N/A,True
+PSS 5000 Forecourt Controller,PSS 5000 Forecourt Controller,PSS 5000 Forecourt Controller,pss 5000 forecourt controller,NOT FOUND,N/A,True
+Client Vantage,Client Vantage,unassigned,unassigned,NOT FOUND,N/A,True
+US Secure Support,US Secure Support,US Secure Support,us secure support,NOT FOUND,N/A,True
+Storage Protect for Databases,Storage Protect for Databases,Storage Protect for Databases,storage protect for databases,NOT FOUND,N/A,True
+TCx Wave,TCx Wave,TCx Wave,tcx wave,NOT FOUND,N/A,True
+Point of Sale,Point of Sale,Point of Sale,point of sale,NOT FOUND,N/A,True
+Netezza Appliance,Netezza Appliance,Netezza Appliance,netezza appliance,NOT FOUND,N/A,True
+QRadar Applications,QRadar Applications,QRadar Applications,qradar applications,NOT FOUND,N/A,True
+Midrange Storage,Midrange Storage,Midrange Storage,midrange storage,NOT FOUND,N/A,True
+AirEngine Series Access Points,AirEngine Series Access Points,AirEngine Series Access Points,airengine series access points,NOT FOUND,N/A,True
+Dekra SYSTEMKOFFER Case,Dekra SYSTEMKOFFER Case,Dekra SYSTEMKOFFER Case,dekra systemkoffer case,NOT FOUND,N/A,True
+ThinkSystem SD Series Server,ThinkSystem SD Series Server,ThinkSystem SD Series Servers,thinksystem sd series servers,NOT FOUND,N/A,True
+Point of Sale Printer,Point of Sale Printer,Point of Sale Printer,point of sale printer,NOT FOUND,N/A,True
+Disk Storage Array,Disk Storage Array,Disk Storage Array,disk storage array,NOT FOUND,N/A,True
+Storage,Storage,Storage,storage,NOT FOUND,N/A,True
+PureTouch Point of Sale,PureTouch Point of Sale,PureTouch Point of Sale,puretouch point of sale,NOT FOUND,N/A,True
+WebSphere Application Server for z/OS,WebSphere Application Server for z/OS,WebSphere Application Server for z/OS,websphere application server for z/os,NOT FOUND,N/A,True
+Alienware,Alienware,Alienware,alienware,NOT FOUND,N/A,True
+OMEGAMON for z/OS,OMEGAMON for z/OS,OMEGAMON for z/OS,omegamon for z/os,NOT FOUND,N/A,True
+Maximo EAM Anywhere SaaS Flex,Maximo EAM Anywhere SaaS Flex,(SaaS) Maximo EAM Anywhere SaaS Flex,(saas) maximo eam anywhere saas flex,NOT FOUND,N/A,True
+TS1170 Tape Drive,TS1170 Tape Drive,Tape Drive Next,tape drive next,NOT FOUND,N/A,True
+Power System 550 Server,Power System 550 Server,Power System 550 Server,power system 550 server,NOT FOUND,N/A,True
+Application Discovery and Delivery Intelligence,Application Discovery and Delivery Intelligence,Application Discovery and Delivery Intelligence,application discovery and delivery intelligence,NOT FOUND,N/A,True
+Event Streams,Event Streams,Event Streams,event streams,NOT FOUND,N/A,True
+Z Multi-Factor Authentication,Z Multi-Factor Authentication,MFA,mfa,NOT FOUND,N/A,True
+Db2 Connect,DB2 Connect Enterprise Edition,Db2 Connect,db2 connect,NOT FOUND,N/A,True
+Z IntelliMagic Vision,Z IntelliMagic Vision,Z IntelliMagic Vision for z/OS,z intellimagic vision for z/os,NOT FOUND,N/A,True
+Power System 730 Server,Power System 730 Server,Power System 730 Server,power system 730 server,NOT FOUND,N/A,True
+TS1130 Tape Drive,TS1130 Tape Drive,TS1130 Tape Drive,ts1130 tape drive,NOT FOUND,N/A,True
+Combo Point of Sale Box,Combo Point of Sale Box,Combo Point of Sale Box,combo point of sale box,NOT FOUND,N/A,True
+Power System E850 Server,Power System E850 Server,Power System E850 Server,power system e850 server,NOT FOUND,N/A,True
+PhantomJS,PhantomJS,PhantomJS,phantomjs,NOT FOUND,N/A,True
+AMS,AMS,AMS,ams,NOT FOUND,N/A,True
+Rational Programming Patterns,Rational Programming Patterns,Rational Programming Patterns,rational programming patterns,NOT FOUND,N/A,True
+Developer for z/OS,Developer for z/OS,Developer for z/OS,developer for z/os,NOT FOUND,N/A,True
+MDS,MDS,MDS,mds,NOT FOUND,N/A,True
+OfficeJet Series Printers,OfficeJet Series Printers,OfficeJet Series Printers,officejet series printers,NOT FOUND,N/A,True
+Storage Protect for Cloud,Storage Protect for Cloud,Storage Protect for Cloud,storage protect for cloud,NOT FOUND,N/A,True
+Optim Archive,Optim Archive,Optim Archive,optim archive,NOT FOUND,N/A,True
+Power System Series Rack,Power System Series Rack,Power System Series Rack,power system series rack,NOT FOUND,N/A,True
+Premium Operations Oracle,Premium Operations Oracle,Storage Premium Operations,storage premium operations,NOT FOUND,N/A,True
+Flat Panel Series Monitors,Flat Panel Series Monitors,Monitors,monitors,NOT FOUND,N/A,True
+OneData,OneData,OneData,onedata,NOT FOUND,N/A,True
+TS3310 Tape Library,TS3310 Tape Library,TS3310 Tape Library,ts3310 tape library,NOT FOUND,N/A,True
+Ansible,Ansible,Ansible,ansible,NOT FOUND,N/A,True
+Rhapsody,Rhapsody,Rhapsody,rhapsody,NOT FOUND,N/A,True
+Physical Inventory Inspections Project Services,Physical Inventory Inspections Project Services,Physical Inventory Inspections Project Services,physical inventory inspections project services,NOT FOUND,N/A,True
+SANnav,SANnav,SANnav,sannav,NOT FOUND,N/A,True
+SPSS Modeler,IBM SPSS Modeler,SPSS Modeler,spss modeler,NOT FOUND,N/A,True
+Engineering Test Management,Engineering Test Management,Engineering Test Management,engineering test management,NOT FOUND,N/A,True
+UCS Server,UCS Server,UCS Server,ucs server,NOT FOUND,N/A,True
+FlashSystem 5600,FlashSystem 5600,unassigned,unassigned,NOT FOUND,N/A,True
+BOB@IBM,BOB@IBM,unassigned,unassigned,NOT FOUND,N/A,True
+Rational Application Developer for WebSphere Software,Rational Application Developer for WebSphere Software,Rational Application Developer for WebSphere Software,rational application developer for websphere software,NOT FOUND,N/A,True
+Runtimes for Business,Runtimes for Business,Runtimes for Business,runtimes for business,NOT FOUND,N/A,True
+MobileFirst Platform Foundation,MobileFirst Platform Foundation,MobileFirst Platform Foundation,mobilefirst platform foundation,NOT FOUND,N/A,True
+LinuxONE Rockhopper II,LinuxONE Rockhopper II,Z Servers,z servers,NOT FOUND,N/A,True
+Product Master,Product Master,Product Master,product master,NOT FOUND,N/A,True
+Windows,Windows,Microsoft Windows Operating System,microsoft windows operating system,NOT FOUND,N/A,True
+IMS Tools Base for z/OS,IMS Tools Base for z/OS,IMS Tools Base z/OS,ims tools base z/os,NOT FOUND,N/A,True
+QFX Series Switches,QFX Series Switches,QFX Series,qfx series,NOT FOUND,N/A,True
+oncallmanager,oncallmanager,oncallmanager,oncallmanager,NOT FOUND,N/A,True
+Disk Storage,Disk Storage,Disk Storage,disk storage,NOT FOUND,N/A,True
+Watson Explorer,Watson Explorer,Watson Explorer,watson explorer,NOT FOUND,N/A,True
+Storage Defender,Storage Defender,Storage Defender,storage defender,NOT FOUND,N/A,True
+InfoSphere Information Server: Information Governance Catalog (IGC),InfoSphere Information Server: Information Governance Catalog (IGC),InfoSphere Information Server: Information Governance Catalog (I,infosphere information server: information governance catalog (i,NOT FOUND,N/A,True
+FlexNetwork MSR Series Routers,FlexNetwork MSR Series Routers,Router,router,NOT FOUND,N/A,True
+Open Enterprise SDK for Apache Kafka,Open Enterprise SDK for Apache Kafka,Open Enterprise SDK for Apache Kafka,open enterprise sdk for apache kafka,NOT FOUND,N/A,True
+Rational Synergy,Rational Synergy,Rational Synergy,rational synergy,NOT FOUND,N/A,True
+Nomad Self-Managed,Nomad Self-Managed,Nomad Self-Managed,nomad self-managed,NOT FOUND,N/A,True
+Proliant DX Series Servers,Proliant DX Series Servers,Proliant DX Series Servers,proliant dx series servers,NOT FOUND,N/A,True
+Z Operational Log and Data Analytics,Z Operational Log and Data Analytics,Z Operational Log and Data Analytics,z operational log and data analytics,NOT FOUND,N/A,True
+watsonx.data intelligence as a Service,watsonx.data intelligence as a Service,watsonx.data intelligence as a Service,"watsonx.data intelligence as a service, watsonx.data intelligence as a service.0, watsonx.data intelligence as a service.x",NOT FOUND,N/A,True
+Security QRadar Suite,Security QRadar Suite,Security QRadar Suite,security qradar suite,NOT FOUND,N/A,True
+Fusion HCI for watsonx,Fusion HCI for watsonx,Fusion HCI for watsonx,fusion hci for watsonx,NOT FOUND,N/A,True
+eCare: SQO,eCare: SQO,Digital eCare,digital ecare,NOT FOUND,N/A,True
+Lenovo EveryScale Solution,Lenovo EveryScale Solution,unassigned,unassigned,NOT FOUND,N/A,True
+Rational ClearQuest,Rational ClearQuest,Rational ClearQuest,rational clearquest,NOT FOUND,N/A,True
+Query Management Facility,Query Management Facility,QMF Analytics for Multiplatforms,qmf analytics for multiplatforms,NOT FOUND,N/A,True
+Cognos PowerPlay,Cognos PowerPlay,Cognos PowerPlay,cognos powerplay,NOT FOUND,N/A,True
+QRadar Appliance Hardware,QRadar Appliance Hardware,QRadar Appliance Hardware,qradar appliance hardware,NOT FOUND,N/A,True
+SPSS Collaboration & Deployment Services,SPSS Collaboration & Deployment Services,SPSS Collaboration & Deployment Services,spss collaboration & deployment services,NOT FOUND,N/A,True
+DevOps Velocity,DevOps Velocity,DevOps Velocity,devops velocity,NOT FOUND,N/A,True
+Tivoli OMEGAMON XE for Db2 Performance Expert,Tivoli OMEGAMON XE for Db2 Performance Expert,Tivoli OMEGAMON XE for Db2 Performance Expert,tivoli omegamon xe for db2 performance expert,NOT FOUND,N/A,True
+CL/SuperSession,CL/SuperSession,CL Supersession,cl supersession,NOT FOUND,N/A,True
+File Manager,File Manager,File Manager - HCL,file manager - hcl,NOT FOUND,N/A,True
+Fault Analyzer,Fault Analyzer for z/OS,Fault Analyzer - HCL,fault analyzer - hcl,NOT FOUND,N/A,True
+Network Enclosures,Network Enclosures,Network Enclosures,network enclosures,NOT FOUND,N/A,True
+Uninterruptable Power Supply,Uninterruptable Power Supply,Uninterruptible Power Supply,uninterruptible power supply,NOT FOUND,N/A,True
+Z OMEGAMON AI for z/OS,Z OMEGAMON AI for z/OS,Z OMEGAMON AI for z/OS,z omegamon ai for z/os,NOT FOUND,N/A,True
+QRadar Applications SaaS,QRadar Applications SaaS,QRadar Applications SaaS,qradar applications saas,NOT FOUND,N/A,True
+Datacap on Cloud,Datacap on Cloud,Datacap on Cloud,datacap on cloud,NOT FOUND,N/A,True
+Data Center Management,Data Center Management,Data Center Software,data center software,NOT FOUND,N/A,True
+Workstation Personal Computer,Workstation Personal Computer,Workstations,workstations,NOT FOUND,N/A,True
+Unity Hybrid Storage,Unity Hybrid Storage,Unity Hybrid Storage,unity hybrid storage,NOT FOUND,N/A,True
+PowerSC,PowerSC,PowerSC,powersc,NOT FOUND,N/A,True
+Monitors,Monitors,15in Monitor,15in monitor,NOT FOUND,N/A,True
+Equallogic,Equallogic,Equallogic,equallogic,NOT FOUND,N/A,True
+Notebooks,Notebooks,Notebooks,notebooks,NOT FOUND,N/A,True
+OptiPlex,OptiPlex,OptiPlex,optiplex,NOT FOUND,N/A,True
+Video Conference,Video Conference,Video Conference,video conference,NOT FOUND,N/A,True
+Hardware customization/shipping & handling,Hardware customization/shipping & handling,Hardware customization/shipping & handling,hardware customization/shipping & handling,NOT FOUND,N/A,True
+Optim Data Growth,Optim Data Growth,Optim Data Growth,optim data growth,NOT FOUND,N/A,True
+COBOL,COBOL,COBOL,cobol,NOT FOUND,N/A,True
+Guardium Discover and Classify,Guardium Discover and Classify,Security Discover and Classify,security discover and classify,NOT FOUND,N/A,True
+Ideapad,Ideapad,Ideapad,ideapad,NOT FOUND,N/A,True
+Scanner,Scanner,Scanner,scanner,NOT FOUND,N/A,True
+Daeja ViewONE,Daeja ViewONE,Daeja ViewONE,daeja viewone,NOT FOUND,N/A,True
+webMethods AgileApps SaaS,webMethods AgileApps SaaS,webMethods AgileApps SaaS,webmethods agileapps saas,NOT FOUND,N/A,True
+Spectrum Protect for ERP,Spectrum Protect for ERP,Storage Protect for ERP,storage protect for erp,NOT FOUND,N/A,True
+Financial Crimes Insight,Financial Crimes Insight,Financial Crimes Insight (SaaS),financial crimes insight (saas),NOT FOUND,N/A,True
+Guardium Insights,Guardium Insights,Guardium Insights,guardium insights,NOT FOUND,N/A,True
+Db2 Analytics Accelerator Loader for z/OS,Db2 Analytics Accelerator Loader for z/OS,Db2 Analytics Accelerator Loader for z/OS,db2 analytics accelerator loader for z/os,NOT FOUND,N/A,True
+ATMs,ATMs,ATMs,atms,NOT FOUND,N/A,True
+Luna DB,Luna DB,Luna DB,luna db,NOT FOUND,N/A,True
+Cognos Planning,Cognos Planning,Cognos Planning,cognos planning,NOT FOUND,N/A,True
+ThinkSystem SR V3 Series Server,ThinkSystem SR V3 Series Server,ThinkSystem SR Series Servers,thinksystem sr series servers,NOT FOUND,N/A,True
+Decision Runtime for z/OS,Decision Runtime for z/OS,ODM for z/OS,odm for z/os,NOT FOUND,N/A,True
+Power System S822L Server,Power System S822L Server,Power System S822L Server,power system s822l server,NOT FOUND,N/A,True
+"Db2 Linux, Unix and Windows w/ Performance Optimization","Db2 Linux, Unix and Windows w/ Performance Optimization","Db2 Linux, Unix and Windows w/ Performance Optimization","db2 linux, unix and windows w/ performance optimization",NOT FOUND,N/A,True
+Storage Ceph,Storage Ceph,Ceph,ceph,NOT FOUND,N/A,True
+Explorer for z/OS,Explorer for z/OS,IBM Explorer for z/OS v3.0 Aqua,"ibm explorer for z/os v3.0 aqua, ibm explorer for z/os v3.0 aqua.0, ibm explorer for z/os v3.0 aqua.x",NOT FOUND,N/A,True
+Dependency Based Build,Dependency Based Build,Dependency Based Build for z/OS,dependency based build for z/os,NOT FOUND,N/A,True
+IMS Database Solution Pack for z/OS,IMS Database Solution Pack for z/OS,IMS DB Solution Pack z/OS,ims db solution pack z/os,NOT FOUND,N/A,True
+z13s,z13s,Z Servers,z servers,NOT FOUND,N/A,True
+WebSphere Automation,WebSphere Automation,WebSphere Automation for Cloud Pak for AIOps,websphere automation for cloud pak for aiops,NOT FOUND,N/A,True
+InfoSphere Information Server: QualityStage (QS),InfoSphere Information Server: QualityStage (QS),InfoSphere Information Server: QualityStage (QS),infosphere information server: qualitystage (qs),NOT FOUND,N/A,True
+Cloud Pak for Data as a Service,Cloud Pak for Data as a Service,Cloud Pak for Data as a Service,cloud pak for data as a service,NOT FOUND,N/A,True
+Concert for Z,Concert for Z,unassigned,unassigned,NOT FOUND,N/A,True
+E-Business Suite,E-Business Suite,E-Business Suite,e-business suite,NOT FOUND,N/A,True
+IBMid Support,IBMid Support,IBMid Enterprise Federation,ibmid enterprise federation,NOT FOUND,N/A,True
+Thermal Printers,Thermal Printers,Thermal Printers,thermal printers,NOT FOUND,N/A,True
+EntireX,EntireX,EntireX,entirex,NOT FOUND,N/A,True
+IBM Java for z/OS,"IBM 64-bit SDK for z/OS, Java 2 Technology Edition",IBM Java,ibm java,NOT FOUND,N/A,True
+TETRA Radio Terminals,TETRA Radio Terminals,TETRA Radio Terminals,tetra radio terminals,NOT FOUND,N/A,True
+UrbanCode Release,UrbanCode Release,UrbanCode Release,urbancode release,NOT FOUND,N/A,True
+iMac,iMac,iMac,imac,NOT FOUND,N/A,True
+Power System E870C Server,Power System E870C Server,Power System E870C Server,power system e870c server,NOT FOUND,N/A,True
+Developer for z/OS Enterprise Edition,Developer for z/OS Enterprise Edition,Developer for z/OS Enterprise Edition,developer for z/os enterprise edition,NOT FOUND,N/A,True
+QRadar Log Manager,QRadar Log Manager,QRadar Log Manager,qradar log manager,NOT FOUND,N/A,True
+Rack Server,Rack Server,Rack Server,rack server,NOT FOUND,N/A,True
+Quick System Check Project Services,Quick System Check Project Services,unassigned,unassigned,NOT FOUND,N/A,True
+Terracotta,Terracotta,Terracotta,terracotta,NOT FOUND,N/A,True
+Z Anomaly Analytics,Z Anomaly Analytics,Watson to Z Anomaly Analytics,watson to z anomaly analytics,NOT FOUND,N/A,True
+Rational Software Architect Designer for WebSphere Software,Rational Software Architect Designer for WebSphere Software,Rational Software Architect Designer for WebSphere Software,rational software architect designer for websphere software,NOT FOUND,N/A,True
+Z Open Automation Utilities,Z Open Automation Utilities,Z Open Automation Utilities,z open automation utilities,NOT FOUND,N/A,True
+SRX Series Service Gateways,SRX Series Service Gateways,SRX Series,srx series,NOT FOUND,N/A,True
+Sterling Store Engagement,Sterling Store Engagement,Sterling Store Engagement,sterling store engagement,NOT FOUND,N/A,True
+IBM Verify on Cloud,IBM Verify on Cloud,unassigned,unassigned,NOT FOUND,N/A,True
+Wireless Access Point,Wireless Access Point,Wireless Access Point,wireless access point,NOT FOUND,N/A,True
+Assets@IBM,Assets@IBM,unassigned,unassigned,NOT FOUND,N/A,True
+Db2 Warehouse on Power CloudRack,Db2 Warehouse on Power CloudRack,Db2 Warehouse on Power CloudRack,db2 warehouse on power cloudrack,NOT FOUND,N/A,True
+Think Client,Think Client,Think Client,think client,NOT FOUND,N/A,True
+Airline Control System,Airline Control System,ALCS - TPF,alcs - tpf,NOT FOUND,N/A,True
+z/OS Connect Enterprise Edition,z/OS Connect Enterprise Edition,IBM z/OS Connect,ibm z/os connect,NOT FOUND,N/A,True
+Power System S812 Server,Power System S812 Server,Power System S812 Server,power system s812 server,NOT FOUND,N/A,True
+AI Value Navigator,AI Value Navigator,unassigned,unassigned,NOT FOUND,N/A,True
+Engineering Lifecycle Optimization Publishing,Engineering Lifecycle Optimization Publishing,Engineering Lifecycle Optimization Publishing,engineering lifecycle optimization publishing,NOT FOUND,N/A,True
+Premium Operations AIX,Premium Operations AIX,Premium Operations AIX,premium operations aix,NOT FOUND,N/A,True
+Tivoli Netcool Configuration Manager,Tivoli Netcool Configuration Manager,Netcool ITNM - ITNCM,netcool itnm - itncm,NOT FOUND,N/A,True
+webMethods Managed File Transfer SaaS,webMethods Managed File Transfer SaaS,webMethods Managed File Transfer SaaS,webmethods managed file transfer saas,NOT FOUND,N/A,True
+Storage Ready Node Defender,Storage Ready Node Defender,Storage Ready Node Defender,storage ready node defender,NOT FOUND,N/A,True
+Data Erasure Project Services,Data Erasure Project Services,unassigned,unassigned,NOT FOUND,N/A,True
+Rational Synergy and Change Suite,Rational Synergy and Change Suite,Rational Synergy and Change Suite,rational synergy and change suite,NOT FOUND,N/A,True
+LaserJet Series Printers,LaserJet Series Printers,Laser Printer,laser printer,NOT FOUND,N/A,True
+Signature Pad,Signature Pad,Signature Pad,signature pad,NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,IBM Invoices and Orders,ibm invoices and orders,NOT FOUND,N/A,True
+Content Collector for SAP,Content Collector for SAP,Content Collector for SAP,content collector for sap,NOT FOUND,N/A,True
+Invoices and Orders,Invoices and Orders,IBM Invoices and Orders,ibm invoices and orders,NOT FOUND,N/A,True
+TS3100 Tape Library,TS3100 Tape Library,TS3100 and TS3200 Tape Libraries,ts3100 and ts3200 tape libraries,NOT FOUND,N/A,True
+Environmental Intelligence Suite,Environmental Intelligence Suite,Environmental Intelligence Suite,environmental intelligence suite,NOT FOUND,N/A,True
+M Series Routers,M Series Routers,MX Series,mx series,NOT FOUND,N/A,True
+Recovery Expert,Recovery Expert,Recovery Expert,recovery expert,NOT FOUND,N/A,True
+DevOps Test Embedded,DevOps Test Embedded,DevOps Test Embedded,devops test embedded,NOT FOUND,N/A,True
+Spectrum Virtualize for Storwize V5000,Spectrum Virtualize for Storwize V5000,Spectrum Virtualize for Storwize V5000,spectrum virtualize for storwize v5000,NOT FOUND,N/A,True
+Printers,Printers,Printers,printers,NOT FOUND,N/A,True
+Db2 Warehouse Private (dashDB local),Db2 Warehouse Private (dashDB local),Db2 Warehouse Private,db2 warehouse private,NOT FOUND,N/A,True
+DevOps Test UI,DevOps Test UI,DevOps Test UI,devops test ui,NOT FOUND,N/A,True
+Automation Decision Services,Automation Decision Services,Automation Decision Services,automation decision services,NOT FOUND,N/A,True
+Storage Fusion Data Foundation,Storage Fusion Data Foundation,Storage Fusion Data Foundation,storage fusion data foundation,NOT FOUND,N/A,True
+ThinkSystem Series Enclosure,ThinkSystem Series Enclosure,Rack Mount Series Tape Enclosures,rack mount series tape enclosures,NOT FOUND,N/A,True
+Enterprise Tablets,Enterprise Tablets,Enterprise Tablets,enterprise tablets,NOT FOUND,N/A,True
+StorageWorks MSA Series Disk Arrays,StorageWorks MSA Series Disk Arrays,MSA Storage,msa storage,NOT FOUND,N/A,True
+Sterling Store,Sterling Store,Sterling Store,sterling store,NOT FOUND,N/A,True
+Spectrum LSF Process Manager,Spectrum LSF Process Manager,Spectrum LSF Process Manager (PPM),spectrum lsf process manager (ppm),NOT FOUND,N/A,True
+Automatic Data Lineage,Automatic Data Lineage,Automatic Data Lineage,automatic data lineage,NOT FOUND,N/A,True
+Tivoli System Automation for MultiPlatforms,Tivoli System Automation for MultiPlatforms,TSAMP,tsamp,NOT FOUND,N/A,True
+CICS Transaction Gateway,CICS Transaction Gateway,CICS Client Components on Multi,cics client components on multi,NOT FOUND,N/A,True
+Fiber Service Platform FSP 3000,Fiber Service Platform FSP 3000,Fiber Service Platform FSP 3000,fiber service platform fsp 3000,NOT FOUND,N/A,True
+CICS Interdependency Analyzer,CICS Interdependency Analyzer,CICS Interdependency Analyzer,cics interdependency analyzer,NOT FOUND,N/A,True
+ThinkVision,ThinkVision,ThinkVision,thinkvision,NOT FOUND,N/A,True
+MQ HPE NonStop,MQ HPE NonStop,MQ HPE NonStop,mq hpe nonstop,NOT FOUND,N/A,True
+Power Platform Family,Power Platform Family,Power Platform Family,power platform family,NOT FOUND,N/A,True
+DNS Appliance,DNS Appliance,DNS Appliance,dns appliance,NOT FOUND,N/A,True
+SingleStore with IBM,SingleStore with IBM,SingleStore DB with IBM,singlestore db with ibm,NOT FOUND,N/A,True
+Red Hat OpenShift Container Platform,Red Hat OpenShift Container Platform,Red Hat OpenShift Container Platform,red hat openshift container platform,NOT FOUND,N/A,True
+DataAI Upgrade SWAT,DataAI Upgrade SWAT,unassigned,unassigned,NOT FOUND,N/A,True
+Noname Advanced API Security,Noname Advanced API Security,Noname Advanced API Security,noname advanced api security,NOT FOUND,N/A,True
+TS2250 Tape Drive,TS2250 Tape Drive,TS2250 Tape Drive,ts2250 tape drive,NOT FOUND,N/A,True
+Semeru Runtimes for z/OS,Semeru Runtimes for z/OS,IBM Semeru Runtime Certified Edition,ibm semeru runtime certified edition,NOT FOUND,N/A,True
+Content Assistant,Content Assistant,Content Assistant,content assistant,NOT FOUND,N/A,True
+Informix Tools and Connectivity,IBM Informix Advanced Enterprise Edition,Informix Tools and Connectivity,informix tools and connectivity,NOT FOUND,N/A,True
+Text to Speech for Cloud,Text to Speech for Cloud,Text to Speech for Cloud,text to speech for cloud,NOT FOUND,N/A,True
+Storage Defender as a Service,Storage Defender as a Service,Storage Defender as a Service,storage defender as a service,NOT FOUND,N/A,True
+Big SQL,IBM Db2 Big SQL,Big SQL,big sql,NOT FOUND,N/A,True
+Sterling Gentran Director,Sterling Gentran Director,Sterling Gentran Director,sterling gentran director,NOT FOUND,N/A,True
+DevOps Test Performance,DevOps Test Performance,DevOps Test Performance,devops test performance,NOT FOUND,N/A,True
+Content Manager OnDemand on Cloud,Content Manager OnDemand on Cloud,Content Manager OnDemand on Cloud,content manager ondemand on cloud,NOT FOUND,N/A,True
+z15 GT2,z15 GT2,Z Servers,z servers,NOT FOUND,N/A,True
+Infoprint Transforms,Infoprint Transforms,XFRM TO AFP,xfrm to afp,NOT FOUND,N/A,True
+Advanced Catalog Management for z/OS,Advanced Catalog Management for z/OS,Tivoli Advanced Catalog Management for z,tivoli advanced catalog management for z,NOT FOUND,N/A,True
+Spectrum LSF License Scheduler,Spectrum LSF License Scheduler,Spectrum LSF License Scheduler,spectrum lsf license scheduler,NOT FOUND,N/A,True
+Sterling Business Transaction Intelligence,Sterling Business Transaction Intelligence,Sterling Business Transaction Intelligence,sterling business transaction intelligence,NOT FOUND,N/A,True
+Test King Friday Product,Test King Friday Product,Test King Friday Product,test king friday product,NOT FOUND,N/A,True
+Professional Services - Software Defined Networking,Professional Services - Software Defined Networking,Technology Expert Labs - SDN,technology expert labs - sdn,NOT FOUND,N/A,True
+Simatic Controller,Simatic Controller,Simatic Controller,simatic controller,NOT FOUND,N/A,True
+WiS TEST Product SPSS,WiS TEST Product SPSS,Watson in Support Test Only,watson in support test only,NOT FOUND,N/A,True
+Db2 High Performance Unload for z/OS,Db2 High Performance Unload for z/OS,Db2 High Performance Unload for z/OS,db2 high performance unload for z/os,NOT FOUND,N/A,True
+Salesforce External Support,Salesforce External Support,SF Support,sf support,NOT FOUND,N/A,True
+Power USB HUB,Power USB HUB,Power USB HUB,power usb hub,NOT FOUND,N/A,True
+Sterling Inventory Visibility,Sterling Inventory Visibility,Sterling Inventory Visibility,sterling inventory visibility,NOT FOUND,N/A,True
+Z Performance and Capacity Analytics,Z Performance and Capacity Analytics,Z Performance and Capacity Analytics,z performance and capacity analytics,NOT FOUND,N/A,True
+Maximo Spatial Asset Management,Maximo Spatial Asset Management,Maximo Spatial Asset Management,maximo spatial asset management,NOT FOUND,N/A,True
+HWD2-Test-Product-PROD1,HWD2-Test-Product-PROD1,Test King Friday Product,test king friday product,NOT FOUND,N/A,True
+WebSphere Service Registry and Repository,WebSphere Service Registry and Repository,WebSphere Service Registry and Repository,websphere service registry and repository,NOT FOUND,N/A,True
+PowerVM for NovaLink,PowerVM for NovaLink,PowerVM for NovaLink,powervm for novalink,NOT FOUND,N/A,True
+Z Crypto Discovery and Inventory,Z Crypto Discovery and Inventory,unassigned,unassigned,NOT FOUND,N/A,True
+Output Manager for z/OS,Output Manager for z/OS,Output Manager for z/OS,output manager for z/os,NOT FOUND,N/A,True
+Sterling Webforms,Sterling Webforms,Sterling Webforms,sterling webforms,NOT FOUND,N/A,True
+IBM Support for Box,IBM Support for Box,IBM Support for Box,ibm support for box,NOT FOUND,N/A,True
+WebSphere Extreme Scale,WebSphere Extreme Scale,WebSphere Extreme Scale,websphere extreme scale,NOT FOUND,N/A,True
+Classic Data Replication,Classic Data Replication,Replication - IMS / VSAM,replication - ims / vsam,NOT FOUND,N/A,True
+On Demand Consulting for Analytics,On Demand Consulting for Analytics,On Demand Consulting for Analytics,on demand consulting for analytics,NOT FOUND,N/A,True
+Implementation & Migrations Project Services,Implementation & Migrations Project Services,Implementation & Migrations Project Services,implementation & migrations project services,NOT FOUND,N/A,True
+Apache Cassandra,Apache Cassandra,Apache Cassandra,apache cassandra,NOT FOUND,N/A,True
+Site Relocation Project Services,Site Relocation Project Services,unassigned,unassigned,NOT FOUND,N/A,True
+IBM Migration Utility,IBM Migration Utility,Migration Utility,migration utility,NOT FOUND,N/A,True
+Appliance Control Center for IBM Z & IBM LinuxONE,Appliance Control Center for IBM Z & IBM LinuxONE,Appliance Control Center for IBM Z & IBM LinuxOne,appliance control center for ibm z & ibm linuxone,NOT FOUND,N/A,True
+SUN ZFS,SUN ZFS,SUN ZFS,sun zfs,NOT FOUND,N/A,True
+Financial Transaction Manager for z/OS,Financial Transaction Manager for z/OS,Financial Transaction Manager for z/OS,financial transaction manager for z/os,NOT FOUND,N/A,True
+Rational Build Forge,Rational Build Forge,Rational Build Forge,rational build forge,NOT FOUND,N/A,True
+LinuxONE Emperor II,LinuxONE Emperor II,Z Servers,z servers,NOT FOUND,N/A,True
+Expert Essentials for Security,Expert Essentials for Security,unassigned,unassigned,NOT FOUND,N/A,True
+Power System 570 Server,Power System 570 Server,Power System 570 Server,power system 570 server,NOT FOUND,N/A,True
+ARCAD,ARCAD,ARCAD,arcad,NOT FOUND,N/A,True
+Sterling Connect Express for z/OS,Sterling Connect Express for z/OS,Sterling Connect Express for z/OS,sterling connect express for z/os,NOT FOUND,N/A,True
+Security Verify Privilege Vault,Security Verify Privilege Vault,Security Verify Privilege Vault,security verify privilege vault,NOT FOUND,N/A,True
+Security Verify Privilege Server Suite,Security Verify Privilege Server Suite,Security Verify Privilege Server Suite,security verify privilege server suite,NOT FOUND,N/A,True
+Trusteer Pinpoint Assure,Trusteer Pinpoint Assure,Trusteer Pinpoint Assure,trusteer pinpoint assure,NOT FOUND,N/A,True
+Configuration & Serviceable Actions Project Services,Configuration & Serviceable Actions Project Services,Configuration & Serviceable Actions Project Services,configuration & serviceable actions project services,NOT FOUND,N/A,True
+Power System L922 Server,Power System L922 Server,Power System L922 Server,power system l922 server,NOT FOUND,N/A,True
+ThinkSystem DE Series Storage,ThinkSystem DE Series Storage,ThinkSystem DE Series Storage Systems,thinksystem de series storage systems,NOT FOUND,N/A,True
+Power System 770 Server,Power System 770 Server,Power System 770 Server,power system 770 server,NOT FOUND,N/A,True
+USB Mouse,USB Mouse,USB Mouse,usb mouse,NOT FOUND,N/A,True
+Tape Autoloaders and Libraries Collection,Tape Autoloaders and Libraries Collection,Tape Autoloaders and Libraries Collection,tape autoloaders and libraries collection,NOT FOUND,N/A,True
+z Development and Test Environment,z Development and Test Environment,z Systems Development and Test Environment,z systems development and test environment,NOT FOUND,N/A,True
+Storage Protect Snapshot,Storage Protect Snapshot,Storage Protect Snapshot,storage protect snapshot,NOT FOUND,N/A,True
+AerPOS Series Smart Terminals,AerPOS Series Smart Terminals,AerPOS Series Smart Terminals,aerpos series smart terminals,NOT FOUND,N/A,True
+Application Service Engine Server,Application Service Engine Server,Application Service Engine Server,application service engine server,NOT FOUND,N/A,True
+Passbook Printers,Passbook Printers,Passbook Printers,passbook printers,NOT FOUND,N/A,True
+DataStax Mission Control,DataStax Mission Control,DataStax Mission Control,datastax mission control,NOT FOUND,N/A,True
+Enterprise,Enterprise,Enterprise,enterprise,NOT FOUND,N/A,True
+FlashSystem C200,FlashSystem C200,unassigned,unassigned,NOT FOUND,N/A,True
+Storwize V5100,Storwize V5100,Storwize V5100,storwize v5100,NOT FOUND,N/A,True
+Test Accelerator for Z,Test Accelerator for Z,Test Accelerator for Z,test accelerator for z,NOT FOUND,N/A,True
+Application Delivery Foundation Common Component,Application Delivery Foundation Common Component,ADFZ common component - HCL,adfz common component - hcl,NOT FOUND,N/A,True
+Primergy Server,Primergy Server,Primergy Server,primergy server,NOT FOUND,N/A,True
+App Connect Enterprise Cloud Service,App Connect Enterprise Cloud Service,App Connect Enterprise Cloud Service,app connect enterprise cloud service,NOT FOUND,N/A,True
+Transparent Data Migration Facility for z/OS,Transparent Data Migration Facility for z/OS,Transparent Data Migration Facility for z/OS,transparent data migration facility for z/os,NOT FOUND,N/A,True
+Cloud Pak for Network Automation,Cloud Pak for Network Automation,Cloud Pak for Network Automation,cloud pak for network automation,NOT FOUND,N/A,True
+VIPRION,VIPRION,VIPRION Performance Blade,viprion performance blade,NOT FOUND,N/A,True
+Field Project Services,Field Project Services,No Product,no product,NOT FOUND,N/A,True
+Encryption Facility for z/OS,Encryption Facility for z/OS,Encryption Facility for z/OS,encryption facility for z/os,NOT FOUND,N/A,True
+Guardium Data Security Center,Guardium Data Security Center,Guardium Data Security Center,guardium data security center,NOT FOUND,N/A,True
+App Connect Professional on Cloud,App Connect Professional on Cloud,App Connect Professional on Cloud,app connect professional on cloud,NOT FOUND,N/A,True
+Delivery SCBN Standard,Delivery SCBN Standard,WCE: Delivery SCBN Standard,wce: delivery scbn standard,NOT FOUND,N/A,True
+NeXtScale Series,NeXtScale Series,NetBay Series Rack Cabinets,netbay series rack cabinets,NOT FOUND,N/A,True
+Hyper Protect Offline Signing Orchestrator,Hyper Protect Offline Signing Orchestrator,Hyper Protect Offline Signing Orchestrator,hyper protect offline signing orchestrator,NOT FOUND,N/A,True
+Guardium Appliance Hardware,Guardium Appliance Hardware,Guardium Appliance Hardware,guardium appliance hardware,NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,Live Chat,live chat,NOT FOUND,N/A,True
+System i 820 Server,System i 820 Server,System i 820 Server,system i 820 server,NOT FOUND,N/A,True
+Integration Designer,Integration Designer,Integration Designer,integration designer,NOT FOUND,N/A,True
+Firepower,Firepower,Firepower,firepower,NOT FOUND,N/A,True
+Db2 Query Monitor for z/OS,Db2 Query Monitor for z/OS,Db2 Query Monitor for z/OS,db2 query monitor for z/os,NOT FOUND,N/A,True
+TS2260 Tape Drive,TS2260 Tape Drive,TS2260 Tape Drive,ts2260 tape drive,NOT FOUND,N/A,True
+Tivoli Application Dependency Discovery Manager,Tivoli Application Dependency Discovery Manager,Application Dependency Discovery,application dependency discovery,NOT FOUND,N/A,True
+Cloudera DataFlow,Cloudera DataFlow,Cloudera DataFlow,cloudera dataflow,NOT FOUND,N/A,True
+Data Virtualization,Data Virtualization,Data Virtualization,data virtualization,NOT FOUND,N/A,True
+Enterprise Records,Enterprise Records,Enterprise Records,enterprise records,NOT FOUND,N/A,True
+ILOG CPLEX Optimization Studio,ILOG CPLEX Optimization Studio,ILOG CPLEX Optimization Studio,ilog cplex optimization studio,NOT FOUND,N/A,True
+Astra Streaming,Astra Streaming,Astra Streaming,astra streaming,NOT FOUND,N/A,True
+Blade Servers,Blade Servers,Blade Server,blade server,NOT FOUND,N/A,True
+Automated Tape Allocation Manager,Automated Tape Allocation Manager,AUTO TAPE ALLOC MGR Z/OS,auto tape alloc mgr z/os,NOT FOUND,N/A,True
+FortiGate,FortiGate,FortiGate,fortigate,NOT FOUND,N/A,True
+Server,Server,Server,server,NOT FOUND,N/A,True
+Storagetek,Storagetek,Storagetek,storagetek,NOT FOUND,N/A,True
+OMEGAMON for Messaging on z/OS,OMEGAMON for Messaging on z/OS,OMEGAMON for Messaging on z/OS,omegamon for messaging on z/os,NOT FOUND,N/A,True
+Integrity BL Series C-Class Servers Blades,Integrity BL Series C-Class Servers Blades,Integrity BL Series C-Class Servers Blades,integrity bl series c-class servers blades,NOT FOUND,N/A,True
+watsonx.data intelligence,watsonx.data intelligence,watsonx.data intelligence,"watsonx.data intelligence, watsonx.data intelligence.0, watsonx.data intelligence.x",NOT FOUND,N/A,True
+P-temina Self Printer,P-temina Self Printer,P-temina Self Printer,p-temina self printer,NOT FOUND,N/A,True
+Support for Hyperledger Fabric,Support for Hyperledger Fabric,Support for Hyperledger Fabric,support for hyperledger fabric,NOT FOUND,N/A,True
+Tape Library,Tape Library,Tape Library,tape library,NOT FOUND,N/A,True
+VMware vCenter Server,VMware vCenter Server,VMware vCenter Server,vmware vcenter server,NOT FOUND,N/A,True
+DevOps Test Virtualization,DevOps Test Virtualization,DevOps Test Virtualization,devops test virtualization,NOT FOUND,N/A,True
+Event Automation,Event Automation,Event Automation,event automation,NOT FOUND,N/A,True
+Netezza Performance Server,Netezza Performance Server,Netezza Performance Server,netezza performance server,NOT FOUND,N/A,True
+Storage Ready Node Ceph,Storage Ready Node Ceph,Storage Ready Node Ceph,storage ready node ceph,NOT FOUND,N/A,True
+DeskJet Series Printers,DeskJet Series Printers,Inkjet Printer,inkjet printer,NOT FOUND,N/A,True
+HashiCorp PayGo,HashiCorp PayGo,HashiCorp PayGo,hashicorp paygo,NOT FOUND,N/A,True
+OMEGAMON for Networks on z/OS,OMEGAMON for Networks on z/OS,OMEGAMON for Networks on z/OS,omegamon for networks on z/os,NOT FOUND,N/A,True
+Power System AC922 Server,Power System AC922 Server,Power System AC922 Server,power system ac922 server,NOT FOUND,N/A,True
+"Db2 Linux, Unix and Windows Storage Optimization","Db2 Linux, Unix and Windows Storage Optimization","Db2 Linux, Unix and Windows Storage Optimization","db2 linux, unix and windows storage optimization",NOT FOUND,N/A,True
+watsonx.data integration as a Service,watsonx.data integration as a Service,watsonx.data integration as a Service,"watsonx.data integration as a service, watsonx.data integration as a service.0, watsonx.data integration as a service.x",NOT FOUND,N/A,True
+Z OMEGAMON AI for JVM,Z OMEGAMON AI for JVM,Z OMEGAMON AI for JVM,z omegamon ai for jvm,NOT FOUND,N/A,True
+Thinkbook,Thinkbook,Thinkbook,thinkbook,NOT FOUND,N/A,True
+BusinessObjects Web Intelligence,BusinessObjects Web Intelligence,unassigned,unassigned,NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,No Product,no product,NOT FOUND,N/A,True
+Apache Pulsar,Apache Pulsar,Apache Pulsar,apache pulsar,NOT FOUND,N/A,True
+FlashSystem Collection,FlashSystem Collection,FlashSystem Collection,flashsystem collection,NOT FOUND,N/A,True
+Machine Learning for z/OS,Machine Learning for z/OS,unassigned,unassigned,NOT FOUND,N/A,True
+Observability by Instana APM on z/OS,Observability by Instana APM on z/OS,Observability by Instana APM on z/OS,observability by instana apm on z/os,NOT FOUND,N/A,True
+IMS Fast Path DEDB REDO Utility,IMS Fast Path DEDB REDO Utility,unassigned,unassigned,NOT FOUND,N/A,True
+TS2290 Tape Drive,TS2290 Tape Drive,TS2290 Tape Drive,ts2290 tape drive,NOT FOUND,N/A,True
+InfoSphere Change Data Delivery,InfoSphere Change Data Delivery,Replication - Change Data Capture,replication - change data capture,NOT FOUND,N/A,True
+Retail,Retail,Retail,retail,NOT FOUND,N/A,True
+Concert on Cloud,Concert on Cloud,Concert on Cloud,concert on cloud,NOT FOUND,N/A,True
+AF/Integrated Resource Manager,AF/Integrated Resource Manager,Tivoli AF/Integrated Services Manager,tivoli af/integrated services manager,NOT FOUND,N/A,True
+TS2280 Tape Drive,TS2280 Tape Drive,TS2280 Tape Drive,ts2280 tape drive,NOT FOUND,N/A,True
+IMS High Performance Pointer Checker for z/OS,IMS High Performance Pointer Checker for z/OS,IMS HP Pointer Checker,ims hp pointer checker,NOT FOUND,N/A,True
+Reporting Appliance,Reporting Appliance,Reporting Appliance,reporting appliance,NOT FOUND,N/A,True
+Db2 Web Query for i,Db2 Web Query for i,DB2 Web Query for i,db2 web query for i,NOT FOUND,N/A,True
+Rational Asset Manager,Rational Asset Manager,Rational Asset Manager,rational asset manager,NOT FOUND,N/A,True
+Db2 Cloning Tool for z/OS,Db2 Cloning Tool for z/OS,Db2 Cloning Tool for z/OS,db2 cloning tool for z/os,NOT FOUND,N/A,True
+RMF Reporter,RMF Reporter,RMF Reporter,rmf reporter,NOT FOUND,N/A,True
+Optim Test Data Management for z/OS,Optim Test Data Management for z/OS,Optim Test Data Management for z/OS,optim test data management for z/os,NOT FOUND,N/A,True
+Spectrum LSF Explorer,Spectrum LSF Explorer,Spectrum LSF Explorer,spectrum lsf explorer,NOT FOUND,N/A,True
+Speech to Text for Cloud,Speech to Text for Cloud,Speech to Text for Cloud,speech to text for cloud,NOT FOUND,N/A,True
+Application Delivery Foundation,Application Delivery Foundation,Application Delivery Foundation,application delivery foundation,NOT FOUND,N/A,True
+IMS Recovery Solution Pack for z/OS,IMS Recovery Solution Pack for z/OS,IMS Recovery Solution Pack for z/OS,ims recovery solution pack for z/os,NOT FOUND,N/A,True
+Cloud Tape Connector,Cloud Tape Connector,Cloud Tape Connector,cloud tape connector,NOT FOUND,N/A,True
+Kubecost Cloud Service,Kubecost Cloud Service,Kubecost Cloud Service,kubecost cloud service,NOT FOUND,N/A,True
+Db2 Recovery Expert for z/OS,Db2 Recovery Expert for z/OS,Db2 Recovery Expert for z/OS,db2 recovery expert for z/os,NOT FOUND,N/A,True
+Optim Data Privacy,Optim Data Privacy,Optim Data Privacy,optim data privacy,NOT FOUND,N/A,True
+watsonx Assistant for Z,watsonx Assistant for Z,watsonx Assistant for Z,watsonx assistant for z,NOT FOUND,N/A,True
+Z Distribution for Zowe,Z Distribution for Zowe,Z Distribution for Zowe,z distribution for zowe,NOT FOUND,N/A,True
+Business Intelligence,Business Intelligence,Business Intelligence,business intelligence,NOT FOUND,N/A,True
+Guardium Data Security Center SaaS,Guardium Data Security Center SaaS,Guardium Data Security Center SaaS,guardium data security center saas,NOT FOUND,N/A,True
+Process Mining as a Service,Process Mining as a Service,Process Mining as a Service,process mining as a service,NOT FOUND,N/A,True
+MQ as a Service,MQ as a Service,MQ as a Service,mq as a service,NOT FOUND,N/A,True
+IMS High Performance Load,IMS High Performance Load,IMS HP Load,ims hp load,NOT FOUND,N/A,True
+System Automation for Integrated Operations Management,System Automation for Integrated Operations Management,System Automation for Integrated Operations Management,system automation for integrated operations management,NOT FOUND,N/A,True
+HP 9000 RP Series Servers,HP 9000 RP Series Servers,9000,"9000, 9000.0",NOT FOUND,N/A,True
+Mini-Tower Slim Cabinet,Mini-Tower Slim Cabinet,unassigned,unassigned,NOT FOUND,N/A,True
+Z OMEGAMON Integration Monitor,Z OMEGAMON Integration Monitor,Z OMEGAMON Integration Monitor,z omegamon integration monitor,NOT FOUND,N/A,True
+SPSS Amos,SPSS Amos,SPSS Amos,spss amos,NOT FOUND,N/A,True
+Engineering Integration Hub,Engineering Integration Hub,IBM Engineering Integration Hub,ibm engineering integration hub,NOT FOUND,N/A,True
+TXSeries for Multiplatforms,TXSeries for Multiplatforms,TXSeries for Multiplatforms,txseries for multiplatforms,NOT FOUND,N/A,True
+SuperServer,SuperServer,SuperServer,superserver,NOT FOUND,N/A,True
+Cinema Display,Cinema Display,Cinema Display,cinema display,NOT FOUND,N/A,True
+webMethods B2B SaaS,webMethods B2B SaaS,webMethods B2B SaaS,webmethods b2b saas,NOT FOUND,N/A,True
+Integrity RX Series Servers,Integrity RX Series Servers,Integrity,integrity,NOT FOUND,N/A,True
+Tivoli Composite Application Manager for Application Diagnostics for z/OS,Tivoli Composite Application Manager for Application Diagnostics for z/OS,ITCAM for Application Diagnostics for z/OS,itcam for application diagnostics for z/os,NOT FOUND,N/A,True
+Spectrum LSF Application Center (PAC),Spectrum LSF Application Center (PAC),Spectrum LSF Application Center (PAC),spectrum lsf application center (pac),NOT FOUND,N/A,True
+InfoSphere Data Architect,InfoSphere Data Architect,InfoSphere Data Architect,infosphere data architect,NOT FOUND,N/A,True
+AI Optimizer for IBM Z and IBM LinuxONE,AI Optimizer for IBM Z and IBM LinuxONE,AI Optimizer for Z,ai optimizer for z,NOT FOUND,N/A,True
+NCS Appliance,NCS Appliance,NCS Appliance,ncs appliance,NOT FOUND,N/A,True
+Application Gateway,Application Gateway,Application Gateway,application gateway,NOT FOUND,N/A,True
+Application Performance Analyzer,Application Performance Analyzer,Application Performance Analyzer,application performance analyzer,NOT FOUND,N/A,True
+Flex System Series,Flex System Series,Flat Panel Console Kit,flat panel console kit,NOT FOUND,N/A,True
+Telepresence,Telepresence,Telepresence,telepresence,NOT FOUND,N/A,True
+Print Services Facility,Print Services Facility,PSF,psf,NOT FOUND,N/A,True
+eCare: CPQ,eCare: CPQ,Digital eCare,digital ecare,NOT FOUND,N/A,True
+Red Hat for Fusion,Red Hat for Fusion,unassigned,unassigned,NOT FOUND,N/A,True
+Option - OBI - Think Option,Option - OBI - Think Option,Option - OBI - Think Option,option - obi - think option,NOT FOUND,N/A,True
+webMethods AgileApps,webMethods AgileApps,webMethods AgileApps,webmethods agileapps,NOT FOUND,N/A,True
+Luna Streaming,Luna Streaming,Luna Streaming,luna streaming,NOT FOUND,N/A,True
+zBC12,zBC12,Z Servers,z servers,NOT FOUND,N/A,True
+HourGlass,HourGlass,IBM HourGlass,ibm hourglass,NOT FOUND,N/A,True
+Apache ActiveMQ Artemis,Apache ActiveMQ Artemis,unassigned,unassigned,NOT FOUND,N/A,True
+Advanced Audit DFSMShsm,Advanced Audit DFSMShsm,Tivoli Advanced Audit for DFSMShsm - TEP,tivoli advanced audit for dfsmshsm - tep,NOT FOUND,N/A,True
+CICS Performance Analyzer,CICS Performance Analyzer,CICS Performance Analyzer,cics performance analyzer,NOT FOUND,N/A,True
+AI System Services for IBM z/OS,AI System Services for IBM z/OS,AI System Services for IBM z/OS,ai system services for ibm z/os,NOT FOUND,N/A,True
+Sterling Connect Enterprise for z/OS,Sterling Connect Enterprise for z/OS,Sterling Connect:Enterprise for z/OS,sterling connect:enterprise for z/os,NOT FOUND,N/A,True
+Business Monitor,Business Monitor,Business Monitor,business monitor,NOT FOUND,N/A,True
+Mac Mini,Mac Mini,Mac Mini,mac mini,NOT FOUND,N/A,True
+Robotic Process Automation as a Service,Robotic Process Automation as a Service,Robotic Process Automation as a Service,robotic process automation as a service,NOT FOUND,N/A,True
+Automation Foundation,Automation Foundation,Automation Foundation,automation foundation,NOT FOUND,N/A,True
+PL/I,IBM Enterprise PL/I for z/OS,PL/I,pl/i,NOT FOUND,N/A,True
+Voice Gateway,Voice Gateway,IBM Voice Gateway,ibm voice gateway,NOT FOUND,N/A,True
+Analytics Engine,Analytics Engine,Analytics Engine,analytics engine,NOT FOUND,N/A,True
+REXX Compiler/Library,REXX Compiler/Library,REXX Compiler/Library,rexx compiler/library,NOT FOUND,N/A,True
+watsonx.data integration,watsonx.data integration,watsonx.data integration,"watsonx.data integration, watsonx.data integration.0, watsonx.data integration.x",NOT FOUND,N/A,True
+A9000 Software,A9000 Software,A9000 Software,a9000 software,NOT FOUND,N/A,True
+Open Enterprise SDK for Node.js,Open Enterprise SDK for Node.js,SDK for Node.js,"sdk for node.js, sdk for node.js.0, sdk for node.js.x",NOT FOUND,N/A,True
+z/OS Container Platform,z/OS Container Platform,z/OS Container Platform,z/os container platform,NOT FOUND,N/A,True
+Db2 CI/CD Expert for z/OS,Db2 CI/CD Expert for z/OS,Db2 CI/CD Expert for z/OS,db2 ci/cd expert for z/os,NOT FOUND,N/A,True
+Z JCL Expert,Z JCL Expert,Z JCL Expert,z jcl expert,NOT FOUND,N/A,True
+Tivoli Business Service Manager,Tivoli Business Service Manager,Netcool Impact TBSM,netcool impact tbsm,NOT FOUND,N/A,True
+PC Series Desktop Thermal Printers,PC Series Desktop Thermal Printers,PC Series Desktop Thermal Printers,pc series desktop thermal printers,NOT FOUND,N/A,True
+G600 Series SAN Switches,G600 Series SAN Switches,G600 Series SAN Switches,g600 series san switches,NOT FOUND,N/A,True
+Flex System V7000,Flex System V7000,Flex System V7000,flex system v7000,NOT FOUND,N/A,True
+Power System 760 Server,Power System 760 Server,Power System 760 Server,power system 760 server,NOT FOUND,N/A,True
+Power Cloud Infrastructure,Power Cloud Infrastructure,Power Cloud Infrastructure,power cloud infrastructure,NOT FOUND,N/A,True
+Rational Business Developer,Rational Business Developer,Rational Business Developer,rational business developer,NOT FOUND,N/A,True
+Spectrum Virtualize for FlashSystem 9000 Series,Spectrum Virtualize for FlashSystem 9000 Series,Spectrum Virtualize for FlashSystem 9000 Series,spectrum virtualize for flashsystem 9000 series,NOT FOUND,N/A,True
+Storwize V3500,Storwize V3500,Storwize V3500,storwize v3500,NOT FOUND,N/A,True
+Customer Concierge Kiosk,Customer Concierge Kiosk,unassigned,unassigned,NOT FOUND,N/A,True
+Global Name Management,Global Name Management,Global Name Management,global name management,NOT FOUND,N/A,True
+AOEMF Controller,AOEMF Controller,AOEMF Controller,aoemf controller,NOT FOUND,N/A,True
+Rational Developer,Rational Developer,No Product,no product,NOT FOUND,N/A,True
+MongoDB Enterprise Advanced,MongoDB Enterprise Advanced,MongoDB Enterprise Advanced,mongodb enterprise advanced,NOT FOUND,N/A,True
+VMware vSphere,VMware vSphere,VMware vSphere,vmware vsphere,NOT FOUND,N/A,True
+EasyCoder Desktop Thermal Printers,EasyCoder Desktop Thermal Printers,EasyCoder Desktop Thermal Printers,easycoder desktop thermal printers,NOT FOUND,N/A,True
+Power System Expandable Disk System,Power System Expandable Disk System,Power System Expandable Disk System,power system expandable disk system,NOT FOUND,N/A,True
+eCare: Partner,eCare: Partner,Digital eCare,digital ecare,NOT FOUND,N/A,True
+GitLab Premium for IBM,GitLab Premium for IBM,GitLab Premium for IBM,gitlab premium for ibm,NOT FOUND,N/A,True
+Aruba Networking Gateways,Aruba Networking Gateways,unassigned,unassigned,NOT FOUND,N/A,True
+System Backup and Recovery,System Backup and Recovery,System Backup and Recovery,system backup and recovery,NOT FOUND,N/A,True
+Sterling Partner Engagement Manager,Sterling Partner Engagement Manager,Sterling Partner Engagement Manager Software,sterling partner engagement manager software,NOT FOUND,N/A,True
+Quantum Safe Explorer,Quantum Safe Explorer,unassigned,unassigned,NOT FOUND,N/A,True
+Db2 Accessories Suite,Db2 Accessories Suite,Db2 Accessories Suite,db2 accessories suite,NOT FOUND,N/A,True
+Z Digital Integration Hub,Z Digital Integration Hub,Z Digital Integration Hub,z digital integration hub,NOT FOUND,N/A,True
+Advanced Allocation Management for z/OS,Advanced Allocation Management for z/OS,Advanced Allocation Management for z/OS,advanced allocation management for z/os,NOT FOUND,N/A,True
+3PAR StoreServ Series Storages,3PAR StoreServ Series Storages,3PAR Storage,3par storage,NOT FOUND,N/A,True
+Tools Customizer for z/OS,Tools Customizer for z/OS,Tools Customizer for z/OS,tools customizer for z/os,NOT FOUND,N/A,True
+IoT Connected Vehicle Insights,IoT Connected Vehicle Insights,(SaaS) IoT Connected Vehicle Insights,(saas) iot connected vehicle insights,NOT FOUND,N/A,True
+Open SDK for Rust,Open SDK for Rust,Open SDK for Rust,open sdk for rust,NOT FOUND,N/A,True
+XML Toolkit for z/OS,XML Toolkit for z/OS,XML Toolkit for z/OS,xml toolkit for z/os,NOT FOUND,N/A,True
+ThinkAgile HX Series Server,ThinkAgile HX Series Server,ThinkAgile Series Appliances,thinkagile series appliances,NOT FOUND,N/A,True
+Identity Services Engine,Identity Services Engine,Identity Services Engine,identity services engine,NOT FOUND,N/A,True
+"Configure, Price, Quote on Cloud","Configure, Price, Quote on Cloud","Configure, Price, Quote on Cloud","configure, price, quote on cloud",NOT FOUND,N/A,True
+Power System IC922 Server,Power System IC922 Server,Power System IC922 Server,power system ic922 server,NOT FOUND,N/A,True
+IBM Cloud Private,IBM Cloud Private,IBM Cloud Private,ibm cloud private,NOT FOUND,N/A,True
+Enterprise Content Management System Monitor,Enterprise Content Management System Monitor,Enterprise Content Management System Monitor,enterprise content management system monitor,NOT FOUND,N/A,True
+DevOps Build,DevOps Build,DevOps Build,devops build,NOT FOUND,N/A,True
+G700 Series SAN Swtiches,G700 Series SAN Swtiches,G700 Series SAN Swtiches,g700 series san swtiches,NOT FOUND,N/A,True
+Smart Assist Project Services,Smart Assist Project Services,Smart Assist Project Services,smart assist project services,NOT FOUND,N/A,True
+Cloud Pak for Security SaaS,Cloud Pak for Security SaaS,Cloud Pak for Security SaaS,cloud pak for security saas,NOT FOUND,N/A,True
+Sterling Fulfillment Optimizer with Watson,Sterling Fulfillment Optimizer with Watson,Sterling Order Optimizer with Watson,sterling order optimizer with watson,NOT FOUND,N/A,True
+Watson Knowledge Studio for Cloud,Watson Knowledge Studio for Cloud,Watson Knowledge Studio for Cloud,watson knowledge studio for cloud,NOT FOUND,N/A,True
+Self Checkout System,Self Checkout System,Self Checkout System,self checkout system,NOT FOUND,N/A,True
+SmartCloud Application Performance Management,SmartCloud Application Performance Management,ITCAM,itcam,NOT FOUND,N/A,True
+PowerLinux Series Server,PowerLinux Series Server,PowerLinux Series Server,powerlinux series server,NOT FOUND,N/A,True
+Messaging Security Gateways,Messaging Security Gateways,Messaging Security Gateways,messaging security gateways,NOT FOUND,N/A,True
+Foundation & Advanced Support for Java Runtimes,Foundation & Advanced Support for Java Runtimes,Support for Runtimes,support for runtimes,NOT FOUND,N/A,True
+License Management Support,License Management Support,License Management Support - LMS,license management support - lms,NOT FOUND,N/A,True
+Concert for Power,Concert for Power,unassigned,unassigned,NOT FOUND,N/A,True
+ThinkAgile VX Series Server,ThinkAgile VX Series Server,ThinkSystem DB610 Series SAN Switches,thinksystem db610 series san switches,NOT FOUND,N/A,True
+ThinkSystem Top of Rack (ToR) Switch,ThinkSystem Top of Rack (ToR) Switch,Networking - Switch,networking - switch,NOT FOUND,N/A,True
+Content Foundation,Content Foundation,Content Foundation,content foundation,NOT FOUND,N/A,True
+Storage System,Storage System,Storage System,storage system,NOT FOUND,N/A,True
+SAP HANA,SAP HANA,SAP HANA,sap hana,NOT FOUND,N/A,True
+Salesforce Internal Support,Salesforce Internal Support,SF Support,sf support,NOT FOUND,N/A,True
+Apache Kafka,Apache Kafka,Apache Kafka,apache kafka,NOT FOUND,N/A,True
+Z Backup Resiliency,Z Backup Resiliency,IZBR,izbr,NOT FOUND,N/A,True
+Storage Protect for Space Management,Storage Protect for Space Management,Storage Protect for Space Management,storage protect for space management,NOT FOUND,N/A,True
+High Level Assembler,High Level Assembler,HLASM,hlasm,NOT FOUND,N/A,True
+Power System Mellanox Director Switch,Power System Mellanox Director Switch,Power System Mellanox Director Switch,power system mellanox director switch,NOT FOUND,N/A,True
+Db2 Query Management Facility for TSO/CICS,Db2 Query Management Facility for TSO/CICS,Db2 Query Management Facility for z/OS,db2 query management facility for z/os,NOT FOUND,N/A,True
+ThinkAgile SXM for Mellanox Switch,ThinkAgile SXM for Mellanox Switch,TS2240 Tape Drives,ts2240 tape drives,NOT FOUND,N/A,True
+Db2 Sort for z/OS,Db2 Sort for z/OS,Db2 Sort for z/OS,db2 sort for z/os,NOT FOUND,N/A,True
+Sterling Connect Express,Sterling Connect Express,Sterling Connect Express,sterling connect express,NOT FOUND,N/A,True
+Netcool Agile Service Manager,Netcool Agile Service Manager,Netcool ITNM - ITNCM,netcool itnm - itncm,NOT FOUND,N/A,True
+Z OMEGAMON AI for Storage,Z OMEGAMON AI for Storage,Z OMEGAMON AI for Storage,z omegamon ai for storage,NOT FOUND,N/A,True
+Storm Travel Case,Storm Travel Case,Storm Travel Case,storm travel case,NOT FOUND,N/A,True
+TV,TV,TV,tv,NOT FOUND,N/A,True
+Maximo for Nuclear Power,Maximo for Nuclear Power,Maximo for Nuclear Power,maximo for nuclear power,NOT FOUND,N/A,True
+LTO 10 Tape Drive,LTO 10 Tape Drive,No Product,no product,NOT FOUND,N/A,True
+Case Manager,Case Manager,Case Manager,case manager,NOT FOUND,N/A,True
+Rhapsody Systems Engineering,Rhapsody Systems Engineering,Rhapsody Systems Engineering,rhapsody systems engineering,NOT FOUND,N/A,True
+Communication Server,Communication Server,Communication Server,communication server,NOT FOUND,N/A,True
+IP Phone,IP Phone,IP Phone,ip phone,NOT FOUND,N/A,True
+Quidway Series Switches,Quidway Series Switches,Quidway Series Switches,quidway series switches,NOT FOUND,N/A,True
+Controller,Controller,Controller,controller,NOT FOUND,N/A,True
+Db2 DevOps Experience for z/OS,Db2 DevOps Experience for z/OS,Db2 DevOps Experience for z/OS,db2 devops experience for z/os,NOT FOUND,N/A,True
+Java Technology,Java Technology,Java Technology,java technology,NOT FOUND,N/A,True
+Transformation Extender Advanced,Transformation Extender Advanced,Transformation Extender Advanced,transformation extender advanced,NOT FOUND,N/A,True
+7800 Series SAN Switches,7800 Series SAN Switches,unassigned,unassigned,NOT FOUND,N/A,True
+Maximo for Aviation,Maximo for Aviation,Maximo For Aviation,maximo for aviation,NOT FOUND,N/A,True
+Db2 Utilities Solution Pack for z/OS,Db2 Utilities Solution Pack for z/OS,Db2 Utilities Solution Pack for z/OS,db2 utilities solution pack for z/os,NOT FOUND,N/A,True
+Red Hat Ceph Storage,Red Hat Ceph Storage,Red Hat Ceph Storage,red hat ceph storage,NOT FOUND,N/A,True
+IMS Performance Analyzer for z/OS,IMS Performance Analyzer for z/OS,IMS Performance Analyzer for z/OS,ims performance analyzer for z/os,NOT FOUND,N/A,True
+XOS Switches,XOS Switches,X460 Series Network Switches,x460 series network switches,NOT FOUND,N/A,True
+Query Workload Tuner,Query Workload Tuner,Query Workload Tuner,query workload tuner,NOT FOUND,N/A,True
+Red Hat for Fusion,Red Hat for Fusion,No Product,no product,NOT FOUND,N/A,True
+System i 525 Server,System i 525 Server,System i 525 Server,system i 525 server,NOT FOUND,N/A,True
+Db2 Table Editor for z/OS,Db2 Table Editor for z/OS,Db2 Table Editor for z/OS,db2 table editor for z/os,NOT FOUND,N/A,True
+eDiscovery,eDiscovery,eDiscovery,ediscovery,NOT FOUND,N/A,True
+Digital Commerce Site: Other Products,Digital Commerce Site: Other Products,Digital eCare,digital ecare,NOT FOUND,N/A,True
+Optim Archive for z/OS,Optim Archive for z/OS,Optim Archive for z/OS,optim archive for z/os,NOT FOUND,N/A,True
+Power System S812L Server,Power System S812L Server,Power System S812L Server,power system s812l server,NOT FOUND,N/A,True
+Db2 SQL Performance Analyzer for z/OS,Db2 SQL Performance Analyzer for z/OS,Db2 SQL Performance Analyzer for z/OS,db2 sql performance analyzer for z/os,NOT FOUND,N/A,True
+VS Fortran Compiler/Library,VS Fortran Compiler/Library,VS Fortran on OS/390,vs fortran on os/390,NOT FOUND,N/A,True
+Library Support for Struts,Library Support for Struts,unassigned,unassigned,NOT FOUND,N/A,True
+IBM HTTP Server,IBM HTTP Server,WebSphere IBM HTTP Server,websphere ibm http server,NOT FOUND,N/A,True
+N-series,N-series,N-series,n-series,NOT FOUND,N/A,True
+PowerVC,PowerVC,PowerVC,powervc,NOT FOUND,N/A,True
+IMS Fast Path Solution Pack for z/OS,IMS Fast Path Solution Pack for z/OS,IMS Fast Path Solution Pack,ims fast path solution pack,NOT FOUND,N/A,True
+Db2 Recovery Expert Pro for z/OS,Db2 Recovery Expert Pro for z/OS,Db2 Recovery Expert Pro for z/OS,db2 recovery expert pro for z/os,NOT FOUND,N/A,True
+Business Automation Insights,Business Automation Insights,Business Automation Insights,business automation insights,NOT FOUND,N/A,True
+Tape Autoloader,Tape Autoloader,TS2900 Tape Autoloaders,ts2900 tape autoloaders,NOT FOUND,N/A,True
+X7 Series SAN Directors,X7 Series SAN Directors,Storage Director Chassis,storage director chassis,NOT FOUND,N/A,True
+DevOps Test Performance Test Server,DevOps Test Performance Test Server,DevOps Test Performance Test Server,devops test performance test server,NOT FOUND,N/A,True
+Identity Manager,Identity Manager,Identity Manager,identity manager,NOT FOUND,N/A,True
+Firewall Appliance,Firewall Appliance,PA Series,pa series,NOT FOUND,N/A,True
+ThinkSystem DB Series SAN Switch,ThinkSystem DB Series SAN Switch,ThinkSystem DB620 Series SAN Switches,thinksystem db620 series san switches,NOT FOUND,N/A,True
+QRadar SOAR SaaS,QRadar SOAR SaaS,QRadar SOAR SaaS,qradar soar saas,NOT FOUND,N/A,True
+Z Decision Support,Z Decision Support,Cap Mgmt Analytics Monitor Agent 1.8.1,"cap mgmt analytics monitor agent 1.8.1, cap mgmt analytics monitor agent 1.8.1.0, cap mgmt analytics monitor agent 1.8.x",NOT FOUND,N/A,True
+Confidential Computing Containers for Red Hat OpenShift Container Platform,Confidential Computing Containers for Red Hat OpenShift Container Platform,No Product,no product,NOT FOUND,N/A,True
+Data Gate for z/OS,Data Gate for z/OS,Db2 Data Gate,db2 data gate,NOT FOUND,N/A,True
+Guardium S-TAP for zOS,IBM Security Guardium S-TAP for Db2 on z/OS,Guardium S-TAP for zOS,guardium s-tap for zos,NOT FOUND,N/A,True
+AIX Toolbox for Open Source Software,AIX Toolbox for Open Source Software,AIX Toolbox for Open Source Software,aix toolbox for open source software,NOT FOUND,N/A,True
+Cloud Pak for Multicloud Management,Cloud Pak for Multicloud Management,Cloud Pak for Multicloud Management,cloud pak for multicloud management,NOT FOUND,N/A,True
+Security Management,Security Management,Security Management,security management,NOT FOUND,N/A,True
+Spyre Support Appliance for IBM Z & IBM LinuxONE,Spyre Support Appliance for IBM Z & IBM LinuxONE,Spyre Support Appliance for IBM Z & IBM LinuxOne,spyre support appliance for ibm z & ibm linuxone,NOT FOUND,N/A,True
+OMEGAMON for IMS on z/OS,OMEGAMON for IMS on z/OS,OMEGAMON for IMS on z/OS,omegamon for ims on z/os,NOT FOUND,N/A,True
+ILOG CPLEX Optimization Studio Subscription,ILOG CPLEX Optimization Studio Subscription,ILOG CPLEX Optimization Studio Subscription,ilog cplex optimization studio subscription,NOT FOUND,N/A,True
+Z Observability Connect,Z Observability Connect,Z Application Performance Management Connect,z application performance management connect,NOT FOUND,N/A,True
+Other Applications,Other Applications,Microsoft Applications,microsoft applications,NOT FOUND,N/A,True
+Solaris,Solaris,Solaris,solaris,NOT FOUND,N/A,True
+Storwize Storage Series,Storwize Storage Series,Storwize V3700 Storage Systems,storwize v3700 storage systems,NOT FOUND,N/A,True
+Application Policy Infrastructure Controller,Application Policy Infrastructure Controller,APIC,apic,NOT FOUND,N/A,True
+GitLab Ultimate for IBM,GitLab Ultimate for IBM,GitLab Ultimae for IBM Cloud Paks,gitlab ultimae for ibm cloud paks,NOT FOUND,N/A,True
+Access Point,Access Point,Access Point,access point,NOT FOUND,N/A,True
+PostgreSQL,PostgreSQL,PostgreSQL,postgresql,NOT FOUND,N/A,True
+Rapid Infrastructure Automation,Rapid Infrastructure Automation,Rapid Network Automation,rapid network automation,NOT FOUND,N/A,True
+On Call Manager,On Call Manager,oncallmanager,oncallmanager,NOT FOUND,N/A,True
+VMware ESXi,VMware ESXi,VMware ESXi,vmware esxi,NOT FOUND,N/A,True
+Integrity Superdome 2 Series Servers,Integrity Superdome 2 Series Servers,Integrity Superdome 2 Series Servers,integrity superdome 2 series servers,NOT FOUND,N/A,True
+Engineering Lifecycle Optimization Method Composer,Engineering Lifecycle Optimization Method Composer,Engineering Lifecycle Optimization Method Composer,engineering lifecycle optimization method composer,NOT FOUND,N/A,True
+BladeCenter JS Series Server,BladeCenter JS Series Server,BladeCenter JS Series Server,bladecenter js series server,NOT FOUND,N/A,True
+Unified Storage,Unified Storage,Unified Storage,unified storage,NOT FOUND,N/A,True
+Data Erasure Project Services,Data Erasure Project Services,No Product,no product,NOT FOUND,N/A,True
+Data Gate for watsonx,Data Gate for watsonx,Data Gate for watsonx,data gate for watsonx,NOT FOUND,N/A,True
+IMS High Performance Image Copy for z/OS,IMS High Performance Image Copy for z/OS,IMS HP Image Copy,ims hp image copy,NOT FOUND,N/A,True
+Print Management Facility/MVS,Print Management Facility/MVS,AFP/PMF,afp/pmf,NOT FOUND,N/A,True
+Z OMEGAMON AI for Db2,Z OMEGAMON AI for Db2,No Product,no product,NOT FOUND,N/A,True
+ICKDSF (Device Support Facilities),ICKDSF (Device Support Facilities),unassigned,unassigned,NOT FOUND,N/A,True
+RS/6000 F50 Server,RS/6000 F50 Server,RS/6000 F50 Server,rs/6000 f50 server,NOT FOUND,N/A,True
+Interactive System Productivity Facility for VM,Interactive System Productivity Facility for VM,unassigned,unassigned,NOT FOUND,N/A,True
+Hyperflex HX Series,Hyperflex HX Series,Hyperflex HX Series,hyperflex hx series,NOT FOUND,N/A,True
+Verify Privileged Identity Platform,Verify Privileged Identity Platform,unassigned,unassigned,NOT FOUND,N/A,True
+z196,z196,Z Servers,z servers,NOT FOUND,N/A,True
+Powervault,Powervault,Powervault,powervault,NOT FOUND,N/A,True
+LTO 10 Tape Drive,LTO 10 Tape Drive,unassigned,unassigned,NOT FOUND,N/A,True
+Zabbix,Zabbix,Zabbix,zabbix,NOT FOUND,N/A,True
+Tivoli Storage Manager FastBack,Tivoli Storage Manager FastBack,Tivoli Storage Manager FastBack,tivoli storage manager fastback,NOT FOUND,N/A,True
+UTM Hardware Appliances,UTM Hardware Appliances,UTM Hardware Appliances,utm hardware appliances,NOT FOUND,N/A,True
+Watson Natural Language Understanding,Watson Natural Language Understanding,Watson Natural Language Understanding,watson natural language understanding,NOT FOUND,N/A,True
+Ubuntu Linux Server,Ubuntu Linux Server,Ubuntu Linux Server,ubuntu linux server,NOT FOUND,N/A,True
+Advanced Archive for DFSMShsm,Advanced Archive for DFSMShsm,Advanced Archive for z/OS,advanced archive for z/os,NOT FOUND,N/A,True
+SimpliVity Hyperconverged Infrastructure,SimpliVity Hyperconverged Infrastructure,SimpliVity Hyperconverged Infrastructure,simplivity hyperconverged infrastructure,NOT FOUND,N/A,True
+Production Imaging Edition,Production Imaging Edition,Production Imaging Edition,production imaging edition,NOT FOUND,N/A,True
+On Call Manager,On Call Manager,No Product,no product,NOT FOUND,N/A,True
+Host Access Transformation Services,Host Access Transformation Services,Host Access Transformation Services,host access transformation services,NOT FOUND,N/A,True
+TotalStorage Storage Enclosure,TotalStorage Storage Enclosure,No Product,no product,NOT FOUND,N/A,True
+Container Hosting Foundation for z/OS,Container Hosting Foundation for z/OS,Container Hosting Foundation for z/OS,container hosting foundation for z/os,NOT FOUND,N/A,True
+QRadar EDR SaaS,QRadar EDR SaaS,QRadar EDR SaaS,qradar edr saas,NOT FOUND,N/A,True
+TRIRIGA Suite,TRIRIGA Suite,TRIRIGA Application Suite,tririga application suite,NOT FOUND,N/A,True
+Guardium Cryptography Manager,Guardium Cryptography Manager,unassigned,unassigned,NOT FOUND,N/A,True
+Data Domain,Data Domain,Data Domain,data domain,NOT FOUND,N/A,True
+IMS Problem Investigator for z/OS,IMS Problem Investigator for z/OS,IMS Problem Investigator for z/OS,ims problem investigator for z/os,NOT FOUND,N/A,True
+Lenovo Base,Lenovo Base,TS2250 Tape Drives,ts2250 tape drives,NOT FOUND,N/A,True
+IMS Queue Control Facility for z/OS,IMS Queue Control Facility for z/OS,IMS Queue Control Facility,ims queue control facility,NOT FOUND,N/A,True
+Netra,Netra,Netra,netra,NOT FOUND,N/A,True
+Guardium Cryptography Manager,Guardium Cryptography Manager,No Product,no product,NOT FOUND,N/A,True
+Pliant SaaS,Pliant SaaS,Pliant SaaS,pliant saas,NOT FOUND,N/A,True
+Terminals for Attractive Customer Experience Client Controller,Terminals for Attractive Customer Experience Client Controller,Terminals for Attractive Customer Experience Client Controller,terminals for attractive customer experience client controller,NOT FOUND,N/A,True
+PTX Series Routers,PTX Series Routers,PTX Series,ptx series,NOT FOUND,N/A,True
+TRIRIGA CAD Integrator/Publisher,TRIRIGA CAD Integrator/Publisher,TRIRIGA CAD Integrator/Publisher,tririga cad integrator/publisher,NOT FOUND,N/A,True
+IntelliFlex Storage Appliance Series,IntelliFlex Storage Appliance Series,IntelliFlex Storage Appliance Series,intelliflex storage appliance series,NOT FOUND,N/A,True
+Python AI Toolkit for z/OS,Python AI Toolkit for z/OS,Python AI Toolkit for z/OS,python ai toolkit for z/os,NOT FOUND,N/A,True
+Power System S824L Server,Power System S824L Server,Power System S824L Server,power system s824l server,NOT FOUND,N/A,True
+Watson AI Services,Watson AI Services,Watson AI Services,watson ai services,NOT FOUND,N/A,True
+CICS Batch Application Control,CICS Batch Application Control,CICS Batch Application Control,cics batch application control,NOT FOUND,N/A,True
+Terminals for Attractive Customer Experience Scanner,Terminals for Attractive Customer Experience Scanner,Terminals for Attractive Customer Experience Scanner,terminals for attractive customer experience scanner,NOT FOUND,N/A,True
+StorageWorks MSL Series Tape Libraries,StorageWorks MSL Series Tape Libraries,Storageworks Tape Library,storageworks tape library,NOT FOUND,N/A,True
+Advanced Backup and Recovery for z/OS,Advanced Backup and Recovery for z/OS,Tivoli Advanced Backup and Recovery for z,tivoli advanced backup and recovery for z,NOT FOUND,N/A,True
+Spyre Runtime for IBM Z & IBM LinuxONE,Spyre Runtime for IBM Z & IBM LinuxONE,Spyre Runtime for IBM Z & IBM LinuxOne,spyre runtime for ibm z & ibm linuxone,NOT FOUND,N/A,True
+Db2 Data Access Common Collector,Db2 Data Access Common Collector,Db2 Data Access Common Collector,db2 data access common collector,NOT FOUND,N/A,True
+Course Generator,Course Generator,unassigned,unassigned,NOT FOUND,N/A,True
+Optim Archive Viewer,Optim Archive Viewer,Optim Archive Viewer,optim archive viewer,NOT FOUND,N/A,True
+Tivoli Composite Application Manager for Transactions,Tivoli Composite Application Manager for Transactions,ITCAM,itcam,NOT FOUND,N/A,True
+Talent Platform Optimizers,Talent Platform Optimizers,unassigned,unassigned,NOT FOUND,N/A,True
+IMS Library Integrity Utilities for z/OS,IMS Library Integrity Utilities for z/OS,IMS Library Integrity Utilities,ims library integrity utilities,NOT FOUND,N/A,True
+Unified Key Orchestrator,Unified Key Orchestrator,unassigned,unassigned,NOT FOUND,N/A,True
+DevOps Test Hub,DevOps Test Hub,DevOps Test Hub,devops test hub,NOT FOUND,N/A,True
+Red Hat Enterprise Linux for SAP Solutions,Red Hat Enterprise Linux for SAP Solutions,Red Hat Enterprise Linux for SAP Solutions,red hat enterprise linux for sap solutions,NOT FOUND,N/A,True
+Servers,Servers,Servers,servers,NOT FOUND,N/A,True
+Fluent Bit,Fluent Bit,Fluent Bit,fluent bit,NOT FOUND,N/A,True
+MobileFirst Quality Assurance,MobileFirst Quality Assurance,MobileFirst Quality Assurance,mobilefirst quality assurance,NOT FOUND,N/A,True
+Fiber Service Platform,Fiber Service Platform,Fiber Service Platform,fiber service platform,NOT FOUND,N/A,True
+watsonx Code Assistant,watsonx Code Assistant,watsonx Code Assistant for Ansible,watsonx code assistant for ansible,NOT FOUND,N/A,True
+T-1000 Series Firewall Appliances,T-1000 Series Firewall Appliances,T-1000 Series Firewall Appliances,t-1000 series firewall appliances,NOT FOUND,N/A,True
+Maximo for Life Sciences,Maximo for Life Sciences,Maximo for Life Sciences,maximo for life sciences,NOT FOUND,N/A,True
+Data Product Hub,Data Product Hub,Data Product Hub,data product hub,NOT FOUND,N/A,True
+Beetle Point of Sale System,Beetle Point of Sale System,Beetle Point of Sale System,beetle point of sale system,NOT FOUND,N/A,True
+Python for z/OS,Python for z/OS,Python for z/OS,python for z/os,NOT FOUND,N/A,True
+OMEGAMON Performance Management Suite,OMEGAMON Performance Management Suite,OMEGAMON Performance Management Suite,omegamon performance management suite,NOT FOUND,N/A,True
+Open Enterprise Foundation for z/OS,Open Enterprise Foundation for z/OS,Open Enterprise Foundation for z/OS,open enterprise foundation for z/os,NOT FOUND,N/A,True
+Expertise Connect for On Demand Consulting,Expertise Connect for On Demand Consulting,unassigned,unassigned,NOT FOUND,N/A,True
+Invoices and Orders,Invoices and Orders,Digital eCare,digital ecare,NOT FOUND,N/A,True
+Aruba Networking CX Series Switches,Aruba Networking CX Series Switches,unassigned,unassigned,NOT FOUND,N/A,True
+Db2 Performance Solution Pack for z/OS,Db2 Performance Solution Pack for z/OS,Db2 Performance Solution Pack for z/OS,db2 performance solution pack for z/os,NOT FOUND,N/A,True
+AP Series Wireless LAN Access Points,AP Series Wireless LAN Access Points,unassigned,unassigned,NOT FOUND,N/A,True
+Spectrum LSF Simulator,Spectrum LSF Simulator,Spectrum LSF Simulator,spectrum lsf simulator,NOT FOUND,N/A,True
+Power System Mellanox Switch,Power System Mellanox Switch,Power System Mellanox Switch,power system mellanox switch,NOT FOUND,N/A,True
+Nexus 9000 Series Switches,Nexus 9000 Series Switches,unassigned,unassigned,NOT FOUND,N/A,True
+Document Scanners,Document Scanners,Document Scanners,document scanners,NOT FOUND,N/A,True
+BladeCenter Series,BladeCenter Series,Bladecenter,bladecenter,NOT FOUND,N/A,True
+CICS VSAM Recovery,CICS VSAM Recovery,CICS VSAM Recovery,cics vsam recovery,NOT FOUND,N/A,True
+Supercomputer,Supercomputer,Supercomputer,supercomputer,NOT FOUND,N/A,True
+"ACF/VTAM (VM,VSE)","ACF/VTAM (VM,VSE)",unassigned,unassigned,NOT FOUND,N/A,True
+ThinkStation,ThinkStation,ThinkStation,thinkstation,NOT FOUND,N/A,True
+Mac Pro,Mac Pro,Mac Pro,mac pro,NOT FOUND,N/A,True
+Application Support Facility,Application Support Facility,ASF,asf,NOT FOUND,N/A,True
+DevOps Model RealTime,DevOps Model RealTime,DevOps Model RealTime,devops model realtime,NOT FOUND,N/A,True
+Screen Definition Facility II,Screen Definition Facility II,SDF II,sdf ii,NOT FOUND,N/A,True
+Developer for z/OS HLL/WB,Developer for z/OS HLL/WB,Developer for z/OS HLL/WB,developer for z/os hll/wb,NOT FOUND,N/A,True
+Wireless Controller,Wireless Controller,Wireless Controller,wireless controller,NOT FOUND,N/A,True
+InfoSphere Information Server: BigIntegrate and BigQuality (BIBQ),InfoSphere Information Server: BigIntegrate and BigQuality (BIBQ),InfoSphere Information Server: BigIntegrate and BigQuality (BIBQ,infosphere information server: bigintegrate and bigquality (bibq,NOT FOUND,N/A,True
+Power System 595 Server,Power System 595 Server,Power System 595 Server,power system 595 server,NOT FOUND,N/A,True
+Db2 Object Comparison Tool for z/OS,Db2 Object Comparison Tool for z/OS,Db2 Object Comparison Tool for z/OS,db2 object comparison tool for z/os,NOT FOUND,N/A,True
+Network Switches,Network Switches,Network Switch,network switch,NOT FOUND,N/A,True
+Quantum Safe Remediator,Quantum Safe Remediator,unassigned,unassigned,NOT FOUND,N/A,True
+OMEGAMON for z/OS Management Suite,OMEGAMON for z/OS Management Suite,OMEGAMON for z/OS Management Suite,omegamon for z/os management suite,NOT FOUND,N/A,True
+Db2 Automation Tool for z/OS,Db2 Automation Tool for z/OS,Db2 Automation Tool for z/OS,db2 automation tool for z/os,NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,PA Care,pa care,NOT FOUND,N/A,True
+Power System 795 Server,Power System 795 Server,Power System 795 Server,power system 795 server,NOT FOUND,N/A,True
+watsonx BI,watsonx BI,watsonx BI,watsonx bi,NOT FOUND,N/A,True
+Z Virtual Test Platform,Z Virtual Test Platform,Z Virtual Test Platform,z virtual test platform,NOT FOUND,N/A,True
+GSS (GPFS Storage Server),GSS (GPFS Storage Server),GSS (GPFS Storage Server),gss (gpfs storage server),NOT FOUND,N/A,True
+webMethods Hybrid Integration,webMethods Hybrid Integration,webMethods Hybrid Integration,webmethods hybrid integration,NOT FOUND,N/A,True
+Tape Drives,Tape Drives,TS2260 Tape Drives,ts2260 tape drives,NOT FOUND,N/A,True
+IMS Enterprise Suite,IMS Enterprise Suite,IMS Enterprise Suite,ims enterprise suite,NOT FOUND,N/A,True
+Network Management,Network Management,Network Management Software,network management software,NOT FOUND,N/A,True
+Terminals for Attractive Customer Experience Keypad,Terminals for Attractive Customer Experience Keypad,Terminals for Attractive Customer Experience Keypad,terminals for attractive customer experience keypad,NOT FOUND,N/A,True
+PIX,PIX,PIX,pix,NOT FOUND,N/A,True
+ProLiant XL Series Servers,ProLiant XL Series Servers,ProLiant XL Series Servers,proliant xl series servers,NOT FOUND,N/A,True
+Advanced Reporting for DFSMShsm,Advanced Reporting for DFSMShsm,Tivoli Advanced Reporting for DFSMShsm,tivoli advanced reporting for dfsmshsm,NOT FOUND,N/A,True
+Exadata,Exadata,Exadata,exadata,NOT FOUND,N/A,True
+IMS Connect Extensions for z/OS,IMS Connect Extensions for z/OS,IMS Connect Extensions,ims connect extensions,NOT FOUND,N/A,True
+Synergy Series Frames,Synergy Series Frames,Synergy Series Frames,synergy series frames,NOT FOUND,N/A,True
+USB Port Hub,USB Port Hub,USB Port Hub,usb port hub,NOT FOUND,N/A,True
+VNX Series,VNX Series,VNX Series,vnx series,NOT FOUND,N/A,True
+ACE,ACE,ACE,ace,NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,unassigned,unassigned,NOT FOUND,N/A,True
+NetEngine AR Series Routers,NetEngine AR Series Routers,NetEngine AR Series Routers,netengine ar series routers,NOT FOUND,N/A,True
+USB Keyboard,USB Keyboard,USB Keyboard,usb keyboard,NOT FOUND,N/A,True
+z/VM Agent for TDMF z/OS,z/VM Agent for TDMF z/OS,z/VM Agent for TDMF z/OS,z/vm agent for tdmf z/os,NOT FOUND,N/A,True
+HashiCorp Marketplace SaaS,HashiCorp Marketplace SaaS,HashiCorp Marketplace SaaS,hashicorp marketplace saas,NOT FOUND,N/A,True
+Test Partner Ecosystem Support,Test Partner Ecosystem Support,Test King Friday Product,test king friday product,NOT FOUND,N/A,True
+G820 Series SAN Switches,G820 Series SAN Switches,No Product,no product,NOT FOUND,N/A,True
+PowerLE2U Next,PowerLE2U Next,unassigned,unassigned,NOT FOUND,N/A,True
+FlashSystem 7600,FlashSystem 7600,No Product,no product,NOT FOUND,N/A,True
+ProLiant BL Series P-Class Servers Blades,ProLiant BL Series P-Class Servers Blades,Proliant DL Server,proliant dl server,NOT FOUND,N/A,True
+x86 Servers,x86 Servers,x86 Servers,x86 servers,NOT FOUND,N/A,True
+Tivoli Composite Application Manager for Application Diagnostics,Tivoli Composite Application Manager for Application Diagnostics,ITCAM,itcam,NOT FOUND,N/A,True
+Matrix Printer,Matrix Printer,Matrix Printer,matrix printer,NOT FOUND,N/A,True
+ServerProtect,ServerProtect,unassigned,unassigned,NOT FOUND,N/A,True
+SQL Data Insights Pro,SQL Data Insights Pro,No Product,no product,NOT FOUND,N/A,True
+Ons,Ons,Ons,ons,NOT FOUND,N/A,True
+Maximo Anywhere,Maximo Anywhere,Maximo Anywhere,maximo anywhere,NOT FOUND,N/A,True
+Content Integrator,Content Integrator,Content Integrator,content integrator,NOT FOUND,N/A,True
+One540 Series Access Routers,One540 Series Access Routers,One540 Series Access Routers,one540 series access routers,NOT FOUND,N/A,True
+TS2240 Tape Drive,TS2240 Tape Drive,TS2240 Tape Drive,ts2240 tape drive,NOT FOUND,N/A,True
+eCare: Passport Advantage,eCare: Passport Advantage,eCare,ecare,NOT FOUND,N/A,True
+Network Finance WorkStation USB Device Server,Network Finance WorkStation USB Device Server,Network Finance WorkStation USB Device Server,network finance workstation usb device server,NOT FOUND,N/A,True
+Apache CouchDB,Apache CouchDB,Apache CouchDB,apache couchdb,NOT FOUND,N/A,True
+Firepower Chassis,Firepower Chassis,Firepower Chassis,firepower chassis,NOT FOUND,N/A,True
+Kakiri-kun Series Power Strips,Kakiri-kun Series Power Strips,Kakiri-kun Series Power Strips,kakiri-kun series power strips,NOT FOUND,N/A,True
+Tape Controller,Tape Controller,Tape Controller,tape controller,NOT FOUND,N/A,True
+Business Automation Starter Kit,Business Automation Starter Kit,Business Automation Starter Kit,business automation starter kit,NOT FOUND,N/A,True
+Mini-Tiger Price Computing Scale,Mini-Tiger Price Computing Scale,Mini-Tiger Price Computing Scale,mini-tiger price computing scale,NOT FOUND,N/A,True
+Key Lifecycle Manager for z/OS,Key Lifecycle Manager for z/OS,Key Lifecycle Manager for z/OS,key lifecycle manager for z/os,NOT FOUND,N/A,True
+System i 570 Server,System i 570 Server,System i 570 Server,system i 570 server,NOT FOUND,N/A,True
+Kraken Beta,Kraken Beta,unassigned,unassigned,NOT FOUND,N/A,True
+Planning Analytics Core Financial Applications,Planning Analytics Core Financial Applications,Planning Analytics Core Financial Applications,planning analytics core financial applications,NOT FOUND,N/A,True
+API Connect for GraphQL,API Connect for GraphQL,API Connect Essentials,api connect essentials,NOT FOUND,N/A,True
+Apache Ranger,Apache Ranger,Apache Ranger,apache ranger,NOT FOUND,N/A,True
+Lenovo Server - Mission Critical,Lenovo Server - Mission Critical,Storwize V5000 Storage Systems,storwize v5000 storage systems,NOT FOUND,N/A,True
+Comcipher Series Network Encryptor Devices,Comcipher Series Network Encryptor Devices,Comcipher Series Network Encryptor Devices,comcipher series network encryptor devices,NOT FOUND,N/A,True
+Power System H924 Server,Power System H924 Server,Power System H924 Server,power system h924 server,NOT FOUND,N/A,True
+Hyperion,Hyperion,Hyperion,hyperion,NOT FOUND,N/A,True
+Storage Premium Operations,Storage Premium Operations,Storage Premium Operations,storage premium operations,NOT FOUND,N/A,True
+Cisco Catalyst Series Blade Switches,Cisco Catalyst Series Blade Switches,Cisco Catalyst Series Blade Switches,cisco catalyst series blade switches,NOT FOUND,N/A,True
+Key Management Solutions,Key Management Solutions,No Product,no product,NOT FOUND,N/A,True
+Automatic Binary Optimizer,Automatic Binary Optimizer,Automatic Binary Optimizer,automatic binary optimizer,NOT FOUND,N/A,True
+Trinzic Series Appliances,Trinzic Series Appliances,Trinzic Series Appliance,trinzic series appliance,NOT FOUND,N/A,True
+Firewall,Firewall,Firewall,firewall,NOT FOUND,N/A,True
+LaserJet Enterprise Series Printers,LaserJet Enterprise Series Printers,LaserJet Enterprise Series Printers,laserjet enterprise series printers,NOT FOUND,N/A,True
+Power System 560 Server,Power System 560 Server,Power System 560 Server,power system 560 server,NOT FOUND,N/A,True
+Unity EdgeConnect Appliances,Unity EdgeConnect Appliances,No Product,no product,NOT FOUND,N/A,True
+DataAI SWAT,DataAI SWAT,unassigned,unassigned,NOT FOUND,N/A,True
+Maximo Application Suite SWAT,Maximo Application Suite SWAT,unassigned,unassigned,NOT FOUND,N/A,True
+Engineering Lifecycle Management SWAT,Engineering Lifecycle Management SWAT,unassigned,unassigned,NOT FOUND,N/A,True
+Entitled Systems Support,Entitled Systems Support,Entitled Systems Support - ESS,entitled systems support - ess,NOT FOUND,N/A,True
+Cloud Video Logistics Manager,Cloud Video Logistics Manager,unassigned,unassigned,NOT FOUND,N/A,True
+AI Ops SWAT,AI Ops SWAT,AI Ops SWAT,ai ops swat,NOT FOUND,N/A,True
+Data Privacy Investigations,Data Privacy Investigations,Data Privacy Operations,data privacy operations,NOT FOUND,N/A,True
+Delivery SCBN Premium,Delivery SCBN Premium,WCE Provisioning,wce provisioning,NOT FOUND,N/A,True
+STERLING Tiger SWAT,STERLING Tiger SWAT,unassigned,unassigned,NOT FOUND,N/A,True
+Data Privacy Operations,Data Privacy Operations,Data Privacy Operations Help Project,data privacy operations help project,NOT FOUND,N/A,True
+Remote Code Load,Remote Code Load,Remote Code Load,remote code load,NOT FOUND,N/A,True
+eCare: MyIBM,eCare: MyIBM,Digital Commerce,digital commerce,NOT FOUND,N/A,True
+Salesforce External Support,Salesforce External Support,External Support,external support,NOT FOUND,N/A,True
+eCare: Passport Advantage,eCare: Passport Advantage,PA Care,pa care,NOT FOUND,N/A,True
+FlashArray//c Hybrid Storage,FlashArray//c Hybrid Storage,FlashArray//c Hybrid Storage,flasharray//c hybrid storage,NOT FOUND,N/A,True
+Data Privacy Operations,Data Privacy Operations,Chief Privacy Office,chief privacy office,NOT FOUND,N/A,True
+Systems Predictive Support,Systems Predictive Support,Systems Predictive Support,systems predictive support,NOT FOUND,N/A,True
+Fix Exception,Fix Exception,Fix Exception Handling,fix exception handling,NOT FOUND,N/A,True
+SkillsBuild High School Tenant,SkillsBuild High School Tenant,SkillsBuild,skillsbuild,NOT FOUND,N/A,True
+SkillsBuild Adult Tenant,SkillsBuild Adult Tenant,SkillsBuild,skillsbuild,NOT FOUND,N/A,True
+eCare: Passport Advantage,eCare: Passport Advantage,SQO Care,sqo care,NOT FOUND,N/A,True
+eCare: CPQ,eCare: CPQ,SQO Care,sqo care,NOT FOUND,N/A,True
+Digital Commerce: Accounting Products,Digital Commerce: Accounting Products,Digital Commerce,digital commerce,NOT FOUND,N/A,True
+SkillsBuild Level 1,SkillsBuild Level 1,SkillsBuild,skillsbuild,NOT FOUND,N/A,True
+,,Digital eCare,digital ecare,NOT FOUND,N/A,True
+Invoices and Orders,Invoices and Orders,SPSS Invoices and Orders,spss invoices and orders,NOT FOUND,N/A,True
+,,PA Care,pa care,NOT FOUND,N/A,True
+FixCentral Feedback,FixCentral Feedback,SF Support,sf support,NOT FOUND,N/A,True
+ThinkSmart Hub Series Conference Room Devices,ThinkSmart Hub Series Conference Room Devices,ThinkSmart Hub Series Conference Room Devices,thinksmart hub series conference room devices,NOT FOUND,N/A,True
+ThinkSystem SR V4 Series Server,ThinkSystem SR V4 Series Server,unassigned,unassigned,NOT FOUND,N/A,True
+Transition Accelerator Kit,Transition Accelerator Kit,unassigned,unassigned,NOT FOUND,N/A,True
+SkillsBuild Partner Tenant,SkillsBuild Partner Tenant,SkillsBuild,skillsbuild,NOT FOUND,N/A,True
+Call Home Connect,Call Home Connect,Call Home Connect,call home connect,NOT FOUND,N/A,True
+Premium Operations IBMi,Premium Operations IBMi,Premium Operations IBM i,premium operations ibm i,NOT FOUND,N/A,True
+Security SWAT,Security SWAT,Security SWAT,security swat,NOT FOUND,N/A,True
+eCare: Passport Advantage,eCare: Passport Advantage,Singapore Care,singapore care,NOT FOUND,N/A,True
+Client Value Acceleration Portal,Client Value Acceleration Portal,unassigned,unassigned,NOT FOUND,N/A,True
+FlashArray//x Storage,FlashArray//x Storage,FlashArray//x Storage,flasharray//x storage,NOT FOUND,N/A,True
+Internal Customer Experience Analytics,Internal Customer Experience Analytics,Internal Customer Experience Analytics,internal customer experience analytics,NOT FOUND,N/A,True
+Storage Extension Shelves,Storage Extension Shelves,Storage,storage,NOT FOUND,N/A,True
+IBM Digital 3PM: 3PM Support,IBM Digital 3PM: 3PM Support,Digital 3PM,digital 3pm,NOT FOUND,N/A,True
+Invoices and Orders,Invoices and Orders,Digital Commerce,digital commerce,NOT FOUND,N/A,True
+ThinkSystem Edge Server Series,ThinkSystem Edge Server Series,unassigned,unassigned,NOT FOUND,N/A,True
+,,SQO Care,sqo care,NOT FOUND,N/A,True
+,,Singapore Care,singapore care,NOT FOUND,N/A,True
+eCare: SQO,eCare: SQO,PA Care,pa care,NOT FOUND,N/A,True
+eCare: SQO,eCare: SQO,SQO Care,sqo care,NOT FOUND,N/A,True
+ThinkSystem SR Series GPU Server,ThinkSystem SR Series GPU Server,unassigned,unassigned,NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,External Support,external support,NOT FOUND,N/A,True
+eCare: CPQ,eCare: CPQ,PA Care,pa care,NOT FOUND,N/A,True
+ECuRep,ECuRep,SF Support,sf support,NOT FOUND,N/A,True
+Invoices and Orders,Invoices and Orders,PA Care,pa care,NOT FOUND,N/A,True
+Electronic Connections,Electronic Connections,Electronic Connections,electronic connections,NOT FOUND,N/A,True
+ThinkSystem DM Series Storage,ThinkSystem DM Series Storage,ThinkSystem DM Series Storage Systems,thinksystem dm series storage systems,NOT FOUND,N/A,True
+DataAI SWAT,DataAI SWAT,DataAI Upgrade SWAT,dataai upgrade swat,NOT FOUND,N/A,True
+Accelerated Value Program Services,Accelerated Value Program Services,Accelerated Value Program Services,accelerated value program services,NOT FOUND,N/A,True
+Integration SWAT,Integration SWAT,Integration SWAT,integration swat,NOT FOUND,N/A,True
+MultiCloud SaaS Platform (Internal),MultiCloud SaaS Platform (Internal),MultiCloud SaaS Platform(MCSP),multicloud saas platform(mcsp),NOT FOUND,N/A,True
+IBMid Support,IBMid Support,PA Care,pa care,NOT FOUND,N/A,True
+Inspiron,Inspiron,Inspiron,inspiron,NOT FOUND,N/A,True
+Watson in Support TEST Product,Watson in Support TEST Product,External Support,external support,NOT FOUND,N/A,True
+WiS TEST Product BWL,WiS TEST Product BWL,Watson in Support Test Only,watson in support test only,NOT FOUND,N/A,True
+CSP Test Automation Product,CSP Test Automation Product,Test King Friday Product,test king friday product,NOT FOUND,N/A,True
+CSP Test Automation Product,CSP Test Automation Product,CSP Test Automation Mission,csp test automation mission,NOT FOUND,N/A,True
+Watson in Support TEST Product,Watson in Support TEST Product,Watson in Support Test Only,watson in support test only,NOT FOUND,N/A,True
+eCare: SQO,eCare: SQO,Singapore Care,singapore care,NOT FOUND,N/A,True
+Hyperscale Series,Hyperscale Series,Networking - Hyperscale,networking - hyperscale,NOT FOUND,N/A,True
+Business Automation SWAT,Business Automation SWAT,Business Automation SWAT,business automation swat,NOT FOUND,N/A,True
+Test ENT: Db2 pureScale,Test ENT: Db2 pureScale,Test King Friday Product,test king friday product,NOT FOUND,N/A,True
+Old Test Live Agent Prod,Old Test Live Agent Prod,Old Test Live Agent Prod,old test live agent prod,NOT FOUND,N/A,True
+eCare: CPQ,eCare: CPQ,Singapore Care,singapore care,NOT FOUND,N/A,True
+MyNotification,MyNotification,SF Support,sf support,NOT FOUND,N/A,True
+DataAI SWAT,DataAI SWAT,DataAI SWAT,dataai swat,NOT FOUND,N/A,True
+IBM Support for Cisco Spark,IBM Support for Cisco Spark,IBM Support for Cisco Spark,ibm support for cisco spark,NOT FOUND,N/A,True
+ThinkSystem SR V2 Series Server,ThinkSystem SR V2 Series Server,No Product,no product,NOT FOUND,N/A,True
+eCare: MyIBM,eCare: MyIBM,PA Care,pa care,NOT FOUND,N/A,True
+Invoices and Orders,Invoices and Orders,Singapore Care,singapore care,NOT FOUND,N/A,True
+eCare: Redhat,eCare: Redhat,Singapore Care,singapore care,NOT FOUND,N/A,True
+IBMid Enterprise Federation,IBMid Enterprise Federation,External Support,external support,NOT FOUND,N/A,True
+ModernSystems,ModernSystems,unassigned,unassigned,NOT FOUND,N/A,True
+ThinkAgile MX Series Server,ThinkAgile MX Series Server,ThinkSystem D10xx Series Storage Systems,thinksystem d10xx series storage systems,NOT FOUND,N/A,True
+eCare: Partner,eCare: Partner,SQO Care,sqo care,NOT FOUND,N/A,True
+ThinkSystem DG Series Storage,ThinkSystem DG Series Storage,ThinkSystem DG Series Storage Systems,thinksystem dg series storage systems,NOT FOUND,N/A,True
+WebSphere SWAT,WebSphere SWAT,WebSphere SWAT,websphere swat,NOT FOUND,N/A,True
+Confluent Platform for Z and LinuxONE Acquisition,Confluent Platform for Z and LinuxONE Acquisition,unassigned,unassigned,NOT FOUND,N/A,True
+ThinkSystem SR Series GPU Server,ThinkSystem SR Series GPU Server,No Product,no product,NOT FOUND,N/A,True
+Data Privacy Operations,Data Privacy Operations,Chief Privacy Office - AI Ethics,chief privacy office - ai ethics,NOT FOUND,N/A,True
+Salesforce Internal Support,Salesforce Internal Support,External Support,external support,NOT FOUND,N/A,True
+DataAI Upgrade SWAT,DataAI Upgrade SWAT,DataAI Upgrade SWAT,dataai upgrade swat,NOT FOUND,N/A,True
+eCare: MyIBM,eCare: MyIBM,Singapore Care,singapore care,NOT FOUND,N/A,True
+HashiCorp Terraform,HashiCorp Terraform,Hashicorp Terraform,hashicorp terraform,NOT FOUND,N/A,True
+eCare: Passport Advantage,eCare: Passport Advantage,Digital Commerce,digital commerce,NOT FOUND,N/A,True
+IBM i Lab Services,IBM i Lab Services,IBM i Lab Services,ibm i lab services,NOT FOUND,N/A,True
+Modern Data Accelerators,Modern Data Accelerators,unassigned,unassigned,NOT FOUND,N/A,True
+Hashicorp Vault,Hashicorp Vault,Hashicorp Vault,hashicorp vault,NOT FOUND,N/A,True
+,,unassigned,unassigned,NOT FOUND,N/A,True
+eCare: MyIBM,eCare: MyIBM,Digital 3PM,digital 3pm,NOT FOUND,N/A,True
+ThinkServer TD Series,ThinkServer TD Series,System X,system x,NOT FOUND,N/A,True
+Software Support App,Software Support App,IBM Software Support App,ibm software support app,NOT FOUND,N/A,True
+eCare: SQO,eCare: SQO,Digital Commerce,digital commerce,NOT FOUND,N/A,True
+ThinkServer RD Series,ThinkServer RD Series,EBG Server,ebg server,NOT FOUND,N/A,True
+SAN Series Storage,SAN Series Storage,ThinkSystem S22xx Series Storage Systems,thinksystem s22xx series storage systems,NOT FOUND,N/A,True
+Operations Manager for z/VM,Operations Manager for z/VM,Operations Manager for zVM,operations manager for zvm,NOT FOUND,N/A,True
+Salesforce External Support,Salesforce External Support,Singapore Care,singapore care,NOT FOUND,N/A,True
+Automation Test Product,Automation Test Product,CSP Test Automation Mission,csp test automation mission,NOT FOUND,N/A,True
+ThinkServer TS Series,ThinkServer TS Series,ThinkSystem S32xx Series Storage Systems,thinksystem s32xx series storage systems,NOT FOUND,N/A,True
+Red Hat Marketplace,Red Hat Marketplace,unassigned,unassigned,NOT FOUND,N/A,True
+ThinkEdge Series Personal Computers,ThinkEdge Series Personal Computers,ThinkEdge Series Personal Computers,thinkedge series personal computers,NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,SQO Care,sqo care,NOT FOUND,N/A,True
+MultiCloud SaaS Platform,MultiCloud SaaS Platform,MultiCloud SaaS Platform(MCSP),multicloud saas platform(mcsp),NOT FOUND,N/A,True
+Db2 Management Solution Pack for z/OS,Db2 Management Solution Pack for z/OS,Db2 Management Solution Pack for z/OS,db2 management solution pack for z/os,NOT FOUND,N/A,True
+Partner Ecosystem Support,Partner Ecosystem Support,Singapore Care,singapore care,NOT FOUND,N/A,True
+Rack Cabinets and Accessories,Rack Cabinets and Accessories,unassigned,unassigned,NOT FOUND,N/A,True
+Archive and Essence Manager,Archive and Essence Manager,unassigned,unassigned,NOT FOUND,N/A,True
+FlashSystem 5600,FlashSystem 5600,No Product,no product,NOT FOUND,N/A,True
+ThinkSystem SR V4 Series Server,ThinkSystem SR V4 Series Server,No Product,no product,NOT FOUND,N/A,True
+ServiceLink & IBMLink,ServiceLink & IBMLink,ServiceLink & IBMLink,servicelink & ibmlink,NOT FOUND,N/A,True
+IdeaCentre,IdeaCentre,IdeaCentre,ideacentre,NOT FOUND,N/A,True
+Db2 for z/OS SWAT,Db2 for z/OS SWAT,unassigned,unassigned,NOT FOUND,N/A,True
+IMS Tiger Team SWAT,IMS Tiger Team SWAT,unassigned,unassigned,NOT FOUND,N/A,True
+Proactive Assessments Project Services,Proactive Assessments Project Services,unassigned,unassigned,NOT FOUND,N/A,True
+Webex Board,Webex Board,Webex Board,webex board,NOT FOUND,N/A,True
+BOB@IBM,BOB@IBM,Digital Commerce,digital commerce,NOT FOUND,N/A,True
+ASR 9000 Series Aggregation Services Routers,ASR 9000 Series Aggregation Services Routers,unassigned,unassigned,NOT FOUND,N/A,True
+Electronic Service Agent,Electronic Service Agent,Electronic Service Agent,electronic service agent,NOT FOUND,N/A,True
+IMS Extended Terminal Option Support for z/OS,IMS Extended Terminal Option Support for z/OS,IMS ETO Support,ims eto support,NOT FOUND,N/A,True
+Scanner Cradle Charger,Scanner Cradle Charger,Scanner Cradle Charger,scanner cradle charger,NOT FOUND,N/A,True
+Overlay Generation Language/370,Overlay Generation Language/370,OGL/370,ogl/370,NOT FOUND,N/A,True
+Premium Operation z HW,Premium Operation z HW,Storage Premium Operations,storage premium operations,NOT FOUND,N/A,True
+Premium Operation z SW,Premium Operation z SW,Storage Premium Operations,storage premium operations,NOT FOUND,N/A,True
+High Performance Unload,High Performance Unload,High Performance Unload,high performance unload,NOT FOUND,N/A,True
