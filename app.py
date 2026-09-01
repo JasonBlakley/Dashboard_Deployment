@@ -258,6 +258,11 @@ july26_merged = get_item('oidash-app','July_2026_merged.csv')
 july26_merged_new = july26_merged['Body'].read()
 with open('July_2026_merged.csv','wb') as file:
     file.write(july26_merged_new)
+
+august26_merged = get_item('oidash-app','August_2026_merged.csv')
+august26_merged_new = august26_merged['Body'].read()
+with open('August_2026_merged.csv','wb') as file:
+    file.write(august26_merged_new)
 print("✓ 2026 monthly data downloaded")
 
 # Load 2024 data
@@ -307,7 +312,11 @@ june_26_merged['Date'] = pd.to_datetime(june_26_merged['Month'])
 july_26_merged = pd.read_csv('July_2026_merged.csv', low_memory=False)
 july_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 july_26_merged['Date'] = pd.to_datetime(july_26_merged['Month'])
-print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged) + len(june_26_merged) + len(july_26_merged):,} records from 2026")
+
+august_26_merged = pd.read_csv('August_2026_merged.csv', low_memory=False)
+august_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+august_26_merged['Date'] = pd.to_datetime(august_26_merged['Month'])
+print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged) + len(june_26_merged) + len(july_26_merged) + len(august_26_merged):,} records from 2026")
 
 # Concatenate all data (6 dataframes instead of 16)
 print("Merging all data...")
@@ -320,13 +329,23 @@ all_data = pd.concat([
     april_26_merged,
     may_26_merged,
     june_26_merged,
-    july_26_merged
+    july_26_merged,
+    august_26_merged
 ], ignore_index=True)
 print(f"✓ Total records: {len(all_data):,}")
 earliest_date = all_data['Date'].min() # earliest date 
 most_recent_date = all_data['Date'].max() # the most recent date 
 # merging the pidname info 
 all_data = all_data.merge(pidname_mapping_table, how = 'left', on  = 'Product Name')
+
+# Filter out unassigned and IBM-internal GBG rows — these are not real customers
+# and would otherwise dominate the Top Customers by Risk chart
+_before = len(all_data)
+all_data = all_data[
+    (all_data['Global Buying Group Name'] != 'Unassigned') &
+    (~all_data['Global Buying Group Name'].str.contains('IBM', case=False, na=False))
+]
+print(f"✓ Filtered out {_before - len(all_data):,} Unassigned/IBM-internal rows ({_before:,} → {len(all_data):,})")
 
 # ============================================================================
 # PERFORMANCE OPTIMIZATION: Cache product info table
