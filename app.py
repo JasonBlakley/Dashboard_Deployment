@@ -205,64 +205,39 @@ all_data = pd.concat([all_data, jan_data_loaded, feb_data_loaded, march_data_loa
 """
 
 
+import gc as _gc
+
+def _download_to_file(bucket, key, local_path):
+    """Download COS object to local file, freeing the bytes buffer immediately."""
+    obj = get_item(bucket, key)
+    data = obj['Body'].read()
+    with open(local_path, 'wb') as f:
+        f.write(data)
+    del data
+    del obj
+    _gc.collect()
+
 # ============================================================================
 # DATA LOADING - Consolidated yearly files (6 files instead of 16)
 # Reduces load time from 5-8 minutes to 3-5 minutes
 # ============================================================================
 print("Downloading 2024 data...")
-merged_2024 = get_item('oidash-app','Merged_data_2024.csv')
-merged_2024_new = merged_2024['Body'].read()
-with open('Merged_data_2024.csv','wb') as file:
-    file.write(merged_2024_new)
+_download_to_file('oidash-app', 'Merged_data_2024.csv', 'Merged_data_2024.csv')
 print("✓ 2024 data downloaded")
 
 print("Downloading 2025 data...")
-merged_2025 = get_item('oidash-app','Merged_data_2025.csv')
-merged_2025_new = merged_2025['Body'].read()
-with open('Merged_data_2025.csv','wb') as file:
-    file.write(merged_2025_new)
+_download_to_file('oidash-app', 'Merged_data_2025.csv', 'Merged_data_2025.csv')
 print("✓ 2025 data downloaded")
 
 print("Downloading 2026 monthly data...")
-january26_merged = get_item('oidash-app','January_26_merged.csv')
-january26_merged_new = january26_merged['Body'].read()
-with open('January_26_merged.csv','wb') as file:
-    file.write(january26_merged_new)
-
-february26_merged = get_item('oidash-app','February_2026_merged.csv')
-february26_merged_new = february26_merged['Body'].read()
-with open('February_2026_merged.csv','wb') as file:
-    file.write(february26_merged_new)
-
-march26_merged = get_item('oidash-app','March_2026_merged.csv')
-march26_merged_new = march26_merged['Body'].read()
-with open('March_2026_merged.csv','wb') as file:
-    file.write(march26_merged_new)
-
-april26_merged = get_item('oidash-app','April_2026_merged.csv')
-april26_merged_new = april26_merged['Body'].read()
-with open('April_2026_merged.csv','wb') as file:
-    file.write(april26_merged_new)
-
-may26_merged = get_item('oidash-app','May_2026_merged.csv')
-may26_merged_new = may26_merged['Body'].read()
-with open('May_2026_merged.csv','wb') as file:
-    file.write(may26_merged_new)
-
-june26_merged = get_item('oidash-app','June_2026_merged.csv')
-june26_merged_new = june26_merged['Body'].read()
-with open('June_2026_merged.csv','wb') as file:
-    file.write(june26_merged_new)
-
-july26_merged = get_item('oidash-app','July_2026_merged.csv')
-july26_merged_new = july26_merged['Body'].read()
-with open('July_2026_merged.csv','wb') as file:
-    file.write(july26_merged_new)
-
-august26_merged = get_item('oidash-app','August_2026_merged.csv')
-august26_merged_new = august26_merged['Body'].read()
-with open('August_2026_merged.csv','wb') as file:
-    file.write(august26_merged_new)
+_download_to_file('oidash-app', 'January_26_merged.csv', 'January_26_merged.csv')
+_download_to_file('oidash-app', 'February_2026_merged.csv', 'February_2026_merged.csv')
+_download_to_file('oidash-app', 'March_2026_merged.csv', 'March_2026_merged.csv')
+_download_to_file('oidash-app', 'April_2026_merged.csv', 'April_2026_merged.csv')
+_download_to_file('oidash-app', 'May_2026_merged.csv', 'May_2026_merged.csv')
+_download_to_file('oidash-app', 'June_2026_merged.csv', 'June_2026_merged.csv')
+_download_to_file('oidash-app', 'July_2026_merged.csv', 'July_2026_merged.csv')
+_download_to_file('oidash-app', 'August_2026_merged.csv', 'August_2026_merged.csv')
 print("✓ 2026 monthly data downloaded")
 
 import traceback as _traceback
