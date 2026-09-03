@@ -265,61 +265,78 @@ with open('August_2026_merged.csv','wb') as file:
     file.write(august26_merged_new)
 print("✓ 2026 monthly data downloaded")
 
+import traceback as _traceback
+import sys as _sys
+
+def _flush():
+    _sys.stdout.flush()
+    _sys.stderr.flush()
+
 # Load 2024 data
-print("Loading 2024 data...")
+print("DIAG: starting 2024 load"); _flush()
 all_data_24 = pd.read_csv('Merged_data_2024.csv', low_memory=False)
+print(f"DIAG: 2024 csv read done, shape={all_data_24.shape}"); _flush()
 all_data_24.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 all_data_24['Date'] = pd.to_datetime(all_data_24['Month'])
 if 'Unnamed: 0' in all_data_24.columns:
     all_data_24.drop(columns = ['Unnamed: 0'], inplace = True)
-print(f"✓ Loaded {len(all_data_24):,} records from 2024")
+print(f"✓ Loaded {len(all_data_24):,} records from 2024"); _flush()
 
 # Load 2025 data
-print("Loading 2025 data...")
+print("DIAG: starting 2025 load"); _flush()
 all_data_25 = pd.read_csv('Merged_data_2025.csv', low_memory=False)
+print(f"DIAG: 2025 csv read done, shape={all_data_25.shape}"); _flush()
 all_data_25.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 all_data_25['Date'] = pd.to_datetime(all_data_25['Month'])
 if 'Unnamed: 0' in all_data_25.columns:
     all_data_25.drop(columns = ['Unnamed: 0'], inplace = True)
-print(f"✓ Loaded {len(all_data_25):,} records from 2025")
+print(f"✓ Loaded {len(all_data_25):,} records from 2025"); _flush()
 
 # Load 2026 monthly data
-print("Loading 2026 monthly data...")
+print("DIAG: starting 2026 monthly loads"); _flush()
 january_26_merged = pd.read_csv('January_26_merged.csv', low_memory=False)
 january_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 january_26_merged['Date'] = pd.to_datetime(january_26_merged['Month'])
+print(f"DIAG: jan26 loaded {len(january_26_merged):,}"); _flush()
 
 february_26_merged = pd.read_csv('February_2026_merged.csv', low_memory=False)
 february_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 february_26_merged['Date'] = pd.to_datetime(february_26_merged['Month'])
+print(f"DIAG: feb26 loaded {len(february_26_merged):,}"); _flush()
 
 march_26_merged = pd.read_csv('March_2026_merged.csv', low_memory=False)
 march_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 march_26_merged['Date'] = pd.to_datetime(march_26_merged['Month'])
+print(f"DIAG: mar26 loaded {len(march_26_merged):,}"); _flush()
 
 april_26_merged = pd.read_csv('April_2026_merged.csv', low_memory=False)
 april_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 april_26_merged['Date'] = pd.to_datetime(april_26_merged['Month'])
+print(f"DIAG: apr26 loaded {len(april_26_merged):,}"); _flush()
 
 may_26_merged = pd.read_csv('May_2026_merged.csv', low_memory=False)
 may_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 may_26_merged['Date'] = pd.to_datetime(may_26_merged['Month'])
+print(f"DIAG: may26 loaded {len(may_26_merged):,}"); _flush()
 
 june_26_merged = pd.read_csv('June_2026_merged.csv', low_memory=False)
 june_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 june_26_merged['Date'] = pd.to_datetime(june_26_merged['Month'])
+print(f"DIAG: jun26 loaded {len(june_26_merged):,}"); _flush()
 
 july_26_merged = pd.read_csv('July_2026_merged.csv', low_memory=False)
 july_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 july_26_merged['Date'] = pd.to_datetime(july_26_merged['Month'])
+print(f"DIAG: jul26 loaded {len(july_26_merged):,}"); _flush()
 
 august_26_merged = pd.read_csv('August_2026_merged.csv', low_memory=False)
 august_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 august_26_merged['Date'] = pd.to_datetime(august_26_merged['Month'])
-print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged) + len(june_26_merged) + len(july_26_merged) + len(august_26_merged):,} records from 2026")
+print(f"DIAG: aug26 loaded {len(august_26_merged):,}"); _flush()
+print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged) + len(june_26_merged) + len(july_26_merged) + len(august_26_merged):,} records from 2026"); _flush()
 
 # Concatenate all data (6 dataframes instead of 16)
-print("Merging all data...")
+print("DIAG: starting concat"); _flush()
 all_data = pd.concat([
     all_data_24,
     all_data_25,
@@ -332,45 +349,53 @@ all_data = pd.concat([
     july_26_merged,
     august_26_merged
 ], ignore_index=True)
-print(f"✓ Total records: {len(all_data):,}")
-earliest_date = all_data['Date'].min() # earliest date 
-most_recent_date = all_data['Date'].max() # the most recent date 
-# merging the pidname info 
+print(f"✓ Total records: {len(all_data):,}"); _flush()
+earliest_date = all_data['Date'].min() # earliest date
+most_recent_date = all_data['Date'].max() # the most recent date
+# merging the pidname info
+print("DIAG: starting pidname merge"); _flush()
 all_data = all_data.merge(pidname_mapping_table, how = 'left', on  = 'Product Name')
+print(f"DIAG: pidname merge done, shape={all_data.shape}"); _flush()
 
 # Filter out unassigned and IBM-internal GBG rows — these are not real customers
 # and would otherwise dominate the Top Customers by Risk chart
+print("DIAG: starting GBG filter"); _flush()
 _before = len(all_data)
 all_data = all_data[
     (all_data['Global Buying Group Name'] != 'Unassigned') &
     (~all_data['Global Buying Group Name'].str.contains('IBM', case=False, na=False))
 ]
-print(f"✓ Filtered out {_before - len(all_data):,} Unassigned/IBM-internal rows ({_before:,} → {len(all_data):,})")
+print(f"✓ Filtered out {_before - len(all_data):,} Unassigned/IBM-internal rows ({_before:,} → {len(all_data):,})"); _flush()
 
 # ============================================================================
 # PERFORMANCE OPTIMIZATION: Cache product info table
 # This cache eliminates the need to process all_data on every Graph 2 update
 # Expected improvement: 50-70% faster Graph 2 rendering
 # ============================================================================
-print("Creating product info cache for performance optimization...")
+print("DIAG: creating product info cache"); _flush()
 PRODUCT_INFO_TABLE_CACHE = all_data.groupby('Product Name').first().reset_index()[['Product Name', 'pidname']]
-print(f"✓ Cached {len(PRODUCT_INFO_TABLE_CACHE)} products for faster Graph 2 rendering")
+print(f"✓ Cached {len(PRODUCT_INFO_TABLE_CACHE)} products for faster Graph 2 rendering"); _flush()
 #all_data.drop(columns = ['pidname_x'], inplace = True )
 #all_data.rename(columns = {'pidname_y' : 'pidname'} ,inplace = True)
-# joining the pid info back to the new data 
+# joining the pid info back to the new data
 # get the dictionaries and write them to JSON files
+print("DIAG: downloading color dicts"); _flush()
 red = get_item('oidash-app','Red_dict_May_26_final.json')
 red = red['Body'].read()
 with open('red.json','wb') as file:
     file.write(red)
+print("DIAG: red dict downloaded"); _flush()
 orange = get_item('oidash-app','Orange_dict_May_26_final.json')
 orange = orange['Body'].read()
 with open('orange.json','wb') as file:
     file.write(orange)
+print("DIAG: orange dict downloaded"); _flush()
 green = get_item('oidash-app','Green_dict_May_26_final.json')
 green = green['Body'].read()
 with open('green.json','wb') as file:
     file.write(green)
+print("DIAG: green dict downloaded"); _flush()
+print("DIAG: creating Flask/Dash app"); _flush()
 server = Flask(__name__)
 DASH_URL_BASE_PATHNAME = "/dashboard/"
 auth = AppIDAuthProviderDash(DASH_URL_BASE_PATHNAME)
