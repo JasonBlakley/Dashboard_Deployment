@@ -238,6 +238,7 @@ _download_to_file('oidash-app', 'May_2026_merged.csv', 'May_2026_merged.csv')
 _download_to_file('oidash-app', 'June_2026_merged.csv', 'June_2026_merged.csv')
 _download_to_file('oidash-app', 'July_2026_merged.csv', 'July_2026_merged.csv')
 _download_to_file('oidash-app', 'August_2026_merged.csv', 'August_2026_merged.csv')
+_download_to_file('oidash-app', 'September_2026_merged.csv', 'September_2026_merged.csv')
 print("✓ 2026 monthly data downloaded")
 
 import traceback as _traceback
@@ -308,7 +309,12 @@ august_26_merged = pd.read_csv('August_2026_merged.csv', low_memory=False)
 august_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
 august_26_merged['Date'] = pd.to_datetime(august_26_merged['Month'])
 print(f"DIAG: aug26 loaded {len(august_26_merged):,}"); _flush()
-print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged) + len(june_26_merged) + len(july_26_merged) + len(august_26_merged):,} records from 2026"); _flush()
+
+september_26_merged = pd.read_csv('September_2026_merged.csv', low_memory=False)
+september_26_merged.rename(columns= {'Global Buying Group Name_x' : 'Global Buying Group Name', 'Product_x' : 'Product' }, inplace= True)
+september_26_merged['Date'] = pd.to_datetime(september_26_merged['Month'])
+print(f"DIAG: sep26 loaded {len(september_26_merged):,}"); _flush()
+print(f"✓ Loaded {len(january_26_merged) + len(february_26_merged) + len(march_26_merged) + len(april_26_merged) + len(may_26_merged) + len(june_26_merged) + len(july_26_merged) + len(august_26_merged) + len(september_26_merged):,} records from 2026"); _flush()
 
 # Concatenate all data (6 dataframes instead of 16)
 print("DIAG: starting concat"); _flush()
@@ -322,7 +328,8 @@ all_data = pd.concat([
     may_26_merged,
     june_26_merged,
     july_26_merged,
-    august_26_merged
+    august_26_merged,
+    september_26_merged
 ], ignore_index=True)
 print(f"✓ Total records: {len(all_data):,}"); _flush()
 earliest_date = all_data['Date'].min() # earliest date
