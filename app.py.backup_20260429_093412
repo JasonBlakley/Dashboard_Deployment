@@ -38,7 +38,9 @@ import logging
 #setting up the API with the COS
 # Constants for IBM COS values
 COS_ENDPOINT = "https://s3.us-east.cloud-object-storage.appdomain.cloud" # Current list avaiable at https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints
-COS_API_KEY_ID = "REDACTED"
+COS_API_KEY_ID = os.environ.get("COS_API_KEY_ID")
+if not COS_API_KEY_ID:
+    raise RuntimeError("COS_API_KEY_ID environment variable is not set")
 COS_INSTANCE_CRN = "crn:v1:bluemix:public:cloud-object-storage:global:a/6003dba678e9a506528e0dc3dad11d75:b75750b4-68a2-4113-af62-16c1e6e10bca::" # eg "crn:v1:bluemix:public:cloud-object-storage:global:a/3bf0d9003xxxxxxxxxx1c3e97696b71c:d6f04d83-6c4f-4a62-a165-696756d63903::"
 
 # Create resource
